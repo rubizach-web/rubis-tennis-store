@@ -73,7 +73,7 @@ jobs:
           [ -f "$dir/report.json" ] || exit 0
           git config user.name "inventory-sync"
           git config user.email "inventory-sync@users.noreply.github.com"
-          git fetch --depth=1 origin sync-reports || true
+          git fetch --depth=1 origin +sync-reports:refs/remotes/origin/sync-reports || true
           git worktree add -B sync-reports "${{ runner.temp }}/reports" "origin/sync-reports" 2>/dev/null \
             || git worktree add --orphan -b sync-reports "${{ runner.temp }}/reports"
           cd "${{ runner.temp }}/reports"

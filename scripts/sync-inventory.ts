@@ -67,6 +67,8 @@ async function main() {
         log(`${r.outcome.padEnd(16)} ${p.name}`);
       } catch (err: any) {
         log(`crash            ${p.name}: ${err?.message ?? err}`);
+        // Annotations are visible on the run page even when logs are not
+        console.log(`::warning::${p.name}: ${String(err?.stack ?? err).split('\n').slice(0, 3).join(' | ')}`);
       }
     }
   }
@@ -217,5 +219,6 @@ function writeStepSummary(summary: any, all: ProductSyncResult[]) {
 
 main().catch(err => {
   console.error(err);
+  console.log(`::error::${String(err?.stack ?? err).split('\n').slice(0, 6).join(' | ')}`);
   process.exit(1);
 });

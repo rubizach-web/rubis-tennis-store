@@ -52,6 +52,8 @@ function shoeKey(n: number): string {
 /** Parses "41", "41.5", "41,5", "41 1/3", "41-1-3", "41½" into a number. */
 function parseNumberWithFraction(s: string): number | null {
   const t = s
+    .trim()
+    .replace(/^([⅓⅔½])\s*(\d{1,2})$/, '$2$1') // Wilson writes 36⅔ as "⅔36"
     .replace(/½/g, ' 1/2')
     .replace(/⅓/g, ' 1/3')
     .replace(/⅔/g, ' 2/3')
@@ -98,6 +100,10 @@ export function sizeKeys(rawLabel: string, hint = ''): string[] {
   // Grip: "G2", "L2", "4 1/4 - G2", "1/4 4 - G2", "4 1/4 (L2)"
   const gripCode = upper.match(/(?:^|[\s(\-])[GL]\s?([0-5])(?:$|[\s)\-])/) || upper.match(/^[GL]([0-5])$/);
   if (gripCode) keys.add(`grip:${gripCode[1]}`);
+
+  // Hebrew "ידית 2 (1/4 4)"
+  const hebrewGrip = label.match(/ידית\s*([0-5])(?![0-9])/);
+  if (hebrewGrip) keys.add(`grip:${hebrewGrip[1]}`);
 
   // Grip in inches, possibly RTL-mangled
   const inch = upper.match(/4\s+([1357])\s*\/\s*([248])/) || upper.match(/([1357])\s*\/\s*([248])\s+4/);

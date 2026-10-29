@@ -391,3 +391,11 @@ test('a product that is clearly not the supplier\'s is reported, not left waitin
   );
   assert.equal(r.outcome, 'unknown_supplier');
 });
+
+test('Hebrew grip labels and fraction glyphs', () => {
+  assert.ok(sizesMatch('ידית 0 (4")', '0', 'מידת גריפ'));
+  assert.ok(sizesMatch('ידית 2 (1/4 4)', '4 1/4" (2)'));
+  assert.ok(sizesMatch('2/3 36', '⅔36'));
+  assert.ok(sizesMatch('36 2/3', '36⅔'));
+  assert.ok(!sizesMatch('36', '⅔36'));
+});
