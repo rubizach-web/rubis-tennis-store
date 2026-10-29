@@ -7,7 +7,9 @@
     "dev": "tsx server.ts",
     "build": "vite build && esbuild server.ts --bundle --platform=node --format=cjs --packages=external --sourcemap --outfile=dist/server.cjs",
     "start": "node dist/server.cjs",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "test:inventory": "node --experimental-strip-types --no-warnings --test server/inventory/inventory.test.ts",
+    "sync:inventory": "node --experimental-strip-types --no-warnings scripts/sync-inventory.ts"
   },
   "dependencies": {
     "@google/genai": "^1.29.0",

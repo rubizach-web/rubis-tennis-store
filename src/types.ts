@@ -14,46 +14,41 @@ export interface Product {
   tags?: string[];
   sizes?: string[];
   inStock?: boolean;
+  /** 'babolat' | 'wilson' | 'yonex' for synced products (older values may be supplier names). */
   supplierSite?: string;
+  /** Page of this exact product (and colour) at the supplier. */
   supplierUrl?: string;
+  /** Supplier's own id for the product (Babolat / Wilson) or its URL (Tennis Online). */
+  supplierRef?: string;
+  /**
+   * confirmed – approved by the owner · auto – linked automatically with high confidence
+   * suggested – candidates waiting for approval · none – nothing found · manual – not synced
+   */
+  supplierLinkStatus?: 'confirmed' | 'auto' | 'suggested' | 'none' | 'manual';
+  supplierSuggestions?: { ref: string; url: string; title: string; color?: string; score: number }[];
+  supplierLinkReason?: string;
+  supplierTitle?: string;
+  supplierColor?: string;
+  /** Store sizes that cannot be sold right now (shown greyed out on the site). */
+  unavailableSizes?: string[];
+  /** Sizes the supplier currently has (for the owner's reference). */
+  supplierSizes?: string[];
   lastStockCheck?: string;
   stockStatusDetail?: string;
+  stockCheckState?: 'ok' | 'not_found' | 'error' | 'unlinked' | 'manual';
 }
 
-export interface SupplierSite {
-  id: string;
-  name: string;
-  url: string;
-  domain: string;
-  logoText: string;
-  brandKeywords: string[];
-  status?: 'active' | 'scanning' | 'error' | 'idle';
-  lastChecked?: string;
-  productsFoundCount?: number;
+/** True when the product can be bought: in stock, and (if it has sizes) at least one size left. */
+export function isSellable(product: Pick<Product, 'inStock' | 'sizes' | 'unavailableSizes'>): boolean {
+  if (product.inStock === false) return false;
+  const hasSizes = (product.sizes || []).some(s => s.trim());
+  return !hasSizes || sellableSizes(product).length > 0;
 }
 
-export interface ScanReportItem {
-  productId: string;
-  productName: string;
-  supplierName: string;
-  supplierUrl?: string;
-  matchedUrl?: string;
-  previousStock: boolean;
-  newStock: boolean;
-  statusDetail: string;
-  timestamp: string;
-  matchedTitle?: string;
-}
-
-export interface ScanSummary {
-  id: string;
-  startedAt: string;
-  completedAt: string;
-  totalChecked: number;
-  inStockCount: number;
-  outOfStockCount: number;
-  updatedCount: number;
-  results: ScanReportItem[];
+/** Sizes a customer can actually choose for this product. */
+export function sellableSizes(product: Pick<Product, 'sizes' | 'unavailableSizes'>): string[] {
+  const out = new Set((product.unavailableSizes || []).map(s => s.trim()));
+  return (product.sizes || []).filter(s => s.trim() && !out.has(s.trim()));
 }
 
 export interface Category {

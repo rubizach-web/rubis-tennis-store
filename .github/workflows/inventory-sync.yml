@@ -1,0 +1,63 @@
+name: סנכרון מלאי יומי
+
+on:
+  schedule:
+    # 01:00 UTC = 03:00 Israel in winter, 04:00 in summer
+    - cron: '0 1 * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'הרצת ניסיון — רק להציג מה ישתנה, בלי לשמור'
+        type: boolean
+        default: false
+      only_product:
+        description: 'מזהה מוצר אחד לבדיקה (ריק = כל המוצרים)'
+        type: string
+        default: ''
+      relink:
+        description: 'לחפש מחדש קישור למוצרים שקושרו אוטומטית'
+        type: boolean
+        default: false
+
+concurrency:
+  group: inventory-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      HAS_FIREBASE_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT != '' }}
+    steps:
+      - name: Waiting for the Firebase key
+        if: env.HAS_FIREBASE_KEY != 'true'
+        run: |
+          echo "::notice::הסנכרון עוד לא פעיל: צריך להוסיף את הסוד FIREBASE_SERVICE_ACCOUNT בהגדרות המאגר (Settings → Secrets and variables → Actions)."
+
+      - uses: actions/checkout@v4
+        if: env.HAS_FIREBASE_KEY == 'true'
+
+      - uses: actions/setup-node@v4
+        if: env.HAS_FIREBASE_KEY == 'true'
+        with:
+          node-version: 22
+
+      - name: Install firebase-admin
+        if: env.HAS_FIREBASE_KEY == 'true'
+        # Only the sync job needs it; installed on its own so the site's
+        # dependencies and lockfile stay untouched.
+        run: npm install --no-save --no-package-lock --ignore-scripts --legacy-peer-deps firebase-admin@13
+
+      - name: Run unit tests
+        if: env.HAS_FIREBASE_KEY == 'true'
+        run: node --experimental-strip-types --no-warnings --test server/inventory/inventory.test.ts
+
+      - name: Sync stock from suppliers
+        if: env.HAS_FIREBASE_KEY == 'true'
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          DRY_RUN: ${{ inputs.dry_run || 'false' }}
+          ONLY_PRODUCT: ${{ inputs.only_product || '' }}
+          RELINK: ${{ inputs.relink || 'false' }}
+        run: node --experimental-strip-types --no-warnings scripts/sync-inventory.ts

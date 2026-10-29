@@ -1,0 +1,30 @@
+name: בדיקת קוד
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Inventory unit tests
+        run: npm run test:inventory
+
+      - name: Build the site
+        run: npm run build
+
+      - name: Type check
+        run: npm run lint

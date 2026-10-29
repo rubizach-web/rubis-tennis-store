@@ -4,43 +4,8 @@ import express from "express";
 import path from "path";
 import { createServer as createViteServer } from "vite";
 import { GoogleGenAI } from "@google/genai";
-import cron from "node-cron";
-import { 
-  SUPPLIERS, 
-  findMatchingSuppliers, 
-  checkProductOnSupplier,
-  SupplierConfig 
-} from "./server/inventoryCrawler.ts";
-
-interface ScanSummaryState {
-  id: string;
-  startedAt: string;
-  completedAt: string;
-  totalChecked: number;
-  inStockCount: number;
-  outOfStockCount: number;
-  updatedCount: number;
-  results: Array<{
-    productId: string;
-    productName: string;
-    supplierName: string;
-    supplierUrl?: string;
-    matchedUrl?: string;
-    previousStock: boolean;
-    newStock: boolean;
-    statusDetail: string;
-    timestamp: string;
-    matchedTitle?: string;
-  }>;
-}
-
-let lastScanSummary: ScanSummaryState | null = null;
-let isScanInProgress = false;
-let syncSettings = {
-  dailyAutoScanEnabled: true,
-  scanHour: 3, // 03:00 AM
-  lastAutoRun: null as string | null
-};
+import { syncOneProduct, isSupplierId } from "./server/inventory/run.ts";
+import { detectSupplier, findLink, resolveLinkFromUrl } from "./server/inventory/sync.ts";
 
 async function startServer() {
   const app = express();
@@ -55,205 +20,51 @@ async function startServer() {
     res.json({ status: "ok" });
   });
 
-  // API Route: Get Pre-Configured Suppliers
-  app.get("/api/suppliers", (req, res) => {
-    res.json({
-      suppliers: SUPPLIERS.map(s => ({
-        id: s.id,
-        name: s.name,
-        url: s.url,
-        domain: s.domain,
-        brandKeywords: s.brandKeywords
-      })),
-      settings: syncSettings,
-      lastSummary: lastScanSummary,
-      isScanInProgress
-    });
-  });
+  // ---------------------------------------------------------------------------
+  // Supplier stock (see server/inventory). The daily sync itself runs on
+  // GitHub Actions; these routes serve the admin "check now" / linking screen.
+  // ---------------------------------------------------------------------------
 
-  // API Route: Check a Single Product against Supplier Sites
-  app.post("/api/check-single-product", async (req, res) => {
+  // Check one product: link it if needed, read the supplier's stock and
+  // return the fields to save. The admin's browser writes them to Firestore.
+  app.post("/api/inventory/check", async (req, res) => {
     try {
-      const { product, manualSupplierId } = req.body;
-      if (!product || !product.name) {
-        return res.status(400).json({ error: "Missing product data" });
-      }
-
-      const candidateSuppliers = findMatchingSuppliers(product.name, product.tags, manualSupplierId);
-      const supplier = candidateSuppliers[0];
-
-      if (!supplier) {
-        // Not one of the auto-synced suppliers → leave stock untouched (manual update).
-        return res.json({
-          productId: product.id,
-          productName: product.name,
-          supplierName: "עדכון ידני",
-          found: false,
-          inStock: product.inStock !== false,
-          statusDetail: "המוצר אינו שייך לאחד משלושת הספקים המסונכרנים — מתעדכן ידנית",
-          checkedAt: new Date().toISOString()
-        });
-      }
-
-      const result = await checkProductOnSupplier(product.name, supplier);
-
-      res.json({
-        productId: product.id,
-        productName: product.name,
-        supplierName: supplier.name,
-        supplierUrl: supplier.url,
-        matchedUrl: result.matchedUrl,
-        matchedTitle: result.matchedTitle,
-        found: result.found,
-        inStock: result.inStock,
-        statusDetail: result.statusDetail,
-        checkedAt: new Date().toISOString()
-      });
+      const { product, relink } = req.body ?? {};
+      if (!product?.id || !product?.name) return res.status(400).json({ error: "חסרים נתוני מוצר" });
+      const result = await syncOneProduct(product, { relink: !!relink });
+      res.json(result);
     } catch (error: any) {
-      console.error("Single product stock check error:", error);
-      res.status(500).json({ error: error.message || "Failed to check product stock" });
+      console.error("inventory check error:", error);
+      res.status(500).json({ error: error?.message || "בדיקת המלאי נכשלה" });
     }
   });
 
-  // API Route: Batch Sync / Scan Products across Supplier Sites
-  app.post("/api/sync-inventory", async (req, res) => {
-    // If a previous scan was marked in progress for too long, reset it
-    if (isScanInProgress) {
-      return res.status(409).json({ error: "סריקה כבר מתבצעת כעת ברקע. אנא המתן מספר רגעים ונסה שוב." });
-    }
-
+  // Candidate supplier products for a store product
+  app.post("/api/inventory/suggest", async (req, res) => {
     try {
-      const { products } = req.body;
-      if (!Array.isArray(products) || products.length === 0) {
-        return res.status(400).json({ error: "רשימת המוצרים לסריקה ריקה." });
+      const { product, supplier } = req.body ?? {};
+      if (!product?.name) return res.status(400).json({ error: "חסר שם מוצר" });
+      const target = isSupplierId(supplier) ? supplier : detectSupplier(product);
+      if (!isSupplierId(target)) {
+        return res.json({ supplier: target, suggestions: [], reason: "לא זוהה ספק — בחר ספק" });
       }
-
-      isScanInProgress = true;
-      const startedAt = new Date().toISOString();
-      const results: ScanSummaryState["results"] = [];
-
-      let inStockCount = 0;
-      let outOfStockCount = 0;
-      let updatedCount = 0;
-
-      // Process in small parallel chunks (3 products at a time) for speed and server friendliness
-      const chunkSize = 3;
-      for (let i = 0; i < products.length; i += chunkSize) {
-        const chunk = products.slice(i, i + chunkSize);
-
-        const chunkPromises = chunk.map(async (product) => {
-          try {
-            const candidateSuppliers = findMatchingSuppliers(product.name, product.tags, product.supplierSite);
-
-            if (candidateSuppliers.length === 0) {
-              // Not one of the auto-synced suppliers → leave stock untouched (manual update).
-              const keep = product.inStock !== false;
-              return {
-                productId: product.id,
-                productName: product.name,
-                supplierName: "עדכון ידני",
-                previousStock: keep,
-                newStock: keep,
-                statusDetail: "המוצר אינו שייך לאחד משלושת הספקים המסונכרנים — מתעדכן ידנית",
-                timestamp: new Date().toISOString()
-              };
-            }
-
-            let matchedResult: any = null;
-            let matchedSupplier: SupplierConfig = candidateSuppliers[0];
-
-            for (const supp of candidateSuppliers) {
-              const check = await checkProductOnSupplier(product.name, supp);
-              if (check && check.found) {
-                matchedResult = check;
-                matchedSupplier = supp;
-                break;
-              }
-            }
-
-            if (!matchedResult) {
-              matchedResult = {
-                found: false,
-                inStock: product.inStock !== false, // Keep current stock if supplier not responding or not indexed
-                statusDetail: `לא זוהה סטטוס ייעודי באתרי הספקים הנבדקים (${candidateSuppliers.map(s => s.name).join(', ')})`
-              };
-            }
-
-            const previousStock = product.inStock !== false;
-            const newStock = matchedResult.inStock !== false;
-
-            return {
-              productId: product.id,
-              productName: product.name,
-              supplierName: matchedSupplier.name,
-              supplierUrl: matchedSupplier.url,
-              matchedUrl: matchedResult.matchedUrl,
-              matchedTitle: matchedResult.matchedTitle,
-              previousStock,
-              newStock,
-              statusDetail: matchedResult.statusDetail || 'בדיקת מלאי הושלמה',
-              timestamp: new Date().toISOString()
-            };
-          } catch (itemErr: any) {
-            console.error(`Error scanning product ${product.name}:`, itemErr);
-            return {
-              productId: product.id,
-              productName: product.name,
-              supplierName: "בדיקה כללית",
-              previousStock: product.inStock !== false,
-              newStock: product.inStock !== false,
-              statusDetail: "סטטוס המלאי נשמר (ספק לא הגיב)",
-              timestamp: new Date().toISOString()
-            };
-          }
-        });
-
-        const chunkResults = await Promise.all(chunkPromises);
-        for (const item of chunkResults) {
-          if (item.previousStock !== item.newStock) {
-            updatedCount++;
-          }
-          if (item.newStock) {
-            inStockCount++;
-          } else {
-            outOfStockCount++;
-          }
-          results.push(item);
-        }
-      }
-
-      const completedAt = new Date().toISOString();
-      lastScanSummary = {
-        id: Math.random().toString(36).substring(2, 9),
-        startedAt,
-        completedAt,
-        totalChecked: products.length,
-        inStockCount,
-        outOfStockCount,
-        updatedCount,
-        results
-      };
-
-      res.setHeader("Content-Type", "application/json; charset=utf-8");
-      return res.status(200).json(lastScanSummary);
+      const ranked = await findLink(product, target);
+      res.json({ supplier: target, suggestions: ranked.suggestions, reason: ranked.reason, confident: ranked.confident });
     } catch (error: any) {
-      console.error("Batch inventory sync error:", error);
-      return res.status(500).json({ error: error.message || "שגיאה בביצוע סנכרון המלאי" });
-    } finally {
-      isScanInProgress = false;
+      console.error("inventory suggest error:", error);
+      res.status(500).json({ error: error?.message || "חיפוש המוצר אצל הספק נכשל" });
     }
   });
 
-  // API Route: Get or Update Sync Settings
-  app.post("/api/sync-inventory/settings", (req, res) => {
-    const { dailyAutoScanEnabled, scanHour } = req.body;
-    if (typeof dailyAutoScanEnabled === "boolean") {
-      syncSettings.dailyAutoScanEnabled = dailyAutoScanEnabled;
+  // Resolve a supplier page the owner pasted, and show its stock
+  app.post("/api/inventory/resolve-link", async (req, res) => {
+    try {
+      const { url } = req.body ?? {};
+      if (!url) return res.status(400).json({ error: "חסר קישור" });
+      res.json(await resolveLinkFromUrl(String(url)));
+    } catch (error: any) {
+      res.status(400).json({ error: error?.message || "לא הצלחתי לקרוא את הקישור" });
     }
-    if (typeof scanHour === "number" && scanHour >= 0 && scanHour <= 23) {
-      syncSettings.scanHour = scanHour;
-    }
-    res.json({ status: "ok", settings: syncSettings });
   });
 
   // API Route: Parse Supplier Product using Gemini
@@ -360,16 +171,6 @@ Return ONLY valid JSON according to the schema provided. No markdown wrapping ex
         details: errStr
       });
     }
-  });
-
-  // Schedule Daily Background Cron Job (Every night at 03:00 AM)
-  cron.schedule("0 3 * * *", async () => {
-    if (!syncSettings.dailyAutoScanEnabled) {
-      console.log("[CRON] Daily inventory scan is disabled in settings.");
-      return;
-    }
-    console.log("[CRON] Starting daily automated supplier inventory scan at 03:00 AM...");
-    syncSettings.lastAutoRun = new Date().toISOString();
   });
 
   // API 404 handler to prevent API calls from returning index.html

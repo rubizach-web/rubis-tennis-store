@@ -51,6 +51,12 @@ service cloud.firestore {
              (!data.keys().contains('sizes') || (data.sizes is list && data.sizes.size() <= 50));
     }
 
+    // --- Daily stock sync reports (written by the GitHub job with a service account) ---
+    match /syncRuns/{runId} {
+      allow read: if isAdmin();
+      allow write: if false;
+    }
+
     // --- Leads Rules ---
     match /leads/{leadId} {
       allow create: if isValidId(leadId) && isValidLead(incoming());

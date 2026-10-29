@@ -45,7 +45,7 @@ import {
   Globe,
   RefreshCw
 } from 'lucide-react';
-import { DEFAULT_CONTENT, SiteContent, Category, Product, Lead, CartItem } from './types.ts';
+import { DEFAULT_CONTENT, SiteContent, Category, Product, Lead, CartItem, sellableSizes, isSellable } from './types.ts';
 import { AiProductImporter } from './components/AiProductImporter.tsx';
 import { InventorySyncManager } from './components/InventorySyncManager.tsx';
 import { auth, db, sanitizeForFirestore } from './lib/firebase.ts';
@@ -1202,8 +1202,8 @@ function ProductCard({ product, onClick }: { product: Product, onClick: () => vo
         <h4 className="text-xs md:text-sm font-bold uppercase tracking-tight text-zinc-100 line-clamp-1 group-hover:text-gold transition-colors">{product.name}</h4>
         <div className="flex justify-between items-baseline">
            <span className="text-sm md:text-base font-black text-white">₪{product.price}</span>
-           {product.sizes && product.sizes.length > 0 && (
-             <span className="text-[9px] text-zinc-500 font-bold">{product.sizes.length} מידות</span>
+           {sellableSizes(product).length > 0 && (
+             <span className="text-[9px] text-zinc-500 font-bold">{sellableSizes(product).length} מידות</span>
            )}
         </div>
       </div>
@@ -1514,7 +1514,7 @@ function LandingPage({
     }
     
     const productsInScope = allProducts.filter(
-      p => p.categoryId === selectedCategory && p.inStock !== false
+      p => p.categoryId === selectedCategory && isSellable(p)
     );
     
     const brands = new Set<string>();
@@ -1557,14 +1557,13 @@ function LandingPage({
     }
     
     const productsInScope = allProducts.filter(
-      p => p.categoryId === selectedCategory && p.inStock !== false
+      p => p.categoryId === selectedCategory && isSellable(p)
     );
     
     const sizes = new Set<string>();
     productsInScope.forEach(p => {
-      (p.sizes || []).forEach(size => {
-        if (size.trim()) sizes.add(size.trim());
-      });
+      // only sizes that can actually be bought
+      sellableSizes(p).forEach(size => sizes.add(size.trim()));
     });
     
     return Array.from(sizes).sort((a, b) => {
@@ -1576,7 +1575,7 @@ function LandingPage({
   }, [selectedCategory, allProducts]);
 
   const filteredProducts = useMemo(() => {
-    let prods = allProducts.filter(p => p.inStock !== false);
+    let prods = allProducts.filter(p => isSellable(p));
     if (selectedCategory !== 'all') {
       prods = prods.filter(p => p.categoryId === selectedCategory);
     }
@@ -1605,7 +1604,7 @@ function LandingPage({
     // Multiple sizes: OR logic within category sizes
     if (selectedSizes.length > 0) {
       prods = prods.filter(p => 
-        selectedSizes.some(size => (p.sizes || []).includes(size))
+        selectedSizes.some(size => sellableSizes(p).map(s => s.trim()).includes(size))
       );
     }
     
@@ -1700,7 +1699,7 @@ function LandingPage({
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
              {content.categories.map(cat => {
-               const minPrice = allProducts.filter(p => p.categoryId === cat.id && p.inStock !== false).reduce((min, p) => {
+               const minPrice = allProducts.filter(p => p.categoryId === cat.id && isSellable(p)).reduce((min, p) => {
                  const priceText = p.price.replace(/[^\d]/g, '');
                  if (!priceText) return min;
                  const price = parseInt(priceText);
@@ -3207,7 +3206,10 @@ function ProductDetailsModal({ product, onClose, onAddToCart }: {
     onAddToCart: (p: Product, q: number, s?: string) => void
 }) {
   const [quantity, setQuantity] = useState(1);
-  const [selectedSize, setSelectedSize] = useState<string | undefined>(product.sizes?.[0]);
+  const sellable = useMemo(() => sellableSizes(product), [product]);
+  const unavailableSet = useMemo(() => new Set((product.unavailableSizes || []).map(s => s.trim())), [product]);
+  const hasSizes = (product.sizes || []).some(s => s.trim());
+  const [selectedSize, setSelectedSize] = useState<string | undefined>(sellable[0]);
   const images = useMemo(() => product.images && product.images.length > 0 ? product.images : [product.image], [product]);
   const [activeImg, setActiveImg] = useState(0);
 
@@ -3297,15 +3299,26 @@ function ProductDetailsModal({ product, onClose, onAddToCart }: {
             <div className="mb-8">
               <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-widest mb-4">בחר מידה</h3>
               <div className="flex flex-wrap gap-2 justify-end">
-                {product.sizes.map((size, i) => (
-                  <button 
-                    key={`${size}-${i}`}
-                    onClick={() => setSelectedSize(size)}
-                    className={`px-4 py-2 rounded-lg border text-sm font-bold transition-all ${selectedSize === size ? 'bg-gold text-black border-gold shadow-lg shadow-gold/20' : 'bg-white/5 border-white/10 text-white hover:border-white/30'}`}
-                  >
-                    {size}
-                  </button>
-                ))}
+                {product.sizes.map((size, i) => {
+                  const soldOut = unavailableSet.has(size.trim());
+                  return (
+                    <button 
+                      key={`${size}-${i}`}
+                      onClick={() => !soldOut && setSelectedSize(size)}
+                      disabled={soldOut}
+                      title={soldOut ? 'אזל מהמלאי' : undefined}
+                      className={`px-4 py-2 rounded-lg border text-sm font-bold transition-all ${
+                        soldOut
+                          ? 'bg-transparent border-white/5 text-zinc-600 line-through cursor-not-allowed'
+                          : selectedSize === size
+                            ? 'bg-gold text-black border-gold shadow-lg shadow-gold/20'
+                            : 'bg-white/5 border-white/10 text-white hover:border-white/30'
+                      }`}
+                    >
+                      {size}
+                    </button>
+                  );
+                })}
               </div>
             </div>
           )}
@@ -3331,10 +3344,11 @@ function ProductDetailsModal({ product, onClose, onAddToCart }: {
             
             <button 
               onClick={() => onAddToCart(product, quantity, selectedSize)}
-              className="flex-grow h-14 bg-gold text-black rounded-xl font-black uppercase tracking-widest flex items-center justify-center gap-3 shadow-xl shadow-gold/10 hover:shadow-gold/20 hover:scale-[1.02] active:scale-95 transition-all w-full"
+              disabled={product.inStock === false || (hasSizes && !selectedSize)}
+              className="flex-grow h-14 bg-gold text-black rounded-xl font-black uppercase tracking-widest flex items-center justify-center gap-3 shadow-xl shadow-gold/10 hover:shadow-gold/20 hover:scale-[1.02] active:scale-95 transition-all w-full disabled:opacity-40 disabled:hover:scale-100 disabled:cursor-not-allowed"
             >
               <ShoppingCart size={20} />
-              הוסף לסל קניות
+              {product.inStock === false || (hasSizes && sellable.length === 0) ? 'אזל מהמלאי' : 'הוסף לסל קניות'}
             </button>
           </div>
         </div>
