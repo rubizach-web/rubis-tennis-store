@@ -439,6 +439,7 @@ function LinkBadge({ p }: { p: Product }) {
 }
 
 interface RowProps {
+  key?: string;
   p: Product;
   busy: boolean;
   expanded: boolean;
