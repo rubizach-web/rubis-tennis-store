@@ -18,7 +18,8 @@ export const SUPPLIERS: SupplierConfig[] = [
     domain: 'babolat.co.il',
     brandKeywords: ['babolat', 'בבולט', 'באבולט', 'pure aero', 'pure drive', 'pure strike', 'evoke', 'boost'],
     searchUrls: (q: string) => [
-      `https://babolat.co.il/?s=${encodeURIComponent(q)}&post_type=product`
+      // babolat.co.il is not WordPress; its search lives at /search?search=
+      `https://babolat.co.il/search?search=${encodeURIComponent(q)}`
     ]
   },
   {
@@ -40,28 +41,12 @@ export const SUPPLIERS: SupplierConfig[] = [
     searchUrls: (q: string) => [
       `https://www.tennis-online.co.il/?s=${encodeURIComponent(q)}&post_type=product`
     ]
-  },
-  {
-    id: 'sportcenter',
-    name: 'ספורט סנטר',
-    url: 'https://www.sportcenter.co.il',
-    domain: 'sportcenter.co.il',
-    brandKeywords: ['head', 'הד', 'speed', 'radical', 'gravity', 'extreme', 'prestige', 'boom', 'ספורט סנטר', 'sportcenter'],
-    searchUrls: (q: string) => [
-      `https://www.sportcenter.co.il/?s=${encodeURIComponent(q)}&post_type=product`
-    ]
-  },
-  {
-    id: 'bashgal',
-    name: 'בש-גל ספורט',
-    url: 'https://bashgal.co.il',
-    domain: 'bashgal.co.il',
-    brandKeywords: ['bashgal', 'בש-גל', 'בש גל', 'dunlop', 'דנלופ', 'prince', 'פרינס', 'tecnifibre', 'טכניפייבר'],
-    searchUrls: (q: string) => [
-      `https://bashgal.co.il/?s=${encodeURIComponent(q)}&post_type=product`
-    ]
   }
+  // ספורט סנטר ובש-גל הוסרו מהסנכרון האוטומטי — מוצרים שלהם מעודכנים ידנית.
 ];
+
+// Suppliers whose products are updated by hand and must never be auto-matched.
+const MANUAL_SUPPLIER_IDS = ['sportcenter', 'bashgal', 'ספורט סנטר', 'בש-גל'];
 
 // Normalized token extractor
 function extractSearchTokens(text: string): string[] {
@@ -77,6 +62,8 @@ export function findMatchingSuppliers(productName: string, tags?: string[], manu
   if (manualSupplierId) {
     const found = SUPPLIERS.find(s => s.id === manualSupplierId || s.name === manualSupplierId);
     if (found) return [found];
+    // Explicitly assigned to a supplier that is no longer auto-synced → manual.
+    if (MANUAL_SUPPLIER_IDS.some(id => manualSupplierId.toLowerCase().includes(id))) return [];
   }
 
   const searchScope = `${productName} ${(tags || []).join(' ')}`.toLowerCase();
@@ -85,7 +72,9 @@ export function findMatchingSuppliers(productName: string, tags?: string[], manu
     return supplier.brandKeywords.some(keyword => searchScope.includes(keyword.toLowerCase()));
   });
 
-  return matched.length > 0 ? matched : [SUPPLIERS[0]];
+  // No match → empty list. The product belongs to a supplier that is not synced
+  // automatically (e.g. Head / Dunlop) and is left for manual updates.
+  return matched;
 }
 
 // Check stock on a supplier site using HTTP fetch + Cheerio

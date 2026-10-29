@@ -370,7 +370,7 @@ export function InventorySyncManager({ products, onUpdateProduct }: InventorySyn
         <div className="mt-6">
           <div className="flex items-center justify-between mb-3">
             <span className="text-[11px] font-black uppercase tracking-wider text-zinc-400">
-              5 אתרי היבואנים המחוברים לסריקה אוטומטית:
+              3 אתרי היבואנים המחוברים לסריקה אוטומטית:
             </span>
             <div className="flex items-center gap-2 text-[10px] text-zinc-400">
               <Clock size={12} className="text-gold" />
@@ -383,8 +383,6 @@ export function InventorySyncManager({ products, onUpdateProduct }: InventorySyn
               { name: 'BABOLAT', url: 'https://babolat.co.il', domain: 'babolat.co.il', desc: 'מחבטים, תיקים ונעליים' },
               { name: 'WILSON', url: 'https://wilson.co.il', domain: 'wilson.co.il', desc: 'ציוד טניס מקצועי' },
               { name: 'YONEX', url: 'https://www.tennis-online.co.il', domain: 'tennis-online.co.il', desc: 'טניס אונליין ישראל' },
-              { name: 'ספורט סנטר', url: 'https://www.sportcenter.co.il', domain: 'sportcenter.co.il', desc: 'היבואן הרשמי Head' },
-              { name: 'בש-גל', url: 'https://bashgal.co.il', domain: 'bashgal.co.il', desc: 'ציוד ספורט Dunlop' },
             ].map((sup, idx) => (
               <div key={idx} className="bg-black/50 border border-white/10 hover:border-gold/30 rounded-xl p-3.5 transition-all flex flex-col justify-between group">
                 <div className="flex justify-between items-start">

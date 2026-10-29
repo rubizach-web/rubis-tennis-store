@@ -80,7 +80,20 @@ async function startServer() {
       }
 
       const candidateSuppliers = findMatchingSuppliers(product.name, product.tags, manualSupplierId);
-      const supplier = candidateSuppliers[0] || SUPPLIERS[0];
+      const supplier = candidateSuppliers[0];
+
+      if (!supplier) {
+        // Not one of the auto-synced suppliers → leave stock untouched (manual update).
+        return res.json({
+          productId: product.id,
+          productName: product.name,
+          supplierName: "עדכון ידני",
+          found: false,
+          inStock: product.inStock !== false,
+          statusDetail: "המוצר אינו שייך לאחד משלושת הספקים המסונכרנים — מתעדכן ידנית",
+          checkedAt: new Date().toISOString()
+        });
+      }
 
       const result = await checkProductOnSupplier(product.name, supplier);
 
@@ -131,8 +144,23 @@ async function startServer() {
         const chunkPromises = chunk.map(async (product) => {
           try {
             const candidateSuppliers = findMatchingSuppliers(product.name, product.tags, product.supplierSite);
+
+            if (candidateSuppliers.length === 0) {
+              // Not one of the auto-synced suppliers → leave stock untouched (manual update).
+              const keep = product.inStock !== false;
+              return {
+                productId: product.id,
+                productName: product.name,
+                supplierName: "עדכון ידני",
+                previousStock: keep,
+                newStock: keep,
+                statusDetail: "המוצר אינו שייך לאחד משלושת הספקים המסונכרנים — מתעדכן ידנית",
+                timestamp: new Date().toISOString()
+              };
+            }
+
             let matchedResult: any = null;
-            let matchedSupplier: SupplierConfig = candidateSuppliers[0] || SUPPLIERS[0];
+            let matchedSupplier: SupplierConfig = candidateSuppliers[0];
 
             for (const supp of candidateSuppliers) {
               const check = await checkProductOnSupplier(product.name, supp);
