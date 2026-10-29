@@ -12,15 +12,17 @@
 import type { CatalogItem, LinkSuggestion } from './types.ts';
 
 const COLOR_WORDS: Record<string, string> = {
-  black: 'black', שחור: 'black', שחורה: 'black', blk: 'black',
+  black: 'black', שחור: 'black', שחורה: 'black', blk: 'black', ebony: 'black',
   white: 'white', לבן: 'white', לבנה: 'white', wht: 'white', 'off-white': 'white', offwhite: 'white',
+  cream: 'white', קרם: 'white', ivory: 'white',
   blue: 'blue', כחול: 'blue', כחולה: 'blue', navy: 'navy', נייבי: 'navy', 'dark blue': 'navy',
   red: 'red', אדום: 'red', אדומה: 'red', poppy: 'red',
   green: 'green', ירוק: 'green', ירוקה: 'green', olive: 'green', vetiver: 'green',
+  khaki: 'khaki', חאקי: 'khaki',
   yellow: 'yellow', צהוב: 'yellow', צהובה: 'yellow',
   orange: 'orange', כתום: 'orange', כתומה: 'orange',
   pink: 'pink', ורוד: 'pink', ורודה: 'pink', fuchsia: 'pink',
-  purple: 'purple', סגול: 'purple', סגולה: 'purple', lilac: 'purple', violet: 'purple',
+  purple: 'purple', סגול: 'purple', סגולה: 'purple', lilac: 'purple', violet: 'purple', lavender: 'purple',
   grey: 'grey', gray: 'grey', אפור: 'grey', אפורה: 'grey', silver: 'silver', כסף: 'silver', כסוף: 'silver',
   gold: 'gold', זהב: 'gold', זהוב: 'gold',
   brown: 'brown', חום: 'brown', espresso: 'brown', caramel: 'brown',
@@ -29,26 +31,45 @@ const COLOR_WORDS: Record<string, string> = {
   turquoise: 'turquoise', טורקיז: 'turquoise', aqua: 'turquoise',
 };
 
-const AUDIENCE_WORDS: Record<string, 'men' | 'women' | 'junior'> = {
+type Audience = 'men' | 'women' | 'junior';
+const AUDIENCE_WORDS: Record<string, Audience> = {
   men: 'men', mens: 'men', "men's": 'men', man: 'men', גברים: 'men', לגברים: 'men', גבר: 'men', male: 'men',
   women: 'women', womens: 'women', "women's": 'women', woman: 'women', wmn: 'women', lady: 'women', ladies: 'women',
   נשים: 'women', לנשים: 'women', אישה: 'women',
   junior: 'junior', jr: 'junior', juniors: 'junior', kids: 'junior', kid: 'junior', ילדים: 'junior', לילדים: 'junior',
   נוער: 'junior', boy: 'junior', girl: 'junior', boys: 'junior', girls: 'junior',
 };
+const GENDER_WORDS: Record<string, 'boy' | 'girl'> = { boy: 'boy', boys: 'boy', בנים: 'boy', girl: 'girl', girls: 'girl', בנות: 'girl' };
 
 const STOP_WORDS = new Set([
   'נעלי', 'נעל', 'טניס', 'מחבט', 'מחבטי', 'תיק', 'תיקי', 'של', 'עם', 'ל', 'ה', 'ו', 'חדש', 'חדשה', 'new',
   'babolat', 'בבולט', 'באבולט', 'wilson', 'וילסון', 'ווילסון', 'yonex', 'יונקס', 'the', 'and', 'for', 'with',
-  'tennis', 'shoes', 'shoe', 'racket', 'racquet', 'bag', 'unstrung', 'strung', 'ללא', 'גידים', 'גרם',
-  'מקורי', 'original', 'edition', 'color', 'צבע', 'דגם', 'מידה', 'size',
+  'tennis', 'tns', 'shoes', 'shoe', 'racket', 'rackets', 'racquet', 'racquets', 'rkt', 'bag', 'unstrung', 'strung',
+  'ללא', 'גידים', 'גרם', 'מקורי', 'original', 'edition', 'color', 'צבע', 'דגם', 'מידה', 'size',
+  // colour modifiers ("light blue", "dark grey")
+  'light', 'dark', 'בהיר', 'כהה',
+]);
+
+/** Spelling slips and synonyms seen in real product names. */
+const WORD_FIXES: Record<string, string> = {
+  backbag: 'backpack', 'back-bag': 'backpack', bacpack: 'backpack', 'תיק-גב': 'backpack',
+  raquet: 'racquet', raquets: 'racquet',
+  clah: 'clash', aro: 'aero', prupulse: 'propulse', babaolat: 'babolat', ligth: 'light',
+  purpel: 'purple', wimbeldon: 'wimbledon', wimbeledon: 'wimbledon',
+};
+
+/** Words that make a different model of the same family (Pro, Lite, Team, Reverse…). */
+const QUALIFIERS = new Set([
+  'pro', 'lite', 'light', 'team', 'tour', 'reverse', 'super', 'ul', 'ls', 'uls', 's', 'l', 'wide', 'premium',
+  'classic', 'future', 'x', 'feel', 'plus', 'elite', 'mini', 'fury', 'precision',
 ]);
 
 const ROMAN: Record<string, string> = { ii: '2', iii: '3', iv: '4', vi: '6', vii: '7', viii: '8' };
 
 export interface NameParts {
   tokens: Set<string>;
-  audience?: 'men' | 'women' | 'junior';
+  audience?: Audience;
+  gender?: 'boy' | 'girl';
   colors: Set<string>;
 }
 
@@ -56,12 +77,15 @@ export function normalizeText(s: string): string {
   return String(s ?? '')
     .toLowerCase()
     .replace(/&#8211;|&amp;|&quot;|&#039;/g, ' ')
+    .replace(/ג['׳]וניור/g, ' junior ')
     // 290 גרם / 290 gr / 290g → 290g  (no \b: it does not work next to Hebrew letters)
-    .replace(/(\d+)\s*(?:gr|g|גרם|גר'|גר)(?![a-z\u0590-\u05ff])/g, '$1g')
-    .replace(/\b(\d{2})\s*[x×\/]\s*(\d{2})\b/g, '$1x$2') // string pattern 16/20, 16X20 → 16x20
+    .replace(/(\d+)\s*(?:gr|g|גרם|גר'|גר)(?![a-z֐-׿])/g, '$1g')
+    .replace(/\b(\d{2})\s*[x×\/\\]\s*(\d{2})\b/g, '$1x$2') // string pattern 16/20, 16X20 → 16x20
+    .replace(/(\d+)\s*(?:pk|pack|pcs|pc)(?![a-z])/g, '$1pk') // 9PK, 9 Pack, (9PCS) → 9pk
+    .replace(/\bx\s*(\d{1,2})\b/g, 'x$1') // RH X 12 → x12
     .replace(/(\d+)(?:st|nd|rd|th)\s*gen\.?/g, 'gen$1') // 8th gen. → gen8
     .replace(/\bgen\.?\s*(\d+)/g, 'gen$1') // gen 11 → gen11
-    .replace(/\bv\s+(\d+)/g, 'v$1')
+    .replace(/\bv\s*(\d+)(?:\.0)?\b/g, 'v$1') // V 3 / V3.0 → v3
     .replace(/[|,;:!?()[\]{}"“”'`+*]/g, ' ')
     .replace(/[\/\\]/g, ' ')
     .replace(/(?<=[a-z֐-׿])-(?=[a-z֐-׿])/g, ' ') // black-gold → black gold
@@ -71,10 +95,11 @@ export function normalizeText(s: string): string {
 
 export function nameParts(name: string, extraColor?: string): NameParts {
   const text = normalizeText(name);
-  const words = text.split(' ').filter(Boolean);
+  const words = text.split(' ').filter(Boolean).map(w => WORD_FIXES[w] ?? w);
   const tokens = new Set<string>();
   const colors = new Set<string>();
-  let audience: NameParts['audience'];
+  let audience: Audience | undefined;
+  let gender: 'boy' | 'girl' | undefined;
 
   for (let i = 0; i < words.length; i++) {
     const w = words[i];
@@ -88,6 +113,7 @@ export function nameParts(name: string, extraColor?: string): NameParts {
       colors.add(COLOR_WORDS[w]);
       continue;
     }
+    if (GENDER_WORDS[w]) gender = gender ?? GENDER_WORDS[w];
     if (AUDIENCE_WORDS[w]) {
       audience = audience ?? AUDIENCE_WORDS[w];
       continue;
@@ -97,36 +123,61 @@ export function nameParts(name: string, extraColor?: string): NameParts {
   }
 
   if (extraColor) for (const c of nameParts(extraColor).colors) colors.add(c);
-  return { tokens, audience, colors };
+  return { tokens, audience, gender, colors };
 }
 
 const isYear = (t: string) => /^20\d\d$/.test(t);
+const isWeight = (t: string) => /^\d{3}g$/.test(t);
+const isPattern = (t: string) => /^\d{2}x\d{2}$/.test(t);
 
 function tokenWeight(t: string): number {
   if (isYear(t)) return 1; // model years are often missing on one side
   return /\d/.test(t) ? 2 : 1; // model numbers / weights matter most
 }
 
-/** 0..1 similarity, plus penalties for audience/colour conflicts. */
-export function scoreMatch(storeName: string, item: Pick<CatalogItem, 'title' | 'color'>): number {
+/** Colour words hidden in a product URL slug (".../rush-pro-4-5-black-blue/"). */
+function colorTextFromUrl(url?: string): string {
+  if (!url) return '';
+  try {
+    const path = decodeURIComponent(new URL(url).pathname);
+    return path.replace(/[-_/]+/g, ' ');
+  } catch {
+    return '';
+  }
+}
+
+/** Similarity (≈0..1.15), with penalties for model, audience and colour conflicts. */
+export function scoreMatch(storeName: string, item: Pick<CatalogItem, 'title' | 'color'> & { url?: string }): number {
   const a = nameParts(storeName);
-  const b = nameParts(item.title, item.color);
+  const b = nameParts(item.title, item.color || colorTextFromUrl(item.url));
   if (a.tokens.size === 0 || b.tokens.size === 0) return 0;
+
+  // Suppliers that never write the weight / string pattern should not be
+  // punished for it: drop those store tokens when the supplier has none.
+  const supplierHasWeight = [...b.tokens].some(isWeight);
+  const supplierHasPattern = [...b.tokens].some(isPattern);
+  const storeTokens = new Set(
+    [...a.tokens].filter(t => !(isWeight(t) && !supplierHasWeight) && !(isPattern(t) && !supplierHasPattern)),
+  );
+  if (storeTokens.size === 0) return 0;
 
   let shared = 0;
   let total = 0;
-  const union = new Set([...a.tokens, ...b.tokens]);
+  const union = new Set([...storeTokens, ...b.tokens]);
   for (const t of union) {
     const w = tokenWeight(t);
     total += w;
-    if (a.tokens.has(t) && b.tokens.has(t)) shared += w;
+    if (storeTokens.has(t) && b.tokens.has(t)) shared += w;
   }
   let score = shared / total;
 
   // Every model number in the store name must appear on the supplier side
-  for (const t of a.tokens) if (/\d/.test(t) && !isYear(t) && !b.tokens.has(t)) score -= 0.25;
+  for (const t of storeTokens) if (/\d/.test(t) && !isYear(t) && !b.tokens.has(t)) score -= 0.25;
+  // "Pro", "Lite", "Reverse"… on one side only means a different model
+  for (const t of union) if (QUALIFIERS.has(t) && storeTokens.has(t) !== b.tokens.has(t)) score -= 0.25;
 
   if (a.audience && b.audience && a.audience !== b.audience) score -= 0.5;
+  if (a.gender && b.gender && a.gender !== b.gender) score -= 0.5;
   if (a.colors.size && b.colors.size) {
     const overlap = [...a.colors].filter(c => b.colors.has(c)).length;
     if (overlap === 0) {

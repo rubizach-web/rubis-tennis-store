@@ -332,3 +332,62 @@ test('an unreachable supplier catalog leaves stock unchanged', async () => {
   assert.equal(r.fields.inStock, undefined);
   assert.equal(r.newInStock, true);
 });
+
+// ---------------------------------------------------------------- lessons from the first real run
+
+test('store weights are ignored when the supplier never lists weights', () => {
+  const r = rankCandidates('WILSON BURN 100 V5 300g', [
+    { supplier: 'wilson', ref: '1', url: 'u', title: 'מחבט טניס | Burn 100 V5' },
+    { supplier: 'wilson', ref: '2', url: 'u', title: 'מחבט טניס | Ultra 100 V5 Tennis Racket' },
+  ]);
+  assert.equal(r.best?.ref, '1');
+  assert.equal(r.confident, true);
+});
+
+test('Reverse / Pro / Lite editions are different models', () => {
+  const r = rankCandidates('WILSON CLASH 100 V3 295g', [
+    { supplier: 'wilson', ref: '1', url: 'u', title: 'מחבט טניס | Clash 100 V3 Reverse Tennis Racket' },
+  ]);
+  assert.equal(r.confident, false);
+  const r2 = rankCandidates('WILSON CLASH 100 V3 REVERSE 295g', [
+    { supplier: 'wilson', ref: '1', url: 'u', title: 'מחבט טניס | Clash 100 V3 Reverse Tennis Racket' },
+  ]);
+  assert.equal(r2.confident, true);
+});
+
+test('girl and boy junior shoes are not confused', () => {
+  assert.ok(
+    scoreMatch('BABOLAT JET MACH 3 AC GIRL YELLOW-PINK', { title: 'נעלי טניס בבולט Jet Mach 3 AC Boy Junior Babolat', color: 'Yellow' }) <
+      scoreMatch('BABOLAT JET MACH 3 AC GIRL YELLOW-PINK', { title: 'נעלי טניס בבולט Jet Mach 3 AC Junior Girl Babolat', color: 'Yellow / Pink' }),
+  );
+});
+
+test('typos, pack sizes and backpack synonyms', () => {
+  assert.ok(scoreMatch('WILSON CLAH 25 RKT V3', { title: 'מחבט טניס | CLASH 25 RKT V3.0' }) > 0.8);
+  assert.ok(scoreMatch('YONEX PRO RAQUET BAG 9 PACK', { title: 'YONEX PRO RACQUET BAG (9PCS) Espresso Brown' }) > 0.6);
+  assert.ok(scoreMatch('WILSON SHIFT SUPER TOUR BACKBAG', { title: 'תיק טניס | Shift Super Tour Backpack' }) > 0.9);
+  assert.ok(scoreMatch('WILSON TOUR 12 PACK Khaki color', { title: 'תיק טניס | Tour 12 Pack', color: 'שחור' }) < 0.62);
+});
+
+test('a link whose sizes do not exist at all is not made automatically', async () => {
+  const r = await syncOneProduct(
+    { id: 'p6', name: 'BABOLAT JET MACH 4 AC WHITE', sizes: ['43', '44', '45'], inStock: true },
+    {},
+    {
+      decideLink: async () => ({ supplier: 'babolat', status: 'auto', ref: '9', url: 'u', suggestions: [{ ref: '9', url: 'u', title: 'Jet Mach 4 AC Women', score: 1 }], reason: 'x' }),
+      fetchStock: fakeStock([{ label: '38', available: true }, { label: '39', available: true }]),
+    },
+  );
+  assert.equal(r.outcome, 'needs_link');
+  assert.equal(r.fields.supplierRef, undefined);
+  assert.equal(r.fields.inStock, undefined);
+});
+
+test('a product that is clearly not the supplier\'s is reported, not left waiting', async () => {
+  const r = await syncOneProduct(
+    { id: 'p7', name: 'גליל פילאטיס חלול 45 ס"מ', supplierSite: 'BABOLAT ISRAEL', inStock: true },
+    {},
+    { decideLink: async () => ({ supplier: 'babolat', status: 'none', suggestions: [], reason: 'לא נמצא' }), fetchStock: async () => { throw new Error('no'); } },
+  );
+  assert.equal(r.outcome, 'unknown_supplier');
+});

@@ -33,8 +33,8 @@ const MANUAL_SUPPLIER_WORDS = ['sportcenter', 'bashgal', 'ספורט סנטר', 
 const MANUAL_BRAND_WORDS = ['head', 'dunlop', 'דנלופ', 'prince', 'פרינס', 'tecnifibre', 'טכניפייבר'];
 /** Model names that identify the brand when the brand itself is not in the name. */
 const MODEL_KEYWORDS: Record<SupplierId, string[]> = {
-  babolat: ['pure aero', 'pure drive', 'pure strike', 'evoke', 'jet mach', 'sfx', 'propulse', 'rpm blast', 'pulsion', 'air vertuo'],
-  wilson: ['pro staff', 'blade', 'clash', 'ultra', 'rush pro', 'defyer', 'intrigue', 'kaos', 'rf 01', 'court glide'],
+  babolat: ['pure aero', 'pure drive', 'pure strike', 'evoke', 'evo ', 'jet mach', 'jet tere', 'sfx', 'propulse', 'rpm blast', 'pulsion', 'air vertuo', 'rh x', 'rival', 'court l'],
+  wilson: ['pro staff', 'blade', 'clash', 'ultra', 'rush pro', 'defyer', 'intrigue', 'kaos', 'rf 01', 'court glide', 'burn', 'shift', 'super tour', 'us open', 'roland garros'],
   yonex: ['ezone', 'vcore', 'percept', 'astrox', 'nanoflare', 'sonicage', 'eclipsion', 'power cushion', 'poly tour'],
 };
 
@@ -69,6 +69,12 @@ export function detectSupplier(p: SyncableProduct): SupplierId | 'manual' | null
     return 'manual';
   }
   return null; // unknown brand, or several brands mentioned
+}
+
+/** True when the product name/tags mention the supplier's brand or one of its model names. */
+export function nameMentionsSupplier(p: SyncableProduct, supplier: SupplierId): boolean {
+  const haystack = `${p.name} ${(p.tags ?? []).join(' ')}`.toLowerCase();
+  return SUPPLIER_INFO[supplier].brandKeywords.some(k => haystack.includes(k)) || MODEL_KEYWORDS[supplier].some(k => haystack.includes(k));
 }
 
 // ---------------------------------------------------------------------------

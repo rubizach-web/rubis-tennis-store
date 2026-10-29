@@ -5,7 +5,9 @@
 
 import type { LinkStatus, LinkSuggestion, ProductStockUpdate, SupplierId, SupplierStock, SyncableProduct } from './types.ts';
 import { SUPPLIER_IDS } from './types.ts';
-import { computeStockUpdate, decideLink, detectSupplier, fetchStock, type LinkDecision } from './sync.ts';
+import { computeStockUpdate, decideLink, detectSupplier, fetchStock, nameMentionsSupplier, type LinkDecision } from './sync.ts';
+import { matchSizes } from './sizes.ts';
+import { SUPPLIER_INFO } from './types.ts';
 
 export type SyncOutcome =
   | 'checked' // linked product, stock read
@@ -119,6 +121,19 @@ export async function syncOneProduct(
       outcome = 'linked';
     } else {
       fields.supplierLinkStatus = decision.status;
+      // Nothing similar at the supplier and the name never mentions it:
+      // probably not this supplier's product at all (old data guessed one).
+      if (decision.suggestions.length === 0 && !nameMentionsSupplier(p, supplier)) {
+        return {
+          ...base, ...unchanged, outcome: 'unknown_supplier', supplier,
+          fields: {
+            ...fields,
+            stockCheckState: 'unlinked',
+            stockStatusDetail: `לא נראה כמו מוצר של ${SUPPLIER_INFO[supplier].name} — בחר ספק אחר או סמן "ידני"`,
+            lastStockCheck: now.toISOString(),
+          },
+        };
+      }
       return {
         ...base, ...unchanged, outcome: 'needs_link', supplier,
         fields: {
@@ -132,6 +147,29 @@ export async function syncOneProduct(
   }
 
   const stock = await deps.fetchStock(supplier, ref!, url);
+
+  // Safety net for automatic links: if none of the store's sizes exist in the
+  // supplier product at all, it is almost certainly a different product
+  // (e.g. the women's model for a men's shoe) — ask instead of linking.
+  if (outcome === 'linked' && stock.status === 'found' && stock.sizes) {
+    const storeSizes = (p.sizes ?? []).filter(x => x.trim());
+    const m = matchSizes(storeSizes, stock.sizes, stock.inStock, stock.sizeHint);
+    if (storeSizes.length > 0 && m.notOffered.length === storeSizes.length) {
+      return {
+        ...base, ...unchanged, outcome: 'needs_link', supplier,
+        fields: {
+          supplierSite: supplier,
+          supplierLinkStatus: 'suggested',
+          supplierSuggestions: fields.supplierSuggestions,
+          supplierLinkReason: 'המידות שלך לא קיימות במוצר שנמצא אצל הספק — כנראה מוצר אחר, דרוש אישור',
+          stockCheckState: 'unlinked',
+          stockStatusDetail: 'המידות שלך לא קיימות במוצר שנמצא אצל הספק. המלאי לא שונה עד שתאשר.',
+          lastStockCheck: now.toISOString(),
+        },
+      };
+    }
+  }
+
   const update = computeStockUpdate(p, stock, now);
   if (stock.title) fields.supplierTitle = stock.title;
   if (stock.color) fields.supplierColor = stock.color;
