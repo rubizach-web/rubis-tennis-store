@@ -8,7 +8,7 @@
  * Firebase service account for the store's project (stored as a GitHub secret).
  */
 
-import { readFileSync, appendFileSync } from 'node:fs';
+import { readFileSync, appendFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { syncOneProduct, type ProductSyncResult } from '../server/inventory/run.ts';
 import { SUPPLIER_INFO } from '../server/inventory/types.ts';
 import { detectSupplier, clearCatalogFailures } from '../server/inventory/sync.ts';
@@ -134,6 +134,7 @@ async function main() {
 
   log(JSON.stringify({ ...summary, changes: summary.changes.length }, null, 2));
   writeStepSummary(summary, all);
+  writeReportFiles(summary, all);
 
   // Fail the run (so GitHub e-mails the owner) only when a supplier is fully down.
   const bySupplier = new Map<string, { ok: number; err: number }>();
@@ -149,6 +150,35 @@ async function main() {
     console.error(`Supplier(s) not reachable at all: ${down.join(', ')}`);
     process.exitCode = 1;
   }
+}
+
+/**
+ * Full per-product report as JSON, saved to REPORT_DIR. The workflow publishes
+ * it on the `sync-reports` branch so every run can be reviewed later.
+ */
+function writeReportFiles(summary: any, all: ProductSyncResult[]) {
+  const dir = process.env.REPORT_DIR;
+  if (!dir) return;
+  mkdirSync(dir, { recursive: true });
+  const products = all
+    .map(r => ({
+      id: r.productId,
+      name: r.productName,
+      outcome: r.outcome,
+      supplier: r.supplier ?? null,
+      before: r.previousInStock,
+      after: r.newInStock,
+      unavailableSizes: r.newUnavailable,
+      supplierSizes: r.fields.supplierSizes ?? null,
+      link: r.fields.supplierRef ? { ref: r.fields.supplierRef, url: r.fields.supplierUrl, status: r.fields.supplierLinkStatus } : null,
+      supplierTitle: r.fields.supplierTitle ?? null,
+      supplierColor: r.fields.supplierColor ?? null,
+      detail: r.fields.stockStatusDetail ?? '',
+      linkReason: r.fields.supplierLinkReason ?? null,
+      suggestions: (r.fields.supplierSuggestions ?? []).slice(0, 3),
+    }))
+    .sort((a, b) => a.outcome.localeCompare(b.outcome) || a.name.localeCompare(b.name));
+  writeFileSync(`${dir}/report.json`, JSON.stringify({ summary: { ...summary, changes: undefined }, products }, null, 2));
 }
 
 function writeStepSummary(summary: any, all: ProductSyncResult[]) {

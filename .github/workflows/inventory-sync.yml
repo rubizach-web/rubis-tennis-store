@@ -19,6 +19,9 @@ on:
         type: boolean
         default: false
 
+permissions:
+  contents: write
+
 concurrency:
   group: inventory-sync
   cancel-in-progress: false
@@ -60,4 +63,23 @@ jobs:
           DRY_RUN: ${{ inputs.dry_run || 'false' }}
           ONLY_PRODUCT: ${{ inputs.only_product || '' }}
           RELINK: ${{ inputs.relink || 'false' }}
+          REPORT_DIR: ${{ runner.temp }}/sync-report
         run: node --experimental-strip-types --no-warnings scripts/sync-inventory.ts
+
+      - name: Publish the report to the sync-reports branch
+        if: always() && env.HAS_FIREBASE_KEY == 'true'
+        run: |
+          dir="${{ runner.temp }}/sync-report"
+          [ -f "$dir/report.json" ] || exit 0
+          git config user.name "inventory-sync"
+          git config user.email "inventory-sync@users.noreply.github.com"
+          git fetch --depth=1 origin sync-reports || true
+          git worktree add -B sync-reports "${{ runner.temp }}/reports" "origin/sync-reports" 2>/dev/null \
+            || git worktree add --orphan -b sync-reports "${{ runner.temp }}/reports"
+          cd "${{ runner.temp }}/reports"
+          cp "$dir/report.json" latest.json
+          mkdir -p runs && cp "$dir/report.json" "runs/$(date -u +%Y-%m-%dT%H-%M).json"
+          ls runs/*.json | sort | head -n -60 | xargs -r git rm -q --ignore-unmatch
+          git add -A
+          git commit -q -m "Stock sync report $(date -u +%Y-%m-%dT%H:%MZ)${{ inputs.dry_run && ' (dry run)' || '' }}" || exit 0
+          git push -q origin sync-reports
