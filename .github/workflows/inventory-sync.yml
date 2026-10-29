@@ -2,8 +2,11 @@ name: סנכרון מלאי יומי
 
 on:
   schedule:
-    # 01:00 UTC = 03:00 Israel in winter, 04:00 in summer
-    - cron: '0 1 * * *'
+    # The store's Firestore is on a hard-capped free tier whose daily quota
+    # resets at midnight US Pacific time (08:00 UTC in winter, 07:00 in summer),
+    # so the sync runs right after the reset:
+    # 08:30 UTC = 10:30 Israel in winter, 11:30 in summer.
+    - cron: '30 8 * * *'
   workflow_dispatch:
     inputs:
       dry_run:
