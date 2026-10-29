@@ -1,0 +1,93 @@
+{
+  "entities": {
+    "SiteContent": {
+      "title": "Site Content",
+      "description": "Global configuration and content for the landing page",
+      "type": "object",
+      "properties": {
+        "hero": {
+          "type": "object",
+          "properties": {
+            "title": { "type": "string" },
+            "subtitle": { "type": "string" },
+            "cta": { "type": "string" },
+            "bgImage": { "type": "string" }
+          }
+        },
+        "siteName": { "type": "string" },
+        "logo": { "type": "string" },
+        "labels": {
+          "type": "object",
+          "properties": {
+            "collection": { "type": "string" },
+            "about": { "type": "string" },
+            "categoriesTitle": { "type": "string" }
+          }
+        },
+        "contact": {
+          "type": "object",
+          "properties": {
+            "whatsapp": { "type": "string" },
+            "facebook": { "type": "string" },
+            "email": { "type": "string" },
+            "address": { "type": "string" }
+          }
+        },
+        "categories": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": { "type": "string" },
+              "name": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "Product": {
+      "title": "Product",
+      "description": "Store item details",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "price": { "type": "string" },
+        "image": { "type": "string" },
+        "images": { "type": "array", "items": { "type": "string" } },
+        "description": { "type": "string" },
+        "categoryId": { "type": "string" },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "sizes": { "type": "array", "items": { "type": "string" } }
+      },
+      "required": ["id", "name", "price", "categoryId"]
+    },
+    "Lead": {
+      "title": "Lead",
+      "description": "Customer contact request",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "message": { "type": "string" },
+        "timestamp": { "type": "string", "format": "date-time" }
+      },
+      "required": ["name", "email", "message"]
+    }
+  },
+  "firestore": {
+    "/settings/content": {
+      "schema": "SiteContent",
+      "description": "Singleton document containing all site content"
+    },
+    "/products/{productId}": {
+      "schema": "Product",
+      "description": "Collection of store products"
+    },
+    "/leads/{leadId}": {
+      "schema": "Lead",
+      "description": "Collection of customer leads"
+    }
+  }
+}

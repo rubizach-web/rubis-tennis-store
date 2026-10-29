@@ -1,0 +1,8 @@
+{
+  "name": "rubi's tennis store",
+  "description": "A premium tennis store with automated daily inventory scanning across supplier websites, real-time product management, and intelligent AI import.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

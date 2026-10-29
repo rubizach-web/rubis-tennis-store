@@ -1,0 +1,85 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+@theme {
+  --font-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  
+  --color-gold: #D4AF37;
+  --color-luxury-black: #050505;
+  --color-luxury-dark-gray: #1a1a1a;
+  --color-luxury-white: #ffffff;
+  --color-text-muted: #a0a0a0;
+}
+
+@layer base {
+  body {
+    @apply bg-luxury-black text-luxury-white font-sans;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+.yellow-gradient {
+  @apply bg-gold text-black;
+}
+
+.text-yellow-gradient {
+  @apply text-gold;
+}
+
+.sleek-border {
+  @apply border border-white/5;
+}
+
+.sleek-sidebar {
+  @apply bg-luxury-dark-gray border-r border-white/5;
+}
+
+.sleek-card {
+  @apply bg-luxury-dark-gray border border-white/5 rounded transition-colors hover:border-gold;
+}
+
+.sleek-input {
+  @apply w-full bg-black border border-white/20 p-3 text-white rounded focus:outline-none focus:border-gold transition-colors;
+}
+
+.sleek-btn {
+  @apply w-full bg-gold text-black font-bold p-4 rounded hover:bg-gold/90 transition-colors;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-gold/30 rounded-full;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  @apply bg-gold/50;
+}
+
+/* Accessibility Styles */
+.high-contrast {
+  filter: contrast(1.5);
+}
+
+.grayscale-filter {
+  filter: grayscale(1);
+}
+
+.readable-font * {
+  font-family: Arial, sans-serif !important;
+  line-height: 1.6 !important;
+}
+
+.underline-links a {
+  text-decoration: underline !important;
+}

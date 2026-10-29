@@ -1,0 +1,67 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // 0. Global Safety Net
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // --- Helper Primitives ---
+    function isSignedIn() {
+      return request.auth != null;
+    }
+    function isAdmin() {
+      return isSignedIn() && 
+             request.auth.token.email_verified == true && 
+             (request.auth.token.email.lower() == "rubizach@gmail.com" || request.auth.token.email.lower() == "omerle009@gmail.com");
+    }
+    function isValidId(id) {
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+    function incoming() {
+      return request.resource.data;
+    }
+
+    // --- Content Rules ---
+    match /settings/content {
+      allow read: if true;
+      allow write: if isAdmin() && isValidSiteContent(incoming());
+    }
+
+    function isValidSiteContent(data) {
+      return data.keys().hasAll(['siteName', 'hero']) &&
+             data.siteName is string && data.siteName.size() <= 100 &&
+             data.hero.title is string && data.hero.title.size() <= 500;
+             // Add more validation as needed
+    }
+
+    // --- Products Rules ---
+    match /products/{productId} {
+      allow read: if true;
+      allow create, update: if isAdmin() && isValidId(productId);
+      allow delete: if isAdmin();
+    }
+
+    function isValidProduct(data, productId) {
+      return data.keys().hasAll(['id', 'name', 'price', 'categoryId']) &&
+             data.id == productId &&
+             data.name is string && data.name.size() <= 200 &&
+             data.price is string && data.price.size() <= 100 &&
+             data.categoryId is string && data.categoryId.size() <= 100 &&
+             (!data.keys().contains('sizes') || (data.sizes is list && data.sizes.size() <= 50));
+    }
+
+    // --- Leads Rules ---
+    match /leads/{leadId} {
+      allow create: if isValidId(leadId) && isValidLead(incoming());
+      allow list, get, update, delete: if isAdmin();
+    }
+
+    function isValidLead(data) {
+      return data.keys().hasAll(['name', 'email', 'message', 'timestamp']) &&
+             data.name is string && data.name.size() <= 200 &&
+             data.email is string && data.email.size() <= 200 &&
+             data.message is string && data.message.size() <= 5000;
+    }
+  }
+}
