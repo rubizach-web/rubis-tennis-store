@@ -126,6 +126,22 @@ export function nameParts(name: string, extraColor?: string): NameParts {
   return { tokens, audience, gender, colors };
 }
 
+type Kind = 'racquet' | 'bag' | 'shoe' | 'balls' | 'cover';
+
+/** What kind of product a name describes, when it says so. */
+export function productKind(name: string): Kind | undefined {
+  const t = ` ${normalizeText(name)} `;
+  if (/כיסוי|\bcover\b/.test(t)) return 'cover';
+  if (/כדור|\bballs?\b/.test(t)) return 'balls';
+  if (/\sתיק|\bbag\b|\bbackpack|\bbackbag|\bduffle|\d+pk\b|\brh x|\bx\d{1,2}\b|\bpack\b/.test(t)) return 'bag';
+  if (/נעלי|\bshoes?\b/.test(t)) return 'shoe';
+  if (/מחבט|\brkt\b|\bracq?uet\b|\bracket\b|\b\d{3}g\b/.test(t)) return 'racquet';
+  return undefined;
+}
+
+/** Model families: on one side only means a different product. */
+const FAMILY_WORDS = new Set(['blade', 'clash', 'ultra', 'burn', 'shift', 'rf', 'staff', 'aero', 'drive', 'strike', 'ezone', 'vcore', 'percept']);
+
 const isYear = (t: string) => /^20\d\d$/.test(t);
 const isWeight = (t: string) => /^\d{3}g$/.test(t);
 const isPattern = (t: string) => /^\d{2}x\d{2}$/.test(t);
@@ -175,6 +191,13 @@ export function scoreMatch(storeName: string, item: Pick<CatalogItem, 'title' | 
   for (const t of storeTokens) if (/\d/.test(t) && !isYear(t) && !b.tokens.has(t)) score -= 0.25;
   // "Pro", "Lite", "Reverse"… on one side only means a different model
   for (const t of union) if (QUALIFIERS.has(t) && storeTokens.has(t) !== b.tokens.has(t)) score -= 0.25;
+
+  for (const t of union) if (FAMILY_WORDS.has(t) && storeTokens.has(t) !== b.tokens.has(t)) score -= 0.3;
+
+  // A racquet is never a bag, even when the model words are the same
+  const kindA = productKind(storeName);
+  const kindB = productKind(item.title);
+  if (kindA && kindB && kindA !== kindB) score -= 0.6;
 
   if (a.audience && b.audience && a.audience !== b.audience) score -= 0.5;
   if (a.gender && b.gender && a.gender !== b.gender) score -= 0.5;

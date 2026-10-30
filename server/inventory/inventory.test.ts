@@ -399,3 +399,16 @@ test('Hebrew grip labels and fraction glyphs', () => {
   assert.ok(sizesMatch('36 2/3', '36⅔'));
   assert.ok(!sizesMatch('36', '⅔36'));
 });
+
+test('a racquet is never linked to a bag of the same line', () => {
+  const r = rankCandidates('BABOLAT PURE STRIKE 305G GEN 4', [
+    { supplier: 'babolat', ref: 'bag', url: 'u', title: 'תיק טניס בבולט Backpack Pure Strike Gen4 Grey Babolat', color: 'Grey / Neon Red' },
+    { supplier: 'babolat', ref: 'r', url: 'u', title: 'מחבט טניס בבולט 305 גרם Pure Strike 16/19 Gen4 Babolat' },
+  ]);
+  assert.equal(r.best?.ref, 'r');
+  assert.ok(scoreMatch('BABOLAT PURE STRIKE 305G GEN 4', { title: 'תיק טניס בבולט Backpack Pure Strike Gen4 Grey Babolat' }) < 0.3);
+});
+
+test('a Blade bag is not a generic Super Tour bag', () => {
+  assert.ok(scoreMatch('WILSON BLADE SUPER TOUR 15 PK', { title: 'תיק טניס | Super Tour 15 Pack', color: 'כחול' }) < 0.62);
+});
