@@ -1,17 +1,17 @@
 {
   "summary": {
-    "startedAt": "2026-10-30T09:00:43.699Z",
+    "startedAt": "2026-10-30T09:24:58.307Z",
     "dryRun": true,
     "total": 215,
-    "checked": 114,
-    "linkedNow": 114,
-    "needsLink": 84,
+    "checked": 112,
+    "linkedNow": 112,
+    "needsLink": 86,
     "unknownSupplier": 6,
     "manual": 11,
     "notFound": 0,
     "errors": 0,
-    "inStock": 118,
-    "outOfStock": 97,
+    "inStock": 117,
+    "outOfStock": 98,
     "writes": 0
   },
   "products": [
@@ -85,12 +85,6 @@
           "url": "https://www.tennis-online.co.il/product/yonex-vcore-26-8th-gen/",
           "title": "YONEX VCORE 26 (8th gen.)",
           "score": 1
-        },
-        {
-          "ref": "https://www.tennis-online.co.il/product/yonex-ezone-26-blast-blue-8th-gen/",
-          "url": "https://www.tennis-online.co.il/product/yonex-ezone-26-blast-blue-8th-gen/",
-          "title": "YONEX EZONE 26 Blast Blue (8th gen.)",
-          "score": 0.57
         }
       ]
     },
@@ -819,9 +813,9 @@
           "score": 0.5
         },
         {
-          "ref": "1419",
-          "url": "https://babolat.co.il/product/1419",
-          "title": "תיק טניס בבולט Backpack Pure Aero 2026 Gen9 Babolat",
+          "ref": "1438",
+          "url": "https://babolat.co.il/product/1438",
+          "title": "מחבט טניס בבולט Pure Aero Junior 26 Gen9 Babolat",
           "score": 0.25
         }
       ]
@@ -988,17 +982,16 @@
           "score": 1
         },
         {
-          "ref": "1224",
-          "url": "https://babolat.co.il/product/1224",
-          "title": "תיק טניס בבולט Backpack Pure Drive GEN11 Babolat",
-          "color": "Blue",
-          "score": 0.32
+          "ref": "1267",
+          "url": "https://babolat.co.il/product/1267",
+          "title": "מחבט טניס בבולט Pure Drive Junior 25 Gen11 Babolat",
+          "score": 0.25
         },
         {
-          "ref": "935",
-          "url": "https://babolat.co.il/product/935",
-          "title": "מחבט טניס בבולט 305 גרם Pure Aero 98 Babolat",
-          "score": 0.31
+          "ref": "1268",
+          "url": "https://babolat.co.il/product/1268",
+          "title": "מחבט טניס בבולט Pure Drive Junior 25 Gen11 Babolat Light Blue",
+          "score": 0.25
         }
       ]
     },
@@ -1129,46 +1122,6 @@
       ]
     },
     {
-      "id": "29fbbj16n",
-      "name": "BABOLAT PURE STRIKE 305G GEN 4",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": false,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": [],
-      "link": {
-        "ref": "1356",
-        "url": "https://babolat.co.il/product/1356",
-        "status": "auto"
-      },
-      "supplierTitle": "תיק טניס בבולט Backpack Pure Strike Gen4 Grey Babolat",
-      "supplierColor": "Grey / Neon Red",
-      "detail": "במלאי בבבולט",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "1356",
-          "url": "https://babolat.co.il/product/1356",
-          "title": "תיק טניס בבולט Backpack Pure Strike Gen4 Grey Babolat",
-          "color": "Grey / Neon Red",
-          "score": 0.8
-        },
-        {
-          "ref": "1104",
-          "url": "https://babolat.co.il/product/1104",
-          "title": "מחבט טניס בבולט 305 גרם Pure Strike 16/19 Gen4 2024 Babolat",
-          "score": 0.67
-        },
-        {
-          "ref": "1345",
-          "url": "https://babolat.co.il/product/1345",
-          "title": "מחבט טניס בבולט 305 גרם Pure Strike 16/19 Gen4 Carbon Grey Babolat",
-          "score": 0.67
-        }
-      ]
-    },
-    {
       "id": "six3vcbxx",
       "name": "BABOLAT PURE STRIKE 97 GEN 4",
       "outcome": "linked",
@@ -1289,15 +1242,9 @@
           "score": 1
         },
         {
-          "ref": "41505",
-          "url": "https://wilson.co.il/product/%d7%9e%d7%97%d7%91%d7%98-%d7%98%d7%a0%d7%99%d7%a1-%d7%9c%d7%99%d7%9c%d7%93%d7%99%d7%9d-blade-26-v10/",
-          "title": "מחבט טניס לילדים | Blade 26 v10",
-          "score": 0.5
-        },
-        {
-          "ref": "41214",
-          "url": "https://wilson.co.il/product/blade-104-v10/",
-          "title": "מחבט טניס | Blade 104 V10",
+          "ref": "40436",
+          "url": "https://wilson.co.il/product/%d7%aa%d7%99%d7%a7-%d7%98%d7%a0%d7%99%d7%a1-blade-v10-small-duffel/",
+          "title": "תיק טניס | Blade V10 Small Duffel",
           "score": 0.5
         }
       ]
@@ -1378,16 +1325,16 @@
           "score": 0.83
         },
         {
-          "ref": "1375",
-          "url": "https://babolat.co.il/product/1375",
-          "title": "מחבט טניס בבולט 300 גרם Pure Aero Gen9 Babolat",
-          "score": 0.57
+          "ref": "1417",
+          "url": "https://babolat.co.il/product/1417",
+          "title": "תיק טניס בבולט RH X12 Pure Aero Gen9 2026 Babolat",
+          "score": 0.44
         },
         {
-          "ref": "1438",
-          "url": "https://babolat.co.il/product/1438",
-          "title": "מחבט טניס בבולט Pure Aero Junior 26 Gen9 Babolat",
-          "score": 0.57
+          "ref": "1418",
+          "url": "https://babolat.co.il/product/1418",
+          "title": "תיק טניס בבולט RH X6 Pure Aero Gen9 2026 Babolat",
+          "score": 0.44
         }
       ]
     },
@@ -1457,16 +1404,16 @@
           "score": 1
         },
         {
-          "ref": "1216",
-          "url": "https://babolat.co.il/product/1216",
-          "title": "מחבט טניס בבולט 300 גרם Pure Drive Gen11 Babolat",
-          "score": 0.57
+          "ref": "1222",
+          "url": "https://babolat.co.il/product/1222",
+          "title": "תיק טניס בבולט RH X 12 Pure Drive GEN11 Babolat",
+          "score": 0.5
         },
         {
-          "ref": "1225",
-          "url": "https://babolat.co.il/product/1225",
-          "title": "מחבט טניס בבולט 300 גרם Pure Drive Gen11 + Babolat",
-          "score": 0.57
+          "ref": "1223",
+          "url": "https://babolat.co.il/product/1223",
+          "title": "תיק טניס בבולט RH X 6 Pure Drive GEN11 Babolat",
+          "score": 0.5
         }
       ]
     },
@@ -1533,18 +1480,6 @@
           "url": "https://babolat.co.il/product/1112",
           "title": "תיק טניס בבולט RH X 12 Pure Strike GEN4",
           "score": 0.71
-        },
-        {
-          "ref": "1222",
-          "url": "https://babolat.co.il/product/1222",
-          "title": "תיק טניס בבולט RH X 12 Pure Drive GEN11 Babolat",
-          "score": 0.5
-        },
-        {
-          "ref": "1064",
-          "url": "https://babolat.co.il/product/1064",
-          "title": "תיק טניס בבולט RH X 12 Pure Aero Rafa g2 Babolat",
-          "score": 0.44
         }
       ]
     },
@@ -1612,18 +1547,6 @@
           "url": "https://babolat.co.il/product/1223",
           "title": "תיק טניס בבולט RH X 6 Pure Drive GEN11 Babolat",
           "score": 0.71
-        },
-        {
-          "ref": "1110",
-          "url": "https://babolat.co.il/product/1110",
-          "title": "תיק טניס בבולט RH X 6 Pure Strike GEN4",
-          "score": 0.5
-        },
-        {
-          "ref": "1357",
-          "url": "https://babolat.co.il/product/1357",
-          "title": "תיק טניס בבולט RH X 6 Pure Strike GEN4 Grey",
-          "score": 0.5
         }
       ]
     },
@@ -1654,16 +1577,11 @@
           "score": 0.79
         },
         {
-          "ref": "1223",
-          "url": "https://babolat.co.il/product/1223",
-          "title": "תיק טניס בבולט RH X 6 Pure Drive GEN11 Babolat",
-          "score": 0.5
-        },
-        {
-          "ref": "1418",
-          "url": "https://babolat.co.il/product/1418",
-          "title": "תיק טניס בבולט RH X6 Pure Aero Gen9 2026 Babolat",
-          "score": 0.44
+          "ref": "1357",
+          "url": "https://babolat.co.il/product/1357",
+          "title": "תיק טניס בבולט RH X 6 Pure Strike GEN4 Grey",
+          "color": "Grey / Neon Red",
+          "score": 0.31
         }
       ]
     },
@@ -1770,18 +1688,6 @@
           "url": "https://babolat.co.il/product/1482",
           "title": "תיק טניס בבולט RH X 9 Pure Wimbledon 2026",
           "score": 0.83
-        },
-        {
-          "ref": "1358",
-          "url": "https://babolat.co.il/product/1358",
-          "title": "תיק טניס בבולט RH X 9 Pure Strike GEN4 Grey",
-          "score": 0.5
-        },
-        {
-          "ref": "1522",
-          "url": "https://babolat.co.il/product/1522",
-          "title": "תיק טניס בבולט RH X 9 Pure Drive GEN11 Spectra",
-          "score": 0.44
         }
       ]
     },
@@ -2066,13 +1972,6 @@
           "url": "https://wilson.co.il/product/%d7%9e%d7%97%d7%91%d7%98-%d7%98%d7%a0%d7%99%d7%a1-blade-98-16x19-v10-%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%9e%d7%95%d7%a7%d7%93%d7%9e%d7%aa/",
           "title": "מחבט טניס | BLADE 98 16X19 V10",
           "score": 0.31
-        },
-        {
-          "ref": "40435",
-          "url": "https://wilson.co.il/product/%d7%aa%d7%99%d7%a7-%d7%98%d7%a0%d7%99%d7%a1-blade-v10-backpack/",
-          "title": "תיק טניס | Blade V10 Backpack",
-          "color": "Championship Green (ירוק)",
-          "score": 0.25
         }
       ]
     },
@@ -2119,34 +2018,6 @@
       ]
     },
     {
-      "id": "b7z3nuh2a",
-      "name": "WILSON BLADE SUPER TOUR 15 PK",
-      "outcome": "linked",
-      "supplier": "wilson",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": [],
-      "link": {
-        "ref": "17187",
-        "url": "https://wilson.co.il/product/super-tour-15-pack/",
-        "status": "auto"
-      },
-      "supplierTitle": "תיק טניס | Super Tour 15 Pack",
-      "supplierColor": "כחול",
-      "detail": "אזל באתר וילסון",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "17187",
-          "url": "https://wilson.co.il/product/super-tour-15-pack/",
-          "title": "תיק טניס | Super Tour 15 Pack",
-          "color": "כחול",
-          "score": 0.8
-        }
-      ]
-    },
-    {
       "id": "qze25pjq6",
       "name": "WILSON BLADE TEAM V10 16X20 275G",
       "outcome": "linked",
@@ -2176,16 +2047,15 @@
           "score": 0.67
         },
         {
-          "ref": "40435",
-          "url": "https://wilson.co.il/product/%d7%aa%d7%99%d7%a7-%d7%98%d7%a0%d7%99%d7%a1-blade-v10-backpack/",
-          "title": "תיק טניס | Blade V10 Backpack",
-          "color": "Championship Green (ירוק)",
-          "score": 0.35
-        },
-        {
           "ref": "41505",
           "url": "https://wilson.co.il/product/%d7%9e%d7%97%d7%91%d7%98-%d7%98%d7%a0%d7%99%d7%a1-%d7%9c%d7%99%d7%9c%d7%93%d7%99%d7%9d-blade-26-v10/",
           "title": "מחבט טניס לילדים | Blade 26 v10",
+          "score": 0.25
+        },
+        {
+          "ref": "41214",
+          "url": "https://wilson.co.il/product/blade-104-v10/",
+          "title": "מחבט טניס | Blade 104 V10",
           "score": 0.25
         }
       ]
@@ -2217,12 +2087,6 @@
           "url": "https://wilson.co.il/product/burn-100-v5/",
           "title": "מחבט טניס | Burn 100 V5",
           "score": 1
-        },
-        {
-          "ref": "36638",
-          "url": "https://wilson.co.il/product/ultra-100-v5-tennis-racket/",
-          "title": "מחבט טניס | Ultra 100 V5 Tennis Racket",
-          "score": 0.67
         }
       ]
     },
@@ -2367,18 +2231,6 @@
           "url": "https://wilson.co.il/product/burn-spin-jr-25-tennis-racket-wr171610u/",
           "title": "מחבט טניס לילדים | Burn Spin Jr 25 Tennis Racket",
           "score": 1
-        },
-        {
-          "ref": "38845",
-          "url": "https://wilson.co.il/product/slam-jr-25-tennis-racket/",
-          "title": "מחבט טניס לילדים | Slam Jr 25 Tennis Racket",
-          "score": 0.4
-        },
-        {
-          "ref": "35576",
-          "url": "https://wilson.co.il/product/intrigue-jr-25-tennis-racket-wr180310u/",
-          "title": "מחבט טניס לילדים | Intrigue Jr 25 Tennis Racket",
-          "score": 0.4
         }
       ]
     },
@@ -2406,18 +2258,6 @@
           "url": "https://wilson.co.il/product/burn-spin-jr-26-tennis-racket-wr171510u/",
           "title": "מחבט טניס לילדים | Burn Spin Jr 26 Tennis Racket",
           "score": 1
-        },
-        {
-          "ref": "41505",
-          "url": "https://wilson.co.il/product/%d7%9e%d7%97%d7%91%d7%98-%d7%98%d7%a0%d7%99%d7%a1-%d7%9c%d7%99%d7%9c%d7%93%d7%99%d7%9d-blade-26-v10/",
-          "title": "מחבט טניס לילדים | Blade 26 v10",
-          "score": 0.29
-        },
-        {
-          "ref": "37930",
-          "url": "https://wilson.co.il/product/ultra-26-v5-tennis-racket/",
-          "title": "מחבט טניס | Ultra 26 V5 Tennis Racket",
-          "score": 0.29
         }
       ]
     },
@@ -3092,20 +2932,6 @@
           "url": "https://wilson.co.il/product/pro-staff-backpack/",
           "title": "תיק טניס | Pro Staff Backpack",
           "score": 1
-        },
-        {
-          "ref": "17023",
-          "url": "https://wilson.co.il/product/bumper-and-grommet-set-for-pro-staff-97-v13-tennis-racket/",
-          "title": "מגן לראש מחבט | Bumper And Grommet Set For Pro Staff 97 V13",
-          "color": "שחור",
-          "score": 0.32
-        },
-        {
-          "ref": "30948",
-          "url": "https://wilson.co.il/product/rush-pro-4-0-bla/",
-          "title": "נעלי טניס לגברים | Rush Pro 4.0 Bla",
-          "color": "שחור",
-          "score": 0.29
         }
       ]
     },
@@ -3297,12 +3123,6 @@
           "score": 1
         },
         {
-          "ref": "33035",
-          "url": "https://wilson.co.il/product/%d7%9b%d7%99%d7%a1%d7%95%d7%99-%d7%9c%d7%9e%d7%97%d7%91%d7%98-%d7%98%d7%a0%d7%99%d7%a1-rf-racquet-cover-black/",
-          "title": "כיסוי למחבט טניס | Rf Racquet Cover Black",
-          "score": 0.35
-        },
-        {
           "ref": "32825",
           "url": "https://wilson.co.il/product/rf-tournament-racket-bag-9-pack/",
           "title": "תיק טניס | Rf Tournament Racket Bag 9 Pack",
@@ -3336,12 +3156,6 @@
           "title": "תיק טניס | Rf Tournament Racket Bag 9 Pack",
           "color": "שחור",
           "score": 1
-        },
-        {
-          "ref": "43072",
-          "url": "https://wilson.co.il/product/%d7%aa%d7%99%d7%a7-%d7%98%d7%a0%d7%99%d7%a1-defyer-v1-racket-bag-9pk-rd/",
-          "title": "תיק טניס | Defyer V1 Racket Bag 9PK RD",
-          "score": 0.25
         }
       ]
     },
@@ -3542,13 +3356,7 @@
           "ref": "35761",
           "url": "https://wilson.co.il/product/super-tour-wilson-red-backpack-wr8036901/",
           "title": "תיק טניס | Super Tour WILSON Red Backpack",
-          "score": 0.75
-        },
-        {
-          "ref": "34806",
-          "url": "https://wilson.co.il/product/super-tour-backpack-clash-v3/",
-          "title": "תיק טניס | Super Tour Backpack Clash V3",
-          "score": 0.43
+          "score": 0.45
         }
       ]
     },
@@ -3655,15 +3463,16 @@
           "score": 1
         },
         {
-          "ref": "28893",
-          "url": "https://wilson.co.il/product/shift-super-tour-backpack/",
-          "title": "תיק טניס | Shift Super Tour Backpack",
-          "score": 0.75
-        },
-        {
           "ref": "17183",
           "url": "https://wilson.co.il/product/super-tour-9-pack-red/",
           "title": "תיק טניס | Super Tour 9 Pack Red",
+          "color": "אדום",
+          "score": 0.55
+        },
+        {
+          "ref": "15073",
+          "url": "https://wilson.co.il/product/super-tour-6-pack-bag/",
+          "title": "תיק טניס | Super Tour 6 Pack Bag",
           "color": "אדום",
           "score": 0.55
         }
@@ -3771,10 +3580,11 @@
           "score": 0.42
         },
         {
-          "ref": "39356",
-          "url": "https://wilson.co.il/product/ultra-v5-tour-backpack/",
-          "title": "תיק טניס | Ultra V5 Tour Backpack",
-          "score": 0.4
+          "ref": "36666",
+          "url": "https://wilson.co.il/product/tour-red-padel-bag/",
+          "title": "תיק פאדל | Tour Red Padel Bag",
+          "color": "אדום",
+          "score": 0.25
         }
       ]
     },
@@ -3805,12 +3615,6 @@
           "url": "https://wilson.co.il/product/ultra-100-v5-tennis-racket/",
           "title": "מחבט טניס | Ultra 100 V5 Tennis Racket",
           "score": 1
-        },
-        {
-          "ref": "25673",
-          "url": "https://wilson.co.il/product/burn-100-v5/",
-          "title": "מחבט טניס | Burn 100 V5",
-          "score": 0.67
         }
       ]
     },
@@ -4031,18 +3835,6 @@
           "url": "https://www.tennis-online.co.il/product/yonex-ezone-100-blast-blue-300g-8th-gen-unstrung/",
           "title": "YONEX EZONE 100 300g (8th gen.) Unstrung",
           "score": 0.78
-        },
-        {
-          "ref": "https://www.tennis-online.co.il/product/yonex-percept-100/",
-          "url": "https://www.tennis-online.co.il/product/yonex-percept-100/",
-          "title": "YONEX PERCEPT 100 300g Unstrung",
-          "score": 0.57
-        },
-        {
-          "ref": "https://www.tennis-online.co.il/product/yonex-vcore-100-300g-8th-gen-unstrung/",
-          "url": "https://www.tennis-online.co.il/product/yonex-vcore-100-300g-8th-gen-unstrung/",
-          "title": "YONEX VCORE 100 300g (8th gen.) Unstrung",
-          "score": 0.44
         }
       ]
     },
@@ -4105,18 +3897,6 @@
           "url": "https://www.tennis-online.co.il/product/yonex-ezone-98-blast-blue-305g-8th-gen-unstrung/",
           "title": "YONEX EZONE 98 305g (8th gen.) Unstrung",
           "score": 0.78
-        },
-        {
-          "ref": "https://www.tennis-online.co.il/product/yonex-vcore-98-305g-8th-gen-unstrung/",
-          "url": "https://www.tennis-online.co.il/product/yonex-vcore-98-305g-8th-gen-unstrung/",
-          "title": "YONEX VCORE 98 305g (8th gen.) Unstrung",
-          "score": 0.44
-        },
-        {
-          "ref": "https://www.tennis-online.co.il/product/yonex-vcore-98-305g-7th-gen-unstrung/",
-          "url": "https://www.tennis-online.co.il/product/yonex-vcore-98-305g-7th-gen-unstrung/",
-          "title": "YONEX VCORE 98 305g (7th gen.) Unstrung",
-          "score": 0.44
         }
       ]
     },
@@ -4153,12 +3933,6 @@
           "url": "https://www.tennis-online.co.il/product/yonex-percept-100/",
           "title": "YONEX PERCEPT 100 300g Unstrung",
           "score": 0.83
-        },
-        {
-          "ref": "https://www.tennis-online.co.il/product/yonex-vcore-100-300g-8th-gen-unstrung/",
-          "url": "https://www.tennis-online.co.il/product/yonex-vcore-100-300g-8th-gen-unstrung/",
-          "title": "YONEX VCORE 100 300g (8th gen.) Unstrung",
-          "score": 0.44
         }
       ]
     },
@@ -4194,13 +3968,7 @@
           "ref": "https://www.tennis-online.co.il/product/yonex-muse-100l-280g-unstrung/",
           "url": "https://www.tennis-online.co.il/product/yonex-muse-100l-280g-unstrung/",
           "title": "YONEX MUSE 100L 280g Unstrung",
-          "score": 0.57
-        },
-        {
-          "ref": "https://www.tennis-online.co.il/product/yonex-vcore-100l-285g-8th-gen-unstrung/",
-          "url": "https://www.tennis-online.co.il/product/yonex-vcore-100l-285g-8th-gen-unstrung/",
-          "title": "YONEX VCORE 100L 280g (8th gen.) Unstrung",
-          "score": 0.44
+          "score": 0.27
         }
       ]
     },
@@ -4351,18 +4119,6 @@
           "url": "https://www.tennis-online.co.il/product/yonex-vcore-100-300g-8th-gen-unstrung/",
           "title": "YONEX VCORE 100 300g (8th gen.) Unstrung",
           "score": 1
-        },
-        {
-          "ref": "https://www.tennis-online.co.il/product/yonex-ezone-100-blast-blue-300g-8th-gen-unstrung/",
-          "url": "https://www.tennis-online.co.il/product/yonex-ezone-100-blast-blue-300g-8th-gen-unstrung/",
-          "title": "YONEX EZONE 100 300g (8th gen.) Unstrung",
-          "score": 0.75
-        },
-        {
-          "ref": "https://www.tennis-online.co.il/product/yonex-percept-100/",
-          "url": "https://www.tennis-online.co.il/product/yonex-percept-100/",
-          "title": "YONEX PERCEPT 100 300g Unstrung",
-          "score": 0.25
         }
       ]
     },
@@ -4393,12 +4149,6 @@
           "url": "https://www.tennis-online.co.il/product/yonex-vcore-100l-285g-8th-gen-unstrung/",
           "title": "YONEX VCORE 100L 280g (8th gen.) Unstrung",
           "score": 1
-        },
-        {
-          "ref": "https://www.tennis-online.co.il/product/yonex-muse-100l-280g-unstrung/",
-          "url": "https://www.tennis-online.co.il/product/yonex-muse-100l-280g-unstrung/",
-          "title": "YONEX MUSE 100L 280g Unstrung",
-          "score": 0.25
         }
       ]
     },
@@ -4429,12 +4179,6 @@
           "url": "https://www.tennis-online.co.il/product/yonex-vcore-98-305g-8th-gen-unstrung/",
           "title": "YONEX VCORE 98 305g (8th gen.) Unstrung",
           "score": 1
-        },
-        {
-          "ref": "https://www.tennis-online.co.il/product/yonex-ezone-98-blast-blue-305g-8th-gen-unstrung/",
-          "url": "https://www.tennis-online.co.il/product/yonex-ezone-98-blast-blue-305g-8th-gen-unstrung/",
-          "title": "YONEX EZONE 98 305g (8th gen.) Unstrung",
-          "score": 0.75
         },
         {
           "ref": "https://www.tennis-online.co.il/product/yonex-vcore-98-305g-7th-gen-unstrung/",
@@ -4682,18 +4426,6 @@
           "url": "https://www.tennis-online.co.il/product/yonex-vcore-25-8th-gen/",
           "title": "YONEX VCORE 25 (8th gen.)",
           "score": 0.5
-        },
-        {
-          "ref": "https://www.tennis-online.co.il/product/yonex-ezone-junior-25/",
-          "url": "https://www.tennis-online.co.il/product/yonex-ezone-junior-25/",
-          "title": "YONEX EZONE JUNIOR 25",
-          "score": 0.4
-        },
-        {
-          "ref": "https://www.tennis-online.co.il/product/yonex-ezone-25/",
-          "url": "https://www.tennis-online.co.il/product/yonex-ezone-25/",
-          "title": "YONEX EZONE 25 Graphite (7th gen.)",
-          "score": 0.25
         }
       ]
     },
@@ -5252,15 +4984,15 @@
           "score": 0.5
         },
         {
-          "ref": "1419",
-          "url": "https://babolat.co.il/product/1419",
-          "title": "תיק טניס בבולט Backpack Pure Aero 2026 Gen9 Babolat",
-          "score": 0.25
-        },
-        {
           "ref": "1438",
           "url": "https://babolat.co.il/product/1438",
           "title": "מחבט טניס בבולט Pure Aero Junior 26 Gen9 Babolat",
+          "score": 0.25
+        },
+        {
+          "ref": "1439",
+          "url": "https://babolat.co.il/product/1439",
+          "title": "מחבט טניס בבולט Pure Aero Junior 25 Gen9 Babolat",
           "score": 0.25
         }
       ]
@@ -5354,6 +5086,41 @@
           "ref": "1352",
           "url": "https://babolat.co.il/product/1352",
           "title": "מחבט טניס בבולט 305 גרם Pure Strike 100 16/20 Gen4 Grey Babolat",
+          "score": 0.6
+        }
+      ]
+    },
+    {
+      "id": "29fbbj16n",
+      "name": "BABOLAT PURE STRIKE 305G GEN 4",
+      "outcome": "needs_link",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
+      "suggestions": [
+        {
+          "ref": "1104",
+          "url": "https://babolat.co.il/product/1104",
+          "title": "מחבט טניס בבולט 305 גרם Pure Strike 16/19 Gen4 2024 Babolat",
+          "score": 0.67
+        },
+        {
+          "ref": "1345",
+          "url": "https://babolat.co.il/product/1345",
+          "title": "מחבט טניס בבולט 305 גרם Pure Strike 16/19 Gen4 Carbon Grey Babolat",
+          "score": 0.67
+        },
+        {
+          "ref": "1211",
+          "url": "https://babolat.co.il/product/1211",
+          "title": "מחבט טניס בבולט Evo Strike Gen4 Babolat",
           "score": 0.6
         }
       ]
@@ -5546,16 +5313,9 @@
       "link": null,
       "supplierTitle": null,
       "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "35761",
-          "url": "https://wilson.co.il/product/super-tour-wilson-red-backpack-wr8036901/",
-          "title": "תיק טניס | Super Tour WILSON Red Backpack",
-          "score": 0.25
-        }
-      ]
+      "detail": "לא נמצא מוצר דומה אצל הספק. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "לא נמצא מוצר דומה אצל הספק",
+      "suggestions": []
     },
     {
       "id": "5o2gry0te",
@@ -5821,13 +5581,6 @@
           "url": "https://wilson.co.il/product/%d7%9e%d7%97%d7%91%d7%98-%d7%98%d7%a0%d7%99%d7%a1-blade-98-16x19-v10-%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%9e%d7%95%d7%a7%d7%93%d7%9e%d7%aa/",
           "title": "מחבט טניס | BLADE 98 16X19 V10",
           "score": 0.31
-        },
-        {
-          "ref": "40435",
-          "url": "https://wilson.co.il/product/%d7%aa%d7%99%d7%a7-%d7%98%d7%a0%d7%99%d7%a1-blade-v10-backpack/",
-          "title": "תיק טניס | Blade V10 Backpack",
-          "color": "Championship Green (ירוק)",
-          "score": 0.25
         }
       ]
     },
@@ -5867,13 +5620,6 @@
           "url": "https://wilson.co.il/product/%d7%9e%d7%97%d7%91%d7%98-%d7%98%d7%a0%d7%99%d7%a1-blade-98-16x19-v10-%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%9e%d7%95%d7%a7%d7%93%d7%9e%d7%aa/",
           "title": "מחבט טניס | BLADE 98 16X19 V10",
           "score": 0.31
-        },
-        {
-          "ref": "40435",
-          "url": "https://wilson.co.il/product/%d7%aa%d7%99%d7%a7-%d7%98%d7%a0%d7%99%d7%a1-blade-v10-backpack/",
-          "title": "תיק טניס | Blade V10 Backpack",
-          "color": "Championship Green (ירוק)",
-          "score": 0.25
         }
       ]
     },
@@ -5897,13 +5643,6 @@
           "url": "https://wilson.co.il/product/%d7%9e%d7%97%d7%91%d7%98-%d7%98%d7%a0%d7%99%d7%a1-blade-98-16x19-v10-%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%9e%d7%95%d7%a7%d7%93%d7%9e%d7%aa/",
           "title": "מחבט טניס | BLADE 98 16X19 V10",
           "score": 0.31
-        },
-        {
-          "ref": "40435",
-          "url": "https://wilson.co.il/product/%d7%aa%d7%99%d7%a7-%d7%98%d7%a0%d7%99%d7%a1-blade-v10-backpack/",
-          "title": "תיק טניס | Blade V10 Backpack",
-          "color": "Championship Green (ירוק)",
-          "score": 0.25
         }
       ]
     },
@@ -5981,13 +5720,6 @@
           "url": "https://wilson.co.il/product/%d7%9e%d7%97%d7%91%d7%98-%d7%98%d7%a0%d7%99%d7%a1-blade-98-16x19-v10-%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%9e%d7%95%d7%a7%d7%93%d7%9e%d7%aa/",
           "title": "מחבט טניס | BLADE 98 16X19 V10",
           "score": 0.71
-        },
-        {
-          "ref": "40435",
-          "url": "https://wilson.co.il/product/%d7%aa%d7%99%d7%a7-%d7%98%d7%a0%d7%99%d7%a1-blade-v10-backpack/",
-          "title": "תיק טניס | Blade V10 Backpack",
-          "color": "Championship Green (ירוק)",
-          "score": 0.25
         }
       ]
     },
@@ -6068,6 +5800,30 @@
           "url": "https://wilson.co.il/product/blade-feel-103-197610/",
           "title": "מחבט טניס | Blade Feel 103",
           "score": 0.55
+        }
+      ]
+    },
+    {
+      "id": "b7z3nuh2a",
+      "name": "WILSON BLADE SUPER TOUR 15 PK",
+      "outcome": "needs_link",
+      "supplier": "wilson",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
+      "suggestions": [
+        {
+          "ref": "17187",
+          "url": "https://wilson.co.il/product/super-tour-15-pack/",
+          "title": "תיק טניס | Super Tour 15 Pack",
+          "color": "כחול",
+          "score": 0.5
         }
       ]
     },
@@ -6214,16 +5970,9 @@
       "link": null,
       "supplierTitle": null,
       "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "33688",
-          "url": "https://wilson.co.il/product/%d7%aa%d7%99%d7%a7-%d7%98%d7%a0%d7%99%d7%a1-blade-100-v9-tennis-racket/",
-          "title": "תיק טניס | RF BACKPACK BLACK",
-          "score": 0.33
-        }
-      ]
+      "detail": "לא נמצא מוצר דומה אצל הספק. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "לא נמצא מוצר דומה אצל הספק",
+      "suggestions": []
     },
     {
       "id": "hqnm3cdfa",
@@ -6295,22 +6044,9 @@
       "link": null,
       "supplierTitle": null,
       "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "24559",
-          "url": "https://wilson.co.il/product/pro-staff-97ul-v14/",
-          "title": "מחבט טניס | Pro Staff 97UL V14",
-          "score": 0.25
-        },
-        {
-          "ref": "24554",
-          "url": "https://wilson.co.il/product/pro-staff-97l-v14/",
-          "title": "מחבט טניס | Pro Staff 97L V14",
-          "score": 0.25
-        }
-      ]
+      "detail": "לא נמצא מוצר דומה אצל הספק. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "לא נמצא מוצר דומה אצל הספק",
+      "suggestions": []
     },
     {
       "id": "k1srgbzln",
@@ -6598,15 +6334,17 @@
           "score": 0.5
         },
         {
-          "ref": "39432",
-          "url": "https://wilson.co.il/product/roland-garros-team-102-192910/",
-          "title": "מחבט טניס | Roland Garros Team 102",
+          "ref": "37951",
+          "url": "https://wilson.co.il/product/roland-garros-team-6pk-cream/",
+          "title": "תיק טניס | Roland Garros Team 6PK Cream",
+          "color": "לבן",
           "score": 0.5
         },
         {
-          "ref": "38480",
-          "url": "https://wilson.co.il/product/roland-garros-team-102-168610/",
-          "title": "מחבט טניס | Roland Garros Team 102",
+          "ref": "37949",
+          "url": "https://wilson.co.il/product/team-backpack-8040003/",
+          "title": "תיק טניס | Team Backpack",
+          "color": "לבן",
           "score": 0.5
         }
       ]
@@ -6877,12 +6615,6 @@
           "url": "https://www.tennis-online.co.il/product/yonex-ezone-junior-26/",
           "title": "YONEX EZONE JUNIOR 26",
           "score": 0.75
-        },
-        {
-          "ref": "https://www.tennis-online.co.il/product/yonex-vcore-26-8th-gen/",
-          "url": "https://www.tennis-online.co.il/product/yonex-vcore-26-8th-gen/",
-          "title": "YONEX VCORE 26 (8th gen.)",
-          "score": 0.29
         }
       ]
     },
@@ -7100,22 +6832,22 @@
       "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
       "suggestions": [
         {
-          "ref": "39435",
-          "url": "https://wilson.co.il/product/roland-garros-triumph-19311/",
-          "title": "מחבט טניס | Roland Garros Triumph",
-          "score": 0.4
+          "ref": "15688",
+          "url": "https://wilson.co.il/product/roland-garros-dampener-yellow/",
+          "title": "בולם זעזועים | Roland Garros Dampener Yellow",
+          "score": 0.29
         },
         {
-          "ref": "35595",
-          "url": "https://wilson.co.il/product/roland-garros-equipe-tennis-racket-wr168510u1/",
-          "title": "מחבט טניס | Roland-Garros Equipe Tennis Racket",
-          "score": 0.4
+          "ref": "13452",
+          "url": "https://wilson.co.il/product/tennis-cover-full-generic/",
+          "title": "כיסוי למחבט טניס | Tennis Cover Full Generic",
+          "score": 0.29
         },
         {
-          "ref": "34178",
-          "url": "https://wilson.co.il/product/roland-garros-triumph-3/",
-          "title": "מחבט טניס | Roland Garros Triumph",
-          "score": 0.4
+          "ref": "35737",
+          "url": "https://wilson.co.il/product/wilson-rolawr8403901001nd-garros-eiffel-tower-dampener/",
+          "title": "בולם זעזועים | Wilson Roland Garros Eiffel Tower Dampener",
+          "score": 0.22
         }
       ]
     },
@@ -7163,16 +6895,9 @@
       "link": null,
       "supplierTitle": null,
       "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "35674",
-          "url": "https://wilson.co.il/product/burn-spin-jr-24-tns-rkt-wr187110/",
-          "title": "מחבט טניס לילדים | BURN SPIN JR 24 TNS RKT",
-          "score": 0.22
-        }
-      ]
+      "detail": "לא נמצא מוצר דומה אצל הספק. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "לא נמצא מוצר דומה אצל הספק",
+      "suggestions": []
     },
     {
       "id": "jatvrturh",
