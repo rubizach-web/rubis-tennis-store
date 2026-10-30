@@ -68,8 +68,11 @@ import {
   orderBy,
   Timestamp,
   getDocFromServer,
+  getDoc,
+  getDocs,
   deleteDoc
 } from 'firebase/firestore';
+import { safeFetchJson } from './lib/api.ts';
 
 // --- Utilities ---
 const ADMIN_EMAILS = ["rubizach@gmail.com", "omerle009@gmail.com"];
@@ -236,76 +239,85 @@ export default function App() {
     return () => unsubscribe();
   }, []);
 
-  // Content Listener (Public)
-  useEffect(() => {
-    // Try local storage first for instant load
-    const cached = localStorage.getItem('site_content');
-    if (cached) {
-      try {
-        setContent(JSON.parse(cached));
-      } catch (e) {
-        console.error("Failed to parse cached content", e);
-      }
+  const applyContent = (data: any) => {
+    const { products: legacyProducts, ...cleanData } = data || {};
+    const finalContent = { ...DEFAULT_CONTENT, ...cleanData };
+    if (finalContent.siteName === "Rubi's Tennis") {
+      finalContent.siteName = "RUBI'S TENNIS STORE";
     }
+    setContent(finalContent);
+    try {
+      localStorage.setItem('site_content', JSON.stringify(finalContent));
+    } catch (e) {
+      console.warn("Storage quota exceeded for site_content", e);
+    }
+  };
 
-    const unsub = onSnapshot(doc(db, 'settings', 'content'), (snapshot) => {
-      if (snapshot.exists()) {
-        const data = snapshot.data() as any;
-        const { products: legacyProducts, ...cleanData } = data;
-        const finalContent = { ...DEFAULT_CONTENT, ...cleanData };
-        
-        if (finalContent.siteName === "Rubi's Tennis") {
-          finalContent.siteName = "RUBI'S TENNIS STORE";
-        }
-        
-        setContent(finalContent);
-        try {
-          localStorage.setItem('site_content', JSON.stringify(finalContent));
-        } catch (e) {
-          console.warn("Storage quota exceeded for site_content", e);
+  const applyProducts = (productsData: Product[]) => {
+    setProducts(productsData);
+    try {
+      localStorage.setItem('site_products', JSON.stringify(productsData));
+    } catch (e) {
+      console.warn("Storage quota exceeded for site_products", e);
+    }
+  };
+
+  // Visitors: products and content come from the server's cache (/api/catalog),
+  // so Firestore reads do not grow with traffic. Admins get live listeners below.
+  useEffect(() => {
+    try {
+      const cachedContent = localStorage.getItem('site_content');
+      if (cachedContent) setContent(JSON.parse(cachedContent));
+      const cachedProducts = localStorage.getItem('site_products');
+      if (cachedProducts) setProducts(JSON.parse(cachedProducts));
+    } catch (e) {}
+
+    if (isVerifiedAdmin) return;
+    let cancelled = false;
+    (async () => {
+      const res = await safeFetchJson<{ content: any; products: Product[] }>('/api/catalog');
+      if (cancelled) return;
+      if (res.ok && res.data && Array.isArray(res.data.products)) {
+        if (res.data.content) applyContent(res.data.content);
+        applyProducts(res.data.products);
+        return;
+      }
+      // Server cache unavailable (e.g. running without the server): read once directly
+      try {
+        const [contentSnap, productsSnap] = await Promise.all([
+          getDoc(doc(db, 'settings', 'content')),
+          getDocs(query(collection(db, 'products'))),
+        ]);
+        if (cancelled) return;
+        if (contentSnap.exists()) applyContent(contentSnap.data());
+        applyProducts(productsSnap.docs.map(d => ({ id: d.id, ...d.data() })) as Product[]);
+      } catch (error: any) {
+        console.warn("Catalog load notice:", error);
+        if (error?.code === 'resource-exhausted' || error?.message?.includes('Quota limit exceeded')) {
+          setQuotaExceeded(true);
         }
       }
-    }, (error) => {
-      console.warn("Content snapshot notice:", error);
+    })();
+    return () => { cancelled = true; };
+  }, [isVerifiedAdmin]);
+
+  // Admins: live listeners, so edits show immediately in the admin screens
+  useEffect(() => {
+    if (!isVerifiedAdmin) return;
+    const onError = (error: any) => {
+      console.warn("Admin snapshot notice:", error);
       if (error?.code === 'resource-exhausted' || error?.message?.includes('Quota limit exceeded')) {
         setQuotaExceeded(true);
       }
-    });
-    return () => unsub();
-  }, []);
-
-  // Products Listener (Public)
-  useEffect(() => {
-    // Try cache first
-    const cached = localStorage.getItem('site_products');
-    if (cached) {
-      try {
-        setProducts(JSON.parse(cached));
-      } catch (e) {}
-    }
-
-    const q = query(collection(db, 'products'));
-    const unsub = onSnapshot(q, (snapshot) => {
-      const productsData = snapshot.docs.map(doc => ({
-        id: doc.id,
-        ...doc.data()
-      })) as Product[];
-      setProducts(productsData);
-      try {
-        localStorage.setItem('site_products', JSON.stringify(productsData));
-      } catch (e) {
-        console.warn("Storage quota exceeded for site_products", e);
-        // If products list is too big, maybe just cache the basic info next time
-        // but for now, we just avoid the crash
-      }
-    }, (error) => {
-      console.warn("Products snapshot notice:", error);
-      if (error?.code === 'resource-exhausted' || error?.message?.includes('Quota limit exceeded')) {
-        setQuotaExceeded(true);
-      }
-    });
-    return () => unsub();
-  }, []);
+    };
+    const unsubContent = onSnapshot(doc(db, 'settings', 'content'), (snapshot) => {
+      if (snapshot.exists()) applyContent(snapshot.data());
+    }, onError);
+    const unsubProducts = onSnapshot(query(collection(db, 'products')), (snapshot) => {
+      applyProducts(snapshot.docs.map(d => ({ id: d.id, ...d.data() })) as Product[]);
+    }, onError);
+    return () => { unsubContent(); unsubProducts(); };
+  }, [isVerifiedAdmin]);
 
   // Leads Listener (Admin Only)
   useEffect(() => {
@@ -344,6 +356,7 @@ export default function App() {
 
     try {
       await setDoc(doc(db, 'settings', 'content'), sanitizeForFirestore(newContent));
+      fetch('/api/catalog/refresh', { method: 'POST' }).catch(() => {});
       return true;
     } catch (e: any) {
       console.warn("Save content to Firestore failed:", e);
@@ -571,6 +584,7 @@ export default function App() {
     try {
       const sanitized = sanitizeForFirestore(product);
       await setDoc(doc(db, 'products', product.id), sanitized);
+      fetch('/api/catalog/refresh', { method: 'POST' }).catch(() => {});
     } catch (e: any) {
       console.warn("Save product to Firestore encountered an issue:", e);
       if (e?.code === 'resource-exhausted' || e?.message?.includes('Quota limit exceeded') || e?.message?.includes('exhausted')) {
@@ -601,6 +615,7 @@ export default function App() {
 
     try {
       await deleteDoc(doc(db, 'products', id));
+      fetch('/api/catalog/refresh', { method: 'POST' }).catch(() => {});
       alert('המוצר נמחק בהצלחה!');
     } catch (e: any) {
       console.warn("Delete product warning:", e);

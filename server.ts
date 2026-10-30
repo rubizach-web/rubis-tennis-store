@@ -6,6 +6,7 @@ import { createServer as createViteServer } from "vite";
 import { GoogleGenAI } from "@google/genai";
 import { syncOneProduct, isSupplierId } from "./server/inventory/run.ts";
 import { detectSupplier, findLink, resolveLinkFromUrl } from "./server/inventory/sync.ts";
+import { getCatalog, requestRefresh, catalogStatus } from "./server/catalog.ts";
 
 async function startServer() {
   const app = express();
@@ -17,7 +18,24 @@ async function startServer() {
 
   // API Route: Health Check
   app.get("/api/health", (req, res) => {
-    res.json({ status: "ok" });
+    res.json({ status: "ok", catalog: catalogStatus() });
+  });
+
+  // Products + site content for visitors, served from the server's cache so
+  // Firestore reads do not grow with traffic (see server/catalog.ts).
+  app.get("/api/catalog", async (req, res) => {
+    try {
+      const catalog = await getCatalog();
+      res.setHeader("Cache-Control", "public, max-age=60");
+      res.json(catalog);
+    } catch (error: any) {
+      res.status(503).json({ error: "רשימת המוצרים לא זמינה כרגע", details: error?.message });
+    }
+  });
+
+  // The admin screen pings this after saving so visitors see changes quickly
+  app.post("/api/catalog/refresh", (req, res) => {
+    res.json({ refreshing: requestRefresh() });
   });
 
   // ---------------------------------------------------------------------------
