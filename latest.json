@@ -1,17 +1,17 @@
 {
   "summary": {
-    "startedAt": "2026-10-29T17:06:21.267Z",
+    "startedAt": "2026-10-30T09:00:43.699Z",
     "dryRun": true,
     "total": 215,
-    "checked": 65,
-    "linkedNow": 65,
-    "needsLink": 139,
-    "unknownSupplier": 0,
+    "checked": 114,
+    "linkedNow": 114,
+    "needsLink": 84,
+    "unknownSupplier": 6,
     "manual": 11,
     "notFound": 0,
     "errors": 0,
-    "inStock": 90,
-    "outOfStock": 125,
+    "inStock": 118,
+    "outOfStock": 97,
     "writes": 0
   },
   "products": [
@@ -47,11 +47,17 @@
           "score": 1
         },
         {
-          "ref": "1506",
-          "url": "https://babolat.co.il/product/1506",
-          "title": "נעלי טניס בבולט Jet Mach 4 AC Women Babolat",
-          "color": "Cream Lavender",
-          "score": 1
+          "ref": "1430",
+          "url": "https://babolat.co.il/product/1430",
+          "title": "נעלי טניס בבולט Jet Mach 4 AC Men Gen9 Babolat",
+          "score": 0.71
+        },
+        {
+          "ref": "1428",
+          "url": "https://babolat.co.il/product/1428",
+          "title": "נעלי טניס בבולט Jet Mach 4 AC Men Babolat",
+          "color": "Beige / Dark Blue",
+          "score": 0.6
         }
       ]
     },
@@ -120,12 +126,6 @@
           "title": "תיק טניס בבולט Court L Babolat",
           "color": "Blue",
           "score": 0.6
-        },
-        {
-          "ref": "1324",
-          "url": "https://babolat.co.il/product/1324",
-          "title": "תיק טניס בבולט Court M Babolat",
-          "score": 0.33
         }
       ]
     },
@@ -171,9 +171,7 @@
       "supplier": "babolat",
       "before": false,
       "after": true,
-      "unavailableSizes": [
-        "ידית 0 (4\")"
-      ],
+      "unavailableSizes": [],
       "supplierSizes": [
         "0",
         "1",
@@ -188,7 +186,7 @@
       },
       "supplierTitle": "מחבט טניס בבולט 295 גרם Drive Black Babolat",
       "supplierColor": null,
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 1 (1/8 4), ידית 2 (1/4 4), ידית 3 (3/8 4), ידית 4 (1/2 4) · מידות שהספק לא מציע בכלל: ידית 0 (4\")",
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 0 (4\"), ידית 1 (1/8 4), ידית 2 (1/4 4), ידית 3 (3/8 4), ידית 4 (1/2 4)",
       "linkReason": "התאמה ודאית",
       "suggestions": [
         {
@@ -198,10 +196,16 @@
           "score": 1
         },
         {
-          "ref": "1226",
-          "url": "https://babolat.co.il/product/1226",
-          "title": "מחבט טניס בבולט 295 גרם G-Tour Babolat",
-          "score": 0.4
+          "ref": "1074",
+          "url": "https://babolat.co.il/product/1074",
+          "title": "מחבט טניס בבולט Drive Junior 23 Babolat",
+          "score": 0.33
+        },
+        {
+          "ref": "285",
+          "url": "https://babolat.co.il/product/285",
+          "title": "מחבט טניס בבולט Pure Drive Junior 25 Babolat",
+          "score": 0.25
         }
       ]
     },
@@ -212,9 +216,7 @@
       "supplier": "babolat",
       "before": false,
       "after": true,
-      "unavailableSizes": [
-        "ידית 0 (4\")"
-      ],
+      "unavailableSizes": [],
       "supplierSizes": [
         "0",
         "1",
@@ -227,7 +229,7 @@
       },
       "supplierTitle": "מחבט טניס בבולט 260 גרם Evo Aero Lite Pink Babolat",
       "supplierColor": null,
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 1 (1/8 4), ידית 2 (1/4 4) · מידות שהספק לא מציע בכלל: ידית 0 (4\")",
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 0 (4\"), ידית 1 (1/8 4), ידית 2 (1/4 4)",
       "linkReason": "התאמה ודאית",
       "suggestions": [
         {
@@ -246,7 +248,43 @@
           "ref": "887",
           "url": "https://babolat.co.il/product/887",
           "title": "מחבט טניס בבולט 275 גרם Evo Aero Pink Babolat",
-          "score": 0.55
+          "score": 0.3
+        }
+      ]
+    },
+    {
+      "id": "14lba1e1f",
+      "name": "BABOLAT EVO AERO PINK",
+      "outcome": "linked",
+      "supplier": "babolat",
+      "before": false,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [
+        "1",
+        "2"
+      ],
+      "link": {
+        "ref": "887",
+        "url": "https://babolat.co.il/product/887",
+        "status": "auto"
+      },
+      "supplierTitle": "מחבט טניס בבולט 275 גרם Evo Aero Pink Babolat",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 1 (1/8 4), ידית 2 (1/4 4)",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "887",
+          "url": "https://babolat.co.il/product/887",
+          "title": "מחבט טניס בבולט 275 גרם Evo Aero Pink Babolat",
+          "score": 0.65
+        },
+        {
+          "ref": "886",
+          "url": "https://babolat.co.il/product/886",
+          "title": "מחבט טניס בבולט 275 גרם Evo Aero Babolat",
+          "score": 0.5
         }
       ]
     },
@@ -363,54 +401,6 @@
           "url": "https://babolat.co.il/product/1372",
           "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Girl Babolat",
           "color": "Red",
-          "score": 1
-        },
-        {
-          "ref": "972",
-          "url": "https://babolat.co.il/product/972",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Babolat",
-          "color": "Angel Blue",
-          "score": 0.6
-        },
-        {
-          "ref": "1173",
-          "url": "https://babolat.co.il/product/1173",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Girl Babolat",
-          "color": "Coral / Gold Fusion",
-          "score": 0.6
-        }
-      ]
-    },
-    {
-      "id": "6yyfbvdor",
-      "name": "BABOLAT JET MACH 3 AC GIRL YELLOW-PINK",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": false,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": [
-        "37",
-        "38",
-        "38.5",
-        "39",
-        "40"
-      ],
-      "link": {
-        "ref": "1370",
-        "url": "https://babolat.co.il/product/1370",
-        "status": "auto"
-      },
-      "supplierTitle": "נעלי טניס בבולט Jet Mach 3 AC Boy Junior Babolat",
-      "supplierColor": "Yellow",
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: 37, 38, 38.5, 39, 40",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "1370",
-          "url": "https://babolat.co.il/product/1370",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Boy Junior Babolat",
-          "color": "Yellow",
           "score": 1
         },
         {
@@ -558,13 +548,6 @@
           "title": "נעלי טניס בבולט Jet Mach 3 AC Men WIDE Babolat",
           "color": "Black / White",
           "score": 0.98
-        },
-        {
-          "ref": "972",
-          "url": "https://babolat.co.il/product/972",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Babolat",
-          "color": "Angel Blue",
-          "score": 0.88
         }
       ]
     },
@@ -596,77 +579,21 @@
           "url": "https://babolat.co.il/product/824",
           "title": "נעלי טניס בבולט Jet Mach 3 AC Women Babolat",
           "color": "Black / Pink",
-          "score": 0.91
-        },
-        {
-          "ref": "1467",
-          "url": "https://babolat.co.il/product/1467",
-          "title": "נעלי טניס בבולט Propulse Fury 3 AC Babolat",
-          "color": "Black",
-          "score": 0.53
-        },
-        {
-          "ref": "1381",
-          "url": "https://babolat.co.il/product/1381",
-          "title": "נעלי טניס בבולט Propulse Fury 3 AC Babolat",
-          "color": "Black / Blue",
-          "score": 0.45
-        }
-      ]
-    },
-    {
-      "id": "th3mp49uc",
-      "name": "BABOLAT JET MACH 4 AC WHITE",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [
-        "42.5",
-        "43",
-        "44",
-        "44.5",
-        "45",
-        "46",
-        "47"
-      ],
-      "supplierSizes": [
-        "38",
-        "39",
-        "40",
-        "41",
-        "42"
-      ],
-      "link": {
-        "ref": "1505",
-        "url": "https://babolat.co.il/product/1505",
-        "status": "auto"
-      },
-      "supplierTitle": "נעלי טניס בבולט Jet Mach 4 AC Women Babolat",
-      "supplierColor": "Lavender / White",
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: 41, 42 · מידות שהספק לא מציע בכלל: 42.5, 43, 44, 44.5, 45, 46, 47",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "1505",
-          "url": "https://babolat.co.il/product/1505",
-          "title": "נעלי טניס בבולט Jet Mach 4 AC Women Babolat",
-          "color": "Lavender / White",
           "score": 1
         },
         {
-          "ref": "1506",
-          "url": "https://babolat.co.il/product/1506",
-          "title": "נעלי טניס בבולט Jet Mach 4 AC Women Babolat",
-          "color": "Cream Lavender",
-          "score": 1
-        },
-        {
-          "ref": "1428",
-          "url": "https://babolat.co.il/product/1428",
-          "title": "נעלי טניס בבולט Jet Mach 4 AC Men Babolat",
-          "color": "Beige / Dark Blue",
+          "ref": "961",
+          "url": "https://babolat.co.il/product/961",
+          "title": "נעלי טניס בבולט Jet Mach 3 AC Women Babolat",
+          "color": "French Blue",
           "score": 0.6
+        },
+        {
+          "ref": "749",
+          "url": "https://babolat.co.il/product/749",
+          "title": "נעלי טניס בבולט Jet Mach 3 AC Men Babolat",
+          "color": "Black/Gold",
+          "score": 0.5
         }
       ]
     },
@@ -769,6 +696,48 @@
       ]
     },
     {
+      "id": "zxc1uoul5",
+      "name": "BABOLAT PROPULSE 3 AC GIRL WHITE",
+      "outcome": "linked",
+      "supplier": "babolat",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [
+        "37",
+        "39",
+        "40"
+      ],
+      "supplierSizes": [
+        "36.5",
+        "38.5"
+      ],
+      "link": {
+        "ref": "1350",
+        "url": "https://babolat.co.il/product/1350",
+        "status": "auto"
+      },
+      "supplierTitle": "נעלי טניס בבולט Propulse 3 AC Junior Girl Babolat",
+      "supplierColor": "White / Coral",
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: 36.5, 38.5 · מידות שהספק לא מציע בכלל: 37, 39, 40",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "1350",
+          "url": "https://babolat.co.il/product/1350",
+          "title": "נעלי טניס בבולט Propulse 3 AC Junior Girl Babolat",
+          "color": "White / Coral",
+          "score": 1
+        },
+        {
+          "ref": "1516",
+          "url": "https://babolat.co.il/product/1516",
+          "title": "נעלי טניס בבולט Propulse 3 AC Junior Girl Babolat",
+          "color": "Pink",
+          "score": 0.6
+        }
+      ]
+    },
+    {
       "id": "oyqel3p19",
       "name": "BABOLAT PROPULSE FURY 3 AC GREY-YELLOW",
       "outcome": "linked",
@@ -850,10 +819,10 @@
           "score": 0.5
         },
         {
-          "ref": "1220",
-          "url": "https://babolat.co.il/product/1220",
-          "title": "מחבט טניס בבולט 305 גרם Pure Drive 98 Gen11 Babolat",
-          "score": 0.2
+          "ref": "1419",
+          "url": "https://babolat.co.il/product/1419",
+          "title": "תיק טניס בבולט Backpack Pure Aero 2026 Gen9 Babolat",
+          "score": 0.25
         }
       ]
     },
@@ -864,9 +833,7 @@
       "supplier": "babolat",
       "before": false,
       "after": true,
-      "unavailableSizes": [
-        "ידית 0 (4\")"
-      ],
+      "unavailableSizes": [],
       "supplierSizes": [
         "0",
         "1",
@@ -879,7 +846,7 @@
       },
       "supplierTitle": "מחבט טניס בבולט 270 גרם Pure Aero Lite Gen9 Babolat",
       "supplierColor": null,
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 1 (1/8 4), ידית 2 (1/4 4) · מידות שהספק לא מציע בכלל: ידית 0 (4\")",
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 0 (4\"), ידית 1 (1/8 4), ידית 2 (1/4 4)",
       "linkReason": "התאמה ודאית",
       "suggestions": [
         {
@@ -892,14 +859,13 @@
           "ref": "1375",
           "url": "https://babolat.co.il/product/1375",
           "title": "מחבט טניס בבולט 300 גרם Pure Aero Gen9 Babolat",
-          "score": 0.57
+          "score": 0.32
         },
         {
           "ref": "1419",
           "url": "https://babolat.co.il/product/1419",
           "title": "תיק טניס בבולט Backpack Pure Aero 2026 Gen9 Babolat",
-          "color": "Grey / Yellow",
-          "score": 0.57
+          "score": 0.32
         }
       ]
     },
@@ -937,14 +903,13 @@
           "ref": "1375",
           "url": "https://babolat.co.il/product/1375",
           "title": "מחבט טניס בבולט 300 גרם Pure Aero Gen9 Babolat",
-          "score": 0.57
+          "score": 0.32
         },
         {
           "ref": "1419",
           "url": "https://babolat.co.il/product/1419",
           "title": "תיק טניס בבולט Backpack Pure Aero 2026 Gen9 Babolat",
-          "color": "Grey / Yellow",
-          "score": 0.57
+          "score": 0.32
         }
       ]
     },
@@ -1023,16 +988,62 @@
           "score": 1
         },
         {
+          "ref": "1224",
+          "url": "https://babolat.co.il/product/1224",
+          "title": "תיק טניס בבולט Backpack Pure Drive GEN11 Babolat",
+          "color": "Blue",
+          "score": 0.32
+        },
+        {
           "ref": "935",
           "url": "https://babolat.co.il/product/935",
           "title": "מחבט טניס בבולט 305 גרם Pure Aero 98 Babolat",
           "score": 0.31
+        }
+      ]
+    },
+    {
+      "id": "flwjgec4d",
+      "name": "BABOLAT PURE DRIVE LITE GEN 11",
+      "outcome": "linked",
+      "supplier": "babolat",
+      "before": false,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "link": {
+        "ref": "1218",
+        "url": "https://babolat.co.il/product/1218",
+        "status": "auto"
+      },
+      "supplierTitle": "מחבט טניס בבולט 270 גרם Pure Drive Lite Gen11 Babolat",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 0 (4\"), ידית 1 (1/8 4), ידית 2 (1/4 4), ידית 3 (3/8 4)",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "1218",
+          "url": "https://babolat.co.il/product/1218",
+          "title": "מחבט טניס בבולט 270 גרם Pure Drive Lite Gen11 Babolat",
+          "score": 0.71
         },
         {
-          "ref": "1412",
-          "url": "https://babolat.co.il/product/1412",
-          "title": "מחבט טניס בבולט 305 גרם Pure Aero 98 Gen9 Babolat",
-          "score": 0.2
+          "ref": "1224",
+          "url": "https://babolat.co.il/product/1224",
+          "title": "תיק טניס בבולט Backpack Pure Drive GEN11 Babolat",
+          "color": "Blue",
+          "score": 0.42
+        },
+        {
+          "ref": "1219",
+          "url": "https://babolat.co.il/product/1219",
+          "title": "מחבט טניס בבולט 255 גרם Pure Drive Super Lite Gen11 Babolat",
+          "score": 0.38
         }
       ]
     },
@@ -1043,9 +1054,7 @@
       "supplier": "babolat",
       "before": false,
       "after": true,
-      "unavailableSizes": [
-        "ידית 0 (4\")"
-      ],
+      "unavailableSizes": [],
       "supplierSizes": [
         "0",
         "1"
@@ -1057,7 +1066,7 @@
       },
       "supplierTitle": "מחבט טניס בבולט 255 גרם Pure Drive Super Lite Gen11 Babolat",
       "supplierColor": null,
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 1 (1/8 4) · מידות שהספק לא מציע בכלל: ידית 0 (4\")",
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 0 (4\"), ידית 1 (1/8 4)",
       "linkReason": "התאמה ודאית",
       "suggestions": [
         {
@@ -1070,7 +1079,92 @@
           "ref": "1218",
           "url": "https://babolat.co.il/product/1218",
           "title": "מחבט טניס בבולט 270 גרם Pure Drive Lite Gen11 Babolat",
-          "score": 0.63
+          "score": 0.38
+        }
+      ]
+    },
+    {
+      "id": "ivkvtz04c",
+      "name": "BABOLAT PURE DRIVE TEAM GEN 11",
+      "outcome": "linked",
+      "supplier": "babolat",
+      "before": false,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "link": {
+        "ref": "1217",
+        "url": "https://babolat.co.il/product/1217",
+        "status": "auto"
+      },
+      "supplierTitle": "מחבט טניס בבולט 285 גרם Pure Drive Team Gen11 Babolat",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 0 (4\"), ידית 1 (1/8 4), ידית 2 (1/4 4), ידית 3 (3/8 4)",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "1217",
+          "url": "https://babolat.co.il/product/1217",
+          "title": "מחבט טניס בבולט 285 גרם Pure Drive Team Gen11 Babolat",
+          "score": 0.71
+        },
+        {
+          "ref": "1224",
+          "url": "https://babolat.co.il/product/1224",
+          "title": "תיק טניס בבולט Backpack Pure Drive GEN11 Babolat",
+          "color": "Blue",
+          "score": 0.42
+        },
+        {
+          "ref": "1216",
+          "url": "https://babolat.co.il/product/1216",
+          "title": "מחבט טניס בבולט 300 גרם Pure Drive Gen11 Babolat",
+          "score": 0.32
+        }
+      ]
+    },
+    {
+      "id": "29fbbj16n",
+      "name": "BABOLAT PURE STRIKE 305G GEN 4",
+      "outcome": "linked",
+      "supplier": "babolat",
+      "before": false,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [],
+      "link": {
+        "ref": "1356",
+        "url": "https://babolat.co.il/product/1356",
+        "status": "auto"
+      },
+      "supplierTitle": "תיק טניס בבולט Backpack Pure Strike Gen4 Grey Babolat",
+      "supplierColor": "Grey / Neon Red",
+      "detail": "במלאי בבבולט",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "1356",
+          "url": "https://babolat.co.il/product/1356",
+          "title": "תיק טניס בבולט Backpack Pure Strike Gen4 Grey Babolat",
+          "color": "Grey / Neon Red",
+          "score": 0.8
+        },
+        {
+          "ref": "1104",
+          "url": "https://babolat.co.il/product/1104",
+          "title": "מחבט טניס בבולט 305 גרם Pure Strike 16/19 Gen4 2024 Babolat",
+          "score": 0.67
+        },
+        {
+          "ref": "1345",
+          "url": "https://babolat.co.il/product/1345",
+          "title": "מחבט טניס בבולט 305 גרם Pure Strike 16/19 Gen4 Carbon Grey Babolat",
+          "score": 0.67
         }
       ]
     },
@@ -1164,19 +1258,7 @@
           "ref": "25995",
           "url": "https://wilson.co.il/product/blade-feel-26-comp/",
           "title": "מחבט טניס ג'וניור | Blade Feel 26 Comp",
-          "score": 0.71
-        },
-        {
-          "ref": "41505",
-          "url": "https://wilson.co.il/product/%d7%9e%d7%97%d7%91%d7%98-%d7%98%d7%a0%d7%99%d7%a1-%d7%9c%d7%99%d7%9c%d7%93%d7%99%d7%9d-blade-26-v10/",
-          "title": "מחבט טניס לילדים | Blade 26 v10",
-          "score": 0.43
-        },
-        {
-          "ref": "35679",
-          "url": "https://wilson.co.il/product/burn-spin-jr-26-tennis-racket-wr171510u/",
-          "title": "מחבט טניס לילדים | Burn Spin Jr 26 Tennis Racket",
-          "score": 0.29
+          "score": 1
         }
       ]
     },
@@ -1228,10 +1310,7 @@
       "before": false,
       "after": true,
       "unavailableSizes": [
-        "36",
-        "2/3 36",
-        "1/3 37",
-        "2/3 38"
+        "36"
       ],
       "supplierSizes": [
         "34",
@@ -1247,7 +1326,7 @@
       },
       "supplierTitle": "נעלי טניס ג'וניור | Junior Rush Pro L",
       "supplierColor": "לבן",
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: 38 · מידות שהספק לא מציע בכלל: 2/3 36, 1/3 37, 2/3 38",
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: 2/3 36, 1/3 37, 38, 2/3 38",
       "linkReason": "התאמה ודאית",
       "suggestions": [
         {
@@ -1255,21 +1334,21 @@
           "url": "https://wilson.co.il/product/junior-rush-pro-l-2/",
           "title": "נעלי טניס ג'וניור | Junior Rush Pro L",
           "color": "לבן",
-          "score": 0.68
+          "score": 1
         },
         {
           "ref": "37823",
           "url": "https://wilson.co.il/product/junior-rush-pro-335270/",
           "title": "נעלי טניס ג'וניור | Junior Rush Pro",
           "color": "לבן",
-          "score": 0.48
+          "score": 0.49
         },
         {
           "ref": "39070",
           "url": "https://wilson.co.il/product/rush-pro-ace-335310/",
           "title": "נעלי טניס ג'וניור | Rush Pro Ace",
           "color": "לבן",
-          "score": 0.41
+          "score": 0.32
         }
       ]
     },
@@ -1296,7 +1375,6 @@
           "ref": "1419",
           "url": "https://babolat.co.il/product/1419",
           "title": "תיק טניס בבולט Backpack Pure Aero 2026 Gen9 Babolat",
-          "color": "Grey / Yellow",
           "score": 0.83
         },
         {
@@ -1306,10 +1384,9 @@
           "score": 0.57
         },
         {
-          "ref": "1436",
-          "url": "https://babolat.co.il/product/1436",
-          "title": "מיני מחבט Mini Racket Pure Aero Gen9",
-          "color": "Grey / Yellow",
+          "ref": "1438",
+          "url": "https://babolat.co.il/product/1438",
+          "title": "מחבט טניס בבולט Pure Aero Junior 26 Gen9 Babolat",
           "score": 0.57
         }
       ]
@@ -1394,39 +1471,6 @@
       ]
     },
     {
-      "id": "wquo01vhk",
-      "name": "PURE DRIVE JUNIOR 25 GEN 11",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": [],
-      "link": {
-        "ref": "1267",
-        "url": "https://babolat.co.il/product/1267",
-        "status": "auto"
-      },
-      "supplierTitle": "מחבט טניס בבולט Pure Drive Junior 25 Gen11 Babolat",
-      "supplierColor": null,
-      "detail": "במלאי בבבולט",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "1267",
-          "url": "https://babolat.co.il/product/1267",
-          "title": "מחבט טניס בבולט Pure Drive Junior 25 Gen11 Babolat",
-          "score": 1
-        },
-        {
-          "ref": "1268",
-          "url": "https://babolat.co.il/product/1268",
-          "title": "מחבט טניס בבולט Pure Drive Junior 25 Gen11 Babolat Light Blue",
-          "score": 0.86
-        }
-      ]
-    },
-    {
       "id": "zj82yd2jk",
       "name": "PURE STRIKE BACKPACK GEN4 GREY",
       "outcome": "linked",
@@ -1452,15 +1496,15 @@
           "score": 1
         },
         {
-          "ref": "1354",
-          "url": "https://babolat.co.il/product/1354",
-          "title": "מחבט טניס בבולט 285 גרם Pure Strike Team Gen4 Grey Babolat",
+          "ref": "1357",
+          "url": "https://babolat.co.il/product/1357",
+          "title": "תיק טניס בבולט RH X 6 Pure Strike GEN4 Grey",
           "score": 0.65
         },
         {
-          "ref": "1355",
-          "url": "https://babolat.co.il/product/1355",
-          "title": "מחבט טניס בבולט 265 גרם Pure Strike Lite Gen4 Grey Babolat",
+          "ref": "1358",
+          "url": "https://babolat.co.il/product/1358",
+          "title": "תיק טניס בבולט RH X 9 Pure Strike GEN4 Grey",
           "score": 0.65
         }
       ]
@@ -1488,20 +1532,59 @@
           "ref": "1112",
           "url": "https://babolat.co.il/product/1112",
           "title": "תיק טניס בבולט RH X 12 Pure Strike GEN4",
-          "score": 0.75
+          "score": 0.71
         },
         {
           "ref": "1222",
           "url": "https://babolat.co.il/product/1222",
           "title": "תיק טניס בבולט RH X 12 Pure Drive GEN11 Babolat",
-          "color": "Blue",
-          "score": 0.56
+          "score": 0.5
         },
         {
           "ref": "1064",
           "url": "https://babolat.co.il/product/1064",
           "title": "תיק טניס בבולט RH X 12 Pure Aero Rafa g2 Babolat",
-          "score": 0.5
+          "score": 0.44
+        }
+      ]
+    },
+    {
+      "id": "oyk0b8pj2",
+      "name": "RH X 6 BABOLAT PURE AERO GEN 9",
+      "outcome": "linked",
+      "supplier": "babolat",
+      "before": false,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [],
+      "link": {
+        "ref": "1418",
+        "url": "https://babolat.co.il/product/1418",
+        "status": "auto"
+      },
+      "supplierTitle": "תיק טניס בבולט RH X6 Pure Aero Gen9 2026 Babolat",
+      "supplierColor": "Grey / Yellow",
+      "detail": "במלאי בבבולט",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "1418",
+          "url": "https://babolat.co.il/product/1418",
+          "title": "תיק טניס בבולט RH X6 Pure Aero Gen9 2026 Babolat",
+          "score": 0.88
+        },
+        {
+          "ref": "1065",
+          "url": "https://babolat.co.il/product/1065",
+          "title": "תיק טניס בבולט RH X 6 Pure Aero Rafa g2 Babolat",
+          "color": "Pink / Black",
+          "score": 0.25
+        },
+        {
+          "ref": "1417",
+          "url": "https://babolat.co.il/product/1417",
+          "title": "תיק טניס בבולט RH X12 Pure Aero Gen9 2026 Babolat",
+          "score": 0.25
         }
       ]
     },
@@ -1528,19 +1611,19 @@
           "ref": "1223",
           "url": "https://babolat.co.il/product/1223",
           "title": "תיק טניס בבולט RH X 6 Pure Drive GEN11 Babolat",
-          "score": 0.75
+          "score": 0.71
         },
         {
           "ref": "1110",
           "url": "https://babolat.co.il/product/1110",
           "title": "תיק טניס בבולט RH X 6 Pure Strike GEN4",
-          "score": 0.56
+          "score": 0.5
         },
         {
           "ref": "1357",
           "url": "https://babolat.co.il/product/1357",
           "title": "תיק טניס בבולט RH X 6 Pure Strike GEN4 Grey",
-          "score": 0.56
+          "score": 0.5
         }
       ]
     },
@@ -1568,14 +1651,59 @@
           "url": "https://babolat.co.il/product/1110",
           "title": "תיק טניס בבולט RH X 6 Pure Strike GEN4",
           "color": "White / Black",
-          "score": 0.83
+          "score": 0.79
         },
         {
-          "ref": "1357",
-          "url": "https://babolat.co.il/product/1357",
-          "title": "תיק טניס בבולט RH X 6 Pure Strike GEN4 Grey",
-          "color": "Grey / Neon Red",
-          "score": 0.35
+          "ref": "1223",
+          "url": "https://babolat.co.il/product/1223",
+          "title": "תיק טניס בבולט RH X 6 Pure Drive GEN11 Babolat",
+          "score": 0.5
+        },
+        {
+          "ref": "1418",
+          "url": "https://babolat.co.il/product/1418",
+          "title": "תיק טניס בבולט RH X6 Pure Aero Gen9 2026 Babolat",
+          "score": 0.44
+        }
+      ]
+    },
+    {
+      "id": "yzvt4l4nx",
+      "name": "RH X12 BABOLAT PURE DRIVE GEN 11",
+      "outcome": "linked",
+      "supplier": "babolat",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [],
+      "link": {
+        "ref": "1222",
+        "url": "https://babolat.co.il/product/1222",
+        "status": "auto"
+      },
+      "supplierTitle": "תיק טניס בבולט RH X 12 Pure Drive GEN11 Babolat",
+      "supplierColor": "Blue",
+      "detail": "במלאי בבבולט",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "1222",
+          "url": "https://babolat.co.il/product/1222",
+          "title": "תיק טניס בבולט RH X 12 Pure Drive GEN11 Babolat",
+          "score": 1
+        },
+        {
+          "ref": "1223",
+          "url": "https://babolat.co.il/product/1223",
+          "title": "תיק טניס בבולט RH X 6 Pure Drive GEN11 Babolat",
+          "score": 0.31
+        },
+        {
+          "ref": "1224",
+          "url": "https://babolat.co.il/product/1224",
+          "title": "תיק טניס בבולט Backpack Pure Drive GEN11 Babolat",
+          "color": "Blue",
+          "score": 0.25
         }
       ]
     },
@@ -1605,10 +1733,55 @@
           "score": 0.88
         },
         {
+          "ref": "1064",
+          "url": "https://babolat.co.il/product/1064",
+          "title": "תיק טניס בבולט RH X 12 Pure Aero Rafa g2 Babolat",
+          "score": 0.25
+        },
+        {
           "ref": "1418",
           "url": "https://babolat.co.il/product/1418",
           "title": "תיק טניס בבולט RH X6 Pure Aero Gen9 2026 Babolat",
           "score": 0.25
+        }
+      ]
+    },
+    {
+      "id": "6oomyp20x",
+      "name": "RH X9 BABOLAT PURE WIMBLEDON",
+      "outcome": "linked",
+      "supplier": "babolat",
+      "before": false,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [],
+      "link": {
+        "ref": "1482",
+        "url": "https://babolat.co.il/product/1482",
+        "status": "auto"
+      },
+      "supplierTitle": "תיק טניס בבולט RH X 9 Pure Wimbledon 2026",
+      "supplierColor": "White",
+      "detail": "במלאי בבבולט",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "1482",
+          "url": "https://babolat.co.il/product/1482",
+          "title": "תיק טניס בבולט RH X 9 Pure Wimbledon 2026",
+          "score": 0.83
+        },
+        {
+          "ref": "1358",
+          "url": "https://babolat.co.il/product/1358",
+          "title": "תיק טניס בבולט RH X 9 Pure Strike GEN4 Grey",
+          "score": 0.5
+        },
+        {
+          "ref": "1522",
+          "url": "https://babolat.co.il/product/1522",
+          "title": "תיק טניס בבולט RH X 9 Pure Drive GEN11 Spectra",
+          "score": 0.44
         }
       ]
     },
@@ -1620,7 +1793,6 @@
       "before": false,
       "after": true,
       "unavailableSizes": [
-        "2/3 36",
         "1/3 37",
         "2/3 38",
         "1/3 39",
@@ -1638,7 +1810,7 @@
       },
       "supplierTitle": "נעלי טניס ג'וניור | Rush Pro Ace",
       "supplierColor": "לבן",
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: 36, 38 · מידות שהספק לא מציע בכלל: 2/3 36, 1/3 37, 2/3 38, 1/3 39",
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: 36, 2/3 36, 38",
       "linkReason": "התאמה ודאית",
       "suggestions": [
         {
@@ -1646,21 +1818,63 @@
           "url": "https://wilson.co.il/product/rush-pro-ace-335310/",
           "title": "נעלי טניס ג'וניור | Rush Pro Ace",
           "color": "לבן",
-          "score": 0.68
+          "score": 1
         },
         {
           "ref": "37823",
           "url": "https://wilson.co.il/product/junior-rush-pro-335270/",
           "title": "נעלי טניס ג'וניור | Junior Rush Pro",
           "color": "לבן",
-          "score": 0.48
+          "score": 0.74
         },
         {
           "ref": "39960",
           "url": "https://wilson.co.il/product/junior-rush-pro-l-2/",
           "title": "נעלי טניס ג'וניור | Junior Rush Pro L",
           "color": "לבן",
-          "score": 0.41
+          "score": 0.32
+        }
+      ]
+    },
+    {
+      "id": "ac2do6ey4",
+      "name": "SHIFT 99 V1 ROLAND GARROS 300g",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": false,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [
+        "4 1/4\" (2)",
+        "4 3/8\" (3)"
+      ],
+      "link": {
+        "ref": "35721",
+        "url": "https://wilson.co.il/product/roland-garros-2025-shift-99-v1-wr174311/",
+        "status": "auto"
+      },
+      "supplierTitle": "מחבט טניס | Roland-Garros 2025 Shift 99 V1",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 2 (1/4 4), ידית 3 (3/8 4)",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "35721",
+          "url": "https://wilson.co.il/product/roland-garros-2025-shift-99-v1-wr174311/",
+          "title": "מחבט טניס | Roland-Garros 2025 Shift 99 V1",
+          "score": 0.88
+        },
+        {
+          "ref": "26278",
+          "url": "https://wilson.co.il/product/shift-99-v1/",
+          "title": "מחבט טניס | Shift 99 V1",
+          "score": 0.71
+        },
+        {
+          "ref": "26332",
+          "url": "https://wilson.co.il/product/shift-99-pro-v1/",
+          "title": "מחבט טניס | Shift 99 pro V1",
+          "score": 0.38
         }
       ]
     },
@@ -1706,6 +1920,48 @@
           "url": "https://www.tennis-online.co.il/product/yonex-sonicage-men-black/",
           "title": "נעלי טניס YONEX SONICAGE Men Black",
           "score": 0.6
+        }
+      ]
+    },
+    {
+      "id": "74nneyuzf",
+      "name": "WILSON BLADE 104 V10 16X19 290G",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": false,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [
+        "4 3/8\" (3)",
+        "4 1/4\" (2)"
+      ],
+      "link": {
+        "ref": "41214",
+        "url": "https://wilson.co.il/product/blade-104-v10/",
+        "status": "auto"
+      },
+      "supplierTitle": "מחבט טניס | Blade 104 V10",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 2 (1/4 4), ידית 3 (3/8 4)",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "41214",
+          "url": "https://wilson.co.il/product/blade-104-v10/",
+          "title": "מחבט טניס | Blade 104 V10",
+          "score": 1
+        },
+        {
+          "ref": "41311",
+          "url": "https://wilson.co.il/product/%d7%9e%d7%97%d7%91%d7%98-%d7%98%d7%a0%d7%99%d7%a1-blade-104-v10-frm-2/",
+          "title": "מחבט טניס | Blade 104 V10 Frm 2",
+          "score": 0.63
+        },
+        {
+          "ref": "40273",
+          "url": "https://wilson.co.il/product/%d7%9e%d7%97%d7%91%d7%98-%d7%98%d7%a0%d7%99%d7%a1-blade-98-16x19-v10-%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%9e%d7%95%d7%a7%d7%93%d7%9e%d7%aa/",
+          "title": "מחבט טניס | BLADE 98 16X19 V10",
+          "score": 0.31
         }
       ]
     },
@@ -1778,6 +2034,289 @@
       ]
     },
     {
+      "id": "sz29hou35",
+      "name": "WILSON BLADE 98 V10 18X20 305G",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [
+        "4 3/8\" (3)",
+        "4 1/4\" (2)"
+      ],
+      "link": {
+        "ref": "40412",
+        "url": "https://wilson.co.il/product/blade-98-18x20-v10/",
+        "status": "auto"
+      },
+      "supplierTitle": "מחבט טניס | BLADE 98 18X20 V10",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 2 (1/4 4), ידית 3 (3/8 4)",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "40412",
+          "url": "https://wilson.co.il/product/blade-98-18x20-v10/",
+          "title": "מחבט טניס | BLADE 98 18X20 V10",
+          "score": 1
+        },
+        {
+          "ref": "40273",
+          "url": "https://wilson.co.il/product/%d7%9e%d7%97%d7%91%d7%98-%d7%98%d7%a0%d7%99%d7%a1-blade-98-16x19-v10-%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%9e%d7%95%d7%a7%d7%93%d7%9e%d7%aa/",
+          "title": "מחבט טניס | BLADE 98 16X19 V10",
+          "score": 0.31
+        },
+        {
+          "ref": "40435",
+          "url": "https://wilson.co.il/product/%d7%aa%d7%99%d7%a7-%d7%98%d7%a0%d7%99%d7%a1-blade-v10-backpack/",
+          "title": "תיק טניס | Blade V10 Backpack",
+          "color": "Championship Green (ירוק)",
+          "score": 0.25
+        }
+      ]
+    },
+    {
+      "id": "0kt1vem1k",
+      "name": "WILSON BLADE FEEL 103 280g",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": false,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [
+        "4 1/4\" (2)",
+        "4 3/8\" (3)"
+      ],
+      "link": {
+        "ref": "39565",
+        "url": "https://wilson.co.il/product/blade-feel-103-197610/",
+        "status": "auto"
+      },
+      "supplierTitle": "מחבט טניס | Blade Feel 103",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 2 (1/4 4), ידית 3 (3/8 4)",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "39565",
+          "url": "https://wilson.co.il/product/blade-feel-103-197610/",
+          "title": "מחבט טניס | Blade Feel 103",
+          "score": 1
+        },
+        {
+          "ref": "39574",
+          "url": "https://wilson.co.il/product/blade-feel-team-103-197810/",
+          "title": "מחבט טניס | Blade Feel Team 103",
+          "score": 0.55
+        },
+        {
+          "ref": "25293",
+          "url": "https://wilson.co.il/product/%d7%9e%d7%97%d7%91%d7%98-%d7%98%d7%a0%d7%99%d7%a1-blade-feel-team-103/",
+          "title": "מחבט טניס | Blade Feel Team 103",
+          "score": 0.55
+        }
+      ]
+    },
+    {
+      "id": "b7z3nuh2a",
+      "name": "WILSON BLADE SUPER TOUR 15 PK",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": [],
+      "link": {
+        "ref": "17187",
+        "url": "https://wilson.co.il/product/super-tour-15-pack/",
+        "status": "auto"
+      },
+      "supplierTitle": "תיק טניס | Super Tour 15 Pack",
+      "supplierColor": "כחול",
+      "detail": "אזל באתר וילסון",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "17187",
+          "url": "https://wilson.co.il/product/super-tour-15-pack/",
+          "title": "תיק טניס | Super Tour 15 Pack",
+          "color": "כחול",
+          "score": 0.8
+        }
+      ]
+    },
+    {
+      "id": "qze25pjq6",
+      "name": "WILSON BLADE TEAM V10 16X20 275G",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": false,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [
+        "4 1/8\" (1)",
+        "4 1/4\" (2)",
+        "4 3/8\" (3)"
+      ],
+      "link": {
+        "ref": "41209",
+        "url": "https://wilson.co.il/product/%d7%9e%d7%97%d7%91%d7%98-%d7%98%d7%a0%d7%99%d7%a1-blade-101-team-v10/",
+        "status": "auto"
+      },
+      "supplierTitle": "מחבט טניס | Blade 101 Team V10",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 1 (1/8 4), ידית 2 (1/4 4), ידית 3 (3/8 4)",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "41209",
+          "url": "https://wilson.co.il/product/%d7%9e%d7%97%d7%91%d7%98-%d7%98%d7%a0%d7%99%d7%a1-blade-101-team-v10/",
+          "title": "מחבט טניס | Blade 101 Team V10",
+          "score": 0.67
+        },
+        {
+          "ref": "40435",
+          "url": "https://wilson.co.il/product/%d7%aa%d7%99%d7%a7-%d7%98%d7%a0%d7%99%d7%a1-blade-v10-backpack/",
+          "title": "תיק טניס | Blade V10 Backpack",
+          "color": "Championship Green (ירוק)",
+          "score": 0.35
+        },
+        {
+          "ref": "41505",
+          "url": "https://wilson.co.il/product/%d7%9e%d7%97%d7%91%d7%98-%d7%98%d7%a0%d7%99%d7%a1-%d7%9c%d7%99%d7%9c%d7%93%d7%99%d7%9d-blade-26-v10/",
+          "title": "מחבט טניס לילדים | Blade 26 v10",
+          "score": 0.25
+        }
+      ]
+    },
+    {
+      "id": "fe977rpz2",
+      "name": "WILSON BURN 100 V5 300g",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": false,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [
+        "4 1/8\" (1)",
+        "4 3/8\" (3)"
+      ],
+      "link": {
+        "ref": "25673",
+        "url": "https://wilson.co.il/product/burn-100-v5/",
+        "status": "auto"
+      },
+      "supplierTitle": "מחבט טניס | Burn 100 V5",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 1 (1/8 4), ידית 3 (3/8 4)",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "25673",
+          "url": "https://wilson.co.il/product/burn-100-v5/",
+          "title": "מחבט טניס | Burn 100 V5",
+          "score": 1
+        },
+        {
+          "ref": "36638",
+          "url": "https://wilson.co.il/product/ultra-100-v5-tennis-racket/",
+          "title": "מחבט טניס | Ultra 100 V5 Tennis Racket",
+          "score": 0.67
+        }
+      ]
+    },
+    {
+      "id": "knbit8bam",
+      "name": "WILSON BURN 100LS V6 295g",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": false,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [
+        "4 1/4\" (2)",
+        "4 3/8\" (3)"
+      ],
+      "link": {
+        "ref": "39738",
+        "url": "https://wilson.co.il/product/burn-100ls-v6/",
+        "status": "auto"
+      },
+      "supplierTitle": "מחבט טניס | Burn 100LS V6",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 2 (1/4 4), ידית 3 (3/8 4)",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "39738",
+          "url": "https://wilson.co.il/product/burn-100ls-v6/",
+          "title": "מחבט טניס | Burn 100LS V6",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": "v3cgg9hhq",
+      "name": "WILSON BURN 100S V6 300g",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [
+        "4 1/4\" (2)",
+        "4 3/8\" (3)"
+      ],
+      "link": {
+        "ref": "39734",
+        "url": "https://wilson.co.il/product/burn-100s-v6/",
+        "status": "auto"
+      },
+      "supplierTitle": "מחבט טניס | Burn 100S V6",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 2 (1/4 4), ידית 3 (3/8 4)",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "39734",
+          "url": "https://wilson.co.il/product/burn-100s-v6/",
+          "title": "מחבט טניס | Burn 100S V6",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": "juyxd1kah",
+      "name": "WILSON BURN 100ULS V6 260g",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": false,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [
+        "4 1/8\" (1)",
+        "4 1/4\" (2)"
+      ],
+      "link": {
+        "ref": "39741",
+        "url": "https://wilson.co.il/product/burn-100uls-v6/",
+        "status": "auto"
+      },
+      "supplierTitle": "מחבט טניס | Burn 100ULS V6",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 1 (1/8 4), ידית 2 (1/4 4)",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "39741",
+          "url": "https://wilson.co.il/product/burn-100uls-v6/",
+          "title": "מחבט טניס | Burn 100ULS V6",
+          "score": 1
+        }
+      ]
+    },
+    {
       "id": "52mjwsjsn",
       "name": "WILSON BURN SPIN JR 24",
       "outcome": "linked",
@@ -1800,7 +2339,7 @@
           "ref": "35674",
           "url": "https://wilson.co.il/product/burn-spin-jr-24-tns-rkt-wr187110/",
           "title": "מחבט טניס לילדים | BURN SPIN JR 24 TNS RKT",
-          "score": 0.67
+          "score": 1
         }
       ]
     },
@@ -1869,16 +2408,432 @@
           "score": 1
         },
         {
-          "ref": "42162",
-          "url": "https://wilson.co.il/product/%d7%9e%d7%97%d7%91%d7%98-%d7%98%d7%a0%d7%99%d7%a1-%d7%9c%d7%99%d7%9c%d7%93%d7%99%d7%9d-pro-staff-precision-jr-26-26/",
-          "title": "מחבט טניס לילדים | PRO STAFF PRECISION JR 26",
-          "score": 0.29
-        },
-        {
           "ref": "41505",
           "url": "https://wilson.co.il/product/%d7%9e%d7%97%d7%91%d7%98-%d7%98%d7%a0%d7%99%d7%a1-%d7%9c%d7%99%d7%9c%d7%93%d7%99%d7%9d-blade-26-v10/",
           "title": "מחבט טניס לילדים | Blade 26 v10",
           "score": 0.29
+        },
+        {
+          "ref": "37930",
+          "url": "https://wilson.co.il/product/ultra-26-v5-tennis-racket/",
+          "title": "מחבט טניס | Ultra 26 V5 Tennis Racket",
+          "score": 0.29
+        }
+      ]
+    },
+    {
+      "id": "54jlrwrdo",
+      "name": "WILSON CLAH 25 RKT V3 ",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": false,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [],
+      "link": {
+        "ref": "34822",
+        "url": "https://wilson.co.il/product/clash-25-rkt-v3-0/",
+        "status": "auto"
+      },
+      "supplierTitle": "מחבט טניס | CLASH 25 RKT V3.0",
+      "supplierColor": null,
+      "detail": "במלאי באתר וילסון",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "34822",
+          "url": "https://wilson.co.il/product/clash-25-rkt-v3-0/",
+          "title": "מחבט טניס | CLASH 25 RKT V3.0",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": "u77uhxwu3",
+      "name": "WILSON CLASH 100 PRO REVERSE 295g",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [
+        "4 1/4\" (2)",
+        "4 3/8\" (3)"
+      ],
+      "link": {
+        "ref": "39759",
+        "url": "https://wilson.co.il/product/clash-100-pro-reverse-v3-0/",
+        "status": "auto"
+      },
+      "supplierTitle": "מחבט טניס | Clash 100 Pro Reverse V3.0",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 2 (1/4 4), ידית 3 (3/8 4)",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "39759",
+          "url": "https://wilson.co.il/product/clash-100-pro-reverse-v3-0/",
+          "title": "מחבט טניס | Clash 100 Pro Reverse V3.0",
+          "score": 0.71
+        },
+        {
+          "ref": "39783",
+          "url": "https://wilson.co.il/product/clash-100-v3-reverse-tennis-racket/",
+          "title": "מחבט טניס | Clash 100 V3 Reverse Tennis Racket",
+          "score": 0.32
+        },
+        {
+          "ref": "34807",
+          "url": "https://wilson.co.il/product/clash-100-pro-v3-0/",
+          "title": "מחבט טניס | CLASH 100 PRO V3.0",
+          "score": 0.32
+        }
+      ]
+    },
+    {
+      "id": "s4adeer10",
+      "name": "WILSON CLASH 100 PRO V3 320g",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": true,
+      "after": false,
+      "unavailableSizes": [
+        "ידית 2 (1/4 4)",
+        "ידית 3 (3/8 4)"
+      ],
+      "supplierSizes": [],
+      "link": {
+        "ref": "34807",
+        "url": "https://wilson.co.il/product/clash-100-pro-v3-0/",
+        "status": "auto"
+      },
+      "supplierTitle": "מחבט טניס | CLASH 100 PRO V3.0",
+      "supplierColor": null,
+      "detail": "אף אחת מהמידות שלך לא זמינה אצל הספק",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "34807",
+          "url": "https://wilson.co.il/product/clash-100-pro-v3-0/",
+          "title": "מחבט טניס | CLASH 100 PRO V3.0",
+          "score": 1
+        },
+        {
+          "ref": "39759",
+          "url": "https://wilson.co.il/product/clash-100-pro-reverse-v3-0/",
+          "title": "מחבט טניס | Clash 100 Pro Reverse V3.0",
+          "score": 0.61
+        },
+        {
+          "ref": "34810",
+          "url": "https://wilson.co.il/product/clash-100-v3-0/",
+          "title": "מחבט טניס | CLASH 100 V3.0",
+          "score": 0.58
+        }
+      ]
+    },
+    {
+      "id": "xzsklp7gt",
+      "name": "WILSON CLASH 100 V3 295g",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": true,
+      "after": false,
+      "unavailableSizes": [
+        "ידית 2 (1/4 4)",
+        "ידית 3 (3/8 4)"
+      ],
+      "supplierSizes": [],
+      "link": {
+        "ref": "34810",
+        "url": "https://wilson.co.il/product/clash-100-v3-0/",
+        "status": "auto"
+      },
+      "supplierTitle": "מחבט טניס | CLASH 100 V3.0",
+      "supplierColor": null,
+      "detail": "אף אחת מהמידות שלך לא זמינה אצל הספק",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "34810",
+          "url": "https://wilson.co.il/product/clash-100-v3-0/",
+          "title": "מחבט טניס | CLASH 100 V3.0",
+          "score": 1
+        },
+        {
+          "ref": "39783",
+          "url": "https://wilson.co.il/product/clash-100-v3-reverse-tennis-racket/",
+          "title": "מחבט טניס | Clash 100 V3 Reverse Tennis Racket",
+          "score": 0.58
+        },
+        {
+          "ref": "34807",
+          "url": "https://wilson.co.il/product/clash-100-pro-v3-0/",
+          "title": "מחבט טניס | CLASH 100 PRO V3.0",
+          "score": 0.58
+        }
+      ]
+    },
+    {
+      "id": "fzt0edlxe",
+      "name": "WILSON CLASH 100 V3 REVERSE 295g",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [
+        "ידית 3 (3/8 4)"
+      ],
+      "supplierSizes": [
+        "4 1/4\" (2)"
+      ],
+      "link": {
+        "ref": "39783",
+        "url": "https://wilson.co.il/product/clash-100-v3-reverse-tennis-racket/",
+        "status": "auto"
+      },
+      "supplierTitle": "מחבט טניס | Clash 100 V3 Reverse Tennis Racket",
+      "supplierColor": null,
+      "detail": "אף אחת מהמידות שלך לא זמינה אצל הספק",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "39783",
+          "url": "https://wilson.co.il/product/clash-100-v3-reverse-tennis-racket/",
+          "title": "מחבט טניס | Clash 100 V3 Reverse Tennis Racket",
+          "score": 1
+        },
+        {
+          "ref": "39759",
+          "url": "https://wilson.co.il/product/clash-100-pro-reverse-v3-0/",
+          "title": "מחבט טניס | Clash 100 Pro Reverse V3.0",
+          "score": 0.61
+        },
+        {
+          "ref": "34810",
+          "url": "https://wilson.co.il/product/clash-100-v3-0/",
+          "title": "מחבט טניס | CLASH 100 V3.0",
+          "score": 0.58
+        }
+      ]
+    },
+    {
+      "id": "c3xox401r",
+      "name": "WILSON CLASH 100L V3 280g",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [
+        "ידית 1 (1/8 4)",
+        "ידית 2 (1/4 4)",
+        "ידית 3 (3/8 4)"
+      ],
+      "supplierSizes": [],
+      "link": {
+        "ref": "34817",
+        "url": "https://wilson.co.il/product/clash-100l-v3-0/",
+        "status": "auto"
+      },
+      "supplierTitle": "מחבט טניס | CLASH 100L V3.0",
+      "supplierColor": null,
+      "detail": "אף אחת מהמידות שלך לא זמינה אצל הספק",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "34817",
+          "url": "https://wilson.co.il/product/clash-100l-v3-0/",
+          "title": "מחבט טניס | CLASH 100L V3.0",
+          "score": 1
+        },
+        {
+          "ref": "39786",
+          "url": "https://wilson.co.il/product/clash-100l-v3-reverse-tennis-racket/",
+          "title": "מחבט טניס | Clash 100L V3 Reverse",
+          "score": 0.58
+        }
+      ]
+    },
+    {
+      "id": "6vweb0ym0",
+      "name": "WILSON CLASH 100L V3 REVERSE 280g",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": false,
+      "after": true,
+      "unavailableSizes": [
+        "ידית 1 (1/8 4)",
+        "ידית 3 (3/8 4)"
+      ],
+      "supplierSizes": [
+        "4 1/4\" (2)"
+      ],
+      "link": {
+        "ref": "39786",
+        "url": "https://wilson.co.il/product/clash-100l-v3-reverse-tennis-racket/",
+        "status": "auto"
+      },
+      "supplierTitle": "מחבט טניס | Clash 100L V3 Reverse",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 2 (1/4 4)",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "39786",
+          "url": "https://wilson.co.il/product/clash-100l-v3-reverse-tennis-racket/",
+          "title": "מחבט טניס | Clash 100L V3 Reverse",
+          "score": 1
+        },
+        {
+          "ref": "34817",
+          "url": "https://wilson.co.il/product/clash-100l-v3-0/",
+          "title": "מחבט טניס | CLASH 100L V3.0",
+          "score": 0.58
+        },
+        {
+          "ref": "39833",
+          "url": "https://wilson.co.il/product/clash-100ul-v3-reverse/",
+          "title": "מחבט טניס | Clash 100UL V3 Reverse",
+          "score": 0.25
+        }
+      ]
+    },
+    {
+      "id": "5qc35bdie",
+      "name": "WILSON CLASH 100UL V3 265g",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [
+        "ידית 0 (4\")",
+        "ידית 1 (1/8 4)"
+      ],
+      "supplierSizes": [
+        "4\" (0)"
+      ],
+      "link": {
+        "ref": "35697",
+        "url": "https://wilson.co.il/product/clash-100ul-v3-0-wr173011u/",
+        "status": "auto"
+      },
+      "supplierTitle": "מחבט טניס | CLASH 100UL V3.0",
+      "supplierColor": null,
+      "detail": "אף אחת מהמידות שלך לא זמינה אצל הספק · מידות שהספק לא מציע בכלל: ידית 0 (4\")",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "35697",
+          "url": "https://wilson.co.il/product/clash-100ul-v3-0-wr173011u/",
+          "title": "מחבט טניס | CLASH 100UL V3.0",
+          "score": 1
+        },
+        {
+          "ref": "39833",
+          "url": "https://wilson.co.il/product/clash-100ul-v3-reverse/",
+          "title": "מחבט טניס | Clash 100UL V3 Reverse",
+          "score": 0.58
+        }
+      ]
+    },
+    {
+      "id": "dtrmcfygz",
+      "name": "WILSON CLASH 100UL V3 REVERSE 265g",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": false,
+      "after": true,
+      "unavailableSizes": [
+        "ידית 2 (1/4 4)",
+        "ידית 3 (3/8 4)"
+      ],
+      "supplierSizes": [
+        "4 1/8\" (1)"
+      ],
+      "link": {
+        "ref": "39833",
+        "url": "https://wilson.co.il/product/clash-100ul-v3-reverse/",
+        "status": "auto"
+      },
+      "supplierTitle": "מחבט טניס | Clash 100UL V3 Reverse",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 1 (1/8 4)",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "39833",
+          "url": "https://wilson.co.il/product/clash-100ul-v3-reverse/",
+          "title": "מחבט טניס | Clash 100UL V3 Reverse",
+          "score": 1
+        },
+        {
+          "ref": "35697",
+          "url": "https://wilson.co.il/product/clash-100ul-v3-0-wr173011u/",
+          "title": "מחבט טניס | CLASH 100UL V3.0",
+          "score": 0.58
+        },
+        {
+          "ref": "39786",
+          "url": "https://wilson.co.il/product/clash-100l-v3-reverse-tennis-racket/",
+          "title": "מחבט טניס | Clash 100L V3 Reverse",
+          "score": 0.25
+        }
+      ]
+    },
+    {
+      "id": "kt0xknjgx",
+      "name": "WILSON CLASH 26 RKT V3",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": [],
+      "link": {
+        "ref": "34821",
+        "url": "https://wilson.co.il/product/clash-26-rkt-v3-0/",
+        "status": "auto"
+      },
+      "supplierTitle": "מחבט טניס | CLASH 26 RKT V3.0",
+      "supplierColor": null,
+      "detail": "אזל באתר וילסון",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "34821",
+          "url": "https://wilson.co.il/product/clash-26-rkt-v3-0/",
+          "title": "מחבט טניס | CLASH 26 RKT V3.0",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": "7b6m756pe",
+      "name": "WILSON CLASH TEAM 103 V3 280g",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": false,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [
+        "4 1/4\" (2)",
+        "4 3/8\" (3)"
+      ],
+      "link": {
+        "ref": "34833",
+        "url": "https://wilson.co.il/product/clash-team-103-v3-0/",
+        "status": "auto"
+      },
+      "supplierTitle": "מחבט טניס | CLASH Team 103 V3.0",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 2 (1/4 4), ידית 3 (3/8 4)",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "34833",
+          "url": "https://wilson.co.il/product/clash-team-103-v3-0/",
+          "title": "מחבט טניס | CLASH Team 103 V3.0",
+          "score": 1
         }
       ]
     },
@@ -1890,10 +2845,7 @@
       "before": true,
       "after": true,
       "unavailableSizes": [
-        "2/3 36",
-        "1/3 37",
         "38",
-        "2/3 38",
         "1/3 39",
         "40",
         "2/3 40"
@@ -1911,7 +2863,7 @@
       },
       "supplierTitle": "נעלי טניס לנשים | Intrigue Pro",
       "supplierColor": "לבן",
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: 36 · מידות שהספק לא מציע בכלל: 2/3 36, 1/3 37, 2/3 38, 1/3 39, 2/3 40",
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: 36, 2/3 36, 1/3 37, 2/3 38",
       "linkReason": "התאמה ודאית",
       "suggestions": [
         {
@@ -1919,21 +2871,443 @@
           "url": "https://wilson.co.il/product/intrigue-pro/",
           "title": "נעלי טניס לנשים | Intrigue Pro",
           "color": "לבן",
-          "score": 0.82
+          "score": 1
         },
         {
-          "ref": "38527",
-          "url": "https://wilson.co.il/product/intrigue-lite-wrs335820/",
-          "title": "נעלי טניס לנשים | Intrigue Lite",
+          "ref": "37823",
+          "url": "https://wilson.co.il/product/junior-rush-pro-335270/",
+          "title": "נעלי טניס ג'וניור | Junior Rush Pro",
           "color": "לבן",
-          "score": 0.4
+          "score": 0.48
         },
         {
-          "ref": "35798",
-          "url": "https://wilson.co.il/product/intrigue-lite-wrs335800/",
-          "title": "נעלי טניס לנשים | Intrigue Lite",
+          "ref": "39070",
+          "url": "https://wilson.co.il/product/rush-pro-ace-335310/",
+          "title": "נעלי טניס ג'וניור | Rush Pro Ace",
           "color": "לבן",
           "score": 0.4
+        }
+      ]
+    },
+    {
+      "id": "5y3wtqmbx",
+      "name": "WILSON PRO STAFF 97 CLASSIC 315g",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": false,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [
+        "4 1/4\" (2)",
+        "4 3/8\" (3)"
+      ],
+      "link": {
+        "ref": "39746",
+        "url": "https://wilson.co.il/product/pro-staff-97-classic/",
+        "status": "auto"
+      },
+      "supplierTitle": "מחבט טניס | Pro Staff 97 Classic",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 2 (1/4 4), ידית 3 (3/8 4)",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "39746",
+          "url": "https://wilson.co.il/product/pro-staff-97-classic/",
+          "title": "מחבט טניס | Pro Staff 97 Classic",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": "jzd3wrozi",
+      "name": "WILSON PRO STAFF 97L CLASSIC 305g",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": false,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [
+        "4 1/4\" (2)",
+        "4 3/8\" (3)"
+      ],
+      "link": {
+        "ref": "39749",
+        "url": "https://wilson.co.il/product/pro-staff-97l-classic/",
+        "status": "auto"
+      },
+      "supplierTitle": "מחבט טניס | Pro Staff 97L Classic",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 2 (1/4 4), ידית 3 (3/8 4)",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "39749",
+          "url": "https://wilson.co.il/product/pro-staff-97l-classic/",
+          "title": "מחבט טניס | Pro Staff 97L Classic",
+          "score": 1
+        },
+        {
+          "ref": "24554",
+          "url": "https://wilson.co.il/product/pro-staff-97l-v14/",
+          "title": "מחבט טניס | Pro Staff 97L V14",
+          "score": 0.32
+        }
+      ]
+    },
+    {
+      "id": "xplimb1hp",
+      "name": "WILSON PRO STAFF 97L V14 290g",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [
+        "ידית 1 (1/8 4)"
+      ],
+      "supplierSizes": [
+        "4 1/4\" (2)"
+      ],
+      "link": {
+        "ref": "24554",
+        "url": "https://wilson.co.il/product/pro-staff-97l-v14/",
+        "status": "auto"
+      },
+      "supplierTitle": "מחבט טניס | Pro Staff 97L V14",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 2 (1/4 4)",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "24554",
+          "url": "https://wilson.co.il/product/pro-staff-97l-v14/",
+          "title": "מחבט טניס | Pro Staff 97L V14",
+          "score": 1
+        },
+        {
+          "ref": "24559",
+          "url": "https://wilson.co.il/product/pro-staff-97ul-v14/",
+          "title": "מחבט טניס | Pro Staff 97UL V14",
+          "score": 0.25
+        }
+      ]
+    },
+    {
+      "id": "dloocm9hr",
+      "name": "WILSON PRO STAFF 97UL CLASSIC 270g",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": false,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [
+        "4 1/8\" (1)",
+        "4 1/4\" (2)"
+      ],
+      "link": {
+        "ref": "39752",
+        "url": "https://wilson.co.il/product/pro-staff-97ul-classic/",
+        "status": "auto"
+      },
+      "supplierTitle": "מחבט טניס | Pro Staff 97UL Classic",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 1 (1/8 4), ידית 2 (1/4 4)",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "39752",
+          "url": "https://wilson.co.il/product/pro-staff-97ul-classic/",
+          "title": "מחבט טניס | Pro Staff 97UL Classic",
+          "score": 1
+        },
+        {
+          "ref": "24559",
+          "url": "https://wilson.co.il/product/pro-staff-97ul-v14/",
+          "title": "מחבט טניס | Pro Staff 97UL V14",
+          "score": 0.32
+        }
+      ]
+    },
+    {
+      "id": "dth63xwz5",
+      "name": "WILSON PRO STAFF 97UL V14 269g",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [
+        "ידית 0 (4\")",
+        "ידית 2 (1/4 4)",
+        "ידית 3 (3/8 4)",
+        "ידית 1 (1/8 4)"
+      ],
+      "supplierSizes": [
+        "4\" (0)"
+      ],
+      "link": {
+        "ref": "24559",
+        "url": "https://wilson.co.il/product/pro-staff-97ul-v14/",
+        "status": "auto"
+      },
+      "supplierTitle": "מחבט טניס | Pro Staff 97UL V14",
+      "supplierColor": null,
+      "detail": "אף אחת מהמידות שלך לא זמינה אצל הספק · מידות שהספק לא מציע בכלל: ידית 0 (4\")",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "24559",
+          "url": "https://wilson.co.il/product/pro-staff-97ul-v14/",
+          "title": "מחבט טניס | Pro Staff 97UL V14",
+          "score": 1
+        },
+        {
+          "ref": "24554",
+          "url": "https://wilson.co.il/product/pro-staff-97l-v14/",
+          "title": "מחבט טניס | Pro Staff 97L V14",
+          "score": 0.25
+        }
+      ]
+    },
+    {
+      "id": "51pcuavyo",
+      "name": "WILSON PRO STAFF BACKBAG black",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": false,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [],
+      "link": {
+        "ref": "39882",
+        "url": "https://wilson.co.il/product/pro-staff-backpack/",
+        "status": "auto"
+      },
+      "supplierTitle": "תיק טניס | Pro Staff Backpack",
+      "supplierColor": null,
+      "detail": "במלאי באתר וילסון",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "39882",
+          "url": "https://wilson.co.il/product/pro-staff-backpack/",
+          "title": "תיק טניס | Pro Staff Backpack",
+          "score": 1
+        },
+        {
+          "ref": "17023",
+          "url": "https://wilson.co.il/product/bumper-and-grommet-set-for-pro-staff-97-v13-tennis-racket/",
+          "title": "מגן לראש מחבט | Bumper And Grommet Set For Pro Staff 97 V13",
+          "color": "שחור",
+          "score": 0.32
+        },
+        {
+          "ref": "30948",
+          "url": "https://wilson.co.il/product/rush-pro-4-0-bla/",
+          "title": "נעלי טניס לגברים | Rush Pro 4.0 Bla",
+          "color": "שחור",
+          "score": 0.29
+        }
+      ]
+    },
+    {
+      "id": "f3mh164m1",
+      "name": "WILSON PRO STAFF TEAM CLASSIC 280g",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": false,
+      "after": true,
+      "unavailableSizes": [
+        "ידית 3 (3/8 4)"
+      ],
+      "supplierSizes": [
+        "4 1/4\" (2)"
+      ],
+      "link": {
+        "ref": "39756",
+        "url": "https://wilson.co.il/product/pro-staff-team-classic/",
+        "status": "auto"
+      },
+      "supplierTitle": "מחבט טניס | Pro Staff Team Classic",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 2 (1/4 4)",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "39756",
+          "url": "https://wilson.co.il/product/pro-staff-team-classic/",
+          "title": "מחבט טניס | Pro Staff Team Classic",
+          "score": 1
+        },
+        {
+          "ref": "39752",
+          "url": "https://wilson.co.il/product/pro-staff-97ul-classic/",
+          "title": "מחבט טניס | Pro Staff 97UL Classic",
+          "score": 0.25
+        },
+        {
+          "ref": "39749",
+          "url": "https://wilson.co.il/product/pro-staff-97l-classic/",
+          "title": "מחבט טניס | Pro Staff 97L Classic",
+          "score": 0.25
+        }
+      ]
+    },
+    {
+      "id": "oxinrfx8d",
+      "name": "WILSON RF 01 300g",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": false,
+      "after": true,
+      "unavailableSizes": [
+        "ידית 1 (1/8 4)",
+        "ידית 3 (3/8 4)"
+      ],
+      "supplierSizes": [
+        "4 1/4\" (2)"
+      ],
+      "link": {
+        "ref": "31636",
+        "url": "https://wilson.co.il/product/rf-01/",
+        "status": "auto"
+      },
+      "supplierTitle": "מחבט טניס | RF 01 Tennis Racket",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 2 (1/4 4)",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "31636",
+          "url": "https://wilson.co.il/product/rf-01/",
+          "title": "מחבט טניס | RF 01 Tennis Racket",
+          "score": 1
+        },
+        {
+          "ref": "31642",
+          "url": "https://wilson.co.il/product/rf-01-pro-tennis-racket/",
+          "title": "מחבט טניס | RF 01 Pro Tennis Racket",
+          "score": 0.5
+        },
+        {
+          "ref": "31639",
+          "url": "https://wilson.co.il/product/rf-01-future-tennis-racket/",
+          "title": "מחבט טניס | RF 01 Future Tennis Racket",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "id": "608x67g1k",
+      "name": "WILSON RF 01 Future Lite 265g",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": false,
+      "after": true,
+      "unavailableSizes": [
+        "ידית 0 (4\")"
+      ],
+      "supplierSizes": [
+        "4\" (0)",
+        "4 1/8\" (1)",
+        "4 1/4\" (2)"
+      ],
+      "link": {
+        "ref": "36687",
+        "url": "https://wilson.co.il/product/%d7%9e%d7%97%d7%91%d7%98-%d7%98%d7%a0%d7%99%d7%a1-rf-01-future-lite-tennis-racket/",
+        "status": "auto"
+      },
+      "supplierTitle": "מחבט טניס | RF 01 Future Lite Tennis Racket",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 1 (1/8 4), ידית 2 (1/4 4) · מידות שהספק לא מציע בכלל: ידית 0 (4\")",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "36687",
+          "url": "https://wilson.co.il/product/%d7%9e%d7%97%d7%91%d7%98-%d7%98%d7%a0%d7%99%d7%a1-rf-01-future-lite-tennis-racket/",
+          "title": "מחבט טניס | RF 01 Future Lite Tennis Racket",
+          "score": 1
+        },
+        {
+          "ref": "31639",
+          "url": "https://wilson.co.il/product/rf-01-future-tennis-racket/",
+          "title": "מחבט טניס | RF 01 Future Tennis Racket",
+          "score": 0.55
+        }
+      ]
+    },
+    {
+      "id": "tm11gor1j",
+      "name": "WILSON RF 01 PRO 320g",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [
+        "4 1/4\" (2)",
+        "4 3/8\" (3)"
+      ],
+      "link": {
+        "ref": "31642",
+        "url": "https://wilson.co.il/product/rf-01-pro-tennis-racket/",
+        "status": "auto"
+      },
+      "supplierTitle": "מחבט טניס | RF 01 Pro Tennis Racket",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 2 (1/4 4), ידית 3 (3/8 4)",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "31642",
+          "url": "https://wilson.co.il/product/rf-01-pro-tennis-racket/",
+          "title": "מחבט טניס | RF 01 Pro Tennis Racket",
+          "score": 1
+        },
+        {
+          "ref": "31636",
+          "url": "https://wilson.co.il/product/rf-01/",
+          "title": "מחבט טניס | RF 01 Tennis Racket",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "id": "ypmgehptq",
+      "name": "WILSON RF BACKBAG black",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [],
+      "link": {
+        "ref": "33688",
+        "url": "https://wilson.co.il/product/%d7%aa%d7%99%d7%a7-%d7%98%d7%a0%d7%99%d7%a1-blade-100-v9-tennis-racket/",
+        "status": "auto"
+      },
+      "supplierTitle": "תיק טניס | RF BACKPACK BLACK",
+      "supplierColor": null,
+      "detail": "במלאי באתר וילסון",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "33688",
+          "url": "https://wilson.co.il/product/%d7%aa%d7%99%d7%a7-%d7%98%d7%a0%d7%99%d7%a1-blade-100-v9-tennis-racket/",
+          "title": "תיק טניס | RF BACKPACK BLACK",
+          "score": 1
+        },
+        {
+          "ref": "33035",
+          "url": "https://wilson.co.il/product/%d7%9b%d7%99%d7%a1%d7%95%d7%99-%d7%9c%d7%9e%d7%97%d7%91%d7%98-%d7%98%d7%a0%d7%99%d7%a1-rf-racquet-cover-black/",
+          "title": "כיסוי למחבט טניס | Rf Racquet Cover Black",
+          "score": 0.35
+        },
+        {
+          "ref": "32825",
+          "url": "https://wilson.co.il/product/rf-tournament-racket-bag-9-pack/",
+          "title": "תיק טניס | Rf Tournament Racket Bag 9 Pack",
+          "color": "שחור",
+          "score": 0.35
         }
       ]
     },
@@ -1964,18 +3338,10 @@
           "score": 1
         },
         {
-          "ref": "21804",
-          "url": "https://wilson.co.il/product/super-tour-9-pack/",
-          "title": "תיק טניס | Super Tour 9 Pack",
-          "color": "כחול",
-          "score": 0.43
-        },
-        {
-          "ref": "17183",
-          "url": "https://wilson.co.il/product/super-tour-9-pack-red/",
-          "title": "תיק טניס | Super Tour 9 Pack Red",
-          "color": "אדום",
-          "score": 0.43
+          "ref": "43072",
+          "url": "https://wilson.co.il/product/%d7%aa%d7%99%d7%a7-%d7%98%d7%a0%d7%99%d7%a1-defyer-v1-racket-bag-9pk-rd/",
+          "title": "תיק טניס | Defyer V1 Racket Bag 9PK RD",
+          "score": 0.25
         }
       ]
     },
@@ -1985,10 +3351,9 @@
       "outcome": "linked",
       "supplier": "wilson",
       "before": false,
-      "after": false,
+      "after": true,
       "unavailableSizes": [
-        "2/3 42",
-        "2/3 44"
+        "2/3 42"
       ],
       "supplierSizes": [
         "⅔44"
@@ -2000,7 +3365,7 @@
       },
       "supplierTitle": "נעלי טניס לגברים | Rush Pro Ace",
       "supplierColor": "אפור",
-      "detail": "אף אחת מהמידות שלך לא זמינה אצל הספק · מידות שהספק לא מציע בכלל: 2/3 42, 2/3 44",
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: 2/3 44",
       "linkReason": "התאמה ודאית",
       "suggestions": [
         {
@@ -2011,16 +3376,214 @@
           "score": 1
         },
         {
+          "ref": "39070",
+          "url": "https://wilson.co.il/product/rush-pro-ace-335310/",
+          "title": "נעלי טניס ג'וניור | Rush Pro Ace",
+          "color": "לבן",
+          "score": 0.6
+        },
+        {
           "ref": "39052",
           "url": "https://wilson.co.il/product/rush-pro-4-5-333550/",
           "title": "נעלי טניס לגברים | Rush Pro 4.5",
           "score": 0.4
+        }
+      ]
+    },
+    {
+      "id": "w99xzbcca",
+      "name": "WILSON SHIFT 99 PRO V1 315g",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [
+        "ידית 1 (1/8 4)"
+      ],
+      "supplierSizes": [
+        "4 1/4\" (2)",
+        "4 3/8\" (3)"
+      ],
+      "link": {
+        "ref": "26332",
+        "url": "https://wilson.co.il/product/shift-99-pro-v1/",
+        "status": "auto"
+      },
+      "supplierTitle": "מחבט טניס | Shift 99 pro V1",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 2 (1/4 4), ידית 3 (3/8 4) · מידות שהספק לא מציע בכלל: ידית 1 (1/8 4)",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "26332",
+          "url": "https://wilson.co.il/product/shift-99-pro-v1/",
+          "title": "מחבט טניס | Shift 99 pro V1",
+          "score": 1
         },
         {
-          "ref": "35788",
-          "url": "https://wilson.co.il/product/rush-pro-4-5-wrs334330/",
-          "title": "נעלי טניס לגברים | Rush Pro 4.5",
-          "score": 0.4
+          "ref": "26278",
+          "url": "https://wilson.co.il/product/shift-99-v1/",
+          "title": "מחבט טניס | Shift 99 V1",
+          "score": 0.58
+        },
+        {
+          "ref": "35721",
+          "url": "https://wilson.co.il/product/roland-garros-2025-shift-99-v1-wr174311/",
+          "title": "מחבט טניס | Roland-Garros 2025 Shift 99 V1",
+          "score": 0.31
+        }
+      ]
+    },
+    {
+      "id": "waphitdou",
+      "name": "WILSON SHIFT 99 V1 300g",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [
+        "4 1/4\" (2)",
+        "4 3/8\" (3)"
+      ],
+      "link": {
+        "ref": "26278",
+        "url": "https://wilson.co.il/product/shift-99-v1/",
+        "status": "auto"
+      },
+      "supplierTitle": "מחבט טניס | Shift 99 V1",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 2 (1/4 4), ידית 3 (3/8 4)",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "26278",
+          "url": "https://wilson.co.il/product/shift-99-v1/",
+          "title": "מחבט טניס | Shift 99 V1",
+          "score": 1
+        },
+        {
+          "ref": "35721",
+          "url": "https://wilson.co.il/product/roland-garros-2025-shift-99-v1-wr174311/",
+          "title": "מחבט טניס | Roland-Garros 2025 Shift 99 V1",
+          "score": 0.63
+        },
+        {
+          "ref": "26332",
+          "url": "https://wilson.co.il/product/shift-99-pro-v1/",
+          "title": "מחבט טניס | Shift 99 pro V1",
+          "score": 0.58
+        }
+      ]
+    },
+    {
+      "id": "qv54blwf6",
+      "name": "WILSON SHIFT 99L V1 285g",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": false,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [
+        "4 1/8\" (1)",
+        "4 1/4\" (2)",
+        "4 3/8\" (3)"
+      ],
+      "link": {
+        "ref": "28886",
+        "url": "https://wilson.co.il/product/shift-99l-v1/",
+        "status": "auto"
+      },
+      "supplierTitle": "מחבט טניס | Shift 99L V1",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 1 (1/8 4), ידית 2 (1/4 4), ידית 3 (3/8 4)",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "28886",
+          "url": "https://wilson.co.il/product/shift-99l-v1/",
+          "title": "מחבט טניס | Shift 99L V1",
+          "score": 1
+        },
+        {
+          "ref": "33304",
+          "url": "https://wilson.co.il/product/shift-99l-v1-us-open-2024/",
+          "title": "מחבט טניס | Shift 99L V1 US Open 2024",
+          "score": 0.63
+        }
+      ]
+    },
+    {
+      "id": "mksvgrq63",
+      "name": "WILSON SHIFT SUPER TOUR BACKBAG",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": [],
+      "link": {
+        "ref": "28893",
+        "url": "https://wilson.co.il/product/shift-super-tour-backpack/",
+        "status": "auto"
+      },
+      "supplierTitle": "תיק טניס | Shift Super Tour Backpack",
+      "supplierColor": null,
+      "detail": "אזל באתר וילסון",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "28893",
+          "url": "https://wilson.co.il/product/shift-super-tour-backpack/",
+          "title": "תיק טניס | Shift Super Tour Backpack",
+          "score": 1
+        },
+        {
+          "ref": "35761",
+          "url": "https://wilson.co.il/product/super-tour-wilson-red-backpack-wr8036901/",
+          "title": "תיק טניס | Super Tour WILSON Red Backpack",
+          "score": 0.75
+        },
+        {
+          "ref": "34806",
+          "url": "https://wilson.co.il/product/super-tour-backpack-clash-v3/",
+          "title": "תיק טניס | Super Tour Backpack Clash V3",
+          "score": 0.43
+        }
+      ]
+    },
+    {
+      "id": "bp1rt46t8",
+      "name": "WILSON SUPER TOUR 15PK blue",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": [],
+      "link": {
+        "ref": "17187",
+        "url": "https://wilson.co.il/product/super-tour-15-pack/",
+        "status": "auto"
+      },
+      "supplierTitle": "תיק טניס | Super Tour 15 Pack",
+      "supplierColor": "כחול",
+      "detail": "אזל באתר וילסון",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "17187",
+          "url": "https://wilson.co.il/product/super-tour-15-pack/",
+          "title": "תיק טניס | Super Tour 15 Pack",
+          "color": "כחול",
+          "score": 1
+        },
+        {
+          "ref": "21804",
+          "url": "https://wilson.co.il/product/super-tour-9-pack/",
+          "title": "תיק טניס | Super Tour 9 Pack",
+          "color": "כחול",
+          "score": 0.23
         }
       ]
     },
@@ -2062,7 +3625,7 @@
           "url": "https://wilson.co.il/product/super-tour-15-pack/",
           "title": "תיק טניס | Super Tour 15 Pack",
           "color": "כחול",
-          "score": 0.33
+          "score": 0.23
         }
       ]
     },
@@ -2089,21 +3652,62 @@
           "ref": "35761",
           "url": "https://wilson.co.il/product/super-tour-wilson-red-backpack-wr8036901/",
           "title": "תיק טניס | Super Tour WILSON Red Backpack",
-          "score": 0.65
+          "score": 1
         },
         {
-          "ref": "33301",
-          "url": "https://wilson.co.il/product/bela-super-tour-padel-bag-red/",
-          "title": "תיק פאדל | Bela Super Tour Padel Bag Red",
-          "color": "אדום",
-          "score": 0.48
+          "ref": "28893",
+          "url": "https://wilson.co.il/product/shift-super-tour-backpack/",
+          "title": "תיק טניס | Shift Super Tour Backpack",
+          "score": 0.75
         },
         {
           "ref": "17183",
           "url": "https://wilson.co.il/product/super-tour-9-pack-red/",
           "title": "תיק טניס | Super Tour 9 Pack Red",
           "color": "אדום",
-          "score": 0.48
+          "score": 0.55
+        }
+      ]
+    },
+    {
+      "id": "gb4o5wusj",
+      "name": "WILSON TEAM BACKBAG white-cream",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": false,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [],
+      "link": {
+        "ref": "37949",
+        "url": "https://wilson.co.il/product/team-backpack-8040003/",
+        "status": "auto"
+      },
+      "supplierTitle": "תיק טניס | Team Backpack",
+      "supplierColor": "לבן",
+      "detail": "במלאי באתר וילסון",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "37949",
+          "url": "https://wilson.co.il/product/team-backpack-8040003/",
+          "title": "תיק טניס | Team Backpack",
+          "color": "לבן",
+          "score": 1
+        },
+        {
+          "ref": "37948",
+          "url": "https://wilson.co.il/product/team-backpack-8040001/",
+          "title": "תיק טניס רולאן גארוס | Team Backpack",
+          "color": "לבן",
+          "score": 0.65
+        },
+        {
+          "ref": "37951",
+          "url": "https://wilson.co.il/product/roland-garros-team-6pk-cream/",
+          "title": "תיק טניס | Roland Garros Team 6PK Cream",
+          "color": "לבן",
+          "score": 0.32
         }
       ]
     },
@@ -2132,62 +3736,114 @@
           "title": "תיק טניס | Tour 12 Pack",
           "color": "שחור",
           "score": 1
-        },
-        {
-          "ref": "18498",
-          "url": "https://wilson.co.il/product/roger-federer-team-12-pack-bag/",
-          "title": "תיק טניס | Roger Federer Team 12 Pack Bag",
-          "color": "שחור",
-          "score": 0.43
-        },
-        {
-          "ref": "13834",
-          "url": "https://wilson.co.il/product/roger-federer-dna-12-pack-tennis-bag/",
-          "title": "תיק טניס רוג'ר פדרר | Roger Federer DNA 12 Pack Tennis Bag",
-          "color": "אדום / שחור",
-          "score": 0.3
         }
       ]
     },
     {
-      "id": "jdg0mog7b",
-      "name": "WILSON TOUR 12 PACK Khaki color",
+      "id": "yggf8ufqo",
+      "name": "WILSON TOUR BACKBAG",
       "outcome": "linked",
       "supplier": "wilson",
-      "before": false,
-      "after": false,
+      "before": true,
+      "after": true,
       "unavailableSizes": [],
       "supplierSizes": [],
       "link": {
-        "ref": "26057",
-        "url": "https://wilson.co.il/product/tour-12-pack-8022001/",
+        "ref": "39354",
+        "url": "https://wilson.co.il/product/tour-backpack-8037401/",
         "status": "auto"
       },
-      "supplierTitle": "תיק טניס | Tour 12 Pack",
-      "supplierColor": "שחור",
-      "detail": "אזל באתר וילסון",
+      "supplierTitle": "תיק טניס | Tour Backpack",
+      "supplierColor": null,
+      "detail": "במלאי באתר וילסון",
       "linkReason": "התאמה ודאית",
       "suggestions": [
         {
-          "ref": "26057",
-          "url": "https://wilson.co.il/product/tour-12-pack-8022001/",
-          "title": "תיק טניס | Tour 12 Pack",
-          "color": "שחור",
-          "score": 0.8
+          "ref": "39354",
+          "url": "https://wilson.co.il/product/tour-backpack-8037401/",
+          "title": "תיק טניס | Tour Backpack",
+          "score": 1
         },
         {
-          "ref": "18498",
-          "url": "https://wilson.co.il/product/roger-federer-team-12-pack-bag/",
-          "title": "תיק טניס | Roger Federer Team 12 Pack Bag",
-          "color": "שחור",
-          "score": 0.38
+          "ref": "35761",
+          "url": "https://wilson.co.il/product/super-tour-wilson-red-backpack-wr8036901/",
+          "title": "תיק טניס | Super Tour WILSON Red Backpack",
+          "score": 0.42
         },
         {
-          "ref": "13834",
-          "url": "https://wilson.co.il/product/roger-federer-dna-12-pack-tennis-bag/",
-          "title": "תיק טניס רוג'ר פדרר | Roger Federer DNA 12 Pack Tennis Bag",
-          "color": "אדום / שחור",
-          "score": 0.27
+          "ref": "39356",
+          "url": "https://wilson.co.il/product/ultra-v5-tour-backpack/",
+          "title": "תיק טניס | Ultra V5 Tour Backpack",
+          "score": 0.4
+        }
+      ]
+    },
+    {
+      "id": "7tlcx0oq2",
+      "name": "WILSON ULTRA 100 V5 300g",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": false,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [
+        "4 1/4\" (2)",
+        "4 3/8\" (3)"
+      ],
+      "link": {
+        "ref": "36638",
+        "url": "https://wilson.co.il/product/ultra-100-v5-tennis-racket/",
+        "status": "auto"
+      },
+      "supplierTitle": "מחבט טניס | Ultra 100 V5 Tennis Racket",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 2 (1/4 4), ידית 3 (3/8 4)",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "36638",
+          "url": "https://wilson.co.il/product/ultra-100-v5-tennis-racket/",
+          "title": "מחבט טניס | Ultra 100 V5 Tennis Racket",
+          "score": 1
+        },
+        {
+          "ref": "25673",
+          "url": "https://wilson.co.il/product/burn-100-v5/",
+          "title": "מחבט טניס | Burn 100 V5",
+          "score": 0.67
+        }
+      ]
+    },
+    {
+      "id": "7gawny1ef",
+      "name": "WILSON ULTRA 100UL V5 260g",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": false,
+      "after": true,
+      "unavailableSizes": [
+        "ידית 3 (3/8 4)"
+      ],
+      "supplierSizes": [
+        "4\" (0)",
+        "4 1/8\" (1)",
+        "4 1/4\" (2)"
+      ],
+      "link": {
+        "ref": "36648",
+        "url": "https://wilson.co.il/product/ultra-100ul-v5-tennis-racket/",
+        "status": "auto"
+      },
+      "supplierTitle": "מחבט טניס | Ultra 100UL V5 Tennis Racket",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 1 (1/8 4), ידית 2 (1/4 4) · מידות שהספק לא מציע בכלל: ידית 3 (3/8 4)",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "36648",
+          "url": "https://wilson.co.il/product/ultra-100ul-v5-tennis-racket/",
+          "title": "מחבט טניס | Ultra 100UL V5 Tennis Racket",
+          "score": 1
         }
       ]
     },
@@ -2215,12 +3871,6 @@
           "url": "https://wilson.co.il/product/ultra-25-v5-tennis-racket/",
           "title": "מחבט טניס | Ultra 25 V5 Tennis Racket",
           "score": 1
-        },
-        {
-          "ref": "37942",
-          "url": "https://wilson.co.il/product/ultra-team-v5-tennis-racket/",
-          "title": "מחבט טניס | Ultra Team V5 Tennis Racket",
-          "score": 0.25
         }
       ]
     },
@@ -2248,11 +3898,79 @@
           "url": "https://wilson.co.il/product/ultra-26-v5-tennis-racket/",
           "title": "מחבט טניס | Ultra 26 V5 Tennis Racket",
           "score": 1
-        },
+        }
+      ]
+    },
+    {
+      "id": "rbgga8jrt",
+      "name": "WILSON ULTRA 99 PRO V5 305g",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": false,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [
+        "4 1/8\" (1)",
+        "4 1/4\" (2)",
+        "4 3/8\" (3)"
+      ],
+      "link": {
+        "ref": "36653",
+        "url": "https://wilson.co.il/product/ultra-99-pro-v5-tennis-racket/",
+        "status": "auto"
+      },
+      "supplierTitle": "מחבט טניס | Ultra 99 PRO V5 Tennis Racket",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 1 (1/8 4), ידית 3 (3/8 4)",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "36653",
+          "url": "https://wilson.co.il/product/ultra-99-pro-v5-tennis-racket/",
+          "title": "מחבט טניס | Ultra 99 PRO V5 Tennis Racket",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": "txuar48ov",
+      "name": "WILSON ULTRA TEAM V5 297g",
+      "outcome": "linked",
+      "supplier": "wilson",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [
+        "4 1/8\" (1)",
+        "4 1/4\" (2)",
+        "4 3/8\" (3)"
+      ],
+      "link": {
+        "ref": "37942",
+        "url": "https://wilson.co.il/product/ultra-team-v5-tennis-racket/",
+        "status": "auto"
+      },
+      "supplierTitle": "מחבט טניס | Ultra Team V5 Tennis Racket",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 1 (1/8 4), ידית 3 (3/8 4), ידית 2 (1/4 4)",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
         {
           "ref": "37942",
           "url": "https://wilson.co.il/product/ultra-team-v5-tennis-racket/",
           "title": "מחבט טניס | Ultra Team V5 Tennis Racket",
+          "score": 1
+        },
+        {
+          "ref": "41308",
+          "url": "https://wilson.co.il/product/%d7%9e%d7%97%d7%91%d7%98-%d7%98%d7%a0%d7%99%d7%a1-ultra-100l-v5/",
+          "title": "מחבט טניס | Ultra 100L V5",
+          "score": 0.25
+        },
+        {
+          "ref": "37930",
+          "url": "https://wilson.co.il/product/ultra-26-v5-tennis-racket/",
+          "title": "מחבט טניס | Ultra 26 V5 Tennis Racket",
           "score": 0.25
         }
       ]
@@ -2280,19 +3998,51 @@
           "ref": "39356",
           "url": "https://wilson.co.il/product/ultra-v5-tour-backpack/",
           "title": "תיק טניס | Ultra V5 Tour Backpack",
-          "score": 0.67
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": "5rpdfrlom",
+      "name": "YONEX EZONE 100 Blast Blue 300g",
+      "outcome": "linked",
+      "supplier": "yonex",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [
+        "ידית 2 (1/4 4)",
+        "ידית 3 (3/8 4)"
+      ],
+      "supplierSizes": [
+        "G1 - Blast blue"
+      ],
+      "link": {
+        "ref": "https://www.tennis-online.co.il/product/yonex-ezone-100-blast-blue-300g-8th-gen-unstrung/",
+        "url": "https://www.tennis-online.co.il/product/yonex-ezone-100-blast-blue-300g-8th-gen-unstrung/",
+        "status": "auto"
+      },
+      "supplierTitle": "YONEX EZONE 100 300g (8th gen.) Unstrung",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 1 (1/8 4) · מידות שהספק לא מציע בכלל: ידית 2 (1/4 4), ידית 3 (3/8 4)",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-ezone-100-blast-blue-300g-8th-gen-unstrung/",
+          "url": "https://www.tennis-online.co.il/product/yonex-ezone-100-blast-blue-300g-8th-gen-unstrung/",
+          "title": "YONEX EZONE 100 300g (8th gen.) Unstrung",
+          "score": 0.78
         },
         {
-          "ref": "37942",
-          "url": "https://wilson.co.il/product/ultra-team-v5-tennis-racket/",
-          "title": "מחבט טניס | Ultra Team V5 Tennis Racket",
-          "score": 0.5
+          "ref": "https://www.tennis-online.co.il/product/yonex-percept-100/",
+          "url": "https://www.tennis-online.co.il/product/yonex-percept-100/",
+          "title": "YONEX PERCEPT 100 300g Unstrung",
+          "score": 0.57
         },
         {
-          "ref": "41308",
-          "url": "https://wilson.co.il/product/%d7%9e%d7%97%d7%91%d7%98-%d7%98%d7%a0%d7%99%d7%a1-ultra-100l-v5/",
-          "title": "מחבט טניס | Ultra 100L V5",
-          "score": 0.43
+          "ref": "https://www.tennis-online.co.il/product/yonex-vcore-100-300g-8th-gen-unstrung/",
+          "url": "https://www.tennis-online.co.il/product/yonex-vcore-100-300g-8th-gen-unstrung/",
+          "title": "YONEX VCORE 100 300g (8th gen.) Unstrung",
+          "score": 0.44
         }
       ]
     },
@@ -2354,7 +4104,7 @@
           "ref": "https://www.tennis-online.co.il/product/yonex-ezone-98-blast-blue-305g-8th-gen-unstrung/",
           "url": "https://www.tennis-online.co.il/product/yonex-ezone-98-blast-blue-305g-8th-gen-unstrung/",
           "title": "YONEX EZONE 98 305g (8th gen.) Unstrung",
-          "score": 0.63
+          "score": 0.78
         },
         {
           "ref": "https://www.tennis-online.co.il/product/yonex-vcore-98-305g-8th-gen-unstrung/",
@@ -2405,9 +4155,9 @@
           "score": 0.83
         },
         {
-          "ref": "https://www.tennis-online.co.il/product/yonex-ezone-100-blast-blue-300g-8th-gen-unstrung/",
-          "url": "https://www.tennis-online.co.il/product/yonex-ezone-100-blast-blue-300g-8th-gen-unstrung/",
-          "title": "YONEX EZONE 100 300g (8th gen.) Unstrung",
+          "ref": "https://www.tennis-online.co.il/product/yonex-vcore-100-300g-8th-gen-unstrung/",
+          "url": "https://www.tennis-online.co.il/product/yonex-vcore-100-300g-8th-gen-unstrung/",
+          "title": "YONEX VCORE 100 300g (8th gen.) Unstrung",
           "score": 0.44
         }
       ]
@@ -2487,6 +4237,45 @@
           "url": "https://www.tennis-online.co.il/product/yonex-percept-97-310g-unstrung/",
           "title": "YONEX PERCEPT 97 310g Unstrung",
           "score": 0.83
+        }
+      ]
+    },
+    {
+      "id": "pmjfukgvd",
+      "name": "YONEX PRO RAQUET BAG 9 PK green",
+      "outcome": "linked",
+      "supplier": "yonex",
+      "before": false,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [],
+      "link": {
+        "ref": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-olive-green/",
+        "url": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-olive-green/",
+        "status": "auto"
+      },
+      "supplierTitle": "YONEX PRO RACQUET BAG (9PCS) Olive Green",
+      "supplierColor": null,
+      "detail": "במלאי באתר טניס אונליין",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-olive-green/",
+          "url": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-olive-green/",
+          "title": "YONEX PRO RACQUET BAG (9PCS) Olive Green",
+          "score": 1
+        },
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-espresso-brown/",
+          "url": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-espresso-brown/",
+          "title": "YONEX PRO RACQUET BAG (9PCS) Espresso Brown",
+          "score": 0.6
+        },
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-black/",
+          "url": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-black/",
+          "title": "YONEX PRO RACQUET BAG (9PCS) Black",
+          "score": 0.6
         }
       ]
     },
@@ -2909,22 +4698,6 @@
       ]
     },
     {
-      "id": "jatvrturh",
-      "name": "24 שלישיות כדורים Diadem Premier",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא נמצא מוצר דומה אצל הספק. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "לא נמצא מוצר דומה אצל הספק",
-      "suggestions": []
-    },
-    {
       "id": "4d15j53fo",
       "name": "BABAOLAT PRUPULSE 3 AC BOY BLUE",
       "outcome": "needs_link",
@@ -2944,56 +4717,21 @@
           "url": "https://babolat.co.il/product/1346",
           "title": "נעלי טניס בבולט Propulse 3 AC Junior Boy Babolat",
           "color": "Drive Blue",
-          "score": 0.65
+          "score": 1
         },
         {
-          "ref": "972",
-          "url": "https://babolat.co.il/product/972",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Babolat",
-          "color": "Angel Blue",
-          "score": 0.58
+          "ref": "1347",
+          "url": "https://babolat.co.il/product/1347",
+          "title": "נעלי טניס בבולט Propulse 3 AC Junior Boy Babolat",
+          "color": "Blue / White",
+          "score": 1
         },
         {
-          "ref": "1162",
-          "url": "https://babolat.co.il/product/1162",
-          "title": "נעלי טניס בבולט Propulse Fury 3 AC Babolat",
-          "color": "Blue",
-          "score": 0.58
-        }
-      ]
-    },
-    {
-      "id": "14lba1e1f",
-      "name": "BABOLAT EVO AERO PINK",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "887",
-          "url": "https://babolat.co.il/product/887",
-          "title": "מחבט טניס בבולט 275 גרם Evo Aero Pink Babolat",
-          "score": 0.65
-        },
-        {
-          "ref": "1066",
-          "url": "https://babolat.co.il/product/1066",
-          "title": "מחבט טניס בבולט 260 גרם Evo Aero Lite Pink Babolat",
-          "score": 0.55
-        },
-        {
-          "ref": "886",
-          "url": "https://babolat.co.il/product/886",
-          "title": "מחבט טניס בבולט 275 גרם Evo Aero Babolat",
-          "score": 0.5
+          "ref": "1383",
+          "url": "https://babolat.co.il/product/1383",
+          "title": "נעלי טניס בבולט Propulse 3 AC Junior Boy Babolat",
+          "color": "Black / Blue",
+          "score": 1
         }
       ]
     },
@@ -3009,20 +4747,20 @@
       "link": null,
       "supplierTitle": null,
       "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
+      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
       "suggestions": [
+        {
+          "ref": "848",
+          "url": "https://babolat.co.il/product/848",
+          "title": "מחבט טניס בבולט 240 גרם Evo Drive 115 Wimbledon 2022",
+          "score": 0.63
+        },
         {
           "ref": "319",
           "url": "https://babolat.co.il/product/319",
           "title": "מחבט טניס בבולט 240 גרם Evo Drive 115 Babolat",
           "score": 0.57
-        },
-        {
-          "ref": "848",
-          "url": "https://babolat.co.il/product/848",
-          "title": "מחבט טניס בבולט 240 גרם Evo Drive 115 Wimbledon 2022",
-          "score": 0.44
         }
       ]
     },
@@ -3042,24 +4780,24 @@
       "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
       "suggestions": [
         {
-          "ref": "972",
-          "url": "https://babolat.co.il/product/972",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Babolat",
-          "color": "Angel Blue",
+          "ref": "449",
+          "url": "https://babolat.co.il/product/449",
+          "title": "נעלי טניס בבולט Jet Mach 3 AC Men Babolat",
+          "color": "Blue",
           "score": 1
         },
         {
-          "ref": "1175",
-          "url": "https://babolat.co.il/product/1175",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Girl Babolat",
+          "ref": "961",
+          "url": "https://babolat.co.il/product/961",
+          "title": "נעלי טניס בבולט Jet Mach 3 AC Women Babolat",
           "color": "French Blue",
           "score": 1
         },
         {
-          "ref": "1371",
-          "url": "https://babolat.co.il/product/1371",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Boy Junior Babolat",
-          "color": "Sodalite Blue",
+          "ref": "972",
+          "url": "https://babolat.co.il/product/972",
+          "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Babolat",
+          "color": "Angel Blue",
           "score": 1
         }
       ]
@@ -3084,21 +4822,52 @@
           "url": "https://babolat.co.il/product/972",
           "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Babolat",
           "color": "Angel Blue",
-          "score": 0.98
+          "score": 1
         },
         {
           "ref": "1175",
           "url": "https://babolat.co.il/product/1175",
           "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Girl Babolat",
           "color": "French Blue",
-          "score": 0.98
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": "6yyfbvdor",
+      "name": "BABOLAT JET MACH 3 AC GIRL YELLOW-PINK",
+      "outcome": "needs_link",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
+      "suggestions": [
+        {
+          "ref": "972",
+          "url": "https://babolat.co.il/product/972",
+          "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Babolat",
+          "color": "Angel Blue",
+          "score": 0.6
         },
         {
-          "ref": "1371",
-          "url": "https://babolat.co.il/product/1371",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Boy Junior Babolat",
-          "color": "Sodalite Blue",
-          "score": 0.98
+          "ref": "1173",
+          "url": "https://babolat.co.il/product/1173",
+          "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Girl Babolat",
+          "color": "Coral / Gold Fusion",
+          "score": 0.6
+        },
+        {
+          "ref": "1175",
+          "url": "https://babolat.co.il/product/1175",
+          "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Girl Babolat",
+          "color": "French Blue",
+          "score": 0.6
         }
       ]
     },
@@ -3141,6 +4910,44 @@
       ]
     },
     {
+      "id": "th3mp49uc",
+      "name": "BABOLAT JET MACH 4 AC WHITE",
+      "outcome": "needs_link",
+      "supplier": "babolat",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
+      "suggestions": [
+        {
+          "ref": "1505",
+          "url": "https://babolat.co.il/product/1505",
+          "title": "נעלי טניס בבולט Jet Mach 4 AC Women Babolat",
+          "color": "Lavender / White",
+          "score": 1
+        },
+        {
+          "ref": "1506",
+          "url": "https://babolat.co.il/product/1506",
+          "title": "נעלי טניס בבולט Jet Mach 4 AC Women Babolat",
+          "color": "Cream Lavender",
+          "score": 1
+        },
+        {
+          "ref": "1428",
+          "url": "https://babolat.co.il/product/1428",
+          "title": "נעלי טניס בבולט Jet Mach 4 AC Men Babolat",
+          "color": "Beige / Dark Blue",
+          "score": 0.6
+        }
+      ]
+    },
+    {
       "id": "eb8b415cl",
       "name": "BABOLAT JET TERE 2 BLUE",
       "outcome": "needs_link",
@@ -3168,13 +4975,6 @@
           "title": "נעלי טניס בבולט Jet Tere 2 AC Men Babolat",
           "color": "Blue Atoll",
           "score": 0.95
-        },
-        {
-          "ref": "1476",
-          "url": "https://babolat.co.il/product/1476",
-          "title": "נעלי טניס בבולט Jet Tere 2 Premium AC Men Babolat",
-          "color": "Blue",
-          "score": 0.82
         }
       ]
     },
@@ -3198,58 +4998,14 @@
           "url": "https://babolat.co.il/product/1164",
           "title": "נעלי טניס בבולט Jet Tere 2 AC Men Babolat",
           "color": "Blue",
-          "score": 0.82
+          "score": 0.95
         },
         {
           "ref": "1331",
           "url": "https://babolat.co.il/product/1331",
           "title": "נעלי טניס בבולט Jet Tere 2 AC Men Babolat",
           "color": "Blue Atoll",
-          "score": 0.82
-        },
-        {
-          "ref": "1476",
-          "url": "https://babolat.co.il/product/1476",
-          "title": "נעלי טניס בבולט Jet Tere 2 Premium AC Men Babolat",
-          "color": "Blue",
-          "score": 0.72
-        }
-      ]
-    },
-    {
-      "id": "zxc1uoul5",
-      "name": "BABOLAT PROPULSE 3 AC GIRL WHITE",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "1347",
-          "url": "https://babolat.co.il/product/1347",
-          "title": "נעלי טניס בבולט Propulse 3 AC Junior Boy Babolat",
-          "color": "Blue / White",
-          "score": 1
-        },
-        {
-          "ref": "1350",
-          "url": "https://babolat.co.il/product/1350",
-          "title": "נעלי טניס בבולט Propulse 3 AC Junior Girl Babolat",
-          "color": "White / Coral",
-          "score": 1
-        },
-        {
-          "ref": "1348",
-          "url": "https://babolat.co.il/product/1348",
-          "title": "נעלי טניס בבולט Propulse 3 AC Junior Boy Babolat",
-          "score": 1
+          "score": 0.95
         }
       ]
     },
@@ -3349,21 +5105,21 @@
           "url": "https://babolat.co.il/product/1162",
           "title": "נעלי טניס בבולט Propulse Fury 3 AC Babolat",
           "color": "Blue",
-          "score": 0.98
+          "score": 1
         },
         {
           "ref": "940",
           "url": "https://babolat.co.il/product/940",
           "title": "נעלי טניס בבולט Propulse Fury 3 AC Babolat",
           "color": "White / Blue",
-          "score": 0.91
+          "score": 1
         },
         {
           "ref": "1124",
           "url": "https://babolat.co.il/product/1124",
           "title": "נעלי טניס בבולט Propulse Fury 3 AC Babolat",
           "color": "Blue / Pink",
-          "score": 0.91
+          "score": 1
         }
       ]
     },
@@ -3425,14 +5181,14 @@
           "url": "https://babolat.co.il/product/902",
           "title": "נעלי טניס בבולט Propulse Fury 3 AC Babolat",
           "color": "Grey / Yellow",
-          "score": 0.91
+          "score": 1
         },
         {
           "ref": "1298",
           "url": "https://babolat.co.il/product/1298",
           "title": "נעלי טניס בבולט Propulse Fury 3 AC Babolat",
           "color": "Grey / White",
-          "score": 0.91
+          "score": 1
         }
       ]
     },
@@ -3494,6 +5250,18 @@
           "url": "https://babolat.co.il/product/1375",
           "title": "מחבט טניס בבולט 300 גרם Pure Aero Gen9 Babolat",
           "score": 0.5
+        },
+        {
+          "ref": "1419",
+          "url": "https://babolat.co.il/product/1419",
+          "title": "תיק טניס בבולט Backpack Pure Aero 2026 Gen9 Babolat",
+          "score": 0.25
+        },
+        {
+          "ref": "1438",
+          "url": "https://babolat.co.il/product/1438",
+          "title": "מחבט טניס בבולט Pure Aero Junior 26 Gen9 Babolat",
+          "score": 0.25
         }
       ]
     },
@@ -3527,78 +5295,6 @@
       ]
     },
     {
-      "id": "flwjgec4d",
-      "name": "BABOLAT PURE DRIVE LITE GEN 11",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "1218",
-          "url": "https://babolat.co.il/product/1218",
-          "title": "מחבט טניס בבולט 270 גרם Pure Drive Lite Gen11 Babolat",
-          "score": 0.71
-        },
-        {
-          "ref": "1224",
-          "url": "https://babolat.co.il/product/1224",
-          "title": "תיק טניס בבולט Backpack Pure Drive GEN11 Babolat",
-          "color": "Blue",
-          "score": 0.67
-        },
-        {
-          "ref": "1219",
-          "url": "https://babolat.co.il/product/1219",
-          "title": "מחבט טניס בבולט 255 גרם Pure Drive Super Lite Gen11 Babolat",
-          "score": 0.63
-        }
-      ]
-    },
-    {
-      "id": "ivkvtz04c",
-      "name": "BABOLAT PURE DRIVE TEAM GEN 11",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "1217",
-          "url": "https://babolat.co.il/product/1217",
-          "title": "מחבט טניס בבולט 285 גרם Pure Drive Team Gen11 Babolat",
-          "score": 0.71
-        },
-        {
-          "ref": "1224",
-          "url": "https://babolat.co.il/product/1224",
-          "title": "תיק טניס בבולט Backpack Pure Drive GEN11 Babolat",
-          "color": "Blue",
-          "score": 0.67
-        },
-        {
-          "ref": "1216",
-          "url": "https://babolat.co.il/product/1216",
-          "title": "מחבט טניס בבולט 300 גרם Pure Drive Gen11 Babolat",
-          "score": 0.57
-        }
-      ]
-    },
-    {
       "id": "48eny6y3k",
       "name": "BABOLAT PURE STRIKE 100 16\\20",
       "outcome": "needs_link",
@@ -3610,9 +5306,22 @@
       "link": null,
       "supplierTitle": null,
       "supplierColor": null,
-      "detail": "לא נמצא מוצר דומה אצל הספק. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "לא נמצא מוצר דומה אצל הספק",
-      "suggestions": []
+      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
+      "suggestions": [
+        {
+          "ref": "1352",
+          "url": "https://babolat.co.il/product/1352",
+          "title": "מחבט טניס בבולט 305 גרם Pure Strike 100 16/20 Gen4 Grey Babolat",
+          "score": 0.6
+        },
+        {
+          "ref": "1103",
+          "url": "https://babolat.co.il/product/1103",
+          "title": "מחבט טניס בבולט 305 גרם Pure Strike 100 16/20 Gen4 2024 Babolat",
+          "score": 0.55
+        }
+      ]
     },
     {
       "id": "zga4wlcyy",
@@ -3650,41 +5359,6 @@
       ]
     },
     {
-      "id": "29fbbj16n",
-      "name": "BABOLAT PURE STRIKE 305G GEN 4",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "1104",
-          "url": "https://babolat.co.il/product/1104",
-          "title": "מחבט טניס בבולט 305 גרם Pure Strike 16/19 Gen4 2024 Babolat",
-          "score": 0.67
-        },
-        {
-          "ref": "1345",
-          "url": "https://babolat.co.il/product/1345",
-          "title": "מחבט טניס בבולט 305 גרם Pure Strike 16/19 Gen4 Carbon Grey Babolat",
-          "score": 0.67
-        },
-        {
-          "ref": "1352",
-          "url": "https://babolat.co.il/product/1352",
-          "title": "מחבט טניס בבולט 305 גרם Pure Strike 100 16/20 Gen4 Grey Babolat",
-          "score": 0.6
-        }
-      ]
-    },
-    {
       "id": "knzmt9bw0",
       "name": "BABOLAT PURE STRIKE LITE GEN 4",
       "outcome": "needs_link",
@@ -3704,13 +5378,6 @@
           "url": "https://babolat.co.il/product/1355",
           "title": "מחבט טניס בבולט 265 גרם Pure Strike Lite Gen4 Grey Babolat",
           "score": 0.71
-        },
-        {
-          "ref": "1356",
-          "url": "https://babolat.co.il/product/1356",
-          "title": "תיק טניס בבולט Backpack Pure Strike Gen4 Grey Babolat",
-          "color": "Grey / Neon Red",
-          "score": 0.67
         },
         {
           "ref": "1101",
@@ -3742,13 +5409,6 @@
           "score": 0.71
         },
         {
-          "ref": "1356",
-          "url": "https://babolat.co.il/product/1356",
-          "title": "תיק טניס בבולט Backpack Pure Strike Gen4 Grey Babolat",
-          "color": "Grey / Neon Red",
-          "score": 0.67
-        },
-        {
           "ref": "1100",
           "url": "https://babolat.co.il/product/1100",
           "title": "מחבט טניס בבולט 285 גרם Pure Strike Team Gen4 2024 Babolat",
@@ -3776,21 +5436,21 @@
           "url": "https://babolat.co.il/product/1283",
           "title": "נעלי טניס בבולט SFX4 AC Babolat",
           "color": "Grey / White",
-          "score": 0.83
+          "score": 1
         },
         {
           "ref": "1301",
           "url": "https://babolat.co.il/product/1301",
           "title": "נעלי טניס בבולט SFX4 AC Women Babolat",
           "color": "Lunar Rock",
-          "score": 0.75
+          "score": 1
         },
         {
           "ref": "1284",
           "url": "https://babolat.co.il/product/1284",
           "title": "נעלי טניס בבולט SFX4 AC Babolat",
           "color": "White / Blue",
-          "score": 0.35
+          "score": 0.6
         }
       ]
     },
@@ -3806,9 +5466,17 @@
       "link": null,
       "supplierTitle": null,
       "supplierColor": null,
-      "detail": "לא נמצא מוצר דומה אצל הספק. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "לא נמצא מוצר דומה אצל הספק",
-      "suggestions": []
+      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
+      "suggestions": [
+        {
+          "ref": "40435",
+          "url": "https://wilson.co.il/product/%d7%aa%d7%99%d7%a7-%d7%98%d7%a0%d7%99%d7%a1-blade-v10-backpack/",
+          "title": "תיק טניס | Blade V10 Backpack",
+          "color": "Championship Green (ירוק)",
+          "score": 0.25
+        }
+      ]
     },
     {
       "id": "mqbtgbm6a",
@@ -3878,9 +5546,16 @@
       "link": null,
       "supplierTitle": null,
       "supplierColor": null,
-      "detail": "לא נמצא מוצר דומה אצל הספק. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "לא נמצא מוצר דומה אצל הספק",
-      "suggestions": []
+      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
+      "suggestions": [
+        {
+          "ref": "35761",
+          "url": "https://wilson.co.il/product/super-tour-wilson-red-backpack-wr8036901/",
+          "title": "תיק טניס | Super Tour WILSON Red Backpack",
+          "score": 0.25
+        }
+      ]
     },
     {
       "id": "5o2gry0te",
@@ -3894,9 +5569,28 @@
       "link": null,
       "supplierTitle": null,
       "supplierColor": null,
-      "detail": "לא נמצא מוצר דומה אצל הספק. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "לא נמצא מוצר דומה אצל הספק",
-      "suggestions": []
+      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
+      "suggestions": [
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-6pcs-dark-green/",
+          "url": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-6pcs-dark-green/",
+          "title": "YONEX PRO RACQUET BAG (6PCS) Dark Green",
+          "score": 1
+        },
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-6pcs-espresso-brown/",
+          "url": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-6pcs-espresso-brown/",
+          "title": "YONEX PRO RACQUET BAG (6PCS) Espresso Brown",
+          "score": 1
+        },
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-6pcs-black/",
+          "url": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-6pcs-black/",
+          "title": "YONEX PRO RACQUET BAG (6PCS) Black",
+          "score": 1
+        }
+      ]
     },
     {
       "id": "i4688w08z",
@@ -3910,9 +5604,28 @@
       "link": null,
       "supplierTitle": null,
       "supplierColor": null,
-      "detail": "לא נמצא מוצר דומה אצל הספק. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "לא נמצא מוצר דומה אצל הספק",
-      "suggestions": []
+      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
+      "suggestions": [
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-espresso-brown/",
+          "url": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-espresso-brown/",
+          "title": "YONEX PRO RACQUET BAG (9PCS) Espresso Brown",
+          "score": 0.35
+        },
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-black/",
+          "url": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-black/",
+          "title": "YONEX PRO RACQUET BAG (9PCS) Black",
+          "score": 0.35
+        },
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-olive-green/",
+          "url": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-olive-green/",
+          "title": "YONEX PRO RACQUET BAG (9PCS) Olive Green",
+          "score": 0.35
+        }
+      ]
     },
     {
       "id": "0dtc605cs",
@@ -3934,14 +5647,43 @@
           "url": "https://babolat.co.il/product/1064",
           "title": "תיק טניס בבולט RH X 12 Pure Aero Rafa g2 Babolat",
           "color": "Pink / Black",
-          "score": 0.5
+          "score": 0.56
         },
         {
           "ref": "1065",
           "url": "https://babolat.co.il/product/1065",
           "title": "תיק טניס בבולט RH X 6 Pure Aero Rafa g2 Babolat",
           "color": "Pink / Black",
-          "score": 0.5
+          "score": 0.56
+        }
+      ]
+    },
+    {
+      "id": "wquo01vhk",
+      "name": "PURE DRIVE JUNIOR 25 GEN 11",
+      "outcome": "needs_link",
+      "supplier": "babolat",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
+      "suggestions": [
+        {
+          "ref": "1267",
+          "url": "https://babolat.co.il/product/1267",
+          "title": "מחבט טניס בבולט Pure Drive Junior 25 Gen11 Babolat",
+          "score": 1
+        },
+        {
+          "ref": "1268",
+          "url": "https://babolat.co.il/product/1268",
+          "title": "מחבט טניס בבולט Pure Drive Junior 25 Gen11 Babolat Light Blue",
+          "score": 1
         }
       ]
     },
@@ -3982,44 +5724,6 @@
       ]
     },
     {
-      "id": "oyk0b8pj2",
-      "name": "RH X 6 BABOLAT PURE AERO GEN 9",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "1065",
-          "url": "https://babolat.co.il/product/1065",
-          "title": "תיק טניס בבולט RH X 6 Pure Aero Rafa g2 Babolat",
-          "color": "Pink / Black",
-          "score": 0.3
-        },
-        {
-          "ref": "1110",
-          "url": "https://babolat.co.il/product/1110",
-          "title": "תיק טניס בבולט RH X 6 Pure Strike GEN4",
-          "color": "White / Black",
-          "score": 0.2
-        },
-        {
-          "ref": "1223",
-          "url": "https://babolat.co.il/product/1223",
-          "title": "תיק טניס בבולט RH X 6 Pure Drive GEN11 Babolat",
-          "color": "Blue",
-          "score": 0.2
-        }
-      ]
-    },
-    {
       "id": "teujaywy1",
       "name": "RH X 6 BABOLAT PURE STRIKE",
       "outcome": "needs_link",
@@ -4039,14 +5743,14 @@
           "url": "https://babolat.co.il/product/1110",
           "title": "תיק טניס בבולט RH X 6 Pure Strike GEN4",
           "color": "White / Black",
-          "score": 0.75
+          "score": 0.71
         },
         {
           "ref": "1357",
           "url": "https://babolat.co.il/product/1357",
           "title": "תיק טניס בבולט RH X 6 Pure Strike GEN4 Grey",
           "color": "Grey / Neon Red",
-          "score": 0.75
+          "score": 0.71
         }
       ]
     },
@@ -4070,103 +5774,14 @@
           "url": "https://babolat.co.il/product/1064",
           "title": "תיק טניס בבולט RH X 12 Pure Aero Rafa g2 Babolat",
           "color": "Pink / Black",
-          "score": 0.6
+          "score": 0.42
         },
         {
           "ref": "1065",
           "url": "https://babolat.co.il/product/1065",
           "title": "תיק טניס בבולט RH X 6 Pure Aero Rafa g2 Babolat",
           "color": "Pink / Black",
-          "score": 0.6
-        }
-      ]
-    },
-    {
-      "id": "yzvt4l4nx",
-      "name": "RH X12 BABOLAT PURE DRIVE GEN 11",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "1222",
-          "url": "https://babolat.co.il/product/1222",
-          "title": "תיק טניס בבולט RH X 12 Pure Drive GEN11 Babolat",
-          "color": "Blue",
-          "score": 0.25
-        },
-        {
-          "ref": "1223",
-          "url": "https://babolat.co.il/product/1223",
-          "title": "תיק טניס בבולט RH X 6 Pure Drive GEN11 Babolat",
-          "color": "Blue",
-          "score": 0.25
-        },
-        {
-          "ref": "1224",
-          "url": "https://babolat.co.il/product/1224",
-          "title": "תיק טניס בבולט Backpack Pure Drive GEN11 Babolat",
-          "color": "Blue",
-          "score": 0.25
-        }
-      ]
-    },
-    {
-      "id": "6oomyp20x",
-      "name": "RH X9 BABOLAT PURE WIMBLEDON",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא נמצא מוצר דומה אצל הספק. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "לא נמצא מוצר דומה אצל הספק",
-      "suggestions": []
-    },
-    {
-      "id": "ac2do6ey4",
-      "name": "SHIFT 99 V1 ROLAND GARROS 300g",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "35721",
-          "url": "https://wilson.co.il/product/roland-garros-2025-shift-99-v1-wr174311/",
-          "title": "מחבט טניס | Roland-Garros 2025 Shift 99 V1",
-          "score": 0.45
-        },
-        {
-          "ref": "26278",
-          "url": "https://wilson.co.il/product/shift-99-v1/",
-          "title": "מחבט טניס | Shift 99 V1",
-          "score": 0.31
-        },
-        {
-          "ref": "26332",
-          "url": "https://wilson.co.il/product/shift-99-pro-v1/",
-          "title": "מחבט טניס | Shift 99 pro V1",
-          "score": 0.25
+          "score": 0.42
         }
       ]
     },
@@ -4198,9 +5813,23 @@
       "link": null,
       "supplierTitle": null,
       "supplierColor": null,
-      "detail": "לא נמצא מוצר דומה אצל הספק. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "לא נמצא מוצר דומה אצל הספק",
-      "suggestions": []
+      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
+      "suggestions": [
+        {
+          "ref": "40273",
+          "url": "https://wilson.co.il/product/%d7%9e%d7%97%d7%91%d7%98-%d7%98%d7%a0%d7%99%d7%a1-blade-98-16x19-v10-%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%9e%d7%95%d7%a7%d7%93%d7%9e%d7%aa/",
+          "title": "מחבט טניס | BLADE 98 16X19 V10",
+          "score": 0.31
+        },
+        {
+          "ref": "40435",
+          "url": "https://wilson.co.il/product/%d7%aa%d7%99%d7%a7-%d7%98%d7%a0%d7%99%d7%a1-blade-v10-backpack/",
+          "title": "תיק טניס | Blade V10 Backpack",
+          "color": "Championship Green (ירוק)",
+          "score": 0.25
+        }
+      ]
     },
     {
       "id": "2ctoaz8ya",
@@ -4230,9 +5859,23 @@
       "link": null,
       "supplierTitle": null,
       "supplierColor": null,
-      "detail": "לא נמצא מוצר דומה אצל הספק. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "לא נמצא מוצר דומה אצל הספק",
-      "suggestions": []
+      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
+      "suggestions": [
+        {
+          "ref": "40273",
+          "url": "https://wilson.co.il/product/%d7%9e%d7%97%d7%91%d7%98-%d7%98%d7%a0%d7%99%d7%a1-blade-98-16x19-v10-%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%9e%d7%95%d7%a7%d7%93%d7%9e%d7%aa/",
+          "title": "מחבט טניס | BLADE 98 16X19 V10",
+          "score": 0.31
+        },
+        {
+          "ref": "40435",
+          "url": "https://wilson.co.il/product/%d7%aa%d7%99%d7%a7-%d7%98%d7%a0%d7%99%d7%a1-blade-v10-backpack/",
+          "title": "תיק טניס | Blade V10 Backpack",
+          "color": "Championship Green (ירוק)",
+          "score": 0.25
+        }
+      ]
     },
     {
       "id": "hatjjghrs",
@@ -4246,9 +5889,23 @@
       "link": null,
       "supplierTitle": null,
       "supplierColor": null,
-      "detail": "לא נמצא מוצר דומה אצל הספק. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "לא נמצא מוצר דומה אצל הספק",
-      "suggestions": []
+      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
+      "suggestions": [
+        {
+          "ref": "40273",
+          "url": "https://wilson.co.il/product/%d7%9e%d7%97%d7%91%d7%98-%d7%98%d7%a0%d7%99%d7%a1-blade-98-16x19-v10-%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%9e%d7%95%d7%a7%d7%93%d7%9e%d7%aa/",
+          "title": "מחבט טניס | BLADE 98 16X19 V10",
+          "score": 0.31
+        },
+        {
+          "ref": "40435",
+          "url": "https://wilson.co.il/product/%d7%aa%d7%99%d7%a7-%d7%98%d7%a0%d7%99%d7%a1-blade-v10-backpack/",
+          "title": "תיק טניס | Blade V10 Backpack",
+          "color": "Championship Green (ירוק)",
+          "score": 0.25
+        }
+      ]
     },
     {
       "id": "tlq357uie",
@@ -4283,22 +5940,6 @@
       "suggestions": []
     },
     {
-      "id": "74nneyuzf",
-      "name": "WILSON BLADE 104 V10 16X19 290G",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא נמצא מוצר דומה אצל הספק. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "לא נמצא מוצר דומה אצל הספק",
-      "suggestions": []
-    },
-    {
       "id": "9d5uvk3wu",
       "name": "WILSON BLADE 104 V9 290g",
       "outcome": "needs_link",
@@ -4315,29 +5956,6 @@
       "suggestions": []
     },
     {
-      "id": "sz29hou35",
-      "name": "WILSON BLADE 98 V10 18X20 305G",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "40412",
-          "url": "https://wilson.co.il/product/blade-98-18x20-v10/",
-          "title": "מחבט טניס | BLADE 98 18X20 V10",
-          "score": 0.53
-        }
-      ]
-    },
-    {
       "id": "p7cqgeula",
       "name": "WILSON BLADE 98 V10 305G",
       "outcome": "needs_link",
@@ -4349,20 +5967,27 @@
       "link": null,
       "supplierTitle": null,
       "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
+      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
       "suggestions": [
         {
           "ref": "40412",
           "url": "https://wilson.co.il/product/blade-98-18x20-v10/",
           "title": "מחבט טניס | BLADE 98 18X20 V10",
-          "score": 0.31
+          "score": 0.71
         },
         {
           "ref": "40273",
           "url": "https://wilson.co.il/product/%d7%9e%d7%97%d7%91%d7%98-%d7%98%d7%a0%d7%99%d7%a1-blade-98-16x19-v10-%d7%9e%d7%9b%d7%99%d7%a8%d7%94-%d7%9e%d7%95%d7%a7%d7%93%d7%9e%d7%aa/",
           "title": "מחבט טניס | BLADE 98 16X19 V10",
-          "score": 0.31
+          "score": 0.71
+        },
+        {
+          "ref": "40435",
+          "url": "https://wilson.co.il/product/%d7%aa%d7%99%d7%a7-%d7%98%d7%a0%d7%99%d7%a1-blade-v10-backpack/",
+          "title": "תיק טניס | Blade V10 Backpack",
+          "color": "Championship Green (ירוק)",
+          "score": 0.25
         }
       ]
     },
@@ -4394,55 +6019,20 @@
       "link": null,
       "supplierTitle": null,
       "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
+      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
       "suggestions": [
         {
           "ref": "39561",
           "url": "https://wilson.co.il/product/blade-feel-100-197510/",
           "title": "מחבט טניס | Blade Feel 100",
-          "score": 0.42
+          "score": 1
         },
         {
           "ref": "25930",
           "url": "https://wilson.co.il/product/blade-feel-100/",
           "title": "מחבט טניס | Blade Feel 100",
-          "score": 0.42
-        }
-      ]
-    },
-    {
-      "id": "0kt1vem1k",
-      "name": "WILSON BLADE FEEL 103 280g",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "39565",
-          "url": "https://wilson.co.il/product/blade-feel-103-197610/",
-          "title": "מחבט טניס | Blade Feel 103",
-          "score": 0.42
-        },
-        {
-          "ref": "39574",
-          "url": "https://wilson.co.il/product/blade-feel-team-103-197810/",
-          "title": "מחבט טניס | Blade Feel Team 103",
-          "score": 0.32
-        },
-        {
-          "ref": "25293",
-          "url": "https://wilson.co.il/product/%d7%9e%d7%97%d7%91%d7%98-%d7%98%d7%a0%d7%99%d7%a1-blade-feel-team-103/",
-          "title": "מחבט טניס | Blade Feel Team 103",
-          "score": 0.32
+          "score": 1
         }
       ]
     },
@@ -4458,405 +6048,28 @@
       "link": null,
       "supplierTitle": null,
       "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
+      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
       "suggestions": [
         {
           "ref": "39574",
           "url": "https://wilson.co.il/product/blade-feel-team-103-197810/",
           "title": "מחבט טניס | Blade Feel Team 103",
-          "score": 0.46
+          "score": 1
         },
         {
           "ref": "25293",
           "url": "https://wilson.co.il/product/%d7%9e%d7%97%d7%91%d7%98-%d7%98%d7%a0%d7%99%d7%a1-blade-feel-team-103/",
           "title": "מחבט טניס | Blade Feel Team 103",
-          "score": 0.46
+          "score": 1
         },
         {
           "ref": "39565",
           "url": "https://wilson.co.il/product/blade-feel-103-197610/",
           "title": "מחבט טניס | Blade Feel 103",
-          "score": 0.32
+          "score": 0.55
         }
       ]
-    },
-    {
-      "id": "b7z3nuh2a",
-      "name": "WILSON BLADE SUPER TOUR 15 PK",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "17187",
-          "url": "https://wilson.co.il/product/super-tour-15-pack/",
-          "title": "תיק טניס | Super Tour 15 Pack",
-          "color": "כחול",
-          "score": 0.57
-        }
-      ]
-    },
-    {
-      "id": "qze25pjq6",
-      "name": "WILSON BLADE TEAM V10 16X20 275G",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא נמצא מוצר דומה אצל הספק. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "לא נמצא מוצר דומה אצל הספק",
-      "suggestions": []
-    },
-    {
-      "id": "fe977rpz2",
-      "name": "WILSON BURN 100 V5 300g",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "25673",
-          "url": "https://wilson.co.il/product/burn-100-v5/",
-          "title": "מחבט טניס | Burn 100 V5",
-          "score": 0.46
-        },
-        {
-          "ref": "36638",
-          "url": "https://wilson.co.il/product/ultra-100-v5-tennis-racket/",
-          "title": "מחבט טניס | Ultra 100 V5 Tennis Racket",
-          "score": 0.25
-        }
-      ]
-    },
-    {
-      "id": "knbit8bam",
-      "name": "WILSON BURN 100LS V6 295g",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "39738",
-          "url": "https://wilson.co.il/product/burn-100ls-v6/",
-          "title": "מחבט טניס | Burn 100LS V6",
-          "score": 0.46
-        }
-      ]
-    },
-    {
-      "id": "v3cgg9hhq",
-      "name": "WILSON BURN 100S V6 300g",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "39734",
-          "url": "https://wilson.co.il/product/burn-100s-v6/",
-          "title": "מחבט טניס | Burn 100S V6",
-          "score": 0.46
-        }
-      ]
-    },
-    {
-      "id": "juyxd1kah",
-      "name": "WILSON BURN 100ULS V6 260g",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "39741",
-          "url": "https://wilson.co.il/product/burn-100uls-v6/",
-          "title": "מחבט טניס | Burn 100ULS V6",
-          "score": 0.46
-        }
-      ]
-    },
-    {
-      "id": "54jlrwrdo",
-      "name": "WILSON CLAH 25 RKT V3 ",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא נמצא מוצר דומה אצל הספק. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "לא נמצא מוצר דומה אצל הספק",
-      "suggestions": []
-    },
-    {
-      "id": "u77uhxwu3",
-      "name": "WILSON CLASH 100 PRO REVERSE 295g",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "39759",
-          "url": "https://wilson.co.il/product/clash-100-pro-reverse-v3-0/",
-          "title": "מחבט טניס | Clash 100 Pro Reverse V3.0",
-          "score": 0.31
-        }
-      ]
-    },
-    {
-      "id": "s4adeer10",
-      "name": "WILSON CLASH 100 PRO V3 320g",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "39783",
-          "url": "https://wilson.co.il/product/clash-100-v3-reverse-tennis-racket/",
-          "title": "מחבט טניס | Clash 100 V3 Reverse Tennis Racket",
-          "score": 0.31
-        }
-      ]
-    },
-    {
-      "id": "xzsklp7gt",
-      "name": "WILSON CLASH 100 V3 295g",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "39783",
-          "url": "https://wilson.co.il/product/clash-100-v3-reverse-tennis-racket/",
-          "title": "מחבט טניס | Clash 100 V3 Reverse Tennis Racket",
-          "score": 0.38
-        }
-      ]
-    },
-    {
-      "id": "fzt0edlxe",
-      "name": "WILSON CLASH 100 V3 REVERSE 295g",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "39783",
-          "url": "https://wilson.co.il/product/clash-100-v3-reverse-tennis-racket/",
-          "title": "מחבט טניס | Clash 100 V3 Reverse Tennis Racket",
-          "score": 0.5
-        }
-      ]
-    },
-    {
-      "id": "c3xox401r",
-      "name": "WILSON CLASH 100L V3 280g",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "39786",
-          "url": "https://wilson.co.il/product/clash-100l-v3-reverse-tennis-racket/",
-          "title": "מחבט טניס | Clash 100L V3 Reverse",
-          "score": 0.38
-        }
-      ]
-    },
-    {
-      "id": "6vweb0ym0",
-      "name": "WILSON CLASH 100L V3 REVERSE 280g",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "39786",
-          "url": "https://wilson.co.il/product/clash-100l-v3-reverse-tennis-racket/",
-          "title": "מחבט טניס | Clash 100L V3 Reverse",
-          "score": 0.5
-        }
-      ]
-    },
-    {
-      "id": "5qc35bdie",
-      "name": "WILSON CLASH 100UL V3 265g",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "39833",
-          "url": "https://wilson.co.il/product/clash-100ul-v3-reverse/",
-          "title": "מחבט טניס | Clash 100UL V3 Reverse",
-          "score": 0.38
-        }
-      ]
-    },
-    {
-      "id": "dtrmcfygz",
-      "name": "WILSON CLASH 100UL V3 REVERSE 265g",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "39833",
-          "url": "https://wilson.co.il/product/clash-100ul-v3-reverse/",
-          "title": "מחבט טניס | Clash 100UL V3 Reverse",
-          "score": 0.5
-        }
-      ]
-    },
-    {
-      "id": "kt0xknjgx",
-      "name": "WILSON CLASH 26 RKT V3",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "34821",
-          "url": "https://wilson.co.il/product/clash-26-rkt-v3-0/",
-          "title": "מחבט טניס | CLASH 26 RKT V3.0",
-          "score": 0.25
-        }
-      ]
-    },
-    {
-      "id": "7b6m756pe",
-      "name": "WILSON CLASH TEAM 103 V3 280g",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא נמצא מוצר דומה אצל הספק. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "לא נמצא מוצר דומה אצל הספק",
-      "suggestions": []
     },
     {
       "id": "5evfweftt",
@@ -4909,19 +6122,7 @@
           "ref": "34806",
           "url": "https://wilson.co.il/product/super-tour-backpack-clash-v3/",
           "title": "תיק טניס | Super Tour Backpack Clash V3",
-          "score": 0.57
-        },
-        {
-          "ref": "42265",
-          "url": "https://wilson.co.il/product/%d7%9e%d7%97%d7%91%d7%98-%d7%98%d7%a0%d7%99%d7%a1-clash-108-v3/",
-          "title": "מחבט טניס | Clash 108 V3",
-          "score": 0.43
-        },
-        {
-          "ref": "39833",
-          "url": "https://wilson.co.il/product/clash-100ul-v3-reverse/",
-          "title": "מחבט טניס | Clash 100UL V3 Reverse",
-          "score": 0.38
+          "score": 0.58
         }
       ]
     },
@@ -4955,11 +6156,11 @@
           "score": 1
         },
         {
-          "ref": "39981",
-          "url": "https://wilson.co.il/product/intrigue-pro/",
-          "title": "נעלי טניס לנשים | Intrigue Pro",
+          "ref": "39062",
+          "url": "https://wilson.co.il/product/hurken-lite-334970/",
+          "title": "נעלי פאדל לנשים | Hurken Lite",
           "color": "לבן",
-          "score": 0.48
+          "score": 0.4
         }
       ]
     },
@@ -4993,11 +6194,11 @@
           "score": 1
         },
         {
-          "ref": "39981",
-          "url": "https://wilson.co.il/product/intrigue-pro/",
-          "title": "נעלי טניס לנשים | Intrigue Pro",
+          "ref": "39062",
+          "url": "https://wilson.co.il/product/hurken-lite-334970/",
+          "title": "נעלי פאדל לנשים | Hurken Lite",
           "color": "לבן",
-          "score": 0.41
+          "score": 0.32
         }
       ]
     },
@@ -5013,121 +6214,20 @@
       "link": null,
       "supplierTitle": null,
       "supplierColor": null,
-      "detail": "לא נמצא מוצר דומה אצל הספק. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "לא נמצא מוצר דומה אצל הספק",
-      "suggestions": []
-    },
-    {
-      "id": "5y3wtqmbx",
-      "name": "WILSON PRO STAFF 97 CLASSIC 315g",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
       "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
       "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
       "suggestions": [
         {
-          "ref": "39746",
-          "url": "https://wilson.co.il/product/pro-staff-97-classic/",
-          "title": "מחבט טניס | Pro Staff 97 Classic",
-          "score": 0.46
+          "ref": "33688",
+          "url": "https://wilson.co.il/product/%d7%aa%d7%99%d7%a7-%d7%98%d7%a0%d7%99%d7%a1-blade-100-v9-tennis-racket/",
+          "title": "תיק טניס | RF BACKPACK BLACK",
+          "score": 0.33
         }
       ]
     },
     {
       "id": "hqnm3cdfa",
       "name": "WILSON PRO STAFF 97 V14 315g",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא נמצא מוצר דומה אצל הספק. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "לא נמצא מוצר דומה אצל הספק",
-      "suggestions": []
-    },
-    {
-      "id": "jzd3wrozi",
-      "name": "WILSON PRO STAFF 97L CLASSIC 305g",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "39749",
-          "url": "https://wilson.co.il/product/pro-staff-97l-classic/",
-          "title": "מחבט טניס | Pro Staff 97L Classic",
-          "score": 0.46
-        }
-      ]
-    },
-    {
-      "id": "xplimb1hp",
-      "name": "WILSON PRO STAFF 97L V14 290g",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "24554",
-          "url": "https://wilson.co.il/product/pro-staff-97l-v14/",
-          "title": "מחבט טניס | Pro Staff 97L V14",
-          "score": 0.5
-        }
-      ]
-    },
-    {
-      "id": "dloocm9hr",
-      "name": "WILSON PRO STAFF 97UL CLASSIC 270g",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "39752",
-          "url": "https://wilson.co.il/product/pro-staff-97ul-classic/",
-          "title": "מחבט טניס | Pro Staff 97UL Classic",
-          "score": 0.46
-        }
-      ]
-    },
-    {
-      "id": "dth63xwz5",
-      "name": "WILSON PRO STAFF 97UL V14 269g",
       "outcome": "needs_link",
       "supplier": "wilson",
       "before": false,
@@ -5144,65 +6244,13 @@
           "ref": "24559",
           "url": "https://wilson.co.il/product/pro-staff-97ul-v14/",
           "title": "מחבט טניס | Pro Staff 97UL V14",
-          "score": 0.5
-        }
-      ]
-    },
-    {
-      "id": "51pcuavyo",
-      "name": "WILSON PRO STAFF BACKBAG black",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "39882",
-          "url": "https://wilson.co.il/product/pro-staff-backpack/",
-          "title": "תיק טניס | Pro Staff Backpack",
-          "score": 0.5
+          "score": 0.25
         },
         {
-          "ref": "39756",
-          "url": "https://wilson.co.il/product/pro-staff-team-classic/",
-          "title": "מחבט טניס | Pro Staff Team Classic",
-          "score": 0.4
-        },
-        {
-          "ref": "42162",
-          "url": "https://wilson.co.il/product/%d7%9e%d7%97%d7%91%d7%98-%d7%98%d7%a0%d7%99%d7%a1-%d7%9c%d7%99%d7%9c%d7%93%d7%99%d7%9d-pro-staff-precision-jr-26-26/",
-          "title": "מחבט טניס לילדים | PRO STAFF PRECISION JR 26",
-          "score": 0.33
-        }
-      ]
-    },
-    {
-      "id": "f3mh164m1",
-      "name": "WILSON PRO STAFF TEAM CLASSIC 280g",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "39756",
-          "url": "https://wilson.co.il/product/pro-staff-team-classic/",
-          "title": "מחבט טניס | Pro Staff Team Classic",
-          "score": 0.42
+          "ref": "24554",
+          "url": "https://wilson.co.il/product/pro-staff-97l-v14/",
+          "title": "מחבט טניס | Pro Staff 97L V14",
+          "score": 0.25
         }
       ]
     },
@@ -5218,9 +6266,22 @@
       "link": null,
       "supplierTitle": null,
       "supplierColor": null,
-      "detail": "לא נמצא מוצר דומה אצל הספק. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "לא נמצא מוצר דומה אצל הספק",
-      "suggestions": []
+      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
+      "suggestions": [
+        {
+          "ref": "24559",
+          "url": "https://wilson.co.il/product/pro-staff-97ul-v14/",
+          "title": "מחבט טניס | Pro Staff 97UL V14",
+          "score": 0.32
+        },
+        {
+          "ref": "24554",
+          "url": "https://wilson.co.il/product/pro-staff-97l-v14/",
+          "title": "מחבט טניס | Pro Staff 97L V14",
+          "score": 0.32
+        }
+      ]
     },
     {
       "id": "lowvizk2l",
@@ -5234,9 +6295,22 @@
       "link": null,
       "supplierTitle": null,
       "supplierColor": null,
-      "detail": "לא נמצא מוצר דומה אצל הספק. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "לא נמצא מוצר דומה אצל הספק",
-      "suggestions": []
+      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
+      "suggestions": [
+        {
+          "ref": "24559",
+          "url": "https://wilson.co.il/product/pro-staff-97ul-v14/",
+          "title": "מחבט טניס | Pro Staff 97UL V14",
+          "score": 0.25
+        },
+        {
+          "ref": "24554",
+          "url": "https://wilson.co.il/product/pro-staff-97l-v14/",
+          "title": "מחבט טניס | Pro Staff 97L V14",
+          "score": 0.25
+        }
+      ]
     },
     {
       "id": "k1srgbzln",
@@ -5250,135 +6324,19 @@
       "link": null,
       "supplierTitle": null,
       "supplierColor": null,
-      "detail": "לא נמצא מוצר דומה אצל הספק. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "לא נמצא מוצר דומה אצל הספק",
-      "suggestions": []
-    },
-    {
-      "id": "oxinrfx8d",
-      "name": "WILSON RF 01 300g",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
       "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
       "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
       "suggestions": [
         {
-          "ref": "31636",
-          "url": "https://wilson.co.il/product/rf-01/",
-          "title": "מחבט טניס | RF 01 Tennis Racket",
-          "score": 0.35
-        },
-        {
-          "ref": "31642",
-          "url": "https://wilson.co.il/product/rf-01-pro-tennis-racket/",
-          "title": "מחבט טניס | RF 01 Pro Tennis Racket",
-          "score": 0.25
-        },
-        {
-          "ref": "31639",
-          "url": "https://wilson.co.il/product/rf-01-future-tennis-racket/",
-          "title": "מחבט טניס | RF 01 Future Tennis Racket",
-          "score": 0.25
-        }
-      ]
-    },
-    {
-      "id": "608x67g1k",
-      "name": "WILSON RF 01 Future Lite 265g",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "36687",
-          "url": "https://wilson.co.il/product/%d7%9e%d7%97%d7%91%d7%98-%d7%98%d7%a0%d7%99%d7%a1-rf-01-future-lite-tennis-racket/",
-          "title": "מחבט טניס | RF 01 Future Lite Tennis Racket",
-          "score": 0.46
-        },
-        {
-          "ref": "31639",
-          "url": "https://wilson.co.il/product/rf-01-future-tennis-racket/",
-          "title": "מחבט טניס | RF 01 Future Tennis Racket",
+          "ref": "24559",
+          "url": "https://wilson.co.il/product/pro-staff-97ul-v14/",
+          "title": "מחבט טניס | Pro Staff 97UL V14",
           "score": 0.32
-        }
-      ]
-    },
-    {
-      "id": "tm11gor1j",
-      "name": "WILSON RF 01 PRO 320g",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "31642",
-          "url": "https://wilson.co.il/product/rf-01-pro-tennis-racket/",
-          "title": "מחבט טניס | RF 01 Pro Tennis Racket",
-          "score": 0.42
         },
         {
-          "ref": "31636",
-          "url": "https://wilson.co.il/product/rf-01/",
-          "title": "מחבט טניס | RF 01 Tennis Racket",
-          "score": 0.25
-        }
-      ]
-    },
-    {
-      "id": "ypmgehptq",
-      "name": "WILSON RF BACKBAG black",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "33688",
-          "url": "https://wilson.co.il/product/%d7%aa%d7%99%d7%a7-%d7%98%d7%a0%d7%99%d7%a1-blade-100-v9-tennis-racket/",
-          "title": "תיק טניס | RF BACKPACK BLACK",
-          "score": 0.48
-        },
-        {
-          "ref": "33035",
-          "url": "https://wilson.co.il/product/%d7%9b%d7%99%d7%a1%d7%95%d7%99-%d7%9c%d7%9e%d7%97%d7%91%d7%98-%d7%98%d7%a0%d7%99%d7%a1-rf-racquet-cover-black/",
-          "title": "כיסוי למחבט טניס | Rf Racquet Cover Black",
-          "score": 0.35
-        },
-        {
-          "ref": "32825",
-          "url": "https://wilson.co.il/product/rf-tournament-racket-bag-9-pack/",
-          "title": "תיק טניס | Rf Tournament Racket Bag 9 Pack",
-          "color": "שחור",
+          "ref": "24554",
+          "url": "https://wilson.co.il/product/pro-staff-97l-v14/",
+          "title": "מחבט טניס | Pro Staff 97L V14",
           "score": 0.32
         }
       ]
@@ -5395,17 +6353,9 @@
       "link": null,
       "supplierTitle": null,
       "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "17187",
-          "url": "https://wilson.co.il/product/super-tour-15-pack/",
-          "title": "תיק טניס | Super Tour 15 Pack",
-          "color": "כחול",
-          "score": 0.25
-        }
-      ]
+      "detail": "לא נמצא מוצר דומה אצל הספק. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "לא נמצא מוצר דומה אצל הספק",
+      "suggestions": []
     },
     {
       "id": "e5q04d8ex",
@@ -5546,7 +6496,7 @@
           "url": "https://wilson.co.il/product/rush-pro-4-0-bla/",
           "title": "נעלי טניס לגברים | Rush Pro 4.0 Bla",
           "color": "שחור",
-          "score": 0.48
+          "score": 0.23
         }
       ]
     },
@@ -5584,160 +6534,9 @@
           "url": "https://wilson.co.il/product/junior-rush-pro-335270/",
           "title": "נעלי טניס ג'וניור | Junior Rush Pro",
           "color": "לבן",
-          "score": 0.55
+          "score": 0.57
         }
       ]
-    },
-    {
-      "id": "w99xzbcca",
-      "name": "WILSON SHIFT 99 PRO V1 315g",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "26332",
-          "url": "https://wilson.co.il/product/shift-99-pro-v1/",
-          "title": "מחבט טניס | Shift 99 pro V1",
-          "score": 0.5
-        },
-        {
-          "ref": "26278",
-          "url": "https://wilson.co.il/product/shift-99-v1/",
-          "title": "מחבט טניס | Shift 99 V1",
-          "score": 0.38
-        },
-        {
-          "ref": "35721",
-          "url": "https://wilson.co.il/product/roland-garros-2025-shift-99-v1-wr174311/",
-          "title": "מחבט טניס | Roland-Garros 2025 Shift 99 V1",
-          "score": 0.2
-        }
-      ]
-    },
-    {
-      "id": "waphitdou",
-      "name": "WILSON SHIFT 99 V1 300g",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "26278",
-          "url": "https://wilson.co.il/product/shift-99-v1/",
-          "title": "מחבט טניס | Shift 99 V1",
-          "score": 0.46
-        },
-        {
-          "ref": "26332",
-          "url": "https://wilson.co.il/product/shift-99-pro-v1/",
-          "title": "מחבט טניס | Shift 99 pro V1",
-          "score": 0.38
-        },
-        {
-          "ref": "35721",
-          "url": "https://wilson.co.il/product/roland-garros-2025-shift-99-v1-wr174311/",
-          "title": "מחבט טניס | Roland-Garros 2025 Shift 99 V1",
-          "score": 0.25
-        }
-      ]
-    },
-    {
-      "id": "qv54blwf6",
-      "name": "WILSON SHIFT 99L V1 285g",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "28886",
-          "url": "https://wilson.co.il/product/shift-99l-v1/",
-          "title": "מחבט טניס | Shift 99L V1",
-          "score": 0.46
-        },
-        {
-          "ref": "33304",
-          "url": "https://wilson.co.il/product/shift-99l-v1-us-open-2024/",
-          "title": "מחבט טניס | Shift 99L V1 US Open 2024",
-          "score": 0.25
-        }
-      ]
-    },
-    {
-      "id": "mksvgrq63",
-      "name": "WILSON SHIFT SUPER TOUR BACKBAG",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "28893",
-          "url": "https://wilson.co.il/product/shift-super-tour-backpack/",
-          "title": "תיק טניס | Shift Super Tour Backpack",
-          "score": 0.6
-        },
-        {
-          "ref": "35761",
-          "url": "https://wilson.co.il/product/super-tour-wilson-red-backpack-wr8036901/",
-          "title": "תיק טניס | Super Tour WILSON Red Backpack",
-          "score": 0.4
-        },
-        {
-          "ref": "33301",
-          "url": "https://wilson.co.il/product/bela-super-tour-padel-bag-red/",
-          "title": "תיק פאדל | Bela Super Tour Padel Bag Red",
-          "color": "אדום",
-          "score": 0.29
-        }
-      ]
-    },
-    {
-      "id": "bp1rt46t8",
-      "name": "WILSON SUPER TOUR 15PK blue",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא נמצא מוצר דומה אצל הספק. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "לא נמצא מוצר דומה אצל הספק",
-      "suggestions": []
     },
     {
       "id": "rh6yihres",
@@ -5755,6 +6554,13 @@
       "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
       "suggestions": [
         {
+          "ref": "37949",
+          "url": "https://wilson.co.il/product/team-backpack-8040003/",
+          "title": "תיק טניס | Team Backpack",
+          "color": "לבן",
+          "score": 0.6
+        },
+        {
           "ref": "33324",
           "url": "https://wilson.co.il/product/team-padel-bag-grey-2/",
           "title": "תיק פאדל | Team Padel Bag Grey",
@@ -5764,12 +6570,6 @@
         {
           "ref": "39334",
           "url": "https://wilson.co.il/product/team-racket-6pk-8039903/",
-          "title": "תיק טניס | Team Racket 6PK",
-          "score": 0.25
-        },
-        {
-          "ref": "39333",
-          "url": "https://wilson.co.il/product/team-racket-6pk/",
           "title": "תיק טניס | Team Racket 6PK",
           "score": 0.25
         }
@@ -5812,44 +6612,6 @@
       ]
     },
     {
-      "id": "gb4o5wusj",
-      "name": "WILSON TEAM BACKBAG white-cream",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "37951",
-          "url": "https://wilson.co.il/product/roland-garros-team-6pk-cream/",
-          "title": "תיק טניס | Roland Garros Team 6PK Cream",
-          "color": "לבן",
-          "score": 0.44
-        },
-        {
-          "ref": "37949",
-          "url": "https://wilson.co.il/product/team-backpack-8040003/",
-          "title": "תיק טניס | Team Backpack",
-          "color": "לבן",
-          "score": 0.4
-        },
-        {
-          "ref": "37948",
-          "url": "https://wilson.co.il/product/team-backpack-8040001/",
-          "title": "תיק טניס רולאן גארוס | Team Backpack",
-          "color": "לבן",
-          "score": 0.32
-        }
-      ]
-    },
-    {
       "id": "c2gzcsd6l",
       "name": "WILSON TEAM RACKETS 6 PK blue",
       "outcome": "needs_link",
@@ -5861,9 +6623,22 @@
       "link": null,
       "supplierTitle": null,
       "supplierColor": null,
-      "detail": "לא נמצא מוצר דומה אצל הספק. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "לא נמצא מוצר דומה אצל הספק",
-      "suggestions": []
+      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
+      "suggestions": [
+        {
+          "ref": "39334",
+          "url": "https://wilson.co.il/product/team-racket-6pk-8039903/",
+          "title": "תיק טניס | Team Racket 6PK",
+          "score": 1
+        },
+        {
+          "ref": "39333",
+          "url": "https://wilson.co.il/product/team-racket-6pk/",
+          "title": "תיק טניס | Team Racket 6PK",
+          "score": 1
+        }
+      ]
     },
     {
       "id": "djl685ycf",
@@ -5877,48 +6652,33 @@
       "link": null,
       "supplierTitle": null,
       "supplierColor": null,
-      "detail": "לא נמצא מוצר דומה אצל הספק. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "לא נמצא מוצר דומה אצל הספק",
-      "suggestions": []
-    },
-    {
-      "id": "yggf8ufqo",
-      "name": "WILSON TOUR BACKBAG",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
+      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
       "suggestions": [
         {
-          "ref": "39354",
-          "url": "https://wilson.co.il/product/tour-backpack-8037401/",
-          "title": "תיק טניס | Tour Backpack",
-          "score": 0.33
+          "ref": "39334",
+          "url": "https://wilson.co.il/product/team-racket-6pk-8039903/",
+          "title": "תיק טניס | Team Racket 6PK",
+          "score": 1
         },
         {
-          "ref": "39971",
-          "url": "https://wilson.co.il/product/bela-tour-black/",
-          "title": "נעלי פאדל לגברים | Bela Tour Black",
-          "score": 0.25
+          "ref": "39333",
+          "url": "https://wilson.co.il/product/team-racket-6pk/",
+          "title": "תיק טניס | Team Racket 6PK",
+          "score": 1
         },
         {
-          "ref": "39585",
-          "url": "https://wilson.co.il/product/tour-slam-lite-199010/",
-          "title": "מחבט טניס | Tour Slam Lite",
-          "score": 0.25
+          "ref": "37951",
+          "url": "https://wilson.co.il/product/roland-garros-team-6pk-cream/",
+          "title": "תיק טניס | Roland Garros Team 6PK Cream",
+          "color": "לבן",
+          "score": 0.75
         }
       ]
     },
     {
-      "id": "7tlcx0oq2",
-      "name": "WILSON ULTRA 100 V5 300g",
+      "id": "jdg0mog7b",
+      "name": "WILSON TOUR 12 PACK Khaki color",
       "outcome": "needs_link",
       "supplier": "wilson",
       "before": false,
@@ -5932,16 +6692,11 @@
       "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
       "suggestions": [
         {
-          "ref": "36638",
-          "url": "https://wilson.co.il/product/ultra-100-v5-tennis-racket/",
-          "title": "מחבט טניס | Ultra 100 V5 Tennis Racket",
-          "score": 0.46
-        },
-        {
-          "ref": "25673",
-          "url": "https://wilson.co.il/product/burn-100-v5/",
-          "title": "מחבט טניס | Burn 100 V5",
-          "score": 0.25
+          "ref": "26057",
+          "url": "https://wilson.co.il/product/tour-12-pack-8022001/",
+          "title": "תיק טניס | Tour 12 Pack",
+          "color": "שחור",
+          "score": 0.6
         }
       ]
     },
@@ -5957,89 +6712,20 @@
       "link": null,
       "supplierTitle": null,
       "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
+      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
       "suggestions": [
         {
           "ref": "41308",
           "url": "https://wilson.co.il/product/%d7%9e%d7%97%d7%91%d7%98-%d7%98%d7%a0%d7%99%d7%a1-ultra-100l-v5/",
           "title": "מחבט טניס | Ultra 100L V5",
-          "score": 0.46
+          "score": 1
         },
         {
           "ref": "36642",
           "url": "https://wilson.co.il/product/ultra-100l-v5-tennis-racket/",
           "title": "מחבט טניס | Ultra 100L V5 Tennis Racket",
-          "score": 0.46
-        }
-      ]
-    },
-    {
-      "id": "7gawny1ef",
-      "name": "WILSON ULTRA 100UL V5 260g",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "36648",
-          "url": "https://wilson.co.il/product/ultra-100ul-v5-tennis-racket/",
-          "title": "מחבט טניס | Ultra 100UL V5 Tennis Racket",
-          "score": 0.46
-        }
-      ]
-    },
-    {
-      "id": "rbgga8jrt",
-      "name": "WILSON ULTRA 99 PRO V5 305g",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "36653",
-          "url": "https://wilson.co.il/product/ultra-99-pro-v5-tennis-racket/",
-          "title": "מחבט טניס | Ultra 99 PRO V5 Tennis Racket",
-          "score": 0.5
-        }
-      ]
-    },
-    {
-      "id": "txuar48ov",
-      "name": "WILSON ULTRA TEAM V5 297g",
-      "outcome": "needs_link",
-      "supplier": "wilson",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "37942",
-          "url": "https://wilson.co.il/product/ultra-team-v5-tennis-racket/",
-          "title": "מחבט טניס | Ultra Team V5 Tennis Racket",
-          "score": 0.42
+          "score": 1
         }
       ]
     },
@@ -6090,9 +6776,16 @@
       "link": null,
       "supplierTitle": null,
       "supplierColor": null,
-      "detail": "לא נמצא מוצר דומה אצל הספק. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "לא נמצא מוצר דומה אצל הספק",
-      "suggestions": []
+      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
+      "suggestions": [
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-club-line-backpack-26l/",
+          "url": "https://www.tennis-online.co.il/product/yonex-club-line-backpack-26l/",
+          "title": "תיק גב טניס לילדים YONEX CLUB Line backpack 26L",
+          "score": 0.33
+        }
+      ]
     },
     {
       "id": "cywbwl40x",
@@ -6113,42 +6806,13 @@
           "ref": "https://www.tennis-online.co.il/product/yonex-club-backpack-2522-red/",
           "url": "https://www.tennis-online.co.il/product/yonex-club-backpack-2522-red/",
           "title": "תיק גב טניס YONEX CLUB backpack 2522 red",
-          "score": 0.32
-        }
-      ]
-    },
-    {
-      "id": "5rpdfrlom",
-      "name": "YONEX EZONE 100 Blast Blue 300g",
-      "outcome": "needs_link",
-      "supplier": "yonex",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "https://www.tennis-online.co.il/product/yonex-ezone-100-blast-blue-300g-8th-gen-unstrung/",
-          "url": "https://www.tennis-online.co.il/product/yonex-ezone-100-blast-blue-300g-8th-gen-unstrung/",
-          "title": "YONEX EZONE 100 300g (8th gen.) Unstrung",
-          "score": 0.63
+          "score": 0.55
         },
         {
-          "ref": "https://www.tennis-online.co.il/product/yonex-percept-100/",
-          "url": "https://www.tennis-online.co.il/product/yonex-percept-100/",
-          "title": "YONEX PERCEPT 100 300g Unstrung",
-          "score": 0.57
-        },
-        {
-          "ref": "https://www.tennis-online.co.il/product/yonex-vcore-100-300g-8th-gen-unstrung/",
-          "url": "https://www.tennis-online.co.il/product/yonex-vcore-100-300g-8th-gen-unstrung/",
-          "title": "YONEX VCORE 100 300g (8th gen.) Unstrung",
-          "score": 0.44
+          "ref": "https://www.tennis-online.co.il/product/yonex-club-line-backpack-26l/",
+          "url": "https://www.tennis-online.co.il/product/yonex-club-line-backpack-26l/",
+          "title": "תיק גב טניס לילדים YONEX CLUB Line backpack 26L",
+          "score": 0.33
         }
       ]
     },
@@ -6269,25 +6933,28 @@
       "link": null,
       "supplierTitle": null,
       "supplierColor": null,
-      "detail": "לא נמצא מוצר דומה אצל הספק. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "לא נמצא מוצר דומה אצל הספק",
-      "suggestions": []
-    },
-    {
-      "id": "pmjfukgvd",
-      "name": "YONEX PRO RAQUET BAG 9 PK green",
-      "outcome": "needs_link",
-      "supplier": "yonex",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא נמצא מוצר דומה אצל הספק. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "לא נמצא מוצר דומה אצל הספק",
-      "suggestions": []
+      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
+      "suggestions": [
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-espresso-brown/",
+          "url": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-espresso-brown/",
+          "title": "YONEX PRO RACQUET BAG (9PCS) Espresso Brown",
+          "score": 1
+        },
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-black/",
+          "url": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-black/",
+          "title": "YONEX PRO RACQUET BAG (9PCS) Black",
+          "score": 1
+        },
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-olive-green/",
+          "url": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-olive-green/",
+          "title": "YONEX PRO RACQUET BAG (9PCS) Olive Green",
+          "score": 1
+        }
+      ]
     },
     {
       "id": "p2",
@@ -6305,6 +6972,12 @@
       "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
       "suggestions": [
         {
+          "ref": "https://www.tennis-online.co.il/product/yonex-pro-tournament-bag-92431w-dark-green/",
+          "url": "https://www.tennis-online.co.il/product/yonex-pro-tournament-bag-92431w-dark-green/",
+          "title": "YONEX PRO TOURNAMENT BAG 92431W Dark Green",
+          "score": 0.5
+        },
+        {
           "ref": "https://www.tennis-online.co.il/product/yonex-pro-tournament-bag-92431w-black/",
           "url": "https://www.tennis-online.co.il/product/yonex-pro-tournament-bag-92431w-black/",
           "title": "YONEX PRO TOURNAMENT BAG 92431W black",
@@ -6315,12 +6988,6 @@
           "url": "https://www.tennis-online.co.il/product/yonex-pro-tournament-bag-92431w-blue/",
           "title": "YONEX PRO TOURNAMENT BAG 92431W blue",
           "score": 0.5
-        },
-        {
-          "ref": "https://www.tennis-online.co.il/product/yonex-pro-tournament-bag-92431w-dark-green/",
-          "url": "https://www.tennis-online.co.il/product/yonex-pro-tournament-bag-92431w-dark-green/",
-          "title": "YONEX PRO TOURNAMENT BAG 92431W Dark Green",
-          "score": 0.4
         }
       ]
     },
@@ -6339,6 +7006,12 @@
       "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
       "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
       "suggestions": [
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-42512-team-backpack/",
+          "url": "https://www.tennis-online.co.il/product/yonex-42512-team-backpack/",
+          "title": "תיק גב טניס YONEX 42512 Team backpack",
+          "score": 0.4
+        },
         {
           "ref": "https://www.tennis-online.co.il/product/%d7%aa%d7%99%d7%a7-%d7%98%d7%a0%d7%99%d7%a1-yonex-team-racquet-bag-6pcs-black/",
           "url": "https://www.tennis-online.co.il/product/%d7%aa%d7%99%d7%a7-%d7%98%d7%a0%d7%99%d7%a1-yonex-team-racquet-bag-6pcs-black/",
@@ -6363,6 +7036,12 @@
       "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
       "suggestions": [
         {
+          "ref": "https://www.tennis-online.co.il/product/yonex-42512-team-backpack/",
+          "url": "https://www.tennis-online.co.il/product/yonex-42512-team-backpack/",
+          "title": "תיק גב טניס YONEX 42512 Team backpack",
+          "score": 0.4
+        },
+        {
           "ref": "https://www.tennis-online.co.il/product/yonex-team-racquet-bag-6pcs-blue/",
           "url": "https://www.tennis-online.co.il/product/yonex-team-racquet-bag-6pcs-blue/",
           "title": "תיק טניס YONEX TEAM RACQUET BAG (6PCS) blue",
@@ -6386,50 +7065,24 @@
       "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
       "suggestions": [
         {
+          "ref": "https://www.tennis-online.co.il/product/yonex-42512-red-team-backpack/",
+          "url": "https://www.tennis-online.co.il/product/yonex-42512-red-team-backpack/",
+          "title": "תיק גב טניס YONEX 42512 Red Team backpack",
+          "score": 0.55
+        },
+        {
           "ref": "https://www.tennis-online.co.il/product/yonex-team-racquet-bag-6pcs-red/",
           "url": "https://www.tennis-online.co.il/product/yonex-team-racquet-bag-6pcs-red/",
           "title": "תיק טניס YONEX TEAM RACQUET BAG (6PCS) red",
           "score": 0.4
         },
         {
-          "ref": "https://www.tennis-online.co.il/product/yonex-42512-red-team-backpack/",
-          "url": "https://www.tennis-online.co.il/product/yonex-42512-red-team-backpack/",
-          "title": "תיק גב טניס YONEX 42512 Red Team backpack",
-          "score": 0.32
+          "ref": "https://www.tennis-online.co.il/product/yonex-42512-team-backpack/",
+          "url": "https://www.tennis-online.co.il/product/yonex-42512-team-backpack/",
+          "title": "תיק גב טניס YONEX 42512 Team backpack",
+          "score": 0.4
         }
       ]
-    },
-    {
-      "id": "c5hlif7y2",
-      "name": "גליל פילאטיס חלול 45 ס\"מ",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא נמצא מוצר דומה אצל הספק. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "לא נמצא מוצר דומה אצל הספק",
-      "suggestions": []
-    },
-    {
-      "id": "1lgqmvinn",
-      "name": "דילגית 2.7 מטר 15 ס\"מ עובי",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא נמצא מוצר דומה אצל הספק. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "לא נמצא מוצר דומה אצל הספק",
-      "suggestions": []
     },
     {
       "id": "shmfmhsyl",
@@ -6447,20 +7100,20 @@
       "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
       "suggestions": [
         {
-          "ref": "41233",
-          "url": "https://wilson.co.il/product/%d7%9e%d7%97%d7%91%d7%98-%d7%98%d7%a0%d7%99%d7%a1-roland-garros-elite/",
-          "title": "מחבט טניס לילדים | Roland Garros Elite",
-          "score": 0.4
-        },
-        {
-          "ref": "39552",
-          "url": "https://wilson.co.il/product/roland-garros-elite-wr193210/",
-          "title": "מחבט טניס | Roland Garros Elite",
-          "score": 0.4
-        },
-        {
           "ref": "39435",
           "url": "https://wilson.co.il/product/roland-garros-triumph-19311/",
+          "title": "מחבט טניס | Roland Garros Triumph",
+          "score": 0.4
+        },
+        {
+          "ref": "35595",
+          "url": "https://wilson.co.il/product/roland-garros-equipe-tennis-racket-wr168510u1/",
+          "title": "מחבט טניס | Roland-Garros Equipe Tennis Racket",
+          "score": 0.4
+        },
+        {
+          "ref": "34178",
+          "url": "https://wilson.co.il/product/roland-garros-triumph-3/",
           "title": "מחבט טניס | Roland Garros Triumph",
           "score": 0.4
         }
@@ -6499,22 +7152,6 @@
       "suggestions": []
     },
     {
-      "id": "c768627ue",
-      "name": "מארז 24 שלישיות כדורים TRETORN",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא נמצא מוצר דומה אצל הספק. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "לא נמצא מוצר דומה אצל הספק",
-      "suggestions": []
-    },
-    {
       "id": "1jslj2wvt",
       "name": "מארז 24 שלישיות כדורים WILSON US OPEN",
       "outcome": "needs_link",
@@ -6526,14 +7163,85 @@
       "link": null,
       "supplierTitle": null,
       "supplierColor": null,
-      "detail": "לא נמצא מוצר דומה אצל הספק. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
+      "suggestions": [
+        {
+          "ref": "35674",
+          "url": "https://wilson.co.il/product/burn-spin-jr-24-tns-rkt-wr187110/",
+          "title": "מחבט טניס לילדים | BURN SPIN JR 24 TNS RKT",
+          "score": 0.22
+        }
+      ]
+    },
+    {
+      "id": "jatvrturh",
+      "name": "24 שלישיות כדורים Diadem Premier",
+      "outcome": "unknown_supplier",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא נראה כמו מוצר של Babolat Israel — בחר ספק אחר או סמן \"ידני\"",
+      "linkReason": "לא נמצא מוצר דומה אצל הספק",
+      "suggestions": []
+    },
+    {
+      "id": "c5hlif7y2",
+      "name": "גליל פילאטיס חלול 45 ס\"מ",
+      "outcome": "unknown_supplier",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא נראה כמו מוצר של Babolat Israel — בחר ספק אחר או סמן \"ידני\"",
+      "linkReason": "לא נמצא מוצר דומה אצל הספק",
+      "suggestions": []
+    },
+    {
+      "id": "1lgqmvinn",
+      "name": "דילגית 2.7 מטר 15 ס\"מ עובי",
+      "outcome": "unknown_supplier",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא נראה כמו מוצר של Babolat Israel — בחר ספק אחר או סמן \"ידני\"",
+      "linkReason": "לא נמצא מוצר דומה אצל הספק",
+      "suggestions": []
+    },
+    {
+      "id": "c768627ue",
+      "name": "מארז 24 שלישיות כדורים TRETORN",
+      "outcome": "unknown_supplier",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא נראה כמו מוצר של Babolat Israel — בחר ספק אחר או סמן \"ידני\"",
       "linkReason": "לא נמצא מוצר דומה אצל הספק",
       "suggestions": []
     },
     {
       "id": "89n4qb4r6",
       "name": "מדרגה אירובית- \"סטפר\"",
-      "outcome": "needs_link",
+      "outcome": "unknown_supplier",
       "supplier": "babolat",
       "before": false,
       "after": false,
@@ -6542,14 +7250,14 @@
       "link": null,
       "supplierTitle": null,
       "supplierColor": null,
-      "detail": "לא נמצא מוצר דומה אצל הספק. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "detail": "לא נראה כמו מוצר של Babolat Israel — בחר ספק אחר או סמן \"ידני\"",
       "linkReason": "לא נמצא מוצר דומה אצל הספק",
       "suggestions": []
     },
     {
       "id": "dfycpt36w",
       "name": "פיתה באלאנס 36 ס\"מ",
-      "outcome": "needs_link",
+      "outcome": "unknown_supplier",
       "supplier": "babolat",
       "before": false,
       "after": false,
@@ -6558,7 +7266,7 @@
       "link": null,
       "supplierTitle": null,
       "supplierColor": null,
-      "detail": "לא נמצא מוצר דומה אצל הספק. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "detail": "לא נראה כמו מוצר של Babolat Israel — בחר ספק אחר או סמן \"ידני\"",
       "linkReason": "לא נמצא מוצר דומה אצל הספק",
       "suggestions": []
     }
