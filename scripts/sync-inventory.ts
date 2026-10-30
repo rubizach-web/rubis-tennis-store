@@ -11,7 +11,7 @@
 import { readFileSync, appendFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { syncOneProduct, type ProductSyncResult } from '../server/inventory/run.ts';
 import { SUPPLIER_INFO } from '../server/inventory/types.ts';
-import { detectSupplier, clearCatalogFailures } from '../server/inventory/sync.ts';
+import { detectSupplier, clearCatalogFailures, resolveLinkFromUrl } from '../server/inventory/sync.ts';
 
 const args = new Set(process.argv.slice(2));
 const DRY_RUN = args.has('--dry-run') || process.env.DRY_RUN === 'true';
@@ -39,6 +39,49 @@ async function openDb() {
   return getFirestore(app, config.firestoreDatabaseId);
 }
 
+/**
+ * Links the owner approved on the "Supplier links" page, saved by Claude in
+ * config/supplier-links.json as { productId: choice }. Each choice is
+ *   { action: 'link', supplier, ref, url } | { action: 'paste', url } | { action: 'manual' }
+ * Applied onto the product before syncing, and written back with the results.
+ */
+async function applyApprovedLinks(products: any[]) {
+  let choices: Record<string, any> = {};
+  try {
+    choices = JSON.parse(readFileSync(new URL('../config/supplier-links.json', import.meta.url), 'utf8'));
+  } catch {
+    return;
+  }
+  let applied = 0;
+  for (const p of products) {
+    const c = choices[p.id];
+    if (!c) continue;
+    // Already applied in an earlier run
+    if (c.action === 'manual' && p.supplierLinkStatus === 'manual') continue;
+    if ((c.action === 'link' || c.action === 'paste') && p.supplierLinkStatus === 'confirmed' && (p.supplierUrl === c.url || p.supplierRef === c.ref)) continue;
+    try {
+      if (c.action === 'manual') {
+        Object.assign(p, { supplierLinkStatus: 'manual', supplierSuggestions: [] });
+      } else if (c.action === 'link') {
+        Object.assign(p, { supplierSite: c.supplier, supplierRef: String(c.ref), supplierUrl: c.url, supplierLinkStatus: 'confirmed', supplierSuggestions: [] });
+      } else if (c.action === 'paste') {
+        const r = await resolveLinkFromUrl(c.url);
+        Object.assign(p, { supplierSite: r.supplier, supplierRef: r.ref, supplierUrl: r.url, supplierLinkStatus: 'confirmed', supplierSuggestions: [] });
+      }
+      p.__linkFields = {
+        supplierLinkStatus: p.supplierLinkStatus,
+        supplierSuggestions: [],
+        ...(p.supplierLinkStatus === 'confirmed' ? { supplierSite: p.supplierSite, supplierRef: p.supplierRef, supplierUrl: p.supplierUrl } : {}),
+      };
+      applied++;
+    } catch (err: any) {
+      log(`approved link failed for ${p.name}: ${err?.message ?? err}`);
+      console.log(`::warning::קישור שאושר ל-"${p.name}" לא נקרא: ${err?.message ?? err}`);
+    }
+  }
+  if (applied) log(`Applied ${applied} approved supplier links`);
+}
+
 function log(...a: unknown[]) {
   console.log(new Date().toISOString().slice(11, 19), ...a);
 }
@@ -48,6 +91,7 @@ async function main() {
   const snap = await db.collection('products').get();
   let products: any[] = snap.docs.map((d: any) => ({ ...(d.data() as any), id: d.id }));
   if (ONLY) products = products.filter((p: any) => p.id === ONLY);
+  await applyApprovedLinks(products);
   log(`Loaded ${products.length} products${DRY_RUN ? ' (dry run — nothing will be written)' : ''}`);
 
   // One worker per supplier so each site is visited politely, in sequence.
@@ -63,6 +107,7 @@ async function main() {
     for (const p of list) {
       try {
         const r = await syncOneProduct(p, { relink: RELINK });
+        if (p.__linkFields) r.fields = { ...p.__linkFields, ...r.fields };
         results.set(p.id, r);
         log(`${r.outcome.padEnd(16)} ${p.name}`);
       } catch (err: any) {
