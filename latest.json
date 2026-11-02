@@ -1,6 +1,6 @@
 {
   "summary": {
-    "startedAt": "2026-11-01T09:20:48.337Z",
+    "startedAt": "2026-11-02T09:39:20.646Z",
     "dryRun": true,
     "total": 215,
     "checked": 112,
@@ -1257,13 +1257,13 @@
       "before": false,
       "after": true,
       "unavailableSizes": [
-        "36"
+        "36",
+        "38"
       ],
       "supplierSizes": [
         "34",
         "⅔36",
         "⅓37",
-        "38",
         "⅔38"
       ],
       "link": {
@@ -1273,7 +1273,7 @@
       },
       "supplierTitle": "נעלי טניס ג'וניור | Junior Rush Pro L",
       "supplierColor": "לבן",
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: 2/3 36, 1/3 37, 38, 2/3 38",
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: 2/3 36, 1/3 37, 2/3 38",
       "linkReason": "התאמה ודאית",
       "suggestions": [
         {
@@ -2127,9 +2127,10 @@
       "supplier": "wilson",
       "before": true,
       "after": true,
-      "unavailableSizes": [],
+      "unavailableSizes": [
+        "ידית 2 (1/4 4)"
+      ],
       "supplierSizes": [
-        "4 1/4\" (2)",
         "4 3/8\" (3)"
       ],
       "link": {
@@ -2139,7 +2140,7 @@
       },
       "supplierTitle": "מחבט טניס | Burn 100S V6",
       "supplierColor": null,
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 2 (1/4 4), ידית 3 (3/8 4)",
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 3 (3/8 4)",
       "linkReason": "התאמה ודאית",
       "suggestions": [
         {
