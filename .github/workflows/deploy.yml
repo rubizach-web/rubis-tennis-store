@@ -1,0 +1,66 @@
+name: העלאת האתר לאוויר
+
+# Builds the site from main and deploys it to Cloud Run in the store's Google
+# Cloud project. Runs after every push to main once the GCP_DEPLOY_KEY secret
+# exists; until then it only prints what is missing.
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'config/**'
+      - 'scripts/**'
+      - '**.md'
+  workflow_dispatch:
+
+concurrency:
+  group: deploy
+  cancel-in-progress: true
+
+env:
+  PROJECT_ID: gen-lang-client-0019260301
+  REGION: me-west1 # Tel Aviv
+  SERVICE: rubis-tennis-store
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      HAS_DEPLOY_KEY: ${{ secrets.GCP_DEPLOY_KEY != '' }}
+    steps:
+      - name: Waiting for the deploy key
+        if: env.HAS_DEPLOY_KEY != 'true'
+        run: echo "::notice::העלאה אוטומטית עוד לא פעילה — צריך להוסיף את הסוד GCP_DEPLOY_KEY בהגדרות המאגר."
+
+      - uses: actions/checkout@v4
+        if: env.HAS_DEPLOY_KEY == 'true'
+
+      - uses: google-github-actions/auth@v2
+        if: env.HAS_DEPLOY_KEY == 'true'
+        with:
+          credentials_json: ${{ secrets.GCP_DEPLOY_KEY }}
+
+      - uses: google-github-actions/setup-gcloud@v2
+        if: env.HAS_DEPLOY_KEY == 'true'
+
+      - name: Build and deploy to Cloud Run
+        if: env.HAS_DEPLOY_KEY == 'true'
+        run: |
+          gcloud run deploy "$SERVICE" \
+            --project "$PROJECT_ID" \
+            --region "$REGION" \
+            --source . \
+            --allow-unauthenticated \
+            --min-instances 0 \
+            --max-instances 3 \
+            --memory 512Mi \
+            --set-env-vars "NODE_ENV=production" \
+            --quiet
+
+      - name: Show the address
+        if: env.HAS_DEPLOY_KEY == 'true'
+        run: |
+          url=$(gcloud run services describe "$SERVICE" --project "$PROJECT_ID" --region "$REGION" --format 'value(status.url)')
+          echo "::notice::האתר באוויר: $url"
+          echo "## האתר באוויר: $url" >> "$GITHUB_STEP_SUMMARY"

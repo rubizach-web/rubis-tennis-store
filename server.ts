@@ -10,7 +10,7 @@ import { getCatalog, requestRefresh, catalogStatus } from "./server/catalog.ts";
 
 async function startServer() {
   const app = express();
-  const PORT = 3000;
+  const PORT = Number(process.env.PORT) || 3000;
 
   // Parse JSON bodies (increased limit to handle large product catalogs / data)
   app.use(express.json({ limit: "50mb" }));
