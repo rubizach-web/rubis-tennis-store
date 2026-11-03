@@ -15,11 +15,43 @@
 
 import { initializeApp, getApps, getApp } from 'firebase/app';
 import { getFirestore, collection, doc, getDocs, getDoc } from 'firebase/firestore/lite';
+import { createHash } from 'node:crypto';
 import firebaseConfig from '../firebase-applet-config.json';
 
 const TTL_MS = Number(process.env.CATALOG_TTL_MS ?? 10 * 60 * 1000);
 /** Minimum gap between forced refreshes (the admin's "I just saved" ping). */
 const MIN_REFRESH_GAP_MS = 20 * 1000;
+
+/**
+ * Product photos uploaded in the admin are stored inside the product documents
+ * as base64 "data:" URLs. Sent as-is, the catalog grew past Cloud Run's
+ * response size limit. Each embedded image is therefore served separately from
+ * /api/img/<hash> (cacheable forever, since the hash changes with the image)
+ * and the catalog carries only that short URL.
+ */
+let images = new Map<string, { type: string; body: Buffer }>();
+let nextImages = images;
+
+function extractImages<T>(value: T): T {
+  if (typeof value === 'string') {
+    const m = value.match(/^data:(image\/[a-z0-9.+-]+);base64,(.*)$/is);
+    if (!m) return value;
+    const hash = createHash('sha1').update(value).digest('hex').slice(0, 24);
+    if (!nextImages.has(hash)) nextImages.set(hash, images.get(hash) ?? { type: m[1], body: Buffer.from(m[2], 'base64') });
+    return `/api/img/${hash}` as unknown as T;
+  }
+  if (Array.isArray(value)) return value.map(extractImages) as unknown as T;
+  if (value && typeof value === 'object') {
+    const out: Record<string, unknown> = {};
+    for (const [k, v] of Object.entries(value)) out[k] = extractImages(v);
+    return out as T;
+  }
+  return value;
+}
+
+export function getImage(hash: string) {
+  return images.get(hash);
+}
 
 export interface CatalogPayload {
   content: Record<string, unknown> | null;
@@ -46,11 +78,16 @@ async function load(): Promise<CatalogPayload> {
   ]);
   const content = contentSnap.exists() ? (contentSnap.data() as Record<string, unknown>) : null;
   if (content && 'products' in content) delete (content as any).products; // legacy field
-  return {
-    content,
-    products: productsSnap.docs.map(d => ({ ...d.data(), id: d.id })),
+  // Build the new image set aside and swap it in only when complete, so a
+  // failed refresh never leaves the images of the last good catalog missing.
+  nextImages = new Map();
+  const payload = {
+    content: extractImages(content),
+    products: productsSnap.docs.map(d => extractImages({ ...d.data(), id: d.id })),
     loadedAt: new Date().toISOString(),
   };
+  images = nextImages;
+  return payload;
 }
 
 function refresh(): Promise<CatalogPayload> {
