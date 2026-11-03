@@ -3,6 +3,10 @@ name: העברת תמונות מחוץ לבסיס הנתונים
 on:
   workflow_dispatch:
     inputs:
+      check_only:
+        description: 'רק לבדוק שמפתח התמונות תקין'
+        type: boolean
+        default: false
       dry_run:
         description: 'בדיקה בלבד — למדוד בלי להעביר'
         type: boolean
@@ -17,8 +21,15 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: npm install --no-save --no-package-lock --ignore-scripts --legacy-peer-deps firebase-admin@13
+      - name: Check the images token
+        env:
+          GITHUB_IMAGES_TOKEN: ${{ secrets.IMAGES_TOKEN }}
+        run: node --experimental-strip-types --no-warnings scripts/check-images-token.ts
+
+      - if: ${{ !inputs.check_only }}
+        run: npm install --no-save --no-package-lock --ignore-scripts --legacy-peer-deps firebase-admin@13
       - name: Move photos
+        if: ${{ !inputs.check_only }}
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
           GITHUB_IMAGES_TOKEN: ${{ secrets.IMAGES_TOKEN }}
