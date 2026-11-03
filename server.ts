@@ -6,7 +6,7 @@ import { createServer as createViteServer } from "vite";
 import { GoogleGenAI } from "@google/genai";
 import { syncOneProduct, isSupplierId } from "./server/inventory/run.ts";
 import { detectSupplier, findLink, resolveLinkFromUrl } from "./server/inventory/sync.ts";
-import { getCatalog, requestRefresh, catalogStatus, getImage } from "./server/catalog.ts";
+import { getCatalog, requestRefresh, catalogStatus } from "./server/catalog.ts";
 
 async function startServer() {
   const app = express();
@@ -31,20 +31,6 @@ async function startServer() {
     } catch (error: any) {
       res.status(503).json({ error: "רשימת המוצרים לא זמינה כרגע", details: error?.message });
     }
-  });
-
-  // Product photos that are stored inside the database (see server/catalog.ts)
-  app.get("/api/img/:hash", async (req, res) => {
-    let img = getImage(req.params.hash);
-    if (!img) {
-      // e.g. a fresh server instance: load the catalog, which registers the images
-      try { await getCatalog(); } catch {}
-      img = getImage(req.params.hash);
-    }
-    if (!img) return res.status(404).end();
-    res.setHeader("Content-Type", img.type);
-    res.setHeader("Cache-Control", "public, max-age=31536000, immutable");
-    res.end(img.body);
   });
 
   // The admin screen pings this after saving so visitors see changes quickly
