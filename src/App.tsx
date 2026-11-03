@@ -8,7 +8,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useState, useEffect, useMemo, FormEvent, ChangeEvent, useRef } from 'react';
+import { useState, useEffect, useMemo, FormEvent, ChangeEvent, useRef, type ReactNode } from 'react';
 import { motion, AnimatePresence, Reorder } from 'motion/react';
 import { 
   Accessibility,
@@ -2067,13 +2067,13 @@ function AdminProductCard({
   if (isLocallyDeleted) return null;
 
   return (
-    <div className={`bg-luxury-dark-gray p-8 rounded border ${hasChanges ? 'border-gold/50 shadow-[0_0_15px_rgba(212,175,55,0.1)]' : 'border-white/5'} flex flex-col gap-8 hover:border-gold/30 transition-all relative`}>
+    <div className={`bg-luxury-dark-gray p-4 sm:p-6 xl:p-8 rounded border ${hasChanges ? 'border-gold/50 shadow-[0_0_15px_rgba(212,175,55,0.1)]' : 'border-white/5'} flex flex-col gap-6 xl:gap-8 hover:border-gold/30 transition-all relative min-w-0`}>
       {hasChanges && (
         <div className="absolute -top-px -left-px -right-px h-1 bg-gold rounded-t z-10"></div>
       )}
       
-      <div className="flex flex-col md:flex-row gap-8">
-        <div className="w-full md:w-2/5 space-y-6">
+      <div className="flex flex-col xl:flex-row gap-6 xl:gap-8">
+        <div className="w-full xl:w-2/5 space-y-6">
            <div className="space-y-4">
               <label className="text-[10px] uppercase font-bold tracking-widest text-gold italic">גלריית תמונות ({images.length})</label>
               <div className="grid grid-cols-2 gap-2">
@@ -2091,7 +2091,7 @@ function AdminProductCard({
                         const newImages = images.filter((_, i) => i !== idx);
                         setLocalProduct({ ...localProduct, images: newImages, image: newImages[0] || '' });
                       }}
-                      className="absolute top-1 right-1 bg-red-500 text-white p-1 rounded-full opacity-0 group-hover/img:opacity-100 transition-opacity"
+                      className="absolute top-1 right-1 bg-red-500 text-white p-1 rounded-full opacity-100 md:opacity-0 md:group-hover/img:opacity-100 transition-opacity"
                      >
                        <X size={12} />
                      </button>
@@ -2435,10 +2435,58 @@ function AdminPanel({
     return content.categories.find(c => c.id === selectedCategoryId)?.name;
   }, [selectedCategoryId, content.categories]);
 
+  const adminTabs: { id: typeof activeTab; label: string; title: string; icon: ReactNode }[] = [
+    { id: 'products', label: 'מוצרים', title: 'ניהול מוצרים', icon: <ImageIcon size={16} /> },
+    { id: 'inventory', label: 'מלאי ספקים', title: 'סנכרון מלאי מהספקים', icon: <Globe size={16} /> },
+    { id: 'categories', label: 'קטגוריות', title: 'ניהול קטגוריות', icon: <Menu size={16} /> },
+    { id: 'content', label: 'תוכן כללי', title: 'עריכת תוכן כללי', icon: <Edit2 size={16} /> },
+    { id: 'leads', label: `לידים (${leads.length})`, title: 'לידים שהתקבלו', icon: <Mail size={16} /> },
+  ];
+
   return (
-    <div className="flex h-screen bg-luxury-black text-white overflow-hidden w-full">
-      {/* Sidebar */}
-      <aside className="w-64 bg-luxury-dark-gray border-l border-white/5 flex flex-col p-6">
+    <div className="flex flex-col md:flex-row h-screen bg-luxury-black text-white overflow-hidden w-full" dir="rtl">
+      {/* Mobile: compact top bar + swipeable tabs (the sidebar is desktop only) */}
+      <div className="md:hidden shrink-0 bg-luxury-dark-gray border-b border-white/10" style={{ paddingTop: 'env(safe-area-inset-top, 0px)' }}>
+        <div className="flex items-center justify-between gap-2 px-4 py-3">
+          <button
+            onClick={() => onReturn()}
+            className="flex items-center gap-1.5 px-3 py-2 bg-white/5 border border-white/10 rounded text-[11px] font-bold"
+          >
+            <ArrowRight size={14} />
+            <span>לחנות</span>
+          </button>
+          <div className="flex items-center gap-2 min-w-0">
+            {content.logo && (
+              <img src={content.logo} alt="" className="h-7 w-auto object-contain" referrerPolicy="no-referrer" />
+            )}
+            <span className="text-sm font-black text-gold truncate">ניהול</span>
+          </div>
+          <button
+            onClick={() => { if (confirm('בטוח שברצונך להתנתק?')) onLogout(); }}
+            className="p-2 bg-red-500/10 text-red-500 border border-red-500/20 rounded"
+            aria-label="התנתקות"
+          >
+            <LogOut size={16} />
+          </button>
+        </div>
+        <nav className="flex gap-2 overflow-x-auto px-4 pb-3 scrollbar-hide" aria-label="אזורי ניהול">
+          {adminTabs.map(t => (
+            <button
+              key={t.id}
+              onClick={() => setActiveTab(t.id)}
+              className={`shrink-0 flex items-center gap-1.5 px-3.5 py-2 rounded-full border text-xs font-bold whitespace-nowrap transition-all ${
+                activeTab === t.id ? 'bg-gold text-black border-gold' : 'bg-white/5 border-white/10 text-zinc-300'
+              }`}
+            >
+              {t.icon}
+              <span>{t.label}</span>
+            </button>
+          ))}
+        </nav>
+      </div>
+
+      {/* Desktop sidebar */}
+      <aside className="hidden md:flex w-64 shrink-0 bg-luxury-dark-gray border-l border-white/5 flex-col p-6 overflow-y-auto">
         <div className="mb-6 space-y-2">
           <button 
             onClick={() => onReturn()}
@@ -2446,16 +2494,6 @@ function AdminPanel({
           >
             <ArrowLeft size={16} />
             <span>חזרה לחנות</span>
-          </button>
-          
-          <button 
-            onClick={() => {
-              if (confirm('בטוח שברצונך להתנתק?')) onLogout();
-            }}
-            className="w-full flex items-center justify-center gap-2 p-3 bg-red-500/10 text-red-500 border border-red-500/20 rounded hover:bg-red-500/20 transition-all text-[10px] font-bold uppercase tracking-widest"
-          >
-            <LogOut size={16} />
-            <span>התנתק מהמערכת</span>
           </button>
         </div>
         <div className="mb-10 text-center">
@@ -2466,44 +2504,16 @@ function AdminPanel({
           <p className="text-[10px] text-text-muted uppercase tracking-widest font-bold mt-1">הגדרות אתר</p>
         </div>
         <nav className="flex-grow space-y-2">
-          <button 
-            onClick={() => setActiveTab('content')}
-            className={`w-full text-right p-4 rounded flex items-center justify-between group transition-all border border-transparent ${activeTab === 'content' ? 'border-gold text-gold bg-gold/5' : 'hover:bg-white/5'}`}
-          >
-            <span>תוכן כללי</span>
-            <Edit2 size={16} />
-          </button>
-          <button 
-            onClick={() => setActiveTab('categories')}
-            className={`w-full text-right p-4 rounded flex items-center justify-between group transition-all border border-transparent ${activeTab === 'categories' ? 'border-gold text-gold bg-gold/5' : 'hover:bg-white/5'}`}
-          >
-            <span>קטגוריות</span>
-            <Menu size={16} />
-          </button>
-          <button 
-            onClick={() => setActiveTab('products')}
-            className={`w-full text-right p-4 rounded flex items-center justify-between group transition-all border border-transparent ${activeTab === 'products' ? 'border-gold text-gold bg-gold/5' : 'hover:bg-white/5'}`}
-          >
-            <span>מוצרים</span>
-            <ImageIcon size={16} />
-          </button>
-          <button 
-            onClick={() => setActiveTab('inventory')}
-            className={`w-full text-right p-4 rounded flex items-center justify-between group transition-all border border-transparent ${activeTab === 'inventory' ? 'border-gold text-gold bg-gold/5' : 'hover:bg-white/5'}`}
-          >
-            <div className="flex items-center gap-2">
-              <span>סנכרון מלאי ספקים</span>
-              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-            </div>
-            <Globe size={16} />
-          </button>
-          <button 
-            onClick={() => setActiveTab('leads')}
-            className={`w-full text-right p-4 rounded flex items-center justify-between group transition-all border border-transparent ${activeTab === 'leads' ? 'border-gold text-gold bg-gold/5' : 'hover:bg-white/5'}`}
-          >
-            <span>לידים ({leads.length})</span>
-            <Mail size={16} />
-          </button>
+          {adminTabs.map(t => (
+            <button 
+              key={t.id}
+              onClick={() => setActiveTab(t.id)}
+              className={`w-full text-right p-4 rounded flex items-center justify-between group transition-all border border-transparent ${activeTab === t.id ? 'border-gold text-gold bg-gold/5' : 'hover:bg-white/5'}`}
+            >
+              <span>{t.label}</span>
+              {t.icon}
+            </button>
+          ))}
         </nav>
         <button 
           onClick={() => {
@@ -2511,25 +2521,22 @@ function AdminPanel({
           }}
           className="mt-auto p-4 flex items-center justify-between text-zinc-500 hover:text-red-500 transition-colors uppercase text-[10px] font-bold tracking-widest border-t border-white/5 pt-6"
         >
-          <span>התנתקות מלאה</span>
+          <span>התנתקות</span>
           <LogOut size={16} />
         </button>
       </aside>
 
       {/* Content Area */}
-      <main className="flex-grow overflow-y-auto p-8 md:p-12 custom-scrollbar" dir="rtl">
-        <header className="flex justify-between items-center mb-12 border-b border-white/10 pb-6">
+      <main className="flex-1 min-w-0 overflow-y-auto px-4 py-5 sm:p-8 md:p-12 custom-scrollbar" dir="rtl" style={{ paddingBottom: 'max(1.25rem, env(safe-area-inset-bottom, 0px))' }}>
+        <header className="hidden md:flex justify-between items-center mb-12 border-b border-white/10 pb-6">
            <h3 className="text-3xl font-black uppercase tracking-tighter italic">
-            {activeTab === 'content' && 'עריכת תוכן כללי'}
-            {activeTab === 'categories' && 'ניהול קטגוריות'}
-            {activeTab === 'products' && 'ניהול מוצרים'}
-            {activeTab === 'inventory' && 'סנכרון מלאי יומי מאתרי היבואנים'}
-            {activeTab === 'leads' && 'לידים שהתקבלו'}
+            {adminTabs.find(t => t.id === activeTab)?.title}
            </h3>
            <div className="flex items-center gap-4 text-xs text-text-muted">
              <span>{(content.siteName || '').toUpperCase()} STORE</span>
            </div>
         </header>
+        <h3 className="md:hidden text-xl font-black mb-5">{adminTabs.find(t => t.id === activeTab)?.title}</h3>
 
         {activeTab === 'content' && (
           <div className="max-w-3xl space-y-10 relative pb-20">
@@ -2540,7 +2547,7 @@ function AdminPanel({
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 20 }}
-                  className="sticky top-4 z-10 bg-gold text-black p-4 rounded-xl shadow-2xl flex items-center justify-between gap-6 border border-gold/50 backdrop-blur-md"
+                  className="sticky top-0 md:top-4 z-10 bg-gold text-black p-4 rounded-xl shadow-2xl flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 sm:gap-6 border border-gold/50 backdrop-blur-md"
                  >
                     <div className="flex items-center gap-3">
                       <div className="bg-black/10 p-2 rounded-full animate-pulse">
@@ -3102,10 +3109,10 @@ function AdminPanel({
                     )}
                   </div>
                 </div>
-                <div className="flex gap-3 shrink-0 w-full lg:w-auto">
+                <div className="grid grid-cols-2 sm:flex gap-2 sm:gap-3 shrink-0 w-full lg:w-auto">
                   <button 
                     onClick={() => setActiveTab('inventory')}
-                    className="flex-grow lg:flex-initial flex items-center justify-center gap-2 px-5 py-3 rounded font-bold text-xs uppercase tracking-widest bg-zinc-900 border border-emerald-500/30 text-emerald-400 hover:border-emerald-500 hover:bg-emerald-500/10 transition-all shadow-lg active:scale-95 cursor-pointer"
+                    className="hidden sm:flex flex-grow lg:flex-initial items-center justify-center gap-2 px-5 py-3 rounded font-bold text-xs uppercase tracking-widest bg-zinc-900 border border-emerald-500/30 text-emerald-400 hover:border-emerald-500 hover:bg-emerald-500/10 transition-all shadow-lg active:scale-95 cursor-pointer"
                     title="פתח את מרכז סנכרון המלאי היומי"
                   >
                     <Globe size={14} />
@@ -3113,7 +3120,7 @@ function AdminPanel({
                   </button>
                   <button 
                     onClick={() => setShowAiImporter(!showAiImporter)}
-                    className={`flex-grow lg:flex-initial flex items-center justify-center gap-2 px-6 py-3 rounded font-bold text-xs uppercase tracking-widest transition-all border ${showAiImporter ? 'bg-gold/10 border-gold text-gold shadow-[0_0_15px_rgba(212,175,55,0.15)]' : 'bg-zinc-900 border-gold/20 text-gold hover:border-gold hover:bg-gold/5'} shadow-lg active:scale-95 cursor-pointer`}
+                    className={`flex-grow lg:flex-initial flex items-center justify-center gap-2 px-3 sm:px-6 py-3 rounded font-bold text-xs uppercase tracking-widest transition-all border ${showAiImporter ? 'bg-gold/10 border-gold text-gold shadow-[0_0_15px_rgba(212,175,55,0.15)]' : 'bg-zinc-900 border-gold/20 text-gold hover:border-gold hover:bg-gold/5'} shadow-lg active:scale-95 cursor-pointer`}
                   >
                     <Sparkles size={14} /> 
                     <span>ייבוא מהיר בעזרת AI</span>
@@ -3138,7 +3145,7 @@ function AdminPanel({
                       onSaveProduct(newProduct);
                       alert(`מוצר חדש נוסף בהצלחה לקטגוריה: ${targetCategoryName}`);
                     }}
-                    className="flex-grow lg:flex-initial bg-gold text-black px-6 py-3 rounded font-bold flex items-center justify-center gap-2 text-xs uppercase tracking-widest hover:bg-gold/90 transition-all shadow-lg active:scale-95 whitespace-nowrap cursor-pointer"
+                    className="flex-grow lg:flex-initial bg-gold text-black px-3 sm:px-6 py-3 rounded font-bold flex items-center justify-center gap-2 text-xs uppercase tracking-widest hover:bg-gold/90 transition-all shadow-lg active:scale-95 whitespace-nowrap cursor-pointer"
                   >
                     <Plus size={14} /> הוסף מוצר חדש
                   </button>
@@ -3155,7 +3162,7 @@ function AdminPanel({
                 />
               )}
 
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 2xl:grid-cols-2 gap-4 sm:gap-8">
                 {filteredProducts.map(product => (
                   <AdminProductCard 
                     key={`admin-prod-${product.id}`}
