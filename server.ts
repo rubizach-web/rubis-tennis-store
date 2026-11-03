@@ -7,6 +7,8 @@ import { GoogleGenAI } from "@google/genai";
 import { syncOneProduct, isSupplierId } from "./server/inventory/run.ts";
 import { detectSupplier, findLink, resolveLinkFromUrl } from "./server/inventory/sync.ts";
 import { getCatalog, requestRefresh, catalogStatus, getImage } from "./server/catalog.ts";
+import { storeImage, parseDataUrl } from "./server/images.ts";
+import { requireAdmin } from "./server/adminAuth.ts";
 
 async function startServer() {
   const app = express();
@@ -45,6 +47,21 @@ async function startServer() {
     res.setHeader("Content-Type", img.type);
     res.setHeader("Cache-Control", "public, max-age=31536000, immutable");
     res.end(img.body);
+  });
+
+  // Admin photo upload: stores the photo outside the database (server/images.ts)
+  app.post("/api/admin/images", async (req, res) => {
+    try {
+      await requireAdmin(req.headers.authorization);
+      const { dataUrl } = req.body ?? {};
+      if (!parseDataUrl(dataUrl)) return res.status(400).json({ error: "לא התקבלה תמונה" });
+      if (!process.env.GITHUB_IMAGES_TOKEN) {
+        return res.status(503).json({ error: "אחסון התמונות עוד לא הוגדר (GITHUB_IMAGES_TOKEN)", isConfigError: true });
+      }
+      res.json({ url: await storeImage(dataUrl) });
+    } catch (error: any) {
+      res.status(error?.status || 500).json({ error: error?.message || "העלאת התמונה נכשלה" });
+    }
   });
 
   // The admin screen pings this after saving so visitors see changes quickly

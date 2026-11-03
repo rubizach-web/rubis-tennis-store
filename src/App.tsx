@@ -107,6 +107,28 @@ const compressImage = (base64Str: string, maxWidth = 1000, maxHeight = 1000, qua
   });
 };
 
+/**
+ * Stores an uploaded photo outside the database (see server/images.ts) and
+ * returns its public URL. If image storage is not available, keeps the photo
+ * embedded as before so the upload is never lost.
+ */
+const uploadProductImage = async (dataUrl: string): Promise<string> => {
+  try {
+    const idToken = await auth.currentUser?.getIdToken();
+    const res = await fetch('/api/admin/images', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', ...(idToken ? { Authorization: `Bearer ${idToken}` } : {}) },
+      body: JSON.stringify({ dataUrl }),
+    });
+    const body = await res.json().catch(() => ({}));
+    if (res.ok && body?.url) return body.url as string;
+    console.warn('Image upload fell back to embedding:', body?.error || res.status);
+  } catch (e) {
+    console.warn('Image upload fell back to embedding:', e);
+  }
+  return dataUrl;
+};
+
 // --- Components ---
 
 function FilePicker({ 
@@ -129,7 +151,7 @@ function FilePicker({
       reader.onloadend = async () => {
         const base64 = reader.result as string;
         const compressed = await compressImage(base64);
-        onChange(compressed);
+        onChange(await uploadProductImage(compressed));
       };
       reader.readAsDataURL(file);
     }
@@ -2108,7 +2130,7 @@ function AdminProductCard({
                         const reader = new FileReader();
                         reader.onloadend = async () => {
                           const base64 = reader.result as string;
-                          const compressed = await compressImage(base64);
+                          const compressed = await uploadProductImage(await compressImage(base64));
                           const newImages = [...images, compressed];
                           setLocalProduct({ ...localProduct, images: newImages, image: newImages[0] || '' });
                         };

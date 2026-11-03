@@ -1,0 +1,26 @@
+name: העברת תמונות מחוץ לבסיס הנתונים
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'בדיקה בלבד — למדוד בלי להעביר'
+        type: boolean
+        default: true
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install --no-save --no-package-lock --ignore-scripts --legacy-peer-deps firebase-admin@13
+      - name: Move photos
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          GITHUB_IMAGES_TOKEN: ${{ secrets.IMAGES_TOKEN }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: node --experimental-strip-types --no-warnings scripts/migrate-images.ts
