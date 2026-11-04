@@ -1,65 +1,1187 @@
 {
   "summary": {
-    "startedAt": "2026-11-03T09:26:42.155Z",
+    "startedAt": "2026-11-04T09:32:44.294Z",
     "dryRun": true,
     "total": 215,
-    "checked": 112,
-    "linkedNow": 112,
-    "needsLink": 86,
-    "unknownSupplier": 6,
+    "checked": 74,
+    "linkedNow": 74,
+    "needsLink": 57,
+    "unknownSupplier": 0,
     "manual": 11,
     "notFound": 0,
-    "errors": 0,
-    "inStock": 117,
-    "outOfStock": 98,
+    "errors": 73,
+    "inStock": 87,
+    "outOfStock": 128,
     "writes": 0
   },
   "products": [
     {
       "id": "46kcpxxsn",
       "name": " BABOLAT JET MACH 4 AC RED",
-      "outcome": "linked",
+      "outcome": "error",
       "supplier": "babolat",
       "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "jatvrturh",
+      "name": "24 שלישיות כדורים Diadem Premier",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "4d15j53fo",
+      "name": "BABAOLAT PRUPULSE 3 AC BOY BLUE",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "0d5rqzcs9",
+      "name": "BABOLAT COURT L BLACK",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "y3341hhdr",
+      "name": "BABOLAT COURT L BLUE",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": true,
       "after": true,
       "unavailableSizes": [],
-      "supplierSizes": [
-        "42",
-        "43",
-        "44",
-        "45"
-      ],
-      "link": {
-        "ref": "1429",
-        "url": "https://babolat.co.il/product/1429",
-        "status": "auto"
-      },
-      "supplierTitle": "נעלי טניס בבולט Jet Mach 4 AC Babolat",
-      "supplierColor": "Red",
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: 42, 43, 44, 45",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "1429",
-          "url": "https://babolat.co.il/product/1429",
-          "title": "נעלי טניס בבולט Jet Mach 4 AC Babolat",
-          "color": "Red",
-          "score": 1
-        },
-        {
-          "ref": "1430",
-          "url": "https://babolat.co.il/product/1430",
-          "title": "נעלי טניס בבולט Jet Mach 4 AC Men Gen9 Babolat",
-          "score": 0.71
-        },
-        {
-          "ref": "1428",
-          "url": "https://babolat.co.il/product/1428",
-          "title": "נעלי טניס בבולט Jet Mach 4 AC Men Babolat",
-          "color": "Beige / Dark Blue",
-          "score": 0.6
-        }
-      ]
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "lo67ymysz",
+      "name": "BABOLAT DRIVE BLACK 295G",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "2s2s3n0yt",
+      "name": "BABOLAT EVO AERO LITE PINK",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "14lba1e1f",
+      "name": "BABOLAT EVO AERO PINK",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "o6q61dng5",
+      "name": "BABOLAT EVO DRIVE 115 240G",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "vqfpaxtv9",
+      "name": "BABOLAT EVO DRIVE 115 WIMBELDON",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "0wxvzziic",
+      "name": "BABOLAT JET MACH 3 AC BLACK-GOLD",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "pabjb5c5o",
+      "name": "BABOLAT JET MACH 3 AC BLUE-ORANGE",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "zcamukbly",
+      "name": "BABOLAT JET MACH 3 AC GIRL LIGTH BLUE",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "8web51mdl",
+      "name": "BABOLAT JET MACH 3 AC GIRL RED",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "6yyfbvdor",
+      "name": "BABOLAT JET MACH 3 AC GIRL YELLOW-PINK",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "w6nnk7yma",
+      "name": "BABOLAT JET MACH 3 AC JUNIOR BLUE",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "50o93w6pd",
+      "name": "BABOLAT JET MACH 3 AC JUNIOR YELLOW",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "g3gwofbvf",
+      "name": "BABOLAT JET MACH 3 AC WIDE  BLACK",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "6uco5jw62",
+      "name": "BABOLAT JET MACH 3 AC WIDE BLUE-WHITE-RED",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "y8bfamh7d",
+      "name": "BABOLAT JET MACH 3 AC WOMEN PURPEL-BLACK",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "th3mp49uc",
+      "name": "BABOLAT JET MACH 4 AC WHITE",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "6ltbz2ho6",
+      "name": "BABOLAT JET MACH 4 GEN 9",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "eb8b415cl",
+      "name": "BABOLAT JET TERE 2 BLUE",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "beflpv1gw",
+      "name": "BABOLAT JET TERE 2 LIGHT BLUE",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "ik4bw4tpw",
+      "name": "BABOLAT JET TERE 2 WHITE",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "zxc1uoul5",
+      "name": "BABOLAT PROPULSE 3 AC GIRL WHITE",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "2mhlsq5vy",
+      "name": "BABOLAT PROPULSE 3 AC JUNIOR BOY",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "gmr393vy8",
+      "name": "BABOLAT PROPULSE FURY 3 AC BLUE",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "ocawbearp",
+      "name": "BABOLAT PROPULSE FURY 3 AC BLUE-DARK",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "o5wzxmaxp",
+      "name": "BABOLAT PROPULSE FURY 3 AC BLUE-WHITE",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "oyqel3p19",
+      "name": "BABOLAT PROPULSE FURY 3 AC GREY-YELLOW",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "ag9qf8d3x",
+      "name": "BABOLAT PROPULSE FURY 3 AC LIGTH GREY",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "4onyyjwtk",
+      "name": "BABOLAT PROPULSE FURY 3 AC PINK-BLUE",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "8ku1bftn1",
+      "name": "BABOLAT PURE AERO 100 GEN 9 300G",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "z3ikxm2og",
+      "name": "BABOLAT PURE AERO 98 GEN 9 305G",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "erie7vh7s",
+      "name": "BABOLAT PURE AERO LITE GEN 9",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "hoqntug1n",
+      "name": "BABOLAT PURE AERO TEAM GEN 9",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "vlbme632z",
+      "name": "BABOLAT PURE DRIVE 107 GEN 11",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "3dcw58d9y",
+      "name": "BABOLAT PURE DRIVE 98 GEN 11 305G ",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "okdfltvkm",
+      "name": "BABOLAT PURE DRIVE GEN 11 300G",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "flwjgec4d",
+      "name": "BABOLAT PURE DRIVE LITE GEN 11",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "ksq4r3p4f",
+      "name": "BABOLAT PURE DRIVE SUPER LITE GEN 11",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "ivkvtz04c",
+      "name": "BABOLAT PURE DRIVE TEAM GEN 11",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "48eny6y3k",
+      "name": "BABOLAT PURE STRIKE 100 16\\20",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "zga4wlcyy",
+      "name": "BABOLAT PURE STRIKE 100 GEN 4",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "29fbbj16n",
+      "name": "BABOLAT PURE STRIKE 305G GEN 4",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "six3vcbxx",
+      "name": "BABOLAT PURE STRIKE 97 GEN 4",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "knzmt9bw0",
+      "name": "BABOLAT PURE STRIKE LITE GEN 4",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "yflwwj6ok",
+      "name": "BABOLAT PURE STRIKE TEAM GEN 4",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "do3rx4cf7",
+      "name": "BABOLAT RIVAL 102 280G",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "svj6270sg",
+      "name": "BABOLAT SFX4 AC WOMEN LIGTH GREY",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "5cv10wsp3",
+      "name": "PURE AERO BACKPACK GEN 9",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "0dtc605cs",
+      "name": "PURE AERO BACKPACK RAFA G2",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "5eisvseyq",
+      "name": "PURE AERO JUNIOR 25 GEN 9",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "flb11fn3y",
+      "name": "PURE DRIVE BACKPACK GEN 11",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "wquo01vhk",
+      "name": "PURE DRIVE JUNIOR 25 GEN 11",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "x8cnfyi9i",
+      "name": "PURE DRIVE JUNIOR 26 GEN 11",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "zj82yd2jk",
+      "name": "PURE STRIKE BACKPACK GEN4 GREY",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "jzlc93bpv",
+      "name": "RH X 12 BABOLAT PURE STRIKE",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "oyk0b8pj2",
+      "name": "RH X 6 BABOLAT PURE AERO GEN 9",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "at6a08vc0",
+      "name": "RH X 6 BABOLAT PURE DRIVE",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "teujaywy1",
+      "name": "RH X 6 BABOLAT PURE STRIKE",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "om9bftbe9",
+      "name": "RH X 6 PURE STRIKE WHITE",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "6ee3jz47f",
+      "name": "RH X PURE ARO RAFA G2",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "yzvt4l4nx",
+      "name": "RH X12 BABOLAT PURE DRIVE GEN 11",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "5frelxt0v",
+      "name": "RH X12 PURE AERO GEN 9  ",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "6oomyp20x",
+      "name": "RH X9 BABOLAT PURE WIMBLEDON",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "c5hlif7y2",
+      "name": "גליל פילאטיס חלול 45 ס\"מ",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "1lgqmvinn",
+      "name": "דילגית 2.7 מטר 15 ס\"מ עובי",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "k3whn6blz",
+      "name": "מארז 24 שלישיות כדורים BABOLAT GOLD",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "c768627ue",
+      "name": "מארז 24 שלישיות כדורים TRETORN",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "89n4qb4r6",
+      "name": "מדרגה אירובית- \"סטפר\"",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
+    },
+    {
+      "id": "dfycpt36w",
+      "name": "פיתה באלאנס 36 ס\"מ",
+      "outcome": "error",
+      "supplier": "babolat",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (babolat feed HTTP 403) — המלאי לא שונה",
+      "linkReason": null,
+      "suggestions": []
     },
     {
       "id": "2sb4ezdbz",
@@ -84,1106 +1206,6 @@
           "ref": "https://www.tennis-online.co.il/product/yonex-vcore-26-8th-gen/",
           "url": "https://www.tennis-online.co.il/product/yonex-vcore-26-8th-gen/",
           "title": "YONEX VCORE 26 (8th gen.)",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": "0d5rqzcs9",
-      "name": "BABOLAT COURT L BLACK",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": false,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": [],
-      "link": {
-        "ref": "1325",
-        "url": "https://babolat.co.il/product/1325",
-        "status": "auto"
-      },
-      "supplierTitle": "תיק טניס בבולט Court L Babolat",
-      "supplierColor": "Black",
-      "detail": "במלאי בבבולט",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "1325",
-          "url": "https://babolat.co.il/product/1325",
-          "title": "תיק טניס בבולט Court L Babolat",
-          "color": "Black",
-          "score": 1
-        },
-        {
-          "ref": "1360",
-          "url": "https://babolat.co.il/product/1360",
-          "title": "תיק טניס בבולט Court L Babolat",
-          "color": "Blue",
-          "score": 0.6
-        }
-      ]
-    },
-    {
-      "id": "y3341hhdr",
-      "name": "BABOLAT COURT L BLUE",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": [],
-      "link": {
-        "ref": "1360",
-        "url": "https://babolat.co.il/product/1360",
-        "status": "auto"
-      },
-      "supplierTitle": "תיק טניס בבולט Court L Babolat",
-      "supplierColor": "Blue",
-      "detail": "במלאי בבבולט",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "1360",
-          "url": "https://babolat.co.il/product/1360",
-          "title": "תיק טניס בבולט Court L Babolat",
-          "color": "Blue",
-          "score": 1
-        },
-        {
-          "ref": "1325",
-          "url": "https://babolat.co.il/product/1325",
-          "title": "תיק טניס בבולט Court L Babolat",
-          "color": "Black",
-          "score": 0.6
-        }
-      ]
-    },
-    {
-      "id": "lo67ymysz",
-      "name": "BABOLAT DRIVE BLACK 295G",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": false,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": [
-        "0",
-        "1",
-        "2",
-        "3",
-        "4"
-      ],
-      "link": {
-        "ref": "1130",
-        "url": "https://babolat.co.il/product/1130",
-        "status": "auto"
-      },
-      "supplierTitle": "מחבט טניס בבולט 295 גרם Drive Black Babolat",
-      "supplierColor": null,
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 0 (4\"), ידית 1 (1/8 4), ידית 2 (1/4 4), ידית 3 (3/8 4), ידית 4 (1/2 4)",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "1130",
-          "url": "https://babolat.co.il/product/1130",
-          "title": "מחבט טניס בבולט 295 גרם Drive Black Babolat",
-          "score": 1
-        },
-        {
-          "ref": "1074",
-          "url": "https://babolat.co.il/product/1074",
-          "title": "מחבט טניס בבולט Drive Junior 23 Babolat",
-          "score": 0.33
-        },
-        {
-          "ref": "285",
-          "url": "https://babolat.co.il/product/285",
-          "title": "מחבט טניס בבולט Pure Drive Junior 25 Babolat",
-          "score": 0.25
-        }
-      ]
-    },
-    {
-      "id": "2s2s3n0yt",
-      "name": "BABOLAT EVO AERO LITE PINK",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": false,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": [
-        "0",
-        "1",
-        "2"
-      ],
-      "link": {
-        "ref": "1066",
-        "url": "https://babolat.co.il/product/1066",
-        "status": "auto"
-      },
-      "supplierTitle": "מחבט טניס בבולט 260 גרם Evo Aero Lite Pink Babolat",
-      "supplierColor": null,
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 0 (4\"), ידית 1 (1/8 4), ידית 2 (1/4 4)",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "1066",
-          "url": "https://babolat.co.il/product/1066",
-          "title": "מחבט טניס בבולט 260 גרם Evo Aero Lite Pink Babolat",
-          "score": 0.75
-        },
-        {
-          "ref": "1495",
-          "url": "https://babolat.co.il/product/1495",
-          "title": "מחבט טניס בבולט 260 גרם Evo Aero Lite Pink Gen2 Babolat",
-          "score": 0.58
-        },
-        {
-          "ref": "887",
-          "url": "https://babolat.co.il/product/887",
-          "title": "מחבט טניס בבולט 275 גרם Evo Aero Pink Babolat",
-          "score": 0.3
-        }
-      ]
-    },
-    {
-      "id": "14lba1e1f",
-      "name": "BABOLAT EVO AERO PINK",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": false,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": [
-        "1",
-        "2"
-      ],
-      "link": {
-        "ref": "887",
-        "url": "https://babolat.co.il/product/887",
-        "status": "auto"
-      },
-      "supplierTitle": "מחבט טניס בבולט 275 גרם Evo Aero Pink Babolat",
-      "supplierColor": null,
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 1 (1/8 4), ידית 2 (1/4 4)",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "887",
-          "url": "https://babolat.co.il/product/887",
-          "title": "מחבט טניס בבולט 275 גרם Evo Aero Pink Babolat",
-          "score": 0.65
-        },
-        {
-          "ref": "886",
-          "url": "https://babolat.co.il/product/886",
-          "title": "מחבט טניס בבולט 275 גרם Evo Aero Babolat",
-          "score": 0.5
-        }
-      ]
-    },
-    {
-      "id": "o6q61dng5",
-      "name": "BABOLAT EVO DRIVE 115 240G",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": false,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": [
-        "1",
-        "3"
-      ],
-      "link": {
-        "ref": "319",
-        "url": "https://babolat.co.il/product/319",
-        "status": "auto"
-      },
-      "supplierTitle": "מחבט טניס בבולט 240 גרם Evo Drive 115 Babolat",
-      "supplierColor": null,
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 1 (1/8 4), ידית 3 (3/8 4)",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "319",
-          "url": "https://babolat.co.il/product/319",
-          "title": "מחבט טניס בבולט 240 גרם Evo Drive 115 Babolat",
-          "score": 1
-        },
-        {
-          "ref": "848",
-          "url": "https://babolat.co.il/product/848",
-          "title": "מחבט טניס בבולט 240 גרם Evo Drive 115 Wimbledon 2022",
-          "score": 0.75
-        }
-      ]
-    },
-    {
-      "id": "0wxvzziic",
-      "name": "BABOLAT JET MACH 3 AC BLACK-GOLD",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": false,
-      "after": true,
-      "unavailableSizes": [
-        "40.5"
-      ],
-      "supplierSizes": [
-        "40",
-        "48"
-      ],
-      "link": {
-        "ref": "749",
-        "url": "https://babolat.co.il/product/749",
-        "status": "auto"
-      },
-      "supplierTitle": "נעלי טניס בבולט Jet Mach 3 AC Men Babolat",
-      "supplierColor": "Black/Gold",
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: 40, 48 · מידות שהספק לא מציע בכלל: 40.5",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "749",
-          "url": "https://babolat.co.il/product/749",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Men Babolat",
-          "color": "Black/Gold",
-          "score": 1
-        },
-        {
-          "ref": "824",
-          "url": "https://babolat.co.il/product/824",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Women Babolat",
-          "color": "Black / Pink",
-          "score": 1
-        },
-        {
-          "ref": "1173",
-          "url": "https://babolat.co.il/product/1173",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Girl Babolat",
-          "color": "Coral / Gold Fusion",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": "8web51mdl",
-      "name": "BABOLAT JET MACH 3 AC GIRL RED",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": false,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": [
-        "37",
-        "38",
-        "38.5",
-        "39",
-        "40"
-      ],
-      "link": {
-        "ref": "1372",
-        "url": "https://babolat.co.il/product/1372",
-        "status": "auto"
-      },
-      "supplierTitle": "נעלי טניס בבולט Jet Mach 3 AC Junior Girl Babolat",
-      "supplierColor": "Red",
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: 37, 38, 38.5, 39, 40",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "1372",
-          "url": "https://babolat.co.il/product/1372",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Girl Babolat",
-          "color": "Red",
-          "score": 1
-        },
-        {
-          "ref": "972",
-          "url": "https://babolat.co.il/product/972",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Babolat",
-          "color": "Angel Blue",
-          "score": 0.6
-        },
-        {
-          "ref": "1173",
-          "url": "https://babolat.co.il/product/1173",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Girl Babolat",
-          "color": "Coral / Gold Fusion",
-          "score": 0.6
-        }
-      ]
-    },
-    {
-      "id": "50o93w6pd",
-      "name": "BABOLAT JET MACH 3 AC JUNIOR YELLOW",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": false,
-      "after": true,
-      "unavailableSizes": [
-        "36"
-      ],
-      "supplierSizes": [
-        "37",
-        "38",
-        "38.5",
-        "39",
-        "40"
-      ],
-      "link": {
-        "ref": "1370",
-        "url": "https://babolat.co.il/product/1370",
-        "status": "auto"
-      },
-      "supplierTitle": "נעלי טניס בבולט Jet Mach 3 AC Boy Junior Babolat",
-      "supplierColor": "Yellow",
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: 37, 38, 38.5, 39, 40 · מידות שהספק לא מציע בכלל: 36",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "1370",
-          "url": "https://babolat.co.il/product/1370",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Boy Junior Babolat",
-          "color": "Yellow",
-          "score": 1
-        },
-        {
-          "ref": "972",
-          "url": "https://babolat.co.il/product/972",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Babolat",
-          "color": "Angel Blue",
-          "score": 0.6
-        },
-        {
-          "ref": "1173",
-          "url": "https://babolat.co.il/product/1173",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Girl Babolat",
-          "color": "Coral / Gold Fusion",
-          "score": 0.6
-        }
-      ]
-    },
-    {
-      "id": "g3gwofbvf",
-      "name": "BABOLAT JET MACH 3 AC WIDE  BLACK",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": false,
-      "after": true,
-      "unavailableSizes": [
-        "42"
-      ],
-      "supplierSizes": [
-        "44",
-        "44.5"
-      ],
-      "link": {
-        "ref": "1299",
-        "url": "https://babolat.co.il/product/1299",
-        "status": "auto"
-      },
-      "supplierTitle": "נעלי טניס בבולט Jet Mach 3 AC Men WIDE Babolat",
-      "supplierColor": "Black / White",
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: 44, 44.5 · מידות שהספק לא מציע בכלל: 42",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "1299",
-          "url": "https://babolat.co.il/product/1299",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Men WIDE Babolat",
-          "color": "Black / White",
-          "score": 1
-        },
-        {
-          "ref": "1166",
-          "url": "https://babolat.co.il/product/1166",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Men WIDE Babolat",
-          "color": "White / Blue",
-          "score": 0.6
-        }
-      ]
-    },
-    {
-      "id": "6uco5jw62",
-      "name": "BABOLAT JET MACH 3 AC WIDE BLUE-WHITE-RED",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": false,
-      "after": true,
-      "unavailableSizes": [
-        "42",
-        "44",
-        "48"
-      ],
-      "supplierSizes": [
-        "45",
-        "49"
-      ],
-      "link": {
-        "ref": "1166",
-        "url": "https://babolat.co.il/product/1166",
-        "status": "auto"
-      },
-      "supplierTitle": "נעלי טניס בבולט Jet Mach 3 AC Men WIDE Babolat",
-      "supplierColor": "White / Blue",
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: 45, 49 · מידות שהספק לא מציע בכלל: 42, 48",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "1166",
-          "url": "https://babolat.co.il/product/1166",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Men WIDE Babolat",
-          "color": "White / Blue",
-          "score": 1
-        },
-        {
-          "ref": "1299",
-          "url": "https://babolat.co.il/product/1299",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Men WIDE Babolat",
-          "color": "Black / White",
-          "score": 0.98
-        }
-      ]
-    },
-    {
-      "id": "y8bfamh7d",
-      "name": "BABOLAT JET MACH 3 AC WOMEN PURPEL-BLACK",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [
-        "41"
-      ],
-      "supplierSizes": [
-        "38.5"
-      ],
-      "link": {
-        "ref": "824",
-        "url": "https://babolat.co.il/product/824",
-        "status": "auto"
-      },
-      "supplierTitle": "נעלי טניס בבולט Jet Mach 3 AC Women Babolat",
-      "supplierColor": "Black / Pink",
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: 38.5 · מידות שהספק לא מציע בכלל: 41",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "824",
-          "url": "https://babolat.co.il/product/824",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Women Babolat",
-          "color": "Black / Pink",
-          "score": 1
-        },
-        {
-          "ref": "961",
-          "url": "https://babolat.co.il/product/961",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Women Babolat",
-          "color": "French Blue",
-          "score": 0.6
-        },
-        {
-          "ref": "749",
-          "url": "https://babolat.co.il/product/749",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Men Babolat",
-          "color": "Black/Gold",
-          "score": 0.5
-        }
-      ]
-    },
-    {
-      "id": "6ltbz2ho6",
-      "name": "BABOLAT JET MACH 4 GEN 9",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": false,
-      "after": true,
-      "unavailableSizes": [
-        "47"
-      ],
-      "supplierSizes": [
-        "41",
-        "42",
-        "42.5",
-        "43",
-        "44",
-        "44.5",
-        "45",
-        "46"
-      ],
-      "link": {
-        "ref": "1430",
-        "url": "https://babolat.co.il/product/1430",
-        "status": "auto"
-      },
-      "supplierTitle": "נעלי טניס בבולט Jet Mach 4 AC Men Gen9 Babolat",
-      "supplierColor": "Black / Yellow",
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: 41, 42, 42.5, 43, 44, 44.5, 45, 46 · מידות שהספק לא מציע בכלל: 47",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "1430",
-          "url": "https://babolat.co.il/product/1430",
-          "title": "נעלי טניס בבולט Jet Mach 4 AC Men Gen9 Babolat",
-          "score": 0.86
-        },
-        {
-          "ref": "1428",
-          "url": "https://babolat.co.il/product/1428",
-          "title": "נעלי טניס בבולט Jet Mach 4 AC Men Babolat",
-          "color": "Beige / Dark Blue",
-          "score": 0.32
-        },
-        {
-          "ref": "1429",
-          "url": "https://babolat.co.il/product/1429",
-          "title": "נעלי טניס בבולט Jet Mach 4 AC Babolat",
-          "color": "Red",
-          "score": 0.32
-        }
-      ]
-    },
-    {
-      "id": "ik4bw4tpw",
-      "name": "BABOLAT JET TERE 2 WHITE",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": false,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": [
-        "44.5",
-        "45",
-        "46"
-      ],
-      "link": {
-        "ref": "1165",
-        "url": "https://babolat.co.il/product/1165",
-        "status": "auto"
-      },
-      "supplierTitle": "נעלי טניס בבולט Jet Tere 2 AC Men Babolat",
-      "supplierColor": "White",
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: 44.5, 45, 46",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "1165",
-          "url": "https://babolat.co.il/product/1165",
-          "title": "נעלי טניס בבולט Jet Tere 2 AC Men Babolat",
-          "color": "White",
-          "score": 0.95
-        },
-        {
-          "ref": "1490",
-          "url": "https://babolat.co.il/product/1490",
-          "title": "נעלי טניס בבולט Jet Tere 2 Wimbledon AC Men Babolat",
-          "color": "White",
-          "score": 0.82
-        },
-        {
-          "ref": "1504",
-          "url": "https://babolat.co.il/product/1504",
-          "title": "נעלי טניס בבולט Jet Tere 2 Wimbledon AC Women Babolat",
-          "color": "White",
-          "score": 0.82
-        }
-      ]
-    },
-    {
-      "id": "zxc1uoul5",
-      "name": "BABOLAT PROPULSE 3 AC GIRL WHITE",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [
-        "37",
-        "39",
-        "40"
-      ],
-      "supplierSizes": [
-        "36.5",
-        "38.5"
-      ],
-      "link": {
-        "ref": "1350",
-        "url": "https://babolat.co.il/product/1350",
-        "status": "auto"
-      },
-      "supplierTitle": "נעלי טניס בבולט Propulse 3 AC Junior Girl Babolat",
-      "supplierColor": "White / Coral",
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: 36.5, 38.5 · מידות שהספק לא מציע בכלל: 37, 39, 40",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "1350",
-          "url": "https://babolat.co.il/product/1350",
-          "title": "נעלי טניס בבולט Propulse 3 AC Junior Girl Babolat",
-          "color": "White / Coral",
-          "score": 1
-        },
-        {
-          "ref": "1516",
-          "url": "https://babolat.co.il/product/1516",
-          "title": "נעלי טניס בבולט Propulse 3 AC Junior Girl Babolat",
-          "color": "Pink",
-          "score": 0.6
-        }
-      ]
-    },
-    {
-      "id": "oyqel3p19",
-      "name": "BABOLAT PROPULSE FURY 3 AC GREY-YELLOW",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": false,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": [
-        "41",
-        "42.5",
-        "44.5",
-        "45",
-        "46",
-        "46.5",
-        "47",
-        "48",
-        "49"
-      ],
-      "link": {
-        "ref": "902",
-        "url": "https://babolat.co.il/product/902",
-        "status": "auto"
-      },
-      "supplierTitle": "נעלי טניס בבולט Propulse Fury 3 AC Babolat",
-      "supplierColor": "Grey / Yellow",
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: 41, 42.5, 44.5, 45, 46, 46.5, 47, 48, 49",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "902",
-          "url": "https://babolat.co.il/product/902",
-          "title": "נעלי טניס בבולט Propulse Fury 3 AC Babolat",
-          "color": "Grey / Yellow",
-          "score": 1
-        },
-        {
-          "ref": "1298",
-          "url": "https://babolat.co.il/product/1298",
-          "title": "נעלי טניס בבולט Propulse Fury 3 AC Babolat",
-          "color": "Grey / White",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": "z3ikxm2og",
-      "name": "BABOLAT PURE AERO 98 GEN 9 305G",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": [
-        "1",
-        "2",
-        "3",
-        "4"
-      ],
-      "link": {
-        "ref": "1412",
-        "url": "https://babolat.co.il/product/1412",
-        "status": "auto"
-      },
-      "supplierTitle": "מחבט טניס בבולט 305 גרם Pure Aero 98 Gen9 Babolat",
-      "supplierColor": null,
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 1 (1/8 4), ידית 3 (3/8 4), ידית 4 (1/2 4)",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "1412",
-          "url": "https://babolat.co.il/product/1412",
-          "title": "מחבט טניס בבולט 305 גרם Pure Aero 98 Gen9 Babolat",
-          "score": 1
-        },
-        {
-          "ref": "935",
-          "url": "https://babolat.co.il/product/935",
-          "title": "מחבט טניס בבולט 305 גרם Pure Aero 98 Babolat",
-          "score": 0.5
-        },
-        {
-          "ref": "1438",
-          "url": "https://babolat.co.il/product/1438",
-          "title": "מחבט טניס בבולט Pure Aero Junior 26 Gen9 Babolat",
-          "score": 0.25
-        }
-      ]
-    },
-    {
-      "id": "erie7vh7s",
-      "name": "BABOLAT PURE AERO LITE GEN 9",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": false,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": [
-        "0",
-        "1",
-        "2"
-      ],
-      "link": {
-        "ref": "1415",
-        "url": "https://babolat.co.il/product/1415",
-        "status": "auto"
-      },
-      "supplierTitle": "מחבט טניס בבולט 270 גרם Pure Aero Lite Gen9 Babolat",
-      "supplierColor": null,
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 0 (4\"), ידית 1 (1/8 4), ידית 2 (1/4 4)",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "1415",
-          "url": "https://babolat.co.il/product/1415",
-          "title": "מחבט טניס בבולט 270 גרם Pure Aero Lite Gen9 Babolat",
-          "score": 0.71
-        },
-        {
-          "ref": "1375",
-          "url": "https://babolat.co.il/product/1375",
-          "title": "מחבט טניס בבולט 300 גרם Pure Aero Gen9 Babolat",
-          "score": 0.32
-        },
-        {
-          "ref": "1419",
-          "url": "https://babolat.co.il/product/1419",
-          "title": "תיק טניס בבולט Backpack Pure Aero 2026 Gen9 Babolat",
-          "score": 0.32
-        }
-      ]
-    },
-    {
-      "id": "hoqntug1n",
-      "name": "BABOLAT PURE AERO TEAM GEN 9",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": false,
-      "after": true,
-      "unavailableSizes": [
-        "ידית 2 (1/4 4)"
-      ],
-      "supplierSizes": [
-        "1",
-        "3"
-      ],
-      "link": {
-        "ref": "1413",
-        "url": "https://babolat.co.il/product/1413",
-        "status": "auto"
-      },
-      "supplierTitle": "מחבט טניס בבולט 285 גרם Pure Aero Team Gen9 Babolat",
-      "supplierColor": null,
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 1 (1/8 4), ידית 3 (3/8 4)",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "1413",
-          "url": "https://babolat.co.il/product/1413",
-          "title": "מחבט טניס בבולט 285 גרם Pure Aero Team Gen9 Babolat",
-          "score": 0.71
-        },
-        {
-          "ref": "1375",
-          "url": "https://babolat.co.il/product/1375",
-          "title": "מחבט טניס בבולט 300 גרם Pure Aero Gen9 Babolat",
-          "score": 0.32
-        },
-        {
-          "ref": "1419",
-          "url": "https://babolat.co.il/product/1419",
-          "title": "תיק טניס בבולט Backpack Pure Aero 2026 Gen9 Babolat",
-          "score": 0.32
-        }
-      ]
-    },
-    {
-      "id": "vlbme632z",
-      "name": "BABOLAT PURE DRIVE 107 GEN 11",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [
-        "ידית 1 (1/8 4)",
-        "ידית 2 (1/4 4)"
-      ],
-      "supplierSizes": [
-        "3"
-      ],
-      "link": {
-        "ref": "1229",
-        "url": "https://babolat.co.il/product/1229",
-        "status": "auto"
-      },
-      "supplierTitle": "מחבט טניס בבולט 285 גרם Pure Drive 107 Gen11 Babolat",
-      "supplierColor": null,
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 3 (3/8 4)",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "1229",
-          "url": "https://babolat.co.il/product/1229",
-          "title": "מחבט טניס בבולט 285 גרם Pure Drive 107 Gen11 Babolat",
-          "score": 0.75
-        },
-        {
-          "ref": "1224",
-          "url": "https://babolat.co.il/product/1224",
-          "title": "תיק טניס בבולט Backpack Pure Drive GEN11 Babolat",
-          "color": "Blue",
-          "score": 0.32
-        },
-        {
-          "ref": "1216",
-          "url": "https://babolat.co.il/product/1216",
-          "title": "מחבט טניס בבולט 300 גרם Pure Drive Gen11 Babolat",
-          "score": 0.25
-        }
-      ]
-    },
-    {
-      "id": "3dcw58d9y",
-      "name": "BABOLAT PURE DRIVE 98 GEN 11 305G ",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": false,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": [
-        "2",
-        "3",
-        "4"
-      ],
-      "link": {
-        "ref": "1220",
-        "url": "https://babolat.co.il/product/1220",
-        "status": "auto"
-      },
-      "supplierTitle": "מחבט טניס בבולט 305 גרם Pure Drive 98 Gen11 Babolat",
-      "supplierColor": null,
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 2 (1/4 4), ידית 3 (3/8 4), ידית 4 (1/2 4)",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "1220",
-          "url": "https://babolat.co.il/product/1220",
-          "title": "מחבט טניס בבולט 305 גרם Pure Drive 98 Gen11 Babolat",
-          "score": 1
-        },
-        {
-          "ref": "1267",
-          "url": "https://babolat.co.il/product/1267",
-          "title": "מחבט טניס בבולט Pure Drive Junior 25 Gen11 Babolat",
-          "score": 0.25
-        },
-        {
-          "ref": "1268",
-          "url": "https://babolat.co.il/product/1268",
-          "title": "מחבט טניס בבולט Pure Drive Junior 25 Gen11 Babolat Light Blue",
-          "score": 0.25
-        }
-      ]
-    },
-    {
-      "id": "flwjgec4d",
-      "name": "BABOLAT PURE DRIVE LITE GEN 11",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": false,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": [
-        "0",
-        "1",
-        "2",
-        "3"
-      ],
-      "link": {
-        "ref": "1218",
-        "url": "https://babolat.co.il/product/1218",
-        "status": "auto"
-      },
-      "supplierTitle": "מחבט טניס בבולט 270 גרם Pure Drive Lite Gen11 Babolat",
-      "supplierColor": null,
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 0 (4\"), ידית 1 (1/8 4), ידית 2 (1/4 4), ידית 3 (3/8 4)",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "1218",
-          "url": "https://babolat.co.il/product/1218",
-          "title": "מחבט טניס בבולט 270 גרם Pure Drive Lite Gen11 Babolat",
-          "score": 0.71
-        },
-        {
-          "ref": "1224",
-          "url": "https://babolat.co.il/product/1224",
-          "title": "תיק טניס בבולט Backpack Pure Drive GEN11 Babolat",
-          "color": "Blue",
-          "score": 0.42
-        },
-        {
-          "ref": "1219",
-          "url": "https://babolat.co.il/product/1219",
-          "title": "מחבט טניס בבולט 255 גרם Pure Drive Super Lite Gen11 Babolat",
-          "score": 0.38
-        }
-      ]
-    },
-    {
-      "id": "ksq4r3p4f",
-      "name": "BABOLAT PURE DRIVE SUPER LITE GEN 11",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": false,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": [
-        "0",
-        "1"
-      ],
-      "link": {
-        "ref": "1219",
-        "url": "https://babolat.co.il/product/1219",
-        "status": "auto"
-      },
-      "supplierTitle": "מחבט טניס בבולט 255 גרם Pure Drive Super Lite Gen11 Babolat",
-      "supplierColor": null,
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 0 (4\"), ידית 1 (1/8 4)",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "1219",
-          "url": "https://babolat.co.il/product/1219",
-          "title": "מחבט טניס בבולט 255 גרם Pure Drive Super Lite Gen11 Babolat",
-          "score": 0.75
-        },
-        {
-          "ref": "1218",
-          "url": "https://babolat.co.il/product/1218",
-          "title": "מחבט טניס בבולט 270 גרם Pure Drive Lite Gen11 Babolat",
-          "score": 0.38
-        }
-      ]
-    },
-    {
-      "id": "ivkvtz04c",
-      "name": "BABOLAT PURE DRIVE TEAM GEN 11",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": false,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": [
-        "0",
-        "1",
-        "2",
-        "3"
-      ],
-      "link": {
-        "ref": "1217",
-        "url": "https://babolat.co.il/product/1217",
-        "status": "auto"
-      },
-      "supplierTitle": "מחבט טניס בבולט 285 גרם Pure Drive Team Gen11 Babolat",
-      "supplierColor": null,
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 0 (4\"), ידית 1 (1/8 4), ידית 2 (1/4 4), ידית 3 (3/8 4)",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "1217",
-          "url": "https://babolat.co.il/product/1217",
-          "title": "מחבט טניס בבולט 285 גרם Pure Drive Team Gen11 Babolat",
-          "score": 0.71
-        },
-        {
-          "ref": "1224",
-          "url": "https://babolat.co.il/product/1224",
-          "title": "תיק טניס בבולט Backpack Pure Drive GEN11 Babolat",
-          "color": "Blue",
-          "score": 0.42
-        },
-        {
-          "ref": "1216",
-          "url": "https://babolat.co.il/product/1216",
-          "title": "מחבט טניס בבולט 300 גרם Pure Drive Gen11 Babolat",
-          "score": 0.32
-        }
-      ]
-    },
-    {
-      "id": "six3vcbxx",
-      "name": "BABOLAT PURE STRIKE 97 GEN 4",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": [
-        "2",
-        "3"
-      ],
-      "link": {
-        "ref": "1353",
-        "url": "https://babolat.co.il/product/1353",
-        "status": "auto"
-      },
-      "supplierTitle": "מחבט טניס בבולט 310 גרם Pure Strike 97 Gen4 Grey Babolat",
-      "supplierColor": null,
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 2 (1/4 4), ידית 3 (3/8 4)",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "1353",
-          "url": "https://babolat.co.il/product/1353",
-          "title": "מחבט טניס בבולט 310 גרם Pure Strike 97 Gen4 Grey Babolat",
-          "score": 0.75
-        },
-        {
-          "ref": "1356",
-          "url": "https://babolat.co.il/product/1356",
-          "title": "תיק טניס בבולט Backpack Pure Strike Gen4 Grey Babolat",
-          "score": 0.32
-        }
-      ]
-    },
-    {
-      "id": "do3rx4cf7",
-      "name": "BABOLAT RIVAL 102 280G",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": false,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": [
-        "1",
-        "2",
-        "3"
-      ],
-      "link": {
-        "ref": "1427",
-        "url": "https://babolat.co.il/product/1427",
-        "status": "auto"
-      },
-      "supplierTitle": "מחבט טניס בבולט 280 גרם Rival 102 Babolat",
-      "supplierColor": null,
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 1 (1/8 4), ידית 2 (1/4 4)",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "1427",
-          "url": "https://babolat.co.il/product/1427",
-          "title": "מחבט טניס בבולט 280 גרם Rival 102 Babolat",
           "score": 1
         }
       ]
@@ -1296,398 +1318,6 @@
           "title": "נעלי טניס ג'וניור | Rush Pro Ace",
           "color": "לבן",
           "score": 0.32
-        }
-      ]
-    },
-    {
-      "id": "5cv10wsp3",
-      "name": "PURE AERO BACKPACK GEN 9",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": false,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": [],
-      "link": {
-        "ref": "1419",
-        "url": "https://babolat.co.il/product/1419",
-        "status": "auto"
-      },
-      "supplierTitle": "תיק טניס בבולט Backpack Pure Aero 2026 Gen9 Babolat",
-      "supplierColor": "Grey / Yellow",
-      "detail": "במלאי בבבולט",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "1419",
-          "url": "https://babolat.co.il/product/1419",
-          "title": "תיק טניס בבולט Backpack Pure Aero 2026 Gen9 Babolat",
-          "score": 0.83
-        },
-        {
-          "ref": "1417",
-          "url": "https://babolat.co.il/product/1417",
-          "title": "תיק טניס בבולט RH X12 Pure Aero Gen9 2026 Babolat",
-          "score": 0.44
-        },
-        {
-          "ref": "1418",
-          "url": "https://babolat.co.il/product/1418",
-          "title": "תיק טניס בבולט RH X6 Pure Aero Gen9 2026 Babolat",
-          "score": 0.44
-        }
-      ]
-    },
-    {
-      "id": "5eisvseyq",
-      "name": "PURE AERO JUNIOR 25 GEN 9",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": false,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": [],
-      "link": {
-        "ref": "1439",
-        "url": "https://babolat.co.il/product/1439",
-        "status": "auto"
-      },
-      "supplierTitle": "מחבט טניס בבולט Pure Aero Junior 25 Gen9 Babolat",
-      "supplierColor": null,
-      "detail": "במלאי בבבולט",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "1439",
-          "url": "https://babolat.co.il/product/1439",
-          "title": "מחבט טניס בבולט Pure Aero Junior 25 Gen9 Babolat",
-          "score": 1
-        },
-        {
-          "ref": "879",
-          "url": "https://babolat.co.il/product/879",
-          "title": "מחבט טניס בבולט Pure Aero Junior 25 2023 Babolat",
-          "score": 0.32
-        },
-        {
-          "ref": "1033",
-          "url": "https://babolat.co.il/product/1033",
-          "title": "מחבט טניס בבולט Aero Junior 25 Babolat",
-          "score": 0.25
-        }
-      ]
-    },
-    {
-      "id": "flb11fn3y",
-      "name": "PURE DRIVE BACKPACK GEN 11",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": false,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": [],
-      "link": {
-        "ref": "1224",
-        "url": "https://babolat.co.il/product/1224",
-        "status": "auto"
-      },
-      "supplierTitle": "תיק טניס בבולט Backpack Pure Drive GEN11 Babolat",
-      "supplierColor": "Blue",
-      "detail": "במלאי בבבולט",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "1224",
-          "url": "https://babolat.co.il/product/1224",
-          "title": "תיק טניס בבולט Backpack Pure Drive GEN11 Babolat",
-          "color": "Blue",
-          "score": 1
-        },
-        {
-          "ref": "1222",
-          "url": "https://babolat.co.il/product/1222",
-          "title": "תיק טניס בבולט RH X 12 Pure Drive GEN11 Babolat",
-          "score": 0.5
-        },
-        {
-          "ref": "1223",
-          "url": "https://babolat.co.il/product/1223",
-          "title": "תיק טניס בבולט RH X 6 Pure Drive GEN11 Babolat",
-          "score": 0.5
-        }
-      ]
-    },
-    {
-      "id": "zj82yd2jk",
-      "name": "PURE STRIKE BACKPACK GEN4 GREY",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": [],
-      "link": {
-        "ref": "1356",
-        "url": "https://babolat.co.il/product/1356",
-        "status": "auto"
-      },
-      "supplierTitle": "תיק טניס בבולט Backpack Pure Strike Gen4 Grey Babolat",
-      "supplierColor": "Grey / Neon Red",
-      "detail": "במלאי בבבולט",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "1356",
-          "url": "https://babolat.co.il/product/1356",
-          "title": "תיק טניס בבולט Backpack Pure Strike Gen4 Grey Babolat",
-          "score": 1
-        },
-        {
-          "ref": "1357",
-          "url": "https://babolat.co.il/product/1357",
-          "title": "תיק טניס בבולט RH X 6 Pure Strike GEN4 Grey",
-          "score": 0.65
-        },
-        {
-          "ref": "1358",
-          "url": "https://babolat.co.il/product/1358",
-          "title": "תיק טניס בבולט RH X 9 Pure Strike GEN4 Grey",
-          "score": 0.65
-        }
-      ]
-    },
-    {
-      "id": "jzlc93bpv",
-      "name": "RH X 12 BABOLAT PURE STRIKE",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": false,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": [],
-      "link": {
-        "ref": "1112",
-        "url": "https://babolat.co.il/product/1112",
-        "status": "auto"
-      },
-      "supplierTitle": "תיק טניס בבולט RH X 12 Pure Strike GEN4",
-      "supplierColor": "White / Black",
-      "detail": "במלאי בבבולט",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "1112",
-          "url": "https://babolat.co.il/product/1112",
-          "title": "תיק טניס בבולט RH X 12 Pure Strike GEN4",
-          "score": 0.71
-        }
-      ]
-    },
-    {
-      "id": "oyk0b8pj2",
-      "name": "RH X 6 BABOLAT PURE AERO GEN 9",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": false,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": [],
-      "link": {
-        "ref": "1418",
-        "url": "https://babolat.co.il/product/1418",
-        "status": "auto"
-      },
-      "supplierTitle": "תיק טניס בבולט RH X6 Pure Aero Gen9 2026 Babolat",
-      "supplierColor": "Grey / Yellow",
-      "detail": "במלאי בבבולט",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "1418",
-          "url": "https://babolat.co.il/product/1418",
-          "title": "תיק טניס בבולט RH X6 Pure Aero Gen9 2026 Babolat",
-          "score": 0.88
-        },
-        {
-          "ref": "1065",
-          "url": "https://babolat.co.il/product/1065",
-          "title": "תיק טניס בבולט RH X 6 Pure Aero Rafa g2 Babolat",
-          "color": "Pink / Black",
-          "score": 0.25
-        },
-        {
-          "ref": "1417",
-          "url": "https://babolat.co.il/product/1417",
-          "title": "תיק טניס בבולט RH X12 Pure Aero Gen9 2026 Babolat",
-          "score": 0.25
-        }
-      ]
-    },
-    {
-      "id": "at6a08vc0",
-      "name": "RH X 6 BABOLAT PURE DRIVE",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": false,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": [],
-      "link": {
-        "ref": "1223",
-        "url": "https://babolat.co.il/product/1223",
-        "status": "auto"
-      },
-      "supplierTitle": "תיק טניס בבולט RH X 6 Pure Drive GEN11 Babolat",
-      "supplierColor": "Blue",
-      "detail": "במלאי בבבולט",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "1223",
-          "url": "https://babolat.co.il/product/1223",
-          "title": "תיק טניס בבולט RH X 6 Pure Drive GEN11 Babolat",
-          "score": 0.71
-        }
-      ]
-    },
-    {
-      "id": "om9bftbe9",
-      "name": "RH X 6 PURE STRIKE WHITE",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": false,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": [],
-      "link": {
-        "ref": "1110",
-        "url": "https://babolat.co.il/product/1110",
-        "status": "auto"
-      },
-      "supplierTitle": "תיק טניס בבולט RH X 6 Pure Strike GEN4",
-      "supplierColor": "White / Black",
-      "detail": "במלאי בבבולט",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "1110",
-          "url": "https://babolat.co.il/product/1110",
-          "title": "תיק טניס בבולט RH X 6 Pure Strike GEN4",
-          "color": "White / Black",
-          "score": 0.79
-        },
-        {
-          "ref": "1357",
-          "url": "https://babolat.co.il/product/1357",
-          "title": "תיק טניס בבולט RH X 6 Pure Strike GEN4 Grey",
-          "color": "Grey / Neon Red",
-          "score": 0.31
-        }
-      ]
-    },
-    {
-      "id": "yzvt4l4nx",
-      "name": "RH X12 BABOLAT PURE DRIVE GEN 11",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": [],
-      "link": {
-        "ref": "1222",
-        "url": "https://babolat.co.il/product/1222",
-        "status": "auto"
-      },
-      "supplierTitle": "תיק טניס בבולט RH X 12 Pure Drive GEN11 Babolat",
-      "supplierColor": "Blue",
-      "detail": "במלאי בבבולט",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "1222",
-          "url": "https://babolat.co.il/product/1222",
-          "title": "תיק טניס בבולט RH X 12 Pure Drive GEN11 Babolat",
-          "score": 1
-        },
-        {
-          "ref": "1223",
-          "url": "https://babolat.co.il/product/1223",
-          "title": "תיק טניס בבולט RH X 6 Pure Drive GEN11 Babolat",
-          "score": 0.31
-        },
-        {
-          "ref": "1224",
-          "url": "https://babolat.co.il/product/1224",
-          "title": "תיק טניס בבולט Backpack Pure Drive GEN11 Babolat",
-          "color": "Blue",
-          "score": 0.25
-        }
-      ]
-    },
-    {
-      "id": "5frelxt0v",
-      "name": "RH X12 PURE AERO GEN 9  ",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": false,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": [],
-      "link": {
-        "ref": "1417",
-        "url": "https://babolat.co.il/product/1417",
-        "status": "auto"
-      },
-      "supplierTitle": "תיק טניס בבולט RH X12 Pure Aero Gen9 2026 Babolat",
-      "supplierColor": "Grey / Yellow",
-      "detail": "במלאי בבבולט",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "1417",
-          "url": "https://babolat.co.il/product/1417",
-          "title": "תיק טניס בבולט RH X12 Pure Aero Gen9 2026 Babolat",
-          "score": 0.88
-        },
-        {
-          "ref": "1064",
-          "url": "https://babolat.co.il/product/1064",
-          "title": "תיק טניס בבולט RH X 12 Pure Aero Rafa g2 Babolat",
-          "score": 0.25
-        },
-        {
-          "ref": "1418",
-          "url": "https://babolat.co.il/product/1418",
-          "title": "תיק טניס בבולט RH X6 Pure Aero Gen9 2026 Babolat",
-          "score": 0.25
-        }
-      ]
-    },
-    {
-      "id": "6oomyp20x",
-      "name": "RH X9 BABOLAT PURE WIMBLEDON",
-      "outcome": "linked",
-      "supplier": "babolat",
-      "before": false,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": [],
-      "link": {
-        "ref": "1482",
-        "url": "https://babolat.co.il/product/1482",
-        "status": "auto"
-      },
-      "supplierTitle": "תיק טניס בבולט RH X 9 Pure Wimbledon 2026",
-      "supplierColor": "White",
-      "detail": "במלאי בבבולט",
-      "linkReason": "התאמה ודאית",
-      "suggestions": [
-        {
-          "ref": "1482",
-          "url": "https://babolat.co.il/product/1482",
-          "title": "תיק טניס בבולט RH X 9 Pure Wimbledon 2026",
-          "score": 0.83
         }
       ]
     },
@@ -4431,798 +4061,6 @@
       ]
     },
     {
-      "id": "4d15j53fo",
-      "name": "BABAOLAT PRUPULSE 3 AC BOY BLUE",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "1346",
-          "url": "https://babolat.co.il/product/1346",
-          "title": "נעלי טניס בבולט Propulse 3 AC Junior Boy Babolat",
-          "color": "Drive Blue",
-          "score": 1
-        },
-        {
-          "ref": "1347",
-          "url": "https://babolat.co.il/product/1347",
-          "title": "נעלי טניס בבולט Propulse 3 AC Junior Boy Babolat",
-          "color": "Blue / White",
-          "score": 1
-        },
-        {
-          "ref": "1383",
-          "url": "https://babolat.co.il/product/1383",
-          "title": "נעלי טניס בבולט Propulse 3 AC Junior Boy Babolat",
-          "color": "Black / Blue",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": "vqfpaxtv9",
-      "name": "BABOLAT EVO DRIVE 115 WIMBELDON",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "848",
-          "url": "https://babolat.co.il/product/848",
-          "title": "מחבט טניס בבולט 240 גרם Evo Drive 115 Wimbledon 2022",
-          "score": 0.63
-        },
-        {
-          "ref": "319",
-          "url": "https://babolat.co.il/product/319",
-          "title": "מחבט טניס בבולט 240 גרם Evo Drive 115 Babolat",
-          "score": 0.57
-        }
-      ]
-    },
-    {
-      "id": "pabjb5c5o",
-      "name": "BABOLAT JET MACH 3 AC BLUE-ORANGE",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "449",
-          "url": "https://babolat.co.il/product/449",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Men Babolat",
-          "color": "Blue",
-          "score": 1
-        },
-        {
-          "ref": "961",
-          "url": "https://babolat.co.il/product/961",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Women Babolat",
-          "color": "French Blue",
-          "score": 1
-        },
-        {
-          "ref": "972",
-          "url": "https://babolat.co.il/product/972",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Babolat",
-          "color": "Angel Blue",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": "zcamukbly",
-      "name": "BABOLAT JET MACH 3 AC GIRL LIGTH BLUE",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "972",
-          "url": "https://babolat.co.il/product/972",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Babolat",
-          "color": "Angel Blue",
-          "score": 1
-        },
-        {
-          "ref": "1175",
-          "url": "https://babolat.co.il/product/1175",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Girl Babolat",
-          "color": "French Blue",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": "6yyfbvdor",
-      "name": "BABOLAT JET MACH 3 AC GIRL YELLOW-PINK",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "972",
-          "url": "https://babolat.co.il/product/972",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Babolat",
-          "color": "Angel Blue",
-          "score": 0.6
-        },
-        {
-          "ref": "1173",
-          "url": "https://babolat.co.il/product/1173",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Girl Babolat",
-          "color": "Coral / Gold Fusion",
-          "score": 0.6
-        },
-        {
-          "ref": "1175",
-          "url": "https://babolat.co.il/product/1175",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Girl Babolat",
-          "color": "French Blue",
-          "score": 0.6
-        }
-      ]
-    },
-    {
-      "id": "w6nnk7yma",
-      "name": "BABOLAT JET MACH 3 AC JUNIOR BLUE",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "972",
-          "url": "https://babolat.co.il/product/972",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Babolat",
-          "color": "Angel Blue",
-          "score": 1
-        },
-        {
-          "ref": "1175",
-          "url": "https://babolat.co.il/product/1175",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Girl Babolat",
-          "color": "French Blue",
-          "score": 1
-        },
-        {
-          "ref": "1371",
-          "url": "https://babolat.co.il/product/1371",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Boy Junior Babolat",
-          "color": "Sodalite Blue",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": "th3mp49uc",
-      "name": "BABOLAT JET MACH 4 AC WHITE",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "1505",
-          "url": "https://babolat.co.il/product/1505",
-          "title": "נעלי טניס בבולט Jet Mach 4 AC Women Babolat",
-          "color": "Lavender / White",
-          "score": 1
-        },
-        {
-          "ref": "1506",
-          "url": "https://babolat.co.il/product/1506",
-          "title": "נעלי טניס בבולט Jet Mach 4 AC Women Babolat",
-          "color": "Cream Lavender",
-          "score": 1
-        },
-        {
-          "ref": "1428",
-          "url": "https://babolat.co.il/product/1428",
-          "title": "נעלי טניס בבולט Jet Mach 4 AC Men Babolat",
-          "color": "Beige / Dark Blue",
-          "score": 0.6
-        }
-      ]
-    },
-    {
-      "id": "eb8b415cl",
-      "name": "BABOLAT JET TERE 2 BLUE",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "1164",
-          "url": "https://babolat.co.il/product/1164",
-          "title": "נעלי טניס בבולט Jet Tere 2 AC Men Babolat",
-          "color": "Blue",
-          "score": 0.95
-        },
-        {
-          "ref": "1331",
-          "url": "https://babolat.co.il/product/1331",
-          "title": "נעלי טניס בבולט Jet Tere 2 AC Men Babolat",
-          "color": "Blue Atoll",
-          "score": 0.95
-        }
-      ]
-    },
-    {
-      "id": "beflpv1gw",
-      "name": "BABOLAT JET TERE 2 LIGHT BLUE",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "1164",
-          "url": "https://babolat.co.il/product/1164",
-          "title": "נעלי טניס בבולט Jet Tere 2 AC Men Babolat",
-          "color": "Blue",
-          "score": 0.95
-        },
-        {
-          "ref": "1331",
-          "url": "https://babolat.co.il/product/1331",
-          "title": "נעלי טניס בבולט Jet Tere 2 AC Men Babolat",
-          "color": "Blue Atoll",
-          "score": 0.95
-        }
-      ]
-    },
-    {
-      "id": "2mhlsq5vy",
-      "name": "BABOLAT PROPULSE 3 AC JUNIOR BOY",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "1346",
-          "url": "https://babolat.co.il/product/1346",
-          "title": "נעלי טניס בבולט Propulse 3 AC Junior Boy Babolat",
-          "color": "Drive Blue",
-          "score": 1
-        },
-        {
-          "ref": "1347",
-          "url": "https://babolat.co.il/product/1347",
-          "title": "נעלי טניס בבולט Propulse 3 AC Junior Boy Babolat",
-          "color": "Blue / White",
-          "score": 1
-        },
-        {
-          "ref": "1348",
-          "url": "https://babolat.co.il/product/1348",
-          "title": "נעלי טניס בבולט Propulse 3 AC Junior Boy Babolat",
-          "color": "Orange",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": "gmr393vy8",
-      "name": "BABOLAT PROPULSE FURY 3 AC BLUE",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "1162",
-          "url": "https://babolat.co.il/product/1162",
-          "title": "נעלי טניס בבולט Propulse Fury 3 AC Babolat",
-          "color": "Blue",
-          "score": 1
-        },
-        {
-          "ref": "940",
-          "url": "https://babolat.co.il/product/940",
-          "title": "נעלי טניס בבולט Propulse Fury 3 AC Babolat",
-          "color": "White / Blue",
-          "score": 1
-        },
-        {
-          "ref": "1124",
-          "url": "https://babolat.co.il/product/1124",
-          "title": "נעלי טניס בבולט Propulse Fury 3 AC Babolat",
-          "color": "Blue / Pink",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": "ocawbearp",
-      "name": "BABOLAT PROPULSE FURY 3 AC BLUE-DARK",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "1162",
-          "url": "https://babolat.co.il/product/1162",
-          "title": "נעלי טניס בבולט Propulse Fury 3 AC Babolat",
-          "color": "Blue",
-          "score": 1
-        },
-        {
-          "ref": "940",
-          "url": "https://babolat.co.il/product/940",
-          "title": "נעלי טניס בבולט Propulse Fury 3 AC Babolat",
-          "color": "White / Blue",
-          "score": 1
-        },
-        {
-          "ref": "1124",
-          "url": "https://babolat.co.il/product/1124",
-          "title": "נעלי טניס בבולט Propulse Fury 3 AC Babolat",
-          "color": "Blue / Pink",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": "o5wzxmaxp",
-      "name": "BABOLAT PROPULSE FURY 3 AC BLUE-WHITE",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "940",
-          "url": "https://babolat.co.il/product/940",
-          "title": "נעלי טניס בבולט Propulse Fury 3 AC Babolat",
-          "color": "White / Blue",
-          "score": 1
-        },
-        {
-          "ref": "1466",
-          "url": "https://babolat.co.il/product/1466",
-          "title": "נעלי טניס בבולט Propulse Fury 3 AC Babolat",
-          "color": "White / Blue",
-          "score": 1
-        },
-        {
-          "ref": "1162",
-          "url": "https://babolat.co.il/product/1162",
-          "title": "נעלי טניס בבולט Propulse Fury 3 AC Babolat",
-          "color": "Blue",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": "ag9qf8d3x",
-      "name": "BABOLAT PROPULSE FURY 3 AC LIGTH GREY",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "902",
-          "url": "https://babolat.co.il/product/902",
-          "title": "נעלי טניס בבולט Propulse Fury 3 AC Babolat",
-          "color": "Grey / Yellow",
-          "score": 1
-        },
-        {
-          "ref": "1298",
-          "url": "https://babolat.co.il/product/1298",
-          "title": "נעלי טניס בבולט Propulse Fury 3 AC Babolat",
-          "color": "Grey / White",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": "4onyyjwtk",
-      "name": "BABOLAT PROPULSE FURY 3 AC PINK-BLUE",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "1124",
-          "url": "https://babolat.co.il/product/1124",
-          "title": "נעלי טניס בבולט Propulse Fury 3 AC Babolat",
-          "color": "Blue / Pink",
-          "score": 1
-        },
-        {
-          "ref": "1162",
-          "url": "https://babolat.co.il/product/1162",
-          "title": "נעלי טניס בבולט Propulse Fury 3 AC Babolat",
-          "color": "Blue",
-          "score": 1
-        },
-        {
-          "ref": "940",
-          "url": "https://babolat.co.il/product/940",
-          "title": "נעלי טניס בבולט Propulse Fury 3 AC Babolat",
-          "color": "White / Blue",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": "8ku1bftn1",
-      "name": "BABOLAT PURE AERO 100 GEN 9 300G",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "1375",
-          "url": "https://babolat.co.il/product/1375",
-          "title": "מחבט טניס בבולט 300 גרם Pure Aero Gen9 Babolat",
-          "score": 0.5
-        },
-        {
-          "ref": "1438",
-          "url": "https://babolat.co.il/product/1438",
-          "title": "מחבט טניס בבולט Pure Aero Junior 26 Gen9 Babolat",
-          "score": 0.25
-        },
-        {
-          "ref": "1439",
-          "url": "https://babolat.co.il/product/1439",
-          "title": "מחבט טניס בבולט Pure Aero Junior 25 Gen9 Babolat",
-          "score": 0.25
-        }
-      ]
-    },
-    {
-      "id": "okdfltvkm",
-      "name": "BABOLAT PURE DRIVE GEN 11 300G",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "1216",
-          "url": "https://babolat.co.il/product/1216",
-          "title": "מחבט טניס בבולט 300 גרם Pure Drive Gen11 Babolat",
-          "score": 1
-        },
-        {
-          "ref": "1225",
-          "url": "https://babolat.co.il/product/1225",
-          "title": "מחבט טניס בבולט 300 גרם Pure Drive Gen11 + Babolat",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": "48eny6y3k",
-      "name": "BABOLAT PURE STRIKE 100 16\\20",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "1352",
-          "url": "https://babolat.co.il/product/1352",
-          "title": "מחבט טניס בבולט 305 גרם Pure Strike 100 16/20 Gen4 Grey Babolat",
-          "score": 0.6
-        },
-        {
-          "ref": "1103",
-          "url": "https://babolat.co.il/product/1103",
-          "title": "מחבט טניס בבולט 305 גרם Pure Strike 100 16/20 Gen4 2024 Babolat",
-          "score": 0.55
-        }
-      ]
-    },
-    {
-      "id": "zga4wlcyy",
-      "name": "BABOLAT PURE STRIKE 100 GEN 4",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "1102",
-          "url": "https://babolat.co.il/product/1102",
-          "title": "מחבט טניס בבולט 300 גרם Pure Strike 100 Gen4 2024 Babolat",
-          "score": 0.67
-        },
-        {
-          "ref": "1344",
-          "url": "https://babolat.co.il/product/1344",
-          "title": "מחבט טניס בבולט 300 גרם Pure Strike 100 Gen4 Carbon Grey Babolat",
-          "score": 0.67
-        },
-        {
-          "ref": "1352",
-          "url": "https://babolat.co.il/product/1352",
-          "title": "מחבט טניס בבולט 305 גרם Pure Strike 100 16/20 Gen4 Grey Babolat",
-          "score": 0.6
-        }
-      ]
-    },
-    {
-      "id": "29fbbj16n",
-      "name": "BABOLAT PURE STRIKE 305G GEN 4",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "1104",
-          "url": "https://babolat.co.il/product/1104",
-          "title": "מחבט טניס בבולט 305 גרם Pure Strike 16/19 Gen4 2024 Babolat",
-          "score": 0.67
-        },
-        {
-          "ref": "1345",
-          "url": "https://babolat.co.il/product/1345",
-          "title": "מחבט טניס בבולט 305 גרם Pure Strike 16/19 Gen4 Carbon Grey Babolat",
-          "score": 0.67
-        },
-        {
-          "ref": "1211",
-          "url": "https://babolat.co.il/product/1211",
-          "title": "מחבט טניס בבולט Evo Strike Gen4 Babolat",
-          "score": 0.6
-        }
-      ]
-    },
-    {
-      "id": "knzmt9bw0",
-      "name": "BABOLAT PURE STRIKE LITE GEN 4",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "1355",
-          "url": "https://babolat.co.il/product/1355",
-          "title": "מחבט טניס בבולט 265 גרם Pure Strike Lite Gen4 Grey Babolat",
-          "score": 0.71
-        },
-        {
-          "ref": "1101",
-          "url": "https://babolat.co.il/product/1101",
-          "title": "מחבט טניס בבולט 265 גרם Pure Strike Lite Gen4 2024 Babolat",
-          "score": 0.63
-        }
-      ]
-    },
-    {
-      "id": "yflwwj6ok",
-      "name": "BABOLAT PURE STRIKE TEAM GEN 4",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "1354",
-          "url": "https://babolat.co.il/product/1354",
-          "title": "מחבט טניס בבולט 285 גרם Pure Strike Team Gen4 Grey Babolat",
-          "score": 0.71
-        },
-        {
-          "ref": "1100",
-          "url": "https://babolat.co.il/product/1100",
-          "title": "מחבט טניס בבולט 285 גרם Pure Strike Team Gen4 2024 Babolat",
-          "score": 0.63
-        }
-      ]
-    },
-    {
-      "id": "svj6270sg",
-      "name": "BABOLAT SFX4 AC WOMEN LIGTH GREY",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "1283",
-          "url": "https://babolat.co.il/product/1283",
-          "title": "נעלי טניס בבולט SFX4 AC Babolat",
-          "color": "Grey / White",
-          "score": 1
-        },
-        {
-          "ref": "1301",
-          "url": "https://babolat.co.il/product/1301",
-          "title": "נעלי טניס בבולט SFX4 AC Women Babolat",
-          "color": "Lunar Rock",
-          "score": 1
-        },
-        {
-          "ref": "1284",
-          "url": "https://babolat.co.il/product/1284",
-          "title": "נעלי טניס בבולט SFX4 AC Babolat",
-          "color": "White / Blue",
-          "score": 0.6
-        }
-      ]
-    },
-    {
       "id": "yz0kfd084",
       "name": "BLADE V10 15 PK",
       "outcome": "needs_link",
@@ -5385,164 +4223,6 @@
           "url": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-olive-green/",
           "title": "YONEX PRO RACQUET BAG (9PCS) Olive Green",
           "score": 0.35
-        }
-      ]
-    },
-    {
-      "id": "0dtc605cs",
-      "name": "PURE AERO BACKPACK RAFA G2",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "1064",
-          "url": "https://babolat.co.il/product/1064",
-          "title": "תיק טניס בבולט RH X 12 Pure Aero Rafa g2 Babolat",
-          "color": "Pink / Black",
-          "score": 0.56
-        },
-        {
-          "ref": "1065",
-          "url": "https://babolat.co.il/product/1065",
-          "title": "תיק טניס בבולט RH X 6 Pure Aero Rafa g2 Babolat",
-          "color": "Pink / Black",
-          "score": 0.56
-        }
-      ]
-    },
-    {
-      "id": "wquo01vhk",
-      "name": "PURE DRIVE JUNIOR 25 GEN 11",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "1267",
-          "url": "https://babolat.co.il/product/1267",
-          "title": "מחבט טניס בבולט Pure Drive Junior 25 Gen11 Babolat",
-          "score": 1
-        },
-        {
-          "ref": "1268",
-          "url": "https://babolat.co.il/product/1268",
-          "title": "מחבט טניס בבולט Pure Drive Junior 25 Gen11 Babolat Light Blue",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": "x8cnfyi9i",
-      "name": "PURE DRIVE JUNIOR 26 GEN 11",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "1224",
-          "url": "https://babolat.co.il/product/1224",
-          "title": "תיק טניס בבולט Backpack Pure Drive GEN11 Babolat",
-          "color": "Blue",
-          "score": 0.32
-        },
-        {
-          "ref": "1216",
-          "url": "https://babolat.co.il/product/1216",
-          "title": "מחבט טניס בבולט 300 גרם Pure Drive Gen11 Babolat",
-          "score": 0.25
-        },
-        {
-          "ref": "1225",
-          "url": "https://babolat.co.il/product/1225",
-          "title": "מחבט טניס בבולט 300 גרם Pure Drive Gen11 + Babolat",
-          "score": 0.25
-        }
-      ]
-    },
-    {
-      "id": "teujaywy1",
-      "name": "RH X 6 BABOLAT PURE STRIKE",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "1110",
-          "url": "https://babolat.co.il/product/1110",
-          "title": "תיק טניס בבולט RH X 6 Pure Strike GEN4",
-          "color": "White / Black",
-          "score": 0.71
-        },
-        {
-          "ref": "1357",
-          "url": "https://babolat.co.il/product/1357",
-          "title": "תיק טניס בבולט RH X 6 Pure Strike GEN4 Grey",
-          "color": "Grey / Neon Red",
-          "score": 0.71
-        }
-      ]
-    },
-    {
-      "id": "6ee3jz47f",
-      "name": "RH X PURE ARO RAFA G2",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "1064",
-          "url": "https://babolat.co.il/product/1064",
-          "title": "תיק טניס בבולט RH X 12 Pure Aero Rafa g2 Babolat",
-          "color": "Pink / Black",
-          "score": 0.42
-        },
-        {
-          "ref": "1065",
-          "url": "https://babolat.co.il/product/1065",
-          "title": "תיק טניס בבולט RH X 6 Pure Aero Rafa g2 Babolat",
-          "color": "Pink / Black",
-          "score": 0.42
         }
       ]
     },
@@ -6869,22 +5549,6 @@
       "suggestions": []
     },
     {
-      "id": "k3whn6blz",
-      "name": "מארז 24 שלישיות כדורים BABOLAT GOLD",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא נמצא מוצר דומה אצל הספק. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "לא נמצא מוצר דומה אצל הספק",
-      "suggestions": []
-    },
-    {
       "id": "1jslj2wvt",
       "name": "מארז 24 שלישיות כדורים WILSON US OPEN",
       "outcome": "needs_link",
@@ -6897,102 +5561,6 @@
       "supplierTitle": null,
       "supplierColor": null,
       "detail": "לא נמצא מוצר דומה אצל הספק. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "לא נמצא מוצר דומה אצל הספק",
-      "suggestions": []
-    },
-    {
-      "id": "jatvrturh",
-      "name": "24 שלישיות כדורים Diadem Premier",
-      "outcome": "unknown_supplier",
-      "supplier": "babolat",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא נראה כמו מוצר של Babolat Israel — בחר ספק אחר או סמן \"ידני\"",
-      "linkReason": "לא נמצא מוצר דומה אצל הספק",
-      "suggestions": []
-    },
-    {
-      "id": "c5hlif7y2",
-      "name": "גליל פילאטיס חלול 45 ס\"מ",
-      "outcome": "unknown_supplier",
-      "supplier": "babolat",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא נראה כמו מוצר של Babolat Israel — בחר ספק אחר או סמן \"ידני\"",
-      "linkReason": "לא נמצא מוצר דומה אצל הספק",
-      "suggestions": []
-    },
-    {
-      "id": "1lgqmvinn",
-      "name": "דילגית 2.7 מטר 15 ס\"מ עובי",
-      "outcome": "unknown_supplier",
-      "supplier": "babolat",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא נראה כמו מוצר של Babolat Israel — בחר ספק אחר או סמן \"ידני\"",
-      "linkReason": "לא נמצא מוצר דומה אצל הספק",
-      "suggestions": []
-    },
-    {
-      "id": "c768627ue",
-      "name": "מארז 24 שלישיות כדורים TRETORN",
-      "outcome": "unknown_supplier",
-      "supplier": "babolat",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא נראה כמו מוצר של Babolat Israel — בחר ספק אחר או סמן \"ידני\"",
-      "linkReason": "לא נמצא מוצר דומה אצל הספק",
-      "suggestions": []
-    },
-    {
-      "id": "89n4qb4r6",
-      "name": "מדרגה אירובית- \"סטפר\"",
-      "outcome": "unknown_supplier",
-      "supplier": "babolat",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא נראה כמו מוצר של Babolat Israel — בחר ספק אחר או סמן \"ידני\"",
-      "linkReason": "לא נמצא מוצר דומה אצל הספק",
-      "suggestions": []
-    },
-    {
-      "id": "dfycpt36w",
-      "name": "פיתה באלאנס 36 ס\"מ",
-      "outcome": "unknown_supplier",
-      "supplier": "babolat",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא נראה כמו מוצר של Babolat Israel — בחר ספק אחר או סמן \"ידני\"",
       "linkReason": "לא נמצא מוצר דומה אצל הספק",
       "suggestions": []
     }
