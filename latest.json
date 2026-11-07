@@ -1,6 +1,6 @@
 {
   "summary": {
-    "startedAt": "2026-11-06T09:30:32.050Z",
+    "startedAt": "2026-11-07T09:21:53.207Z",
     "dryRun": true,
     "total": 215,
     "checked": 112,
@@ -3814,12 +3814,11 @@
       "supplier": "yonex",
       "before": true,
       "after": true,
-      "unavailableSizes": [
-        "ידית 2 (1/4 4)",
-        "ידית 3 (3/8 4)"
-      ],
+      "unavailableSizes": [],
       "supplierSizes": [
-        "G1 - Blast blue"
+        "G1 - Blast blue",
+        "G2 - Blast blue",
+        "G3 - blast blue"
       ],
       "link": {
         "ref": "https://www.tennis-online.co.il/product/yonex-ezone-100-blast-blue-300g-8th-gen-unstrung/",
@@ -3828,7 +3827,7 @@
       },
       "supplierTitle": "YONEX EZONE 100 300g (8th gen.) Unstrung",
       "supplierColor": null,
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 1 (1/8 4) · מידות שהספק לא מציע בכלל: ידית 2 (1/4 4), ידית 3 (3/8 4)",
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 1 (1/8 4), ידית 2 (1/4 4), ידית 3 (3/8 4)",
       "linkReason": "התאמה ודאית",
       "suggestions": [
         {
