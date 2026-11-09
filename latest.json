@@ -1,6 +1,6 @@
 {
   "summary": {
-    "startedAt": "2026-11-08T09:22:57.350Z",
+    "startedAt": "2026-11-09T09:42:00.574Z",
     "dryRun": true,
     "total": 215,
     "checked": 112,
@@ -1792,10 +1792,10 @@
       "before": false,
       "after": true,
       "unavailableSizes": [
+        "40",
         "43"
       ],
       "supplierSizes": [
-        "40",
         "42",
         "44"
       ],
@@ -1806,7 +1806,7 @@
       },
       "supplierTitle": "נעלי טניס YONEX SONICAGE Men White",
       "supplierColor": null,
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: 40, 42, 44 · מידות שהספק לא מציע בכלל: 43",
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: 42, 44 · מידות שהספק לא מציע בכלל: 40, 43",
       "linkReason": "התאמה ודאית",
       "suggestions": [
         {
