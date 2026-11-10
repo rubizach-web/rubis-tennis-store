@@ -1,6 +1,6 @@
 {
   "summary": {
-    "startedAt": "2026-11-09T09:42:00.574Z",
+    "startedAt": "2026-11-10T09:26:05.099Z",
     "dryRun": true,
     "total": 215,
     "checked": 112,
@@ -2655,9 +2655,10 @@
       "supplier": "wilson",
       "before": false,
       "after": true,
-      "unavailableSizes": [],
+      "unavailableSizes": [
+        "ידית 2 (1/4 4)"
+      ],
       "supplierSizes": [
-        "4 1/4\" (2)",
         "4 3/8\" (3)"
       ],
       "link": {
@@ -2667,7 +2668,7 @@
       },
       "supplierTitle": "מחבט טניס | CLASH Team 103 V3.0",
       "supplierColor": null,
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 2 (1/4 4), ידית 3 (3/8 4)",
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 3 (3/8 4)",
       "linkReason": "התאמה ודאית",
       "suggestions": [
         {
@@ -3630,7 +3631,6 @@
         "ידית 3 (3/8 4)"
       ],
       "supplierSizes": [
-        "4\" (0)",
         "4 1/8\" (1)",
         "4 1/4\" (2)"
       ],
