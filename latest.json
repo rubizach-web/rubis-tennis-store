@@ -1,6 +1,6 @@
 {
   "summary": {
-    "startedAt": "2026-11-16T10:26:33.162Z",
+    "startedAt": "2026-11-17T09:37:57.240Z",
     "dryRun": true,
     "total": 215,
     "checked": 112,
@@ -10,8 +10,8 @@
     "manual": 11,
     "notFound": 0,
     "errors": 0,
-    "inStock": 118,
-    "outOfStock": 97,
+    "inStock": 117,
+    "outOfStock": 98,
     "writes": 0
   },
   "products": [
@@ -3658,7 +3658,7 @@
       "outcome": "linked",
       "supplier": "wilson",
       "before": true,
-      "after": true,
+      "after": false,
       "unavailableSizes": [],
       "supplierSizes": [],
       "link": {
@@ -3668,7 +3668,7 @@
       },
       "supplierTitle": "מחבט טניס | Ultra 25 V5 Tennis Racket",
       "supplierColor": null,
-      "detail": "במלאי באתר וילסון",
+      "detail": "אזל באתר וילסון",
       "linkReason": "התאמה ודאית",
       "suggestions": [
         {
