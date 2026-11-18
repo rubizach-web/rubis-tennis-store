@@ -1,6 +1,6 @@
 {
   "summary": {
-    "startedAt": "2026-11-17T09:37:57.240Z",
+    "startedAt": "2026-11-18T09:35:50.824Z",
     "dryRun": true,
     "total": 215,
     "checked": 112,
@@ -727,6 +727,13 @@
           "url": "https://babolat.co.il/product/1516",
           "title": "נעלי טניס בבולט Propulse 3 AC Junior Girl Babolat",
           "color": "Pink",
+          "score": 0.6
+        },
+        {
+          "ref": "1569",
+          "url": "https://babolat.co.il/product/1569",
+          "title": "נעלי טניס בבולט Propulse 3 AC Junior Girl Babolat",
+          "color": "Evening Sand",
           "score": 0.6
         }
       ]
@@ -4445,6 +4452,13 @@
       "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
       "suggestions": [
         {
+          "ref": "1570",
+          "url": "https://babolat.co.il/product/1570",
+          "title": "נעלי טניס בבולט Propulse 3 AC Junior Babolat",
+          "color": "Forever Blue",
+          "score": 1
+        },
+        {
           "ref": "1346",
           "url": "https://babolat.co.il/product/1346",
           "title": "נעלי טניס בבולט Propulse 3 AC Junior Boy Babolat",
@@ -4456,13 +4470,6 @@
           "url": "https://babolat.co.il/product/1347",
           "title": "נעלי טניס בבולט Propulse 3 AC Junior Boy Babolat",
           "color": "Blue / White",
-          "score": 1
-        },
-        {
-          "ref": "1383",
-          "url": "https://babolat.co.il/product/1383",
-          "title": "נעלי טניס בבולט Propulse 3 AC Junior Boy Babolat",
-          "color": "Black / Blue",
           "score": 1
         }
       ]
