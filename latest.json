@@ -1,6 +1,6 @@
 {
   "summary": {
-    "startedAt": "2026-11-21T09:20:36.877Z",
+    "startedAt": "2026-11-22T09:21:10.190Z",
     "dryRun": true,
     "total": 215,
     "checked": 112,
@@ -10,8 +10,8 @@
     "manual": 11,
     "notFound": 0,
     "errors": 0,
-    "inStock": 117,
-    "outOfStock": 98,
+    "inStock": 116,
+    "outOfStock": 99,
     "writes": 0
   },
   "products": [
@@ -2993,14 +2993,13 @@
       "outcome": "linked",
       "supplier": "wilson",
       "before": false,
-      "after": true,
+      "after": false,
       "unavailableSizes": [
         "ידית 1 (1/8 4)",
+        "ידית 2 (1/4 4)",
         "ידית 3 (3/8 4)"
       ],
-      "supplierSizes": [
-        "4 1/4\" (2)"
-      ],
+      "supplierSizes": [],
       "link": {
         "ref": "31636",
         "url": "https://wilson.co.il/product/rf-01/",
@@ -3008,7 +3007,7 @@
       },
       "supplierTitle": "מחבט טניס | RF 01 Tennis Racket",
       "supplierColor": null,
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 2 (1/4 4)",
+      "detail": "אף אחת מהמידות שלך לא זמינה אצל הספק",
       "linkReason": "התאמה ודאית",
       "suggestions": [
         {
