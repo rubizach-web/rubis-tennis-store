@@ -1,17 +1,17 @@
 {
   "summary": {
-    "startedAt": "2026-11-25T09:50:45.827Z",
+    "startedAt": "2026-11-26T09:45:58.877Z",
     "dryRun": true,
     "total": 215,
-    "checked": 112,
-    "linkedNow": 112,
-    "needsLink": 86,
+    "checked": 113,
+    "linkedNow": 113,
+    "needsLink": 85,
     "unknownSupplier": 6,
     "manual": 11,
     "notFound": 0,
     "errors": 0,
-    "inStock": 116,
-    "outOfStock": 99,
+    "inStock": 114,
+    "outOfStock": 101,
     "writes": 0
   },
   "products": [
@@ -366,6 +366,55 @@
       ]
     },
     {
+      "id": "zcamukbly",
+      "name": "BABOLAT JET MACH 3 AC GIRL LIGTH BLUE",
+      "outcome": "linked",
+      "supplier": "babolat",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [
+        "37",
+        "40"
+      ],
+      "supplierSizes": [
+        "36.5",
+        "38.5",
+        "39"
+      ],
+      "link": {
+        "ref": "1175",
+        "url": "https://babolat.co.il/product/1175",
+        "status": "auto"
+      },
+      "supplierTitle": "נעלי טניס בבולט Jet Mach 3 AC Junior Girl Babolat",
+      "supplierColor": "French Blue",
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: 38.5, 39",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "1175",
+          "url": "https://babolat.co.il/product/1175",
+          "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Girl Babolat",
+          "color": "French Blue",
+          "score": 1
+        },
+        {
+          "ref": "449",
+          "url": "https://babolat.co.il/product/449",
+          "title": "נעלי טניס בבולט Jet Mach 3 AC Men Babolat",
+          "color": "Blue",
+          "score": 0.65
+        },
+        {
+          "ref": "961",
+          "url": "https://babolat.co.il/product/961",
+          "title": "נעלי טניס בבולט Jet Mach 3 AC Women Babolat",
+          "color": "French Blue",
+          "score": 0.65
+        }
+      ]
+    },
+    {
       "id": "8web51mdl",
       "name": "BABOLAT JET MACH 3 AC GIRL RED",
       "outcome": "linked",
@@ -398,17 +447,17 @@
           "score": 1
         },
         {
-          "ref": "972",
-          "url": "https://babolat.co.il/product/972",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Babolat",
-          "color": "Angel Blue",
-          "score": 0.6
-        },
-        {
           "ref": "1173",
           "url": "https://babolat.co.il/product/1173",
           "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Girl Babolat",
           "color": "Coral / Gold Fusion",
+          "score": 0.6
+        },
+        {
+          "ref": "1175",
+          "url": "https://babolat.co.il/product/1175",
+          "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Girl Babolat",
+          "color": "French Blue",
           "score": 0.6
         }
       ]
@@ -448,17 +497,17 @@
           "score": 1
         },
         {
-          "ref": "972",
-          "url": "https://babolat.co.il/product/972",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Babolat",
-          "color": "Angel Blue",
-          "score": 0.6
-        },
-        {
           "ref": "1173",
           "url": "https://babolat.co.il/product/1173",
           "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Girl Babolat",
           "color": "Coral / Gold Fusion",
+          "score": 0.6
+        },
+        {
+          "ref": "1175",
+          "url": "https://babolat.co.il/product/1175",
+          "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Girl Babolat",
+          "color": "French Blue",
           "score": 0.6
         }
       ]
@@ -723,17 +772,17 @@
           "score": 1
         },
         {
-          "ref": "1516",
-          "url": "https://babolat.co.il/product/1516",
-          "title": "נעלי טניס בבולט Propulse 3 AC Junior Girl Babolat",
-          "color": "Pink",
-          "score": 0.6
-        },
-        {
           "ref": "1569",
           "url": "https://babolat.co.il/product/1569",
           "title": "נעלי טניס בבולט Propulse 3 AC Junior Girl Babolat",
           "color": "Evening Sand",
+          "score": 0.6
+        },
+        {
+          "ref": "1570",
+          "url": "https://babolat.co.il/product/1570",
+          "title": "נעלי טניס בבולט Propulse 3 AC Junior Babolat",
+          "color": "Forever Blue",
           "score": 0.6
         }
       ]
@@ -1228,7 +1277,7 @@
       "outcome": "linked",
       "supplier": "wilson",
       "before": false,
-      "after": true,
+      "after": false,
       "unavailableSizes": [],
       "supplierSizes": [],
       "link": {
@@ -1238,7 +1287,7 @@
       },
       "supplierTitle": "תיק טניס | Blade V10 Backpack",
       "supplierColor": "Championship Green (ירוק)",
-      "detail": "במלאי באתר וילסון",
+      "detail": "אזל באתר וילסון",
       "linkReason": "התאמה ודאית",
       "suggestions": [
         {
@@ -1265,11 +1314,11 @@
       "after": true,
       "unavailableSizes": [
         "36",
+        "2/3 36",
         "38"
       ],
       "supplierSizes": [
         "34",
-        "⅔36",
         "⅓37",
         "⅔38"
       ],
@@ -1280,7 +1329,7 @@
       },
       "supplierTitle": "נעלי טניס ג'וניור | Junior Rush Pro L",
       "supplierColor": "לבן",
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: 2/3 36, 1/3 37, 2/3 38",
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: 1/3 37, 2/3 38",
       "linkReason": "התאמה ודאית",
       "suggestions": [
         {
@@ -1989,9 +2038,10 @@
       "supplier": "wilson",
       "before": false,
       "after": true,
-      "unavailableSizes": [],
+      "unavailableSizes": [
+        "ידית 2 (1/4 4)"
+      ],
       "supplierSizes": [
-        "4 1/4\" (2)",
         "4 3/8\" (3)"
       ],
       "link": {
@@ -2001,7 +2051,7 @@
       },
       "supplierTitle": "מחבט טניס | Blade Feel 103",
       "supplierColor": null,
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 2 (1/4 4), ידית 3 (3/8 4)",
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 3 (3/8 4)",
       "linkReason": "התאמה ודאית",
       "suggestions": [
         {
@@ -2221,7 +2271,7 @@
       "outcome": "linked",
       "supplier": "wilson",
       "before": false,
-      "after": true,
+      "after": false,
       "unavailableSizes": [],
       "supplierSizes": [],
       "link": {
@@ -2231,7 +2281,7 @@
       },
       "supplierTitle": "מחבט טניס לילדים | Burn Spin Jr 25 Tennis Racket",
       "supplierColor": null,
-      "detail": "במלאי באתר וילסון",
+      "detail": "אזל באתר וילסון",
       "linkReason": "התאמה ודאית",
       "suggestions": [
         {
@@ -2432,9 +2482,7 @@
       "unavailableSizes": [
         "ידית 3 (3/8 4)"
       ],
-      "supplierSizes": [
-        "4 1/4\" (2)"
-      ],
+      "supplierSizes": [],
       "link": {
         "ref": "39783",
         "url": "https://wilson.co.il/product/clash-100-v3-reverse-tennis-racket/",
@@ -3883,9 +3931,10 @@
       "supplier": "yonex",
       "before": true,
       "after": true,
-      "unavailableSizes": [],
+      "unavailableSizes": [
+        "ידית 2 (1/4 4)"
+      ],
       "supplierSizes": [
-        "G2 - Espresso brown",
         "G3 - Espresso brown"
       ],
       "link": {
@@ -3895,7 +3944,7 @@
       },
       "supplierTitle": "YONEX EZONE 98 305g (8th gen.) Unstrung",
       "supplierColor": null,
-      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 2 (1/4 4), ידית 3 (3/8 4)",
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 3 (3/8 4) · מידות שהספק לא מציע בכלל: ידית 2 (1/4 4)",
       "linkReason": "התאמה ודאית",
       "suggestions": [
         {
@@ -4532,37 +4581,6 @@
           "score": 1
         },
         {
-          "ref": "972",
-          "url": "https://babolat.co.il/product/972",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Babolat",
-          "color": "Angel Blue",
-          "score": 1
-        }
-      ]
-    },
-    {
-      "id": "zcamukbly",
-      "name": "BABOLAT JET MACH 3 AC GIRL LIGTH BLUE",
-      "outcome": "needs_link",
-      "supplier": "babolat",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
-      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
-      "suggestions": [
-        {
-          "ref": "972",
-          "url": "https://babolat.co.il/product/972",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Babolat",
-          "color": "Angel Blue",
-          "score": 1
-        },
-        {
           "ref": "1175",
           "url": "https://babolat.co.il/product/1175",
           "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Girl Babolat",
@@ -4587,13 +4605,6 @@
       "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
       "suggestions": [
         {
-          "ref": "972",
-          "url": "https://babolat.co.il/product/972",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Babolat",
-          "color": "Angel Blue",
-          "score": 0.6
-        },
-        {
           "ref": "1173",
           "url": "https://babolat.co.il/product/1173",
           "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Girl Babolat",
@@ -4605,6 +4616,13 @@
           "url": "https://babolat.co.il/product/1175",
           "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Girl Babolat",
           "color": "French Blue",
+          "score": 0.6
+        },
+        {
+          "ref": "1372",
+          "url": "https://babolat.co.il/product/1372",
+          "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Girl Babolat",
+          "color": "Red",
           "score": 0.6
         }
       ]
@@ -4624,13 +4642,6 @@
       "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
       "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
       "suggestions": [
-        {
-          "ref": "972",
-          "url": "https://babolat.co.il/product/972",
-          "title": "נעלי טניס בבולט Jet Mach 3 AC Junior Babolat",
-          "color": "Angel Blue",
-          "score": 1
-        },
         {
           "ref": "1175",
           "url": "https://babolat.co.il/product/1175",
