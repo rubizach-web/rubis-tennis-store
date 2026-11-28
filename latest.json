@@ -1,436 +1,20 @@
 {
   "summary": {
-    "startedAt": "2026-11-27T09:46:47.949Z",
+    "startedAt": "2026-11-28T09:24:30.906Z",
     "dryRun": true,
     "total": 215,
-    "checked": 100,
-    "linkedNow": 100,
-    "needsLink": 72,
+    "checked": 113,
+    "linkedNow": 113,
+    "needsLink": 85,
     "unknownSupplier": 6,
     "manual": 11,
     "notFound": 0,
-    "errors": 26,
-    "inStock": 110,
-    "outOfStock": 105,
+    "errors": 0,
+    "inStock": 114,
+    "outOfStock": 101,
     "writes": 0
   },
   "products": [
-    {
-      "id": "efx30f765",
-      "name": " YONEX VCORE 25 red ruby",
-      "outcome": "error",
-      "supplier": "yonex",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (yonex catalog HTTP 403) — המלאי לא שונה",
-      "linkReason": null,
-      "suggestions": []
-    },
-    {
-      "id": "2sb4ezdbz",
-      "name": "(YONEX VCORE 26 (8th gen",
-      "outcome": "error",
-      "supplier": "yonex",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (yonex catalog HTTP 403) — המלאי לא שונה",
-      "linkReason": null,
-      "suggestions": []
-    },
-    {
-      "id": "5o2gry0te",
-      "name": "PRO RAQUET BAG 6 PACK",
-      "outcome": "error",
-      "supplier": "yonex",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (yonex catalog HTTP 403) — המלאי לא שונה",
-      "linkReason": null,
-      "suggestions": []
-    },
-    {
-      "id": "i4688w08z",
-      "name": "PRO RAQUET BAG 9pk midnight navy",
-      "outcome": "error",
-      "supplier": "yonex",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (yonex catalog HTTP 403) — המלאי לא שונה",
-      "linkReason": null,
-      "suggestions": []
-    },
-    {
-      "id": "any8w9gcf",
-      "name": "SONICAGE white",
-      "outcome": "error",
-      "supplier": "yonex",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (yonex catalog HTTP 403) — המלאי לא שונה",
-      "linkReason": null,
-      "suggestions": []
-    },
-    {
-      "id": "h5llve1nc",
-      "name": "YONEX CLUB BACKBAG blue",
-      "outcome": "error",
-      "supplier": "yonex",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (yonex catalog HTTP 403) — המלאי לא שונה",
-      "linkReason": null,
-      "suggestions": []
-    },
-    {
-      "id": "cywbwl40x",
-      "name": "YONEX CLUB BACKBAG red",
-      "outcome": "error",
-      "supplier": "yonex",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (yonex catalog HTTP 403) — המלאי לא שונה",
-      "linkReason": null,
-      "suggestions": []
-    },
-    {
-      "id": "5rpdfrlom",
-      "name": "YONEX EZONE 100 Blast Blue 300g",
-      "outcome": "error",
-      "supplier": "yonex",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (yonex catalog HTTP 403) — המלאי לא שונה",
-      "linkReason": null,
-      "suggestions": []
-    },
-    {
-      "id": "951whaw3g",
-      "name": "YONEX EZONE 100L Blast Blue 285g",
-      "outcome": "error",
-      "supplier": "yonex",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (yonex catalog HTTP 403) — המלאי לא שונה",
-      "linkReason": null,
-      "suggestions": []
-    },
-    {
-      "id": "ezmmrtzrc",
-      "name": "YONEX EZONE 25' blast blue",
-      "outcome": "error",
-      "supplier": "yonex",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (yonex catalog HTTP 403) — המלאי לא שונה",
-      "linkReason": null,
-      "suggestions": []
-    },
-    {
-      "id": "pwx4z0opd",
-      "name": "YONEX EZONE 26' blast blue",
-      "outcome": "error",
-      "supplier": "yonex",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (yonex catalog HTTP 403) — המלאי לא שונה",
-      "linkReason": null,
-      "suggestions": []
-    },
-    {
-      "id": "9fond6282",
-      "name": "YONEX EZONE 98 Blast Blue 305g",
-      "outcome": "error",
-      "supplier": "yonex",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (yonex catalog HTTP 403) — המלאי לא שונה",
-      "linkReason": null,
-      "suggestions": []
-    },
-    {
-      "id": "iv4yv91hz",
-      "name": "YONEX PERCEPT 100 300g Midnight Navy",
-      "outcome": "error",
-      "supplier": "yonex",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (yonex catalog HTTP 403) — המלאי לא שונה",
-      "linkReason": null,
-      "suggestions": []
-    },
-    {
-      "id": "1pt01ucxt",
-      "name": "YONEX PERCEPT 100L 280g Midnight Navy",
-      "outcome": "error",
-      "supplier": "yonex",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (yonex catalog HTTP 403) — המלאי לא שונה",
-      "linkReason": null,
-      "suggestions": []
-    },
-    {
-      "id": "qlehp1lqi",
-      "name": "YONEX PERCEPT 97 310g Midnight Navy",
-      "outcome": "error",
-      "supplier": "yonex",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (yonex catalog HTTP 403) — המלאי לא שונה",
-      "linkReason": null,
-      "suggestions": []
-    },
-    {
-      "id": "wkc7p1jes",
-      "name": "YONEX POWER CUSHION JUNIOR white",
-      "outcome": "error",
-      "supplier": "yonex",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (yonex catalog HTTP 403) — המלאי לא שונה",
-      "linkReason": null,
-      "suggestions": []
-    },
-    {
-      "id": "e9gbwr93t",
-      "name": "YONEX PRO RAQUET BAG 9 PACK ",
-      "outcome": "error",
-      "supplier": "yonex",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (yonex catalog HTTP 403) — המלאי לא שונה",
-      "linkReason": null,
-      "suggestions": []
-    },
-    {
-      "id": "pmjfukgvd",
-      "name": "YONEX PRO RAQUET BAG 9 PK green",
-      "outcome": "error",
-      "supplier": "yonex",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (yonex catalog HTTP 403) — המלאי לא שונה",
-      "linkReason": null,
-      "suggestions": []
-    },
-    {
-      "id": "p2",
-      "name": "YONEX PRO TOURNAMENT BAG",
-      "outcome": "error",
-      "supplier": "yonex",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (yonex catalog HTTP 403) — המלאי לא שונה",
-      "linkReason": null,
-      "suggestions": []
-    },
-    {
-      "id": "jn16277pz",
-      "name": "YONEX SONICAGE green",
-      "outcome": "error",
-      "supplier": "yonex",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (yonex catalog HTTP 403) — המלאי לא שונה",
-      "linkReason": null,
-      "suggestions": []
-    },
-    {
-      "id": "4n5pgdvw3",
-      "name": "YONEX TEAM BACKBAG black",
-      "outcome": "error",
-      "supplier": "yonex",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (yonex catalog HTTP 403) — המלאי לא שונה",
-      "linkReason": null,
-      "suggestions": []
-    },
-    {
-      "id": "bjcdgbo82",
-      "name": "YONEX TEAM BACKBAG blue",
-      "outcome": "error",
-      "supplier": "yonex",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (yonex catalog HTTP 403) — המלאי לא שונה",
-      "linkReason": null,
-      "suggestions": []
-    },
-    {
-      "id": "98y3dor5c",
-      "name": "YONEX TEAM BACKBAG red",
-      "outcome": "error",
-      "supplier": "yonex",
-      "before": false,
-      "after": false,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (yonex catalog HTTP 403) — המלאי לא שונה",
-      "linkReason": null,
-      "suggestions": []
-    },
-    {
-      "id": "4al8sr8j4",
-      "name": "YONEX VCORE 100 300g (8th gen.)",
-      "outcome": "error",
-      "supplier": "yonex",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (yonex catalog HTTP 403) — המלאי לא שונה",
-      "linkReason": null,
-      "suggestions": []
-    },
-    {
-      "id": "wzbpf9hth",
-      "name": "YONEX VCORE 100L 280g (8th gen.)",
-      "outcome": "error",
-      "supplier": "yonex",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (yonex catalog HTTP 403) — המלאי לא שונה",
-      "linkReason": null,
-      "suggestions": []
-    },
-    {
-      "id": "5ihn6sdb8",
-      "name": "YONEX VCORE 98 305g (8th gen.)",
-      "outcome": "error",
-      "supplier": "yonex",
-      "before": true,
-      "after": true,
-      "unavailableSizes": [],
-      "supplierSizes": null,
-      "link": null,
-      "supplierTitle": null,
-      "supplierColor": null,
-      "detail": "לא הצלחתי לקרוא את רשימת המוצרים של הספק (yonex catalog HTTP 403) — המלאי לא שונה",
-      "linkReason": null,
-      "suggestions": []
-    },
     {
       "id": "46kcpxxsn",
       "name": " BABOLAT JET MACH 4 AC RED",
@@ -474,6 +58,33 @@
           "title": "נעלי טניס בבולט Jet Mach 4 AC Men Babolat",
           "color": "Beige / Dark Blue",
           "score": 0.6
+        }
+      ]
+    },
+    {
+      "id": "2sb4ezdbz",
+      "name": "(YONEX VCORE 26 (8th gen",
+      "outcome": "linked",
+      "supplier": "yonex",
+      "before": false,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [],
+      "link": {
+        "ref": "https://www.tennis-online.co.il/product/yonex-vcore-26-8th-gen/",
+        "url": "https://www.tennis-online.co.il/product/yonex-vcore-26-8th-gen/",
+        "status": "auto"
+      },
+      "supplierTitle": "YONEX VCORE 26 (8th gen.)",
+      "supplierColor": null,
+      "detail": "במלאי באתר טניס אונליין",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-vcore-26-8th-gen/",
+          "url": "https://www.tennis-online.co.il/product/yonex-vcore-26-8th-gen/",
+          "title": "YONEX VCORE 26 (8th gen.)",
+          "score": 1
         }
       ]
     },
@@ -2226,6 +1837,51 @@
           "url": "https://wilson.co.il/product/shift-99-pro-v1/",
           "title": "מחבט טניס | Shift 99 pro V1",
           "score": 0.38
+        }
+      ]
+    },
+    {
+      "id": "any8w9gcf",
+      "name": "SONICAGE white",
+      "outcome": "linked",
+      "supplier": "yonex",
+      "before": false,
+      "after": true,
+      "unavailableSizes": [
+        "40",
+        "43"
+      ],
+      "supplierSizes": [
+        "42",
+        "44"
+      ],
+      "link": {
+        "ref": "https://www.tennis-online.co.il/product/yonex-sonicage-men-white/",
+        "url": "https://www.tennis-online.co.il/product/yonex-sonicage-men-white/",
+        "status": "auto"
+      },
+      "supplierTitle": "נעלי טניס YONEX SONICAGE Men White",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: 42, 44 · מידות שהספק לא מציע בכלל: 40, 43",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-sonicage-men-white/",
+          "url": "https://www.tennis-online.co.il/product/yonex-sonicage-men-white/",
+          "title": "נעלי טניס YONEX SONICAGE Men White",
+          "score": 1
+        },
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-sonicage-men/",
+          "url": "https://www.tennis-online.co.il/product/yonex-sonicage-men/",
+          "title": "נעלי טניס YONEX SONICAGE Men",
+          "score": 1
+        },
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-sonicage-men-black/",
+          "url": "https://www.tennis-online.co.il/product/yonex-sonicage-men-black/",
+          "title": "נעלי טניס YONEX SONICAGE Men Black",
+          "score": 0.6
         }
       ]
     },
@@ -4206,6 +3862,388 @@
       ]
     },
     {
+      "id": "5rpdfrlom",
+      "name": "YONEX EZONE 100 Blast Blue 300g",
+      "outcome": "linked",
+      "supplier": "yonex",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [
+        "G1 - Blast blue",
+        "G2 - Blast blue",
+        "G3 - blast blue"
+      ],
+      "link": {
+        "ref": "https://www.tennis-online.co.il/product/yonex-ezone-100-blast-blue-300g-8th-gen-unstrung/",
+        "url": "https://www.tennis-online.co.il/product/yonex-ezone-100-blast-blue-300g-8th-gen-unstrung/",
+        "status": "auto"
+      },
+      "supplierTitle": "YONEX EZONE 100 300g (8th gen.) Unstrung",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 1 (1/8 4), ידית 2 (1/4 4), ידית 3 (3/8 4)",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-ezone-100-blast-blue-300g-8th-gen-unstrung/",
+          "url": "https://www.tennis-online.co.il/product/yonex-ezone-100-blast-blue-300g-8th-gen-unstrung/",
+          "title": "YONEX EZONE 100 300g (8th gen.) Unstrung",
+          "score": 0.78
+        }
+      ]
+    },
+    {
+      "id": "951whaw3g",
+      "name": "YONEX EZONE 100L Blast Blue 285g",
+      "outcome": "linked",
+      "supplier": "yonex",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [
+        "ידית 1 (1/8 4)",
+        "ידית 2 (1/4 4)"
+      ],
+      "supplierSizes": [
+        "3/8 4 - G3"
+      ],
+      "link": {
+        "ref": "https://www.tennis-online.co.il/product/yonex-ezone-100l-blast-blue-285g-8th-gen-unstrung/",
+        "url": "https://www.tennis-online.co.il/product/yonex-ezone-100l-blast-blue-285g-8th-gen-unstrung/",
+        "status": "auto"
+      },
+      "supplierTitle": "YONEX EZONE 100L Blast Blue 285g (8th gen.) Unstrung",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 3 (3/8 4)",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-ezone-100l-blast-blue-285g-8th-gen-unstrung/",
+          "url": "https://www.tennis-online.co.il/product/yonex-ezone-100l-blast-blue-285g-8th-gen-unstrung/",
+          "title": "YONEX EZONE 100L Blast Blue 285g (8th gen.) Unstrung",
+          "score": 0.9
+        }
+      ]
+    },
+    {
+      "id": "9fond6282",
+      "name": "YONEX EZONE 98 Blast Blue 305g",
+      "outcome": "linked",
+      "supplier": "yonex",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [
+        "ידית 2 (1/4 4)"
+      ],
+      "supplierSizes": [
+        "G3 - Espresso brown"
+      ],
+      "link": {
+        "ref": "https://www.tennis-online.co.il/product/yonex-ezone-98-blast-blue-305g-8th-gen-unstrung/",
+        "url": "https://www.tennis-online.co.il/product/yonex-ezone-98-blast-blue-305g-8th-gen-unstrung/",
+        "status": "auto"
+      },
+      "supplierTitle": "YONEX EZONE 98 305g (8th gen.) Unstrung",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 3 (3/8 4) · מידות שהספק לא מציע בכלל: ידית 2 (1/4 4)",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-ezone-98-blast-blue-305g-8th-gen-unstrung/",
+          "url": "https://www.tennis-online.co.il/product/yonex-ezone-98-blast-blue-305g-8th-gen-unstrung/",
+          "title": "YONEX EZONE 98 305g (8th gen.) Unstrung",
+          "score": 0.78
+        }
+      ]
+    },
+    {
+      "id": "iv4yv91hz",
+      "name": "YONEX PERCEPT 100 300g Midnight Navy",
+      "outcome": "linked",
+      "supplier": "yonex",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [
+        "1/4 4 - G2",
+        "3/8 4 - G3"
+      ],
+      "link": {
+        "ref": "https://www.tennis-online.co.il/product/yonex-percept-100-300g-midnight-navy-unstrung/",
+        "url": "https://www.tennis-online.co.il/product/yonex-percept-100-300g-midnight-navy-unstrung/",
+        "status": "auto"
+      },
+      "supplierTitle": "YONEX PERCEPT 100 300g Midnight Navy Unstrung",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 2 (1/4 4), ידית 3 (3/8 4)",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-percept-100-300g-midnight-navy-unstrung/",
+          "url": "https://www.tennis-online.co.il/product/yonex-percept-100-300g-midnight-navy-unstrung/",
+          "title": "YONEX PERCEPT 100 300g Midnight Navy Unstrung",
+          "score": 1
+        },
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-percept-100/",
+          "url": "https://www.tennis-online.co.il/product/yonex-percept-100/",
+          "title": "YONEX PERCEPT 100 300g Unstrung",
+          "score": 0.83
+        }
+      ]
+    },
+    {
+      "id": "1pt01ucxt",
+      "name": "YONEX PERCEPT 100L 280g Midnight Navy",
+      "outcome": "linked",
+      "supplier": "yonex",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [
+        "1/4 4 - G2",
+        "1/8 4 - G1"
+      ],
+      "link": {
+        "ref": "https://www.tennis-online.co.il/product/yonex-percept-100l-280g-midnight-navy-unstrung/",
+        "url": "https://www.tennis-online.co.il/product/yonex-percept-100l-280g-midnight-navy-unstrung/",
+        "status": "auto"
+      },
+      "supplierTitle": "YONEX PERCEPT 100L 280g Midnight Navy Unstrung",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 1 (1/8 4), ידית 2 (1/4 4)",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-percept-100l-280g-midnight-navy-unstrung/",
+          "url": "https://www.tennis-online.co.il/product/yonex-percept-100l-280g-midnight-navy-unstrung/",
+          "title": "YONEX PERCEPT 100L 280g Midnight Navy Unstrung",
+          "score": 1
+        },
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-muse-100l-280g-unstrung/",
+          "url": "https://www.tennis-online.co.il/product/yonex-muse-100l-280g-unstrung/",
+          "title": "YONEX MUSE 100L 280g Unstrung",
+          "score": 0.27
+        }
+      ]
+    },
+    {
+      "id": "qlehp1lqi",
+      "name": "YONEX PERCEPT 97 310g Midnight Navy",
+      "outcome": "linked",
+      "supplier": "yonex",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [
+        "1/4 4 - G2",
+        "3/8 4 - G3"
+      ],
+      "link": {
+        "ref": "https://www.tennis-online.co.il/product/yonex-percept-97-310g-midnight-navy-unstrung/",
+        "url": "https://www.tennis-online.co.il/product/yonex-percept-97-310g-midnight-navy-unstrung/",
+        "status": "auto"
+      },
+      "supplierTitle": "YONEX PERCEPT 97 310g Midnight Navy Unstrung",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 2 (1/4 4), ידית 3 (3/8 4)",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-percept-97-310g-midnight-navy-unstrung/",
+          "url": "https://www.tennis-online.co.il/product/yonex-percept-97-310g-midnight-navy-unstrung/",
+          "title": "YONEX PERCEPT 97 310g Midnight Navy Unstrung",
+          "score": 1
+        },
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-percept-97-310g-unstrung/",
+          "url": "https://www.tennis-online.co.il/product/yonex-percept-97-310g-unstrung/",
+          "title": "YONEX PERCEPT 97 310g Unstrung",
+          "score": 0.83
+        }
+      ]
+    },
+    {
+      "id": "pmjfukgvd",
+      "name": "YONEX PRO RAQUET BAG 9 PK green",
+      "outcome": "linked",
+      "supplier": "yonex",
+      "before": false,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [],
+      "link": {
+        "ref": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-olive-green/",
+        "url": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-olive-green/",
+        "status": "auto"
+      },
+      "supplierTitle": "YONEX PRO RACQUET BAG (9PCS) Olive Green",
+      "supplierColor": null,
+      "detail": "במלאי באתר טניס אונליין",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-olive-green/",
+          "url": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-olive-green/",
+          "title": "YONEX PRO RACQUET BAG (9PCS) Olive Green",
+          "score": 1
+        },
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-espresso-brown/",
+          "url": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-espresso-brown/",
+          "title": "YONEX PRO RACQUET BAG (9PCS) Espresso Brown",
+          "score": 0.6
+        },
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-black/",
+          "url": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-black/",
+          "title": "YONEX PRO RACQUET BAG (9PCS) Black",
+          "score": 0.6
+        }
+      ]
+    },
+    {
+      "id": "jn16277pz",
+      "name": "YONEX SONICAGE green",
+      "outcome": "linked",
+      "supplier": "yonex",
+      "before": false,
+      "after": true,
+      "unavailableSizes": [
+        "43",
+        "46"
+      ],
+      "supplierSizes": [
+        "42",
+        "44"
+      ],
+      "link": {
+        "ref": "https://www.tennis-online.co.il/product/yonex-sonicage-men/",
+        "url": "https://www.tennis-online.co.il/product/yonex-sonicage-men/",
+        "status": "auto"
+      },
+      "supplierTitle": "נעלי טניס YONEX SONICAGE Men",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: 42, 44 · מידות שהספק לא מציע בכלל: 43, 46",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-sonicage-men/",
+          "url": "https://www.tennis-online.co.il/product/yonex-sonicage-men/",
+          "title": "נעלי טניס YONEX SONICAGE Men",
+          "score": 1
+        },
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-sonicage-men-black/",
+          "url": "https://www.tennis-online.co.il/product/yonex-sonicage-men-black/",
+          "title": "נעלי טניס YONEX SONICAGE Men Black",
+          "score": 0.6
+        },
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-sonicage-men-white/",
+          "url": "https://www.tennis-online.co.il/product/yonex-sonicage-men-white/",
+          "title": "נעלי טניס YONEX SONICAGE Men White",
+          "score": 0.6
+        }
+      ]
+    },
+    {
+      "id": "4al8sr8j4",
+      "name": "YONEX VCORE 100 300g (8th gen.)",
+      "outcome": "linked",
+      "supplier": "yonex",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [
+        "1/4 4 - G2",
+        "3/8 4 - G3"
+      ],
+      "link": {
+        "ref": "https://www.tennis-online.co.il/product/yonex-vcore-100-300g-8th-gen-unstrung/",
+        "url": "https://www.tennis-online.co.il/product/yonex-vcore-100-300g-8th-gen-unstrung/",
+        "status": "auto"
+      },
+      "supplierTitle": "YONEX VCORE 100 300g (8th gen.) Unstrung",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 2 (1/4 4), ידית 3 (3/8 4)",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-vcore-100-300g-8th-gen-unstrung/",
+          "url": "https://www.tennis-online.co.il/product/yonex-vcore-100-300g-8th-gen-unstrung/",
+          "title": "YONEX VCORE 100 300g (8th gen.) Unstrung",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": "wzbpf9hth",
+      "name": "YONEX VCORE 100L 280g (8th gen.)",
+      "outcome": "linked",
+      "supplier": "yonex",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [
+        "1/8 4 - G1",
+        "1/4 4 - G2"
+      ],
+      "link": {
+        "ref": "https://www.tennis-online.co.il/product/yonex-vcore-100l-285g-8th-gen-unstrung/",
+        "url": "https://www.tennis-online.co.il/product/yonex-vcore-100l-285g-8th-gen-unstrung/",
+        "status": "auto"
+      },
+      "supplierTitle": "YONEX VCORE 100L 280g (8th gen.) Unstrung",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 1 (1/8 4), ידית 2 (1/4 4)",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-vcore-100l-285g-8th-gen-unstrung/",
+          "url": "https://www.tennis-online.co.il/product/yonex-vcore-100l-285g-8th-gen-unstrung/",
+          "title": "YONEX VCORE 100L 280g (8th gen.) Unstrung",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": "5ihn6sdb8",
+      "name": "YONEX VCORE 98 305g (8th gen.)",
+      "outcome": "linked",
+      "supplier": "yonex",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": [
+        "1/4 4 - G2",
+        "3/8 4 - G3"
+      ],
+      "link": {
+        "ref": "https://www.tennis-online.co.il/product/yonex-vcore-98-305g-8th-gen-unstrung/",
+        "url": "https://www.tennis-online.co.il/product/yonex-vcore-98-305g-8th-gen-unstrung/",
+        "status": "auto"
+      },
+      "supplierTitle": "YONEX VCORE 98 305g (8th gen.) Unstrung",
+      "supplierColor": null,
+      "detail": "במלאי אצל הספק. מידות שאפשר למכור: ידית 2 (1/4 4), ידית 3 (3/8 4)",
+      "linkReason": "התאמה ודאית",
+      "suggestions": [
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-vcore-98-305g-8th-gen-unstrung/",
+          "url": "https://www.tennis-online.co.il/product/yonex-vcore-98-305g-8th-gen-unstrung/",
+          "title": "YONEX VCORE 98 305g (8th gen.) Unstrung",
+          "score": 1
+        },
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-vcore-98-305g-7th-gen-unstrung/",
+          "url": "https://www.tennis-online.co.il/product/yonex-vcore-98-305g-7th-gen-unstrung/",
+          "title": "YONEX VCORE 98 305g (7th gen.) Unstrung",
+          "score": 0.31
+        }
+      ]
+    },
+    {
       "id": "b9deg9ysd",
       "name": "תיק צד WILSON ROLAND GARROS 2026",
       "outcome": "linked",
@@ -4422,6 +4460,29 @@
       "detail": "ספק שמעודכן ידנית — לא נבדק אוטומטית",
       "linkReason": null,
       "suggestions": []
+    },
+    {
+      "id": "efx30f765",
+      "name": " YONEX VCORE 25 red ruby",
+      "outcome": "needs_link",
+      "supplier": "yonex",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
+      "suggestions": [
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-vcore-25-8th-gen/",
+          "url": "https://www.tennis-online.co.il/product/yonex-vcore-25-8th-gen/",
+          "title": "YONEX VCORE 25 (8th gen.)",
+          "score": 0.5
+        }
+      ]
     },
     {
       "id": "4d15j53fo",
@@ -5272,6 +5333,76 @@
       "detail": "לא נמצא מוצר דומה אצל הספק. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
       "linkReason": "לא נמצא מוצר דומה אצל הספק",
       "suggestions": []
+    },
+    {
+      "id": "5o2gry0te",
+      "name": "PRO RAQUET BAG 6 PACK",
+      "outcome": "needs_link",
+      "supplier": "yonex",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
+      "suggestions": [
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-6pcs-dark-green/",
+          "url": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-6pcs-dark-green/",
+          "title": "YONEX PRO RACQUET BAG (6PCS) Dark Green",
+          "score": 1
+        },
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-6pcs-espresso-brown/",
+          "url": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-6pcs-espresso-brown/",
+          "title": "YONEX PRO RACQUET BAG (6PCS) Espresso Brown",
+          "score": 1
+        },
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-6pcs-black/",
+          "url": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-6pcs-black/",
+          "title": "YONEX PRO RACQUET BAG (6PCS) Black",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": "i4688w08z",
+      "name": "PRO RAQUET BAG 9pk midnight navy",
+      "outcome": "needs_link",
+      "supplier": "yonex",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
+      "suggestions": [
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-espresso-brown/",
+          "url": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-espresso-brown/",
+          "title": "YONEX PRO RACQUET BAG (9PCS) Espresso Brown",
+          "score": 0.35
+        },
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-black/",
+          "url": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-black/",
+          "title": "YONEX PRO RACQUET BAG (9PCS) Black",
+          "score": 0.35
+        },
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-olive-green/",
+          "url": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-olive-green/",
+          "title": "YONEX PRO RACQUET BAG (9PCS) Olive Green",
+          "score": 0.35
+        }
+      ]
     },
     {
       "id": "0dtc605cs",
@@ -6384,6 +6515,320 @@
           "ref": "34182",
           "url": "https://wilson.co.il/product/rush-pro-4-5/",
           "title": "נעלי טניס לגברים | Rush Pro 4.5",
+          "score": 0.4
+        }
+      ]
+    },
+    {
+      "id": "h5llve1nc",
+      "name": "YONEX CLUB BACKBAG blue",
+      "outcome": "needs_link",
+      "supplier": "yonex",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
+      "suggestions": [
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-club-line-backpack-26l/",
+          "url": "https://www.tennis-online.co.il/product/yonex-club-line-backpack-26l/",
+          "title": "תיק גב טניס לילדים YONEX CLUB Line backpack 26L",
+          "score": 0.33
+        }
+      ]
+    },
+    {
+      "id": "cywbwl40x",
+      "name": "YONEX CLUB BACKBAG red",
+      "outcome": "needs_link",
+      "supplier": "yonex",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
+      "suggestions": [
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-club-backpack-2522-red/",
+          "url": "https://www.tennis-online.co.il/product/yonex-club-backpack-2522-red/",
+          "title": "תיק גב טניס YONEX CLUB backpack 2522 red",
+          "score": 0.55
+        },
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-club-line-backpack-26l/",
+          "url": "https://www.tennis-online.co.il/product/yonex-club-line-backpack-26l/",
+          "title": "תיק גב טניס לילדים YONEX CLUB Line backpack 26L",
+          "score": 0.33
+        }
+      ]
+    },
+    {
+      "id": "ezmmrtzrc",
+      "name": "YONEX EZONE 25' blast blue",
+      "outcome": "needs_link",
+      "supplier": "yonex",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
+      "suggestions": [
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-ezone-25-blast-blue-8th-gen/",
+          "url": "https://www.tennis-online.co.il/product/yonex-ezone-25-blast-blue-8th-gen/",
+          "title": "YONEX EZONE 25 Blast Blue (8th gen.)",
+          "score": 0.82
+        },
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-ezone-junior-25/",
+          "url": "https://www.tennis-online.co.il/product/yonex-ezone-junior-25/",
+          "title": "YONEX EZONE JUNIOR 25",
+          "score": 0.75
+        },
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-ezone-25/",
+          "url": "https://www.tennis-online.co.il/product/yonex-ezone-25/",
+          "title": "YONEX EZONE 25 Graphite (7th gen.)",
+          "score": 0.43
+        }
+      ]
+    },
+    {
+      "id": "pwx4z0opd",
+      "name": "YONEX EZONE 26' blast blue",
+      "outcome": "needs_link",
+      "supplier": "yonex",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
+      "suggestions": [
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-ezone-26-blast-blue-8th-gen/",
+          "url": "https://www.tennis-online.co.il/product/yonex-ezone-26-blast-blue-8th-gen/",
+          "title": "YONEX EZONE 26 Blast Blue (8th gen.)",
+          "score": 0.82
+        },
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-ezone-junior-26/",
+          "url": "https://www.tennis-online.co.il/product/yonex-ezone-junior-26/",
+          "title": "YONEX EZONE JUNIOR 26",
+          "score": 0.75
+        }
+      ]
+    },
+    {
+      "id": "wkc7p1jes",
+      "name": "YONEX POWER CUSHION JUNIOR white",
+      "outcome": "needs_link",
+      "supplier": "yonex",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
+      "suggestions": [
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-power-cushion-eclipsion-4-white/",
+          "url": "https://www.tennis-online.co.il/product/yonex-power-cushion-eclipsion-4-white/",
+          "title": "נעלי טניס YONEX POWER CUSHION ECLIPSION 4 White",
+          "score": 0.55
+        },
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-power-cushion-ad-accel-junior/",
+          "url": "https://www.tennis-online.co.il/product/yonex-power-cushion-ad-accel-junior/",
+          "title": "נעלי טניס לילדים YONEX POWER CUSHION AD-ACCEL JUNIOR",
+          "score": 0.5
+        },
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-power-cushion-strider-flow-jr/",
+          "url": "https://www.tennis-online.co.il/product/yonex-power-cushion-strider-flow-jr/",
+          "title": "YONEX Power Cushion STRIDER FLOW JR",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "id": "e9gbwr93t",
+      "name": "YONEX PRO RAQUET BAG 9 PACK ",
+      "outcome": "needs_link",
+      "supplier": "yonex",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "יש כמה מוצרים דומים אצל הספק — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "יש כמה מוצרים דומים אצל הספק — דרוש אישור",
+      "suggestions": [
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-espresso-brown/",
+          "url": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-espresso-brown/",
+          "title": "YONEX PRO RACQUET BAG (9PCS) Espresso Brown",
+          "score": 1
+        },
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-black/",
+          "url": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-black/",
+          "title": "YONEX PRO RACQUET BAG (9PCS) Black",
+          "score": 1
+        },
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-olive-green/",
+          "url": "https://www.tennis-online.co.il/product/yonex-pro-racquet-bag-9pcs-olive-green/",
+          "title": "YONEX PRO RACQUET BAG (9PCS) Olive Green",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "name": "YONEX PRO TOURNAMENT BAG",
+      "outcome": "needs_link",
+      "supplier": "yonex",
+      "before": true,
+      "after": true,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
+      "suggestions": [
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-pro-tournament-bag-92431w-dark-green/",
+          "url": "https://www.tennis-online.co.il/product/yonex-pro-tournament-bag-92431w-dark-green/",
+          "title": "YONEX PRO TOURNAMENT BAG 92431W Dark Green",
+          "score": 0.5
+        },
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-pro-tournament-bag-92431w-black/",
+          "url": "https://www.tennis-online.co.il/product/yonex-pro-tournament-bag-92431w-black/",
+          "title": "YONEX PRO TOURNAMENT BAG 92431W black",
+          "score": 0.5
+        },
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-pro-tournament-bag-92431w-blue/",
+          "url": "https://www.tennis-online.co.il/product/yonex-pro-tournament-bag-92431w-blue/",
+          "title": "YONEX PRO TOURNAMENT BAG 92431W blue",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "id": "4n5pgdvw3",
+      "name": "YONEX TEAM BACKBAG black",
+      "outcome": "needs_link",
+      "supplier": "yonex",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
+      "suggestions": [
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-42512-team-backpack/",
+          "url": "https://www.tennis-online.co.il/product/yonex-42512-team-backpack/",
+          "title": "תיק גב טניס YONEX 42512 Team backpack",
+          "score": 0.4
+        },
+        {
+          "ref": "https://www.tennis-online.co.il/product/%d7%aa%d7%99%d7%a7-%d7%98%d7%a0%d7%99%d7%a1-yonex-team-racquet-bag-6pcs-black/",
+          "url": "https://www.tennis-online.co.il/product/%d7%aa%d7%99%d7%a7-%d7%98%d7%a0%d7%99%d7%a1-yonex-team-racquet-bag-6pcs-black/",
+          "title": "תיק טניס YONEX TEAM RACQUET BAG (6PCS) black",
+          "score": 0.4
+        }
+      ]
+    },
+    {
+      "id": "bjcdgbo82",
+      "name": "YONEX TEAM BACKBAG blue",
+      "outcome": "needs_link",
+      "supplier": "yonex",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
+      "suggestions": [
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-42512-team-backpack/",
+          "url": "https://www.tennis-online.co.il/product/yonex-42512-team-backpack/",
+          "title": "תיק גב טניס YONEX 42512 Team backpack",
+          "score": 0.4
+        },
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-team-racquet-bag-6pcs-blue/",
+          "url": "https://www.tennis-online.co.il/product/yonex-team-racquet-bag-6pcs-blue/",
+          "title": "תיק טניס YONEX TEAM RACQUET BAG (6PCS) blue",
+          "score": 0.4
+        }
+      ]
+    },
+    {
+      "id": "98y3dor5c",
+      "name": "YONEX TEAM BACKBAG red",
+      "outcome": "needs_link",
+      "supplier": "yonex",
+      "before": false,
+      "after": false,
+      "unavailableSizes": [],
+      "supplierSizes": null,
+      "link": null,
+      "supplierTitle": null,
+      "supplierColor": null,
+      "detail": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור. המלאי לא שונה עד שתאשר את המוצר אצל הספק.",
+      "linkReason": "ההתאמה הכי טובה לא מספיק קרובה — דרוש אישור",
+      "suggestions": [
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-42512-red-team-backpack/",
+          "url": "https://www.tennis-online.co.il/product/yonex-42512-red-team-backpack/",
+          "title": "תיק גב טניס YONEX 42512 Red Team backpack",
+          "score": 0.55
+        },
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-team-racquet-bag-6pcs-red/",
+          "url": "https://www.tennis-online.co.il/product/yonex-team-racquet-bag-6pcs-red/",
+          "title": "תיק טניס YONEX TEAM RACQUET BAG (6PCS) red",
+          "score": 0.4
+        },
+        {
+          "ref": "https://www.tennis-online.co.il/product/yonex-42512-team-backpack/",
+          "url": "https://www.tennis-online.co.il/product/yonex-42512-team-backpack/",
+          "title": "תיק גב טניס YONEX 42512 Team backpack",
           "score": 0.4
         }
       ]
